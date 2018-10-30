@@ -1,12 +1,9 @@
 # Table of contents
 
-## About HPC@CofC
-
+<!-- ## About HPC@CofC -->
 <!--  * [Introduction](README.md) -->
-  * [Support](support.md)
-  * [Glossary](glossary.md)
-  * [License](license.md)
-  * [Acknowledgement](acknowledge.md)
+* [Support](support.md)
+* [Acknowledgement](acknowledge.md)
 
 ## Using the HPC
 
@@ -72,6 +69,8 @@
 * [Git in the Command Line](git-version-control/git-command-line.md)
 * [Git Scenarios](git-version-control/git-scenarios.md)
 
-## Contributing
+## Misc
 - [How to Contribute](contributing/contributing.md)
 - [Markdown Guide](contributing/markdown-guide.md)
+- [Glossary](glossary.md)
+- [License](license.md)
