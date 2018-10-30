@@ -1,15 +1,11 @@
 # Support
 
-We are here to help!
+If you need any help, please follow any of the following channels.
 
-- Email us @ [support@example.com](mailto:support@example.com).
-- Join us on our user slack channel [example.slack.com](http://example.slack.com).
-- Stop by our office hours in Building A, Room 101.
-
-| Day       | Open  | Close |
-| --------- | ----- | ----- |
-| Monday    | 9 AM  | 1 PM  |
-| Tuesday   | 10 AM | 2 PM  |
-| Wednesday | 11 AM | 4 PM  |
-| Thursday  | 11 AM | 4 PM  |
-| Friday    | 9 AM  | 1 PM  |
+- Please email [HPC support](mailto:temelsob@cofc.edu) directly or
+- Email the campus [helpdesk](mailto:helpdesk@cofc.edu) or 
+- Call the campus helpdesk at 853-953-3375 during these hours
+  - Mon - Fri 7:30 AM - 10:00 PM
+  - Sat - Sun 2:00 PM - 10:00 PM
+- Submit a support ticket through [TeamDynamix](https://cofc.teamdynamix.com) 
+- Stop by Bell Building, Room 520 during normal work hours (M-F, 8AM-5PM)
