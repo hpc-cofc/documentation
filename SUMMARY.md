@@ -2,7 +2,7 @@
 
 ## About HPC@CofC
 
-* [Introduction](README.md)
+<!--  * [Introduction](README.md) -->
   * [Support](support.md)
   * [Glossary](glossary.md)
   * [License](license.md)
