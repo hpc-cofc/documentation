@@ -31,8 +31,8 @@ have all the necessary software libraries and compilers to ensure that users' so
 If you need any help with HPC-related problems, please email [HPC
   support](mailto:temelsob@cofc.edu) directly or via the campus [helpdesk](mailto:helpdesk@cofc.edu)
 
-# Acknowledgements
+# Acknowledgements for the documentation
 
-Big thanks for Wendi Sapp (Oak Ridge National Lab/Sustainable Horizons Institute) and the
+Big thanks to Wendi Sapp (Oak Ridge National Lab/Sustainable Horizons Institute) and the
 [CADES](https://cades.ornl.gov/) team at ORNL for allowing this documentation to be shared with the
 community.
