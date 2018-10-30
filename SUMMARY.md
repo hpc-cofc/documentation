@@ -1,5 +1,7 @@
 # Table of contents
 
+## About HPC@CofC
+
 * [Introduction](README.md)
   * [Support](support.md)
   * [Glossary](glossary.md)
@@ -28,18 +30,6 @@
   * [Compilers](using-the-hpc/how-to-use/compilers.md)
   * [Workflows](using-the-hpc/how-to-use/workflows/README.md)
     * [Crystal Workflow](using-the-hpc/how-to-use/workflows/crystal-workflow.md)
-
-## Contributing
-- [How to Contribute](contributing/contributing.md)
-- [Markdown Guide](contributing/markdown-guide.md)
-
-## Git Version Control
-
-* [Git Basics](git-version-control/git-basics.md)
-* [Git and Atom: GitLab](git-version-control/git-workflow-gitlab.md)
-* [Git and Atom: GitHub](git-version-control/git-workflow-github.md)
-* [Git in the Command Line](git-version-control/git-command-line.md)
-* [Git Scenarios](git-version-control/git-scenarios.md)
 
 ## Learning Linux
 
@@ -73,3 +63,15 @@
 
 * [Docker Containers](tools/docker.md)
 * [Singularity Containers](tools/singularity.md)
+
+## Git Version Control
+
+* [Git Basics](git-version-control/git-basics.md)
+* [Git and Atom: GitLab](git-version-control/git-workflow-gitlab.md)
+* [Git and Atom: GitHub](git-version-control/git-workflow-github.md)
+* [Git in the Command Line](git-version-control/git-command-line.md)
+* [Git Scenarios](git-version-control/git-scenarios.md)
+
+## Contributing
+- [How to Contribute](contributing/contributing.md)
+- [Markdown Guide](contributing/markdown-guide.md)
