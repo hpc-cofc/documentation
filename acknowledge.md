@@ -1,5 +1,3 @@
-# Acknowledgement
-
 # Why
 Please acknowledge in your publications and presentations the role that CofC's HPC resources have
 played in your research and teaching. We appreciate your conscientiousness in this matter.
