@@ -1,18 +1,21 @@
 # Acknowledgement
 
-Please acknowledge in your publications the role that the CCLA facilities played in your research. Alerting our communications staff when a paper is accepted is also appreciated.
+# Why
+Please acknowledge in your publications and presentations the role that CofC's HPC resources have
+played in your research and teaching. We appreciate your conscientiousness in this matter.
+Acknowledgement and pre-publication notification helps 
+- communicate the role HPC plays on campus teaching and research
+- encourage more faculty, students and staff to incorporate HPC into their teaching and research
+- justify CofC's investment in HPC
+- ensure continued funding and support to keep HPC resources available and growing in the future
 
-Sample acknowledgement:
+## Reporting success stories 
+Please alert our [IT communications
+department](mailto:drinkuthkh@cofc.edu) about papers and presentations that utilized CofC's HPC
+resources and personnel. Some of these success stories will be highlighted in IT's communication as
+well as other campus publications.
 
-> This research used resources of the University of Oz, which is supported by Glenda the Good Witch under Contract No. DE-XXXX-XXXXXX"
+## Sample acknowledgement in papers and presentations
 
-You may use any variation on this theme, calling out specific simulations or portions of the research that used CCLA resources, or citing specific resources used.
-
-However, the crucial elements to include are:
-
-* The spelled out center name \(it's okay to include the acronym, too\): Center for Computing in the Liberal Arts \(CCLA\)
-* Office of Science and U.S. Department of Energy
-* Contract No. DE-XXXX-XXXXXXXX
-
-We appreciate your conscientiousness in this matter. Acknowledgement and pre-publication notification helps the CCLA communicate the importance of its role in science to our sponsors, helping assure the continued availability of this valuable resource.
+> This research used high peformance computing (HPC) resources at College of Charleston.
 
