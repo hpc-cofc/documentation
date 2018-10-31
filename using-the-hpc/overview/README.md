@@ -34,7 +34,7 @@ allocation](../how-to-use/access-HPC.md).
     * 1x NVIDIA Quadro P4000 8GB GPU
 * [**Storage**](storage.md)
   * 288TB NFS-shared, global, highly-available storage
-  * 38TB NFS-shared, global fast scratch storage
+  * 38TB NFS-shared, global fast NVMe-SSD-based scratch storage
 * [**Interconnect**](http://www.mellanox.com/page/products_dyn?product_family=192&mtag=sb7700_sb7790)
   * Mellanox EDR Infiniband with 100Gb/s bandwidth
 * [**Software stack**](software.md)

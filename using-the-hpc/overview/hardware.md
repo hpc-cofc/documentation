@@ -1,6 +1,6 @@
 # Hardware
 
-## HPC Hardware Configuration
+## Overall Hardware Configuration
 
 The HPC is a commodity Linux cluster containing many servers/nodes, storage and networking equipment all assembled into a standard rack.
 
@@ -40,47 +40,53 @@ Please see the rack diagram below:
 * [**Interconnect**](http://www.mellanox.com/page/products_dyn?product_family=192&mtag=sb7700_sb7790)
   * Mellanox EDR Infiniband with 100Gb/s bandwidth
 
+## Components
 
-### CPU Information
+### CPU
 
-* **Specs**: [Full specs](https://ark.intel.com/products/123690/Intel-Xeon-Gold-6148F-Processor-27-5M-Cache-2-40-GHz-)
-* **Model**: Intel Xeon Gold Skylake 6148
-* **Cores per socket**: 20
-* **Clock Speed**: 2.40 GHz base clock, 3.70 GHz Turbo Boost clock
-* **Configuration**: 2 CPUs per standard or GPU nodes, 4 CPUs per high memory node
+|    | Intel Xeon Gold Skylake 6148  |
+|----|---|
+| **Specs** | [Summary of  specs](https://ark.intel.com/products/123690/Intel-Xeon-Gold-6148F-Processor-27-5M-Cache-2-40-GHz-)|
+| **Technical Overview** | [Technical details at Intel including comparison with previous generations](https://software.intel.com/en-us/articles/intel-xeon-processor-scalable-family-technical-overview)|
+| **Cores per socket**: | 20 |
+| **Clock Speed** | 2.40 GHz base clock, 3.70 GHz Turbo Boost clock |
+| **Clock Speed Range** | 2.20 GHz to 3.5GHz depending on instruction set and number of active cores|
+| **Hyperthreading** | Possible |
+| **Cache Hierarchy** | L1 = 32 KB per core <br> L2= 1 MB per core <br> L3 = 27.5 MB shared per CPU |
+| **Configuration** | 2 CPUs per standard or GPU nodes, 4 CPUs per high memory node |
+| **Estimated Performance** | 1.4 TeraFLOPS per CPU (double precision) |
+| References | https://ark.intel.com/products/123690/Intel-Xeon-Gold-6148F-Processor-27-5M-Cache-2-40-GHz- <br> https://software.intel.com/en-us/articles/intel-xeon-processor-scalable-family-technical-overview <br> https://en.wikichip.org/wiki/intel/microarchitectures/skylake_(client) <br> https://www.nas.nasa.gov/hecc/support/kb/skylake-processors_550.html <br>  |
 
-### GPU Information
-
-* **Specs**: [Full Specs](https://www.nvidia.com/en-us/data-center/tesla-v100/)
-* **Model**: Tesla K80 \(2 GK210 GPUs on each K80\)
-* **Speed**: 560 MHz base clock
-* **VRAM**: 24 GB of GDDR5
-* **Error correction**: Registered ECC
-* **Capacity**: 2 Tesla K80s per node, 2 GK210 GPUs per K80 \(4 total GK210 GPUs per node\)
+### GPU
 
 |  |**NVIDIA Tesla V100**|
 |--------------|--------------|
-|Architecture |	Volta
+| **Specs** | [Summary of Specs](https://www.nvidia.com/en-us/data-center/tesla-v100/) |
+| **Technical Overview** | [Technical details at NVIDIA including comparison w/ previous generations](/using-the-hpc/screenshots/volta-architecture-whitepaper.pdf "") |
+| Architecture |	Volta
+| GPU 	| GV100 |
 | CUDA Cores 	 | 5120 |
 | Tensor Cores | 	640 |
-| Core Clock  |	? 	|
 | Boost Clock |		1370MHz |
 | Memory Clock |	1.75Gbps HBM2 |
-| Memory Bus Width |	4096-bit |
+| Memory Bus Width |	4096-bit HBM2|
 | Memory Bandwidth |	900GB/sec |
-| VRAM |	16GB |
+| Memory Size |	16GB |
 | L2 Cache |	6MB |
 | Half Precision |	28 TFLOPS |
 | Single Precision |	14 TFLOPS |
 | Double Precision |	7 TFLOPS 	|
-| Tensor Performance(Deep Learning) |		112 TFLOPS |
+| Tensor Performance |		112 TFLOPS |
 | GPU 	| GV100 |
 | Transistor Count |	21B |
 | TDP |	250W |
 | Form Factor |		PCIe |
 | Cooling |	Passive |
 | Manufacturing Process |	TSMC 12nm FFN |
+| **Configuration** | 1 GPU per GPU node |
+| **Estimated Performance** | 7 TeraFLOPS per GPU (double precision) |
+| References |https://www.anandtech.com/show/12576/nvidia-bumps-all-tesla-v100-models-to-32gb <br> https://www.nvidia.com/en-us/data-center/tesla-v100/ <br> http://images.nvidia.com/content/volta-architecture/pdf/volta-architecture-whitepaper.pdf|
 
-### Network
+### Interconnect
 
 * InfiniBand Interconnect
