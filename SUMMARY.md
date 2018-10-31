@@ -1,8 +1,8 @@
 # Table of contents
 
 <!-- ## About HPC@CofC -->
-<!--  * [Introduction](README.md) -->
-* [Support](support.md)
+<!--  * [Introduction](README.md)
+* [Support](support.md) -->
 * [Acknowledgement](acknowledge.md)
 
 ## Using the HPC

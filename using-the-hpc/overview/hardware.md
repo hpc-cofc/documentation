@@ -2,12 +2,12 @@
 
 ## Overall Hardware Configuration
 
-The HPC is a commodity Linux cluster containing many compute, storage and networking equipment all assembled into a standard rack. Please see the rack diagram below for the layout.
+The HPC is a commodity Linux cluster containing many compute, storage and networking equipment all assembled into a standard rack. Please see the table below or the rack diagram further down for the layout.
 
-|  |   |
+|Component Specs  | Component  |
 |--|---|
 | 1  GbE 48-port Switch (4x SPF+ 10GbE ports)	| **internal network** |
-| 1 Mellanox 100Gbs 36 port EDR Infiniband Switch	| **interconnect** |
+| 1 Mellanox 100Gbs 36-port EDR Infiniband Switch	| **interconnect** |
 | #7 PowerEdge R740 2x 6-core Intel Xeon-G 6128 3.4GHz CPUs, 192GB RAM, 1x480GB SAS SSDs striped + 1 NVIDIA Tesla V100 GPU	| **1x gpu nodes** |
 | #7 PowerEdge R740 2x 6-core Intel Xeon-G 6128 3.4GHz CPUs, 192GB RAM, 1x480GB SAS SSDs striped + 1 NVIDIA Tesla V100 GPU |	**1x gpu nodes** |
 | #6 PowerEdge R840 4x 20-core Intel Xeon-G 6148 2.4GHz, 1.5TB RAM, 2x480GB SATA SSD	| **1x large memory node** |
@@ -21,8 +21,9 @@ The HPC is a commodity Linux cluster containing many compute, storage and networ
 | #2 NSS-HA7 (Dual NFS server) 1x 4U PowerVault MD3460 - RBOD w/ 60x 6TB HDDs | **NSS-HA7 long-term storage array** |
 | #1 PowerEdge R740 2x 12-core Intel Xeon-G 6126 2.6GHz CPU, 192GB RAM, 2x480GB SSDs mirrored,  1 NVIDIA Quadro P1000 GPU |	**login/viz node** |
 
+<!--
 <a href="/using-the-hpc/screenshots/Rack-Diagram.png" ><img src="/using-the-hpc/screenshots/Rack-Diagram.png" alt="Rack Diagram" width="440" border="5" /></a>
-
+-->
 ![rack diagram](/using-the-hpc/screenshots/Rack-Diagram.png "rack layout")
 
 ---
