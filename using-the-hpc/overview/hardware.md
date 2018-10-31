@@ -6,6 +6,26 @@ The HPC is a commodity Linux cluster containing many servers/nodes, storage and 
 
 Please see the rack diagram below:
 
+
+|  |   |
+|--|---|
+| 1  GbE 48-port Switch (4x SPF+ 10GbE ports)	| internal network|
+| 1 Mellanox 100Gbs 36 port EDR Infiniband Switch	| interconnect |
+| #7 PowerEdge R740 2x 6-core Intel Xeon-G 6128 3.4GHz CPUs, 192GB RAM, 1x480GB SAS SSDs striped + 1 NVIDIA Tesla V100 GPU	| 1x gpu nodes |
+| #7 PowerEdge R740 2x 6-core Intel Xeon-G 6128 3.4GHz CPUs, 192GB RAM, 1x480GB SAS SSDs striped + 1 NVIDIA Tesla V100 GPU |	1x gpu nodes |
+| #6 PowerEdge R840 4x 20-core Intel Xeon-G 6148 2.4GHz, 1.5TB RAM, 2x480GB SATA SSD	| 1x large memory node |
+| #5 2U PowerEdge R740 2x 20-core Intel Xeon-G 6148 2.4GHz, 192TB RAM, 1x480GB SATA SSD	| 1x gpu-capable nodes |
+| #5 2U PowerEdge R740 2x 20-core Intel Xeon-G 6148 2.4GHz, 192TB RAM, 1x480GB SATA SSD | 1x gpu-capable nodes |
+| #4 4x PowerEdge C6420 in a 2U chassis 2x 20-core Intel Xeon-G 6148 2.4GHz, 192GB RAM, 1x480GB SSD |	4x stdmem nodes |
+| #4 4x PowerEdge C6420 in a 2U chassis 2x 20-core Intel Xeon-G 6148 2.4GHz, 192GB RAM, 1x480GB SSD |	4x stdmem nodes |
+| #3 2U NFS server with NVMe SSDs PowerEdge R740XD 2x Intel Xeon-G 6126 2.6GHz CPU, 192GB RAM,  24x 1.6TB NVMe SSDs |	fast scratch storage server |
+| #2 2U PowerEdge R740 NFS servers  w/ 2x 12-core Intel Xeon Gold 6136 3.0GHz CPUs, 192GB RAM, 5x300TB 15k SAS HDDs,  |	NFS servers for long-term storage array	|
+| #2 2U PowerEdge R740 NFS servers w/ 2x 12-core Intel Xeon Gold 6136 CPUs, 192GB RAM, 5x300TB 15k SAS HDDs, |	NFS servers for long-term storage array	|
+| #2 NSS-HA7 (Dual NFS server) 1x 4U PowerVault MD3460 - RBOD w/ 60x 6TB HDDs | NSS-HA7 long-term storage array |
+| #1 PowerEdge R740 2x 12-core Intel Xeon-G 6126 2.6GHz CPU, 192GB RAM, 2x480GB SSDs mirrored,  1 NVIDIA Quadro P1000 GPU |	login/viz node |
+
+
+
 ![rack diagram](/using-the-hpc/screenshots/Rack-Diagram.png "rack layout")
 
 * [**Compute nodes**](hardware.md)
