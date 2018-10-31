@@ -22,9 +22,8 @@ The HPC is a commodity Linux cluster containing many compute, storage and networ
 | #1 PowerEdge R740 2x 12-core Intel Xeon-G 6126 2.6GHz CPU, 192GB RAM, 2x480GB SSDs mirrored,  1 NVIDIA Quadro P1000 GPU |	**login/viz node** |
 
 <a href="/using-the-hpc/screenshots/Rack-Diagram.png" ><img src="/using-the-hpc/screenshots/Rack-Diagram.png" alt="Rack Diagram" width="440" border="5" /></a>
-<!--
+
 ![rack diagram](/using-the-hpc/screenshots/Rack-Diagram.png "rack layout")
--->
 
 ---
 * [**Compute nodes**](hardware.md)
@@ -75,7 +74,7 @@ The HPC is a commodity Linux cluster containing many compute, storage and networ
 | **Cache Hierarchy** | L1 = 32 KB per core <br> L2= 1 MB per core <br> L3 = 27.5 MB shared per CPU |
 | **Configuration** | 2 CPUs per standard or GPU nodes, 4 CPUs per high memory node |
 | **Estimated Performance** | 1.4 TeraFLOPS per CPU (double precision) |
-| **References** | [1](https://ark.intel.com/products/123690/Intel-Xeon-Gold-6148F-Processor-27-5M-Cache-2-40-GHz-) <br> [2](https://software.intel.com/en-us/articles/intel-xeon-processor-scalable-family-technical-overview) <br> [3](https://en.wikichip.org/wiki/intel/microarchitectures/skylake) <br> [4](https://www.nas.nasa.gov/hecc/support/kb/skylake-processors_550.html) <br>  |
+| **References** | [1](https://ark.intel.com/products/123690/Intel-Xeon-Gold-6148F-Processor-27-5M-Cache-2-40-GHz-) <br> [2](https://software.intel.com/en-us/articles/intel-xeon-processor-scalable-family-technical-overview)<br>[3](https://en.wikichip.org/wiki/intel/microarchitectures/skylake)<br> [4](https://www.nas.nasa.gov/hecc/support/kb/skylake-processors_550.html) |
 
 ---
 ### GPU
@@ -105,7 +104,7 @@ The HPC is a commodity Linux cluster containing many compute, storage and networ
 | **Manufacturing Process** |	TSMC 12nm FFN |
 | **Configuration** | 1 GPU per GPU node |
 | **Estimated Performance** | 7 TeraFLOPS per GPU (double precision) |
-| **References** | [5](https://www.anandtech.com/show/12576/nvidia-bumps-all-tesla-v100-models-to-32gb) <br> [6](https://www.nvidia.com/en-us/data-center/tesla-v100/) <br> [7](http://images.nvidia.com/content/volta-architecture/pdf/volta-architecture-whitepaper.pdf) |
+| **References** | [5](https://www.anandtech.com/show/12576/nvidia-bumps-all-tesla-v100-models-to-32gb)<br> [6](https://www.nvidia.com/en-us/data-center/tesla-v100/)<br> [7](http://images.nvidia.com/content/volta-architecture/pdf/volta-architecture-whitepaper.pdf) |
 
 ### Interconnect
 * Mellanox EDR InfiniBand Interconnect
