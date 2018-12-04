@@ -27,7 +27,7 @@ allocation](../how-to-use/access-HPC.md).
     * 2x 12-core 2.6GHz Intel Xeon Gold 6126 CPUs w/ 19MB L3 cache,
     * 192GB of DDR4 2667MHz RAM,
     * 480GB of local SSD storage,
-    * 2 NVIDIA Tesla V100 16GB
+    * 1 NVIDIA Tesla V100 16GB
     * Double precision performance ~ 1.8 + 7.0 = 8.8 TFLOPs/node
 * [**Login/visualization node**](hardware.md)
   * 1 login and visualization node:
