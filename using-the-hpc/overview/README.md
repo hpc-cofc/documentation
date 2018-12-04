@@ -2,12 +2,15 @@
 
 ## Overview of CofC's HPC Resources
 
+The specs for the yet-to-be-named cluster are provided below.
+<!--
 To get started using the HPC, check first to see if you are ready by looking over the
 [prerequisites](../how-to-use/prerequisites.md). Then, learn how to [request
 access](../how-to-use/request-access.md). Finally, you are ready to [access your Condo
 allocation](../how-to-use/access-HPC.md).
+-->
 
-### HPC Clusters Specs in Brief
+### HPC Cluster Specs in Brief
 
 * [**Compute nodes**](hardware.md)
   * 10 standard compute nodes:
