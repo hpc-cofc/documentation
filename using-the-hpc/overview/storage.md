@@ -1,5 +1,23 @@
 # Storage
 
+Coming soon ...
+
+### USER Home
+
+### USER SCRATCH
+
+### PROJECT SHARE
+
+### LOCAL SCRATCH STORAGE
+
+### Data Retention, Purge, & Quotas
+
+### SUMMARY
+
+### DATA STORAGE RESOURCES
+
+
+<!--
 The ADC Cluster provides an array of data storage platforms, each designed with a particular purpose in mind. Storage areas are broadly divided into two categories: those intended for user data and those intended for project data. Within each of the two categories, we provide different sub-areas, each with an intended purpose:
 
 | Storage Area | Path | Purpose |
@@ -53,4 +71,4 @@ The following table details quota, backup, purge, and retention information for 
 | Project Share | /lustre/or-myst/cad-right/proj-share | Lustre | 770 | TBD | No | No | TBD Days |
 | World Share | /lustre/or-myst/cad-arm/world-share | Lustre | 775 | TBD | No | No | TBD Days |
 | Local Scratch | /lustre/or-myst/cad-right/scratch | Lustre | 770 | TBD | No | No | TBD Days |
-
+-->

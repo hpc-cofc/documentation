@@ -14,7 +14,7 @@ The new cluster will be composed of
 - **1 large memory compute node** with 4x 20-core 2.4GHz  Intel Xeon Skylake CPUs, 1.5TB of memory and 960GB of local storage,
 - **2 GPU-containing nodes** each with 2x 12-core 2.6GHz Intel Xeon Skylake CPUs, 1 NVIDIA Tesla V100 GPU, 192GB of RAM and 480GB local storage,
 - **1 login and visualization node** with 2x 12-core 24 2.4GHz Intel Xeon Skylake CPUs, 1 NVIDIA Quadro P4000 GPU, 192GB of RAM and 480GB local storage,
-- **288TB globally-shared storage**,
+- **600TB globally-shared storage**,
 - **38TB globally-shared NVMe SSD-based fast scratch storage**,
 - **All interconnected with EDR Infiniband fabric**
 

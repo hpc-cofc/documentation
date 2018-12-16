@@ -18,7 +18,7 @@ The HPC is a commodity Linux cluster containing many compute, storage and networ
 | #3 2U NFS server with NVMe SSDs PowerEdge R740XD 2x Intel Xeon-G 6126 2.6GHz CPU, 192GB RAM,  24x 1.6TB NVMe SSDs |	**fast scratch storage server** |
 | #2 2U PowerEdge R740 NFS servers  w/ 2x 12-core Intel Xeon Gold 6136 3.0GHz CPUs, 192GB RAM, 5x300TB 15k SAS HDDs,  |	**NFS servers for long-term storage array**	|
 | #2 2U PowerEdge R740 NFS servers w/ 2x 12-core Intel Xeon Gold 6136 CPUs, 192GB RAM, 5x300TB 15k SAS HDDs, |	**NFS servers for long-term storage array**	|
-| #2 NSS-HA7 (Dual NFS server) 1x 4U PowerVault MD3460 - RBOD w/ 60x 6TB HDDs | **NSS-HA7 long-term storage array** |
+| #2 NSS-HA7 (Dual NFS server) 1x 5U  Dell EMC PowerVault ME4084 - RBOD w/ 84x 8TB HDDs | **NSS-HA7 long-term storage array** |
 | #1 PowerEdge R740 2x 12-core Intel Xeon-G 6126 2.6GHz CPU, 192GB RAM, 2x480GB SSDs mirrored,  1 NVIDIA Quadro P1000 GPU |	**login/viz node** |
 
 <!--
@@ -54,7 +54,7 @@ The HPC is a commodity Linux cluster containing many compute, storage and networ
     * 480GB of local SSD storage,
     * 1x NVIDIA Quadro P4000 8GB GPU
 * [**Storage**](storage.md)
-  * 288TB NFS-shared, global, highly-available storage
+  * 600TB NFS-shared, global, highly-available storage
   * 38TB NFS-shared, global fast scratch storage
 * [**Interconnect**](http://www.mellanox.com/page/products_dyn?product_family=192&mtag=sb7700_sb7790)
   * Mellanox EDR Infiniband with 100Gb/s bandwidth
@@ -75,7 +75,7 @@ The HPC is a commodity Linux cluster containing many compute, storage and networ
 | **Cache Hierarchy** | L1 = 32 KB per core <br> L2= 1 MB per core <br> L3 = 27.5 MB shared per CPU |
 | **Configuration** | 2 CPUs per standard or GPU nodes, 4 CPUs per high memory node |
 | **Estimated Performance** | 1.4 TeraFLOPS per CPU (double precision) |
-| **References** | [1](https://ark.intel.com/products/123690/Intel-Xeon-Gold-6148F-Processor-27-5M-Cache-2-40-GHz-) <br> [2](https://software.intel.com/en-us/articles/intel-xeon-processor-scalable-family-technical-overview)<br>[3](https://en.wikichip.org/wiki/intel/microarchitectures/skylake)<br> [4](https://www.nas.nasa.gov/hecc/support/kb/skylake-processors_550.html) |
+| **References** | [1](https://ark.intel.com/products/123690/Intel-Xeon-Gold-6148F-Processor-27-5M-Cache-2-40-GHz-) ,  [2](https://software.intel.com/en-us/articles/intel-xeon-processor-scalable-family-technical-overview), [3](https://en.wikichip.org/wiki/intel/microarchitectures/skylake),  [4](https://www.nas.nasa.gov/hecc/support/kb/skylake-processors_550.html) |
 
 ---
 ### GPU
@@ -105,7 +105,20 @@ The HPC is a commodity Linux cluster containing many compute, storage and networ
 | **Manufacturing Process** |	TSMC 12nm FFN |
 | **Configuration** | 1 GPU per GPU node |
 | **Estimated Performance** | 7 TeraFLOPS per GPU (double precision) |
-| **References** | [5](https://www.anandtech.com/show/12576/nvidia-bumps-all-tesla-v100-models-to-32gb)<br> [6](https://www.nvidia.com/en-us/data-center/tesla-v100/)<br> [7](http://images.nvidia.com/content/volta-architecture/pdf/volta-architecture-whitepaper.pdf) |
+| **References** | [5](https://www.anandtech.com/show/12576/nvidia-bumps-all-tesla-v100-models-to-32gb),  [6](https://www.nvidia.com/en-us/data-center/tesla-v100/), [7](http://images.nvidia.com/content/volta-architecture/pdf/volta-architecture-whitepaper.pdf) |
 
 ### Interconnect
-* Mellanox EDR InfiniBand Interconnect
+* Mellanox EDR (100 Gbps) InfiniBand interconnect; 1:1 non-blocking
+
+### 􏰀 Storage:
+* Long-term HDD NFS $HOME storage -  highly redundant and resilient.
+  * 600 TB in total
+  * 10 GB quota per user $HOME directory by default; larger allocations upon request
+  * Backed up weekly
+  * Peak performance - 7 GBps / 6 GBps for sequential read/write
+* Short-term NVMe-SSD NFS $SCRATCH storage -  fast storage for intermediate data during the course of a computation
+  * 38 TB in total
+  * 10 GB quota per user $HOME directory by default; larger allocations upon request
+  * Never backed up; purged weekly or as needed
+  * Theoretical peak performance ~ 28 GBps / 28 GBps for sequential read/write
+  * Actual peak performance ~ `12 GBps / 12 GBps for sequential read/write (benchmarks coming soon)`
