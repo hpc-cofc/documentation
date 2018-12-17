@@ -108,15 +108,16 @@ The HPC is a commodity Linux cluster containing many compute, storage and networ
 | **References** | [5](https://www.anandtech.com/show/12576/nvidia-bumps-all-tesla-v100-models-to-32gb),  [6](https://www.nvidia.com/en-us/data-center/tesla-v100/), [7](http://images.nvidia.com/content/volta-architecture/pdf/volta-architecture-whitepaper.pdf) |
 
 ### Interconnect
-* Mellanox EDR (100 Gbps) InfiniBand interconnect; 1:1 non-blocking
+* Mellanox EDR (100 Gbps) InfiniBand interconnect
+* 1:1 non-blocking
 
-### 􏰀 Storage:
-* Long-term HDD NFS $HOME storage -  highly redundant and resilient.
+### 􏰀Storage:
+* Long-term HDD-based NFS $HOME storage -  highly redundant and resilient.
   * 600 TB in total
   * 10 GB quota per user $HOME directory by default; larger allocations upon request
   * Backed up weekly
   * Peak performance - 7 GBps / 6 GBps for sequential read/write
-* Short-term NVMe-SSD NFS $SCRATCH storage -  fast storage for intermediate data during the course of a computation
+* Short-term NVMe SSD-based NFS $SCRATCH storage -  fast storage for intermediate data during the course of a computation
   * 38 TB in total
   * 10 GB quota per user $HOME directory by default; larger allocations upon request
   * Never backed up; purged weekly or as needed
