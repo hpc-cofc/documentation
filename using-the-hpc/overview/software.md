@@ -3,7 +3,8 @@
 ## OpenHPC Stack
 The cluster runs OpenHPC stack on top of a CentOS 7.5 operating system.
 
-|:        :| Available component                |
+|     | Available component                |
+|:--------:|------------------------------------|
 | Base OS   | CentOS 7.5 x86_64 |
 | Compilers   | GNU6(gcc, g++, gfortran), Intel |
 | Math/Numerical Libraries | BLAS, LAPACK, OpenBLAS, ATLAS, MKL, Scalapack |
@@ -13,7 +14,9 @@ The cluster runs OpenHPC stack on top of a CentOS 7.5 operating system.
 | Debugging and profiling tools | Gprof, TAU |
 
 Some of the underlying management components are:
-|:        :| Available component                |
+
+|        | Available component                |
+|:--------:|------------------------------------|
 | Node provisioning   | Warewulf |
 | Resource management | SLURM |
 | Software provisioning | Modules, Built using Lmod/easybuild/Spack |
