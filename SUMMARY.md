@@ -3,7 +3,8 @@
 <!-- ## About HPC@CofC -->
 <!--  * [Introduction](README.md)
 * [Support](support.md) -->
-* [Policies/Acknowledgement](acknowledge.md)
+* [Policies](policies.md)
+* [Acknowledgement](acknowledge.md)
 
 ## Using the HPC
 
@@ -23,27 +24,27 @@
   * [Scheduling Jobs](using-the-hpc/how-to-use/scheduling-jobs.md)
   * [Bash Environment Customization](using-the-hpc/how-to-use/bash-env.md)
   * [Modules](using-the-hpc/how-to-use/modules/README.md)
-    * [CVMFS Modules](using-the-hpc/how-to-use/modules/cvmfs-modules.md)
-  * [Compilers](using-the-hpc/how-to-use/compilers.md)
-  * [Workflows](using-the-hpc/how-to-use/workflows/README.md)
-    * [Crystal Workflow](using-the-hpc/how-to-use/workflows/crystal-workflow.md)
+<!--    * [CVMFS Modules](using-the-hpc/how-to-use/modules/cvmfs-modules.md) -->
+<!--  * [Compilers](using-the-hpc/how-to-use/compilers.md) -->
+<!--  * [Workflows](using-the-hpc/how-to-use/workflows/README.md) -->
+<!--    * [Crystal Workflow](using-the-hpc/how-to-use/workflows/crystal-workflow.md) -->
 
 ## Learning Linux
 
-* [Learning Linux Commands](learning-linux/linux-intro.md)
+* [Overview](learning-linux/linux-intro.md)
 * [Essential Commands](learning-linux/essential-commands/README.md)
-  * [Script: Backup](learning-linux/essential-commands/backup.md)
-  * [Script: Seconds](learning-linux/essential-commands/seconds.md)
 * [Managing Files](learning-linux/managing-files/README.md)
-  * [Script: Create Files](learning-linux/managing-files/loop_for1.md)
-* [File Permissions](learning-linux/file-permissions.md)
+    * [Script: Create Files](learning-linux/managing-files/loop_for1.md)
+    * [File Permissions](learning-linux/managing-files/file-permissions.md)
 * [Working with Processes](learning-linux/processes.md)
 * [Services](learning-linux/services.md)
 * [System Configuration](learning-linux/system-config.md)
-* [Environment Customization](learning-linux/environment.md)
 * [Communication Protocols](learning-linux/protocols.md)
 * [Task Manager \(crontab, at\)](learning-linux/scheduling-cron.md)
-* [Bash Scripting](learning-linux/bash-scripting.md)
+* [Bash Scripting](learning-linux/bash-scripting/README.md)
+  * [Environment Customization](learning-linux/bash-scripting/environment.md)
+  * [Script: Backup](learning-linux/bash-scripting/backup.md)
+  * [Script: Seconds](learning-linux/bash-scripting/seconds.md)
 * [Command Line Shortcuts](learning-linux/shortcuts.md)
 
 

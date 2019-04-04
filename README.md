@@ -6,7 +6,7 @@ of delivering research computing environment and support for the whole campus.
 
 # Available Resources
 
-We recently purchased a new Linux cluster that will be in full operation in May 2019. 
+We recently purchased a new Linux cluster that will be in full operation in May 2019.
 Faculty and staff can request accounts by emailing [email](mailto:hpc@cofc.edu). Students can ask
 their faculty/staff advisors/mentors to submit a request on their behalf.
 
@@ -43,5 +43,5 @@ We recognize that there are a lot of hurdles that keep people from using HPC res
 # Acknowledgements for this Guide
 
 Big thanks to Wendi Sapp (Oak Ridge National Lab/[Sustainable Horizons Institute](http://shinstitute.org/wendi-sapp-3/)) and the
-[CADES](https://cades.ornl.gov/) team at ORNL for sharing this documentation with the HPC
+[CADES](https://cades.ornl.gov/) team at ORNL for sharing the template for this documentation with the HPC
 community.
