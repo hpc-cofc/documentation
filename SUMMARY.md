@@ -34,19 +34,19 @@
 * [Overview](learning-linux/linux-intro.md)
 * [Essential Commands](learning-linux/essential-commands/README.md)
 * [Managing Files](learning-linux/managing-files/README.md)
-    * [Create Files](learning-linux/managing-files/loop_for1.md)
-    * [File Permissions](learning-linux/managing-files/file-permissions.md)
+  * [File Permissions](learning-linux/managing-files/file-permissions.md)
+  * [Create Files](learning-linux/managing-files/loop_for1.md)
 * [Bash Scripting](learning-linux/bash-scripting/README.md)
-    * [Environment Customization](learning-linux/bash-scripting/environment.md)
-    * [Script: Backup](learning-linux/bash-scripting/backup.md)
-    * [Script: Seconds](learning-linux/bash-scripting/seconds.md)
-* [Misc](learning-linux/misc/README.md)
-  * [Working with Processes](learning-linux/misc/processes.md)
-  * [Services](learning-linux/misc/services.md)
+  * [Environment Customization](learning-linux/bash-scripting/environment.md)
+  * [Script: Backup](learning-linux/bash-scripting/backup.md)
+  * [Script: Seconds](learning-linux/bash-scripting/seconds.md)
+* [Working with Processes](learning-linux/misc/processes.md)
+* [Know Your System](learning-linux/misc/README.md)
   * [System Configuration](learning-linux/misc/system-config.md)
+  * [Services](learning-linux/misc/services.md)
   * [Communication Protocols](learning-linux/misc/protocols.md)
   * [Task Manager \(crontab, at\)](learning-linux/misc/scheduling-cron.md)
-
+* [Help - man/tl;dr](learning-linux/help.md)
 
 ## Data Transfer and Storage
 

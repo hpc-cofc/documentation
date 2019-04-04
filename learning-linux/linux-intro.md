@@ -21,4 +21,4 @@ We have grouped this information into categories which are the most used Linux c
   * [Communication Protocols](misc/protocols.md)
   * [Task Manager \(crontab, at\)](misc/scheduling-cron.md)
 
-📝 **Note:** If you need help with other commands or Linux utilities, please [contact us](../support.md).
+📝 **Note:** If you need help with other commands or Linux utilities, please [contact us](mailto:hpc@cofc.edu).
