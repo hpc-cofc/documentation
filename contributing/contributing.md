@@ -1,8 +1,11 @@
 # Ways to Contribute
 
-Would you like to add your content to this template? Do you have some ideas on how to improve this project?
+This documentation was originally written and provided by [Wendi K. Sapp](mailto:wendikristine@gmail.com) and subsequently adapted for the purposes of [CofC's HPC](mailto:hpc@cofc.edu) initiatives. You can contribute to improving and expanding this documentation by
+- Giving feedback about the usefulness of each page (See **"Was this page helpful?"** at the bottom of each page)
+- Joining in as a collaborator or contributor
+- Submitting comments, corrections, issues to the [repository issue tracker](https://github.com/hpc-cofc/documentation/issues) or [emailing](mailto:hpc@cofc.edu).
 
-To directly make changes to and add content, you'll need to use Git/GitHub and Markdown.
+If you want to contribute as a 'collaborator' or 'contributor', you'll need to use Git/GitHub and Markdown.
 
 #### Step 1. Are you familiar with Git/GitHub?
 
@@ -15,10 +18,4 @@ To directly make changes to and add content, you'll need to use Git/GitHub and M
 
 #### Step 3. Contribute!
 
-- Clone the repository, make changes, add content, and submit pull requests.
-
-  ```
-  git clone git@github.com:wendikristine/documentation-template.git
-  ```
-
-- To submit issues or ideas, visit the [repository issue tracker](https://github.com/wendikristine/documentation-template/issues) or [email](mailto:wendikristine@gmail.com) them to me. 
+- Clone the repository, make changes, add content, and push your changes for approval.

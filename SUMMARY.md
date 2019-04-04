@@ -52,11 +52,10 @@
 
 * [Moving Data](data-transfer-and-storage/moving-data/README.md)
   * [Graphical Client SFTP](data-transfer-and-storage/moving-data/graphical-sftp.md)
-<!-- * [Globus Data Transfer Tool](data-transfer-and-storage/globus-overview/README.md)
-  * [Globus Endpoints](data-transfer-and-storage/globus-overview/globus-endpoints.md)
-  * [Globus Transfers & More](data-transfer-and-storage/globus-overview/globus-transfer.md)
-  * [Globus Command Line Interface](data-transfer-and-storage/globus-overview/globus-command-line-interface.md)
-  -->
+<!-- * [Globus Data Transfer Tool](data-transfer-and-storage/globus-overview/README.md) -->
+<!--  * [Globus Endpoints](data-transfer-and-storage/globus-overview/globus-endpoints.md) -->
+<!--  * [Globus Transfers & More](data-transfer-and-storage/globus-overview/globus-transfer.md) -->
+<!--  * [Globus Command Line Interface](data-transfer-and-storage/globus-overview/globus-command-line-interface.md)  -->
 
 <!--
 ## Tools
@@ -72,7 +71,7 @@
   * [Git and Atom: GitHub](git-version-control/git-workflow-github.md)
   * [Git in the Command Line](git-version-control/git-command-line.md)
   * [Git Scenarios](git-version-control/git-scenarios.md)
-* [Contributing to documtentation](contributing/contributing.md)
+* [Contributing to docs](contributing/contributing.md)
   * [Markdown Guide](contributing/markdown-guide.md)
 * [Glossary](glossary.md)
 * [License](license.md)
