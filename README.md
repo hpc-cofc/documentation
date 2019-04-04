@@ -42,6 +42,4 @@ We recognize that there are a lot of hurdles that keep people from using HPC res
 ---
 # Acknowledgements for this Guide
 
-Big thanks to Wendi Sapp (Oak Ridge National Lab/[Sustainable Horizons Institute](http://shinstitute.org/wendi-sapp-3/)) and the
-[CADES](https://cades.ornl.gov/) team at ORNL for sharing the template for this documentation with the HPC
-community.
+Big thanks to Wendi Sapp (Oak Ridge National Lab (ORNL) [CADES](https://cades.ornl.gov/), [Sustainable Horizons Institute](http://shinstitute.org/wendi-sapp-3/), [USD Research Computing Group]( http://rcg.usd.edu)) and the team at ORNL for sharing the template for this documentation with the HPC community. You can find the originals at [GitHub](https://github.com/wendikristine/documentation-template)

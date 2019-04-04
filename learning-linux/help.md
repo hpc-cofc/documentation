@@ -11,6 +11,6 @@ utilities.  <code>tldr<code> is a simplified and community-driven man page for t
 
 <code>tldr</code> is installed on the CofC cluster, but you can install it in your local environment.
 
-![alt text](https://github.com/tldr-pages/tldr/blob/master/screenshot.png "tldr")
+![tldr](https://github.com/tldr-pages/tldr/blob/master/screenshot.png)
 
 More at the [tldr GitHub page](https://github.com/tldr-pages/tldr)
