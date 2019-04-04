@@ -25,7 +25,24 @@
 | `CMD`+`Z` | `CTRL`+`Z` | Pauses \(stops\) an ongoing operation |
 | `CMD`+`N` | `CTRL`+`N` | Opens a new terminal |
 
-📝 **Note:** If you want to learn more shortcuts, please consult more documentation [here](../shortcuts.md).
+## Command Line Shortcuts
+
+| macOS | Windows | Action |
+| :--- | :--- | :--- |
+| `CMD`+`A` | `CTRL`+`A` | Move to the beginning of the line |
+| `CMD`+`E` | `CTRL`+`E` | Move to the end of the line |
+| `CMD`+`H` | `CTRL`+`H` | Erase backward |
+| `CMD`+`D` | `CTRL`+`D` | Erase forward |
+| `CMD`+`F` | `CTRL`+`F` | Move forward one character |
+| `CMD`+`B` | `CTRL`+`B` | Move backward one character |
+| `OPT`+`F` | `ALT`+`F` | Move forward one word |
+| `OPT`+`B` | `ALT`+`B` | Move backward one word |
+| `ALT`+`CTRL`+`F` | Erase forward one word |  |
+| `ALT`+`CTRL`+`B` | Erase backward one word |  |
+| `CMD`+`P` | `CTRL`+`P` | Previous command \(up arrow\) |
+| `CMD`+`N` | `CTRL`+`N` | Next command \(down arrow\) |
+
+📝 **Note:** If you want to learn more shortcuts, please consult more documentation [here](shortcuts.md).
 
 ## Basic Commands
 
@@ -236,4 +253,3 @@
   ```
 
   _The output of the first part of the command \(before the_ `>>`_\) will be added at the **end** of the file_ `/tmp/report.txt`_._
-

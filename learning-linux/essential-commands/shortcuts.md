@@ -14,4 +14,3 @@
 | `ALT`+`CTRL`+`B` | Erase backward one word |  |
 | `CMD`+`P` | `CTRL`+`P` | Previous command \(up arrow\) |
 | `CMD`+`N` | `CTRL`+`N` | Next command \(down arrow\) |
-

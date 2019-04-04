@@ -34,44 +34,45 @@
 * [Overview](learning-linux/linux-intro.md)
 * [Essential Commands](learning-linux/essential-commands/README.md)
 * [Managing Files](learning-linux/managing-files/README.md)
-    * [Script: Create Files](learning-linux/managing-files/loop_for1.md)
+    * [Create Files](learning-linux/managing-files/loop_for1.md)
     * [File Permissions](learning-linux/managing-files/file-permissions.md)
-* [Working with Processes](learning-linux/processes.md)
-* [Services](learning-linux/services.md)
-* [System Configuration](learning-linux/system-config.md)
-* [Communication Protocols](learning-linux/protocols.md)
-* [Task Manager \(crontab, at\)](learning-linux/scheduling-cron.md)
 * [Bash Scripting](learning-linux/bash-scripting/README.md)
-  * [Environment Customization](learning-linux/bash-scripting/environment.md)
-  * [Script: Backup](learning-linux/bash-scripting/backup.md)
-  * [Script: Seconds](learning-linux/bash-scripting/seconds.md)
-* [Command Line Shortcuts](learning-linux/shortcuts.md)
+    * [Environment Customization](learning-linux/bash-scripting/environment.md)
+    * [Script: Backup](learning-linux/bash-scripting/backup.md)
+    * [Script: Seconds](learning-linux/bash-scripting/seconds.md)
+* [Misc](learning-linux/misc/README.md)
+  * [Working with Processes](learning-linux/misc/processes.md)
+  * [Services](learning-linux/misc/services.md)
+  * [System Configuration](learning-linux/misc/system-config.md)
+  * [Communication Protocols](learning-linux/misc/protocols.md)
+  * [Task Manager \(crontab, at\)](learning-linux/misc/scheduling-cron.md)
 
 
 ## Data Transfer and Storage
 
 * [Moving Data](data-transfer-and-storage/moving-data/README.md)
   * [Graphical Client SFTP](data-transfer-and-storage/moving-data/graphical-sftp.md)
-* [Globus Data Transfer Tool](data-transfer-and-storage/globus-overview/README.md)
+<!-- * [Globus Data Transfer Tool](data-transfer-and-storage/globus-overview/README.md)
   * [Globus Endpoints](data-transfer-and-storage/globus-overview/globus-endpoints.md)
   * [Globus Transfers & More](data-transfer-and-storage/globus-overview/globus-transfer.md)
   * [Globus Command Line Interface](data-transfer-and-storage/globus-overview/globus-command-line-interface.md)
+  -->
 
+<!--
 ## Tools
 
 * [Docker Containers](tools/docker.md)
 * [Singularity Containers](tools/singularity.md)
-
-## Git Version Control
-
-* [Git Basics](git-version-control/git-basics.md)
-* [Git and Atom: GitLab](git-version-control/git-workflow-gitlab.md)
-* [Git and Atom: GitHub](git-version-control/git-workflow-github.md)
-* [Git in the Command Line](git-version-control/git-command-line.md)
-* [Git Scenarios](git-version-control/git-scenarios.md)
+-->
 
 ## Misc
-- [How to Contribute](contributing/contributing.md)
-- [Markdown Guide](contributing/markdown-guide.md)
-- [Glossary](glossary.md)
-- [License](license.md)
+
+* [Git Version Control](git-version-control/git-basics.md)
+  * [Git and Atom: GitLab](git-version-control/git-workflow-gitlab.md)
+  * [Git and Atom: GitHub](git-version-control/git-workflow-github.md)
+  * [Git in the Command Line](git-version-control/git-command-line.md)
+  * [Git Scenarios](git-version-control/git-scenarios.md)
+* [Contributing to documtentation](contributing/contributing.md)
+  * [Markdown Guide](contributing/markdown-guide.md)
+* [Glossary](glossary.md)
+* [License](license.md)
