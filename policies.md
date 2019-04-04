@@ -33,23 +33,36 @@ The storage on the HPC cluster is comes in three forms -- globally accessible pe
   * **/globalscratch** - this 35TB partition is a fast, temporary storage that is available on the login/head node as well as all compute nodes. Users with jobs that span multiple nodes, or intermediate data output exceeding 300GB are encouraged to use this partition for temporary storage. While there is currently no limit on how much of the storage users take up in this partition, files stored here are periodically purged to make sure there is always sufficient space for running calculations.
   * **/localscratch** - this partition is a temporary space that is strictly local to individual compute nodes. Users running calculations contained within individual nodes whose disk usage won't exceed 300GB on most compute nodes and 600GB on the <code>bigmem</code> node are strongly encouraged to use this space.
 
-## Publications, Presentations and Other Products
 
-Any form of publication, presentations, websites, patents and other products resulting from work done on HPC machines should include the following citation:
+## Acknowledgement of CofC HPC Usage
+
+Please acknowledge in your publications and presentations the role that CofC's HPC resources have
+played in your research and teaching. We appreciate your conscientiousness in this matter.
+Acknowledgement and pre-publication notification helps
+* communicate the role HPC plays on campus teaching and research
+* encourage more faculty, students and staff to incorporate HPC into their teaching and research
+* justify CofC's investment in HPC
+* ensure continued funding and support to keep HPC resources available and growing in the future
+
+### Reporting success stories
+Please alert our [IT communications department](mailto:drinkuthkh@cofc.edu) or [HPC team](mailto:hpc@cofc.edu) about papers and presentations that utilized CofC's HPC resources and personnel. Some of these success stories will be highlighted in IT's communication as well as other campus publications.
+
+### Publications, Presentations and Other Products
+Any publications, presentations, websites, patents and other products resulting from work done on CofC HPC machines should include the following citation:
 
 > "Computation for the work described in this product was supported by the College of Charleston’s High Performance Computing (HPC) resources (https://hpc.cofc.edu)."
 
-Copies of published papers acknowledging HPC should be submitted for inclusion on the HPC project website, under the [publications page](https://hpc.cofc.edu/publications) as well as the [CofC Research and Grants Administration Office](http://research.cofc.edu/administration/index.php) . Be sure to include complete publication information (i.e, a URL, PDF, or PS file of the actual publication) and indicate if there are any restrictions on publication.
+Copies of published papers acknowledging HPC should be submitted for inclusion on the HPC project website, under the [publications page](https://hpc.cofc.edu/publications) as well as the [CofC Research and Grants Administration Office](http://research.cofc.edu/administration/index.php). Be sure to include complete publication information (i.e, a URL, PDF, or PS file of the actual publication) and indicate if there are any restrictions on publication.
 
-## Grants and Funding
-If you are submitting proposals for grant funding, please contact [hpc@cofc.edu]() or our [Research and Grants Administration Office] personnel(http://research.cofc.edu/administration/contact-orga-staff/index.php) about ways in which
-* you can use our HPC resources in your researchers
+### Grants and Funding
+If you are submitting proposals for grant funding with a computational component that can take advantage of our HPC resources, please contact our Research and Grants Administration Office [personnel](http://research.cofc.edu/administration/contact-orga-staff/index.php) and [hpc@cofc.edu](mailto:hpc@cofc.edu) to discuss ways in which
+* you can use our HPC resources in your researcher
 * the presence of HPC resources can strengthen your proposals
 * you can request funding to add to our HPC resources
 
-If your project is supported by grants or other funding, this information should be included on the HPC project website under the grant page (https://hpc.cofc.edu/projects). This will be used internally to provide a better idea of how CofC researchers are making use of external funding.
+If your project is supported by grants or other funding, this information should be included on the HPC project website under the grant page (https://hpc.cofc.edu/projects). This will be used internally to provide a better idea of how CofC researchers are making use of the HPC for externally funded projects.
 
-## Email Policy
+## Communication Policy
 
 The email account you provided will automatically be subscribed the CofC's HPC mailing list for important system announcements. There will also be a forum and knowledge base platform for users to ask questions and address common problems.
 
@@ -60,23 +73,3 @@ All emails regarding HPC questions, concerns, and maintenance requests should be
 If it has been determined that you have violated any of the HPC resource policies, or any other CofC IT policies, your account(s) will be deactivated immediately. Your account will not be reactivated until HPC management receives a formal request from your faculty mentor or leader of your project.
 
 If you have any questions or concerns regarding any of these policies, please send an email to hpc@cofc.edu.
-
-## Getting Help
-
-Please acknowledge in your publications and presentations the role that CofC's HPC resources have
-played in your research and teaching. We appreciate your conscientiousness in this matter.
-Acknowledgement and pre-publication notification helps
-* communicate the role HPC plays on campus teaching and research
-* encourage more faculty, students and staff to incorporate HPC into their teaching and research
-* justify CofC's investment in HPC
-* ensure continued funding and support to keep HPC resources available and growing in the future
-
-## Reporting success stories
-Please alert our [IT communications
-department](mailto:drinkuthkh@cofc.edu) about papers and presentations that utilized CofC's HPC
-resources and personnel. Some of these success stories will be highlighted in IT's communication as
-well as other campus publications.
-
-## Sample acknowledgement in papers and presentations
-
-> This research used high performance computing (HPC) resources at College of Charleston.

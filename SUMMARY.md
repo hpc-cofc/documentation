@@ -3,7 +3,7 @@
 <!-- ## About HPC@CofC -->
 <!--  * [Introduction](README.md)
 * [Support](support.md) -->
-* [Acknowledgement](acknowledge.md)
+* [Policies/Acknowledgement](acknowledge.md)
 
 ## Using the HPC
 
