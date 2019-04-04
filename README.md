@@ -6,8 +6,9 @@ of delivering research computing environment and support for the whole campus.
 
 # Available Resources
 
-We recently purchased a new Linux cluster that will be in full operation in January 2019. In
-the meantime, users can feel free to request accounts on our existing cluster via [email](mailto:temelsob@cofc.edu,mosesd@cofc.edu).
+We recently purchased a new Linux cluster that will be in full operation in May 2019. 
+Faculty and staff can request accounts by emailing [email](mailto:hpc@cofc.edu). Students can ask
+their faculty/staff advisors/mentors to submit a request on their behalf.
 
 The new cluster will be composed of
 - **10 compute nodes** each with 2x 20-core 2.4GHz Intel Xeon Skylake CPUs, 192GB of memory and 480GB of local storage,
@@ -28,7 +29,7 @@ In total, the cluster can do **51 TeraFLOPS** (trillions of floating point opera
 
 If you need any help, please follow any of the following channels.
 
-- Please email [HPC support](mailto:temelsob@cofc.edu) directly or
+- Please email [HPC support](mailto:hpc@cofc.edu) directly or
 - Email the campus [helpdesk](mailto:helpdesk@cofc.edu) or
 - Call the campus helpdesk at 853-953-3375 during these hours
   - Mon - Fri 7:30 AM - 10:00 PM
