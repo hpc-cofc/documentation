@@ -41,11 +41,11 @@
   * [Script: Backup](learning-linux/bash-scripting/backup.md)
   * [Script: Seconds](learning-linux/bash-scripting/seconds.md)
 * [Working with Processes](learning-linux/misc/processes.md)
-* [Know Your System](learning-linux/misc/README.md)
-  * [System Configuration](learning-linux/misc/system-config.md)
-  * [Services](learning-linux/misc/services.md)
-  * [Communication Protocols](learning-linux/misc/protocols.md)
-  * [Task Manager \(crontab, at\)](learning-linux/misc/scheduling-cron.md)
+* [Know Your System](learning-linux/know-your-system/README.md)
+  * [System Configuration](learning-linux/know-your-system/system-config.md)
+  * [Services](learning-linux/know-your-system/services.md)
+  * [Communication Protocols](learning-linux/know-your-system/protocols.md)
+  * [Task Manager \(crontab, at\)](learning-linux/know-your-system/scheduling-cron.md)
 * [Help - man/tl;dr](learning-linux/help.md)
 
 ## Data Transfer and Storage
