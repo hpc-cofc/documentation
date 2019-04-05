@@ -38,8 +38,8 @@ Here is a list of some common environment variables:
 * Modify the value of environment variables with `export`:
 
   ```bash
-  export PATH=$PATH:/home/UID
-  export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/UID/custom_lib_directory
+  export PATH=$PATH:/home/$USER
+  export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/$USER/custom_lib_directory
   ```
 
 * Set a value for environment variables:
@@ -49,4 +49,3 @@ Here is a list of some common environment variables:
   ```
 
   _This command sets the value of the variable called OMP\_NUM\_THREADS \(an OpenMP parameter\) to 12._
-

@@ -234,4 +234,3 @@ After using commands to run process in the background, you will immediately be r
   _The three scripts of "collection" that are running in the background will finish before the_ `process-job-output` _starts._
 
   `wait` ensures this process and asks to not exit the containing script until all the execution has finished.
-

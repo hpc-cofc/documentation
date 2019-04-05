@@ -98,9 +98,9 @@
   Wed Apr  4 09:06:30 EDT 2018
   ```
 
-  _The date is shown in a complex format._ Use `date +%F` format if you want to do a [backup of a file including the date in the filename](backup.md).
+  _The date is shown in a complex format._ Use `date +%F` format if you want to do a [backup of a file including the date in the filename](../bash-scriptingbackup.md).
 
-  If you want to [calculate, in seconds, the duration of a program](seconds.md), you can use the `date +%s` command.
+  If you want to [calculate, in seconds, the duration of a program](../bash-scripting/seconds.md), you can use the `date +%s` command.
 
 * **cal: Display a calendar of the current month**
 
@@ -166,7 +166,7 @@
 
   _In this case, a new directory called_ `myNEWdir` _is created in the current path._
 
-  If you want to set the permission of the directory while you are creating the directory, you can do so by typing `mkdir -m a=rwx myNEWdir`. Here, the letters r, w, and x stand for read, write, and execute, respectively. For more information on file and directory permissions, see [here](https://github.com/wendikristine/documentation-template/tree/62a326e16ecef2ff128ef0b976de12c16f6ea062/learning-linux/permissions.md).
+  If you want to set the permission of the directory while you are creating the directory, you can do so by typing `mkdir -m a=rwx myNEWdir`. Here, the letters r, w, and x stand for read, write, and execute, respectively. For more information on file and directory permissions, see [here](../managing-files/file-permissions.md).
 
   If you want to create multiple directories at once, run `mkdir test1 test2 test3`.
 
