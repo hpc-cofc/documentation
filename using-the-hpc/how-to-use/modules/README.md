@@ -165,6 +165,8 @@ You can unload all the modules on your environment, by executing the module purg
 module purge
 ```
 
+<!--
 ## Related Information
 
-* [Environment Customization](../environment.md)
+* Environment Customization](../environment.md
+-->
