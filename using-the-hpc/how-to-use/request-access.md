@@ -1,14 +1,28 @@
-# Request an Allocation
+# Requesting an Allocation
 
-You can self-request access with the procedure below. If you are unsure which group to request, or otherwise need assistance, please [contact us](../../support.md).
+## Who can request an account?
+* Faculty and staff can request accounts by filling out a form electronically or emailing their request to [hpc@cofc.edu](mailto:hpc@cofc.edu?subject=Requesting%20new%20faculty/staff%20account).
+* Students are eligible for accounts upon endorsement or sponsorship by their faculty/staff mentor/advisor. Their faculty/staff mentor/advisor can send an email request to [hpc@cofc.edu](mailto:hpc@cofc.edu?subject=Requesting%20new%20student%20account) on their behalf to initiate the account creation process.
 
-1. **Use the appropriate group link below** and enter your email address \(your Univ address, if available\) and click `Continue`.
-2. Review the  user agreement, and select `Agree`.
-3. Enter your  ID \(or a new  user name\).
-4. Enter your  password \(or a new  password\).
-5. Click `Submit` to complete the  request.  
-6. The activation notice will be dispatched to the email address entered above. This process can take up to 24 hours to complete.
+## Information that needs to be provided
+To request an account, faculty/staff/students would need to agree to [CofC HPC's policies](../../policies.md) and provide the following information.
 
+1. Your full name
+2. Your CofC email address
+3. A mobile phone number that will be used for two-factor authentication in the future.
+
+## Procedure
+### User names and primary group names
+* User names are set to your CofC login name unless explicitly requested otherwise.
+* Primary group names
+  * Faculty/staff - the primary group names for you and your students would be your CofC login name unless you explicitly request otherwise
+* Secondary group names
+  * If faculty/staff need users to belong in secondary groups, say for a group of students working on the same project, they can request that a secondary group be created under a name of their choice.
+
+### Account creation and creation timeline
+The creation and activation notice will be dispatched to the email address entered above. This process can take up to 24 hours to complete.
+
+<!--
 ## HPC Condo Groups
 
 To access HPC Condos, users will need to be added into an appropriate group. Find your group in the table below, and click on the respective / registration URL, as outlined in the instructions above. _NSED access exists in the Moderate Protection Zone._
@@ -22,3 +36,4 @@ To access HPC Condos, users will need to be added into an appropriate group. Fin
 * Help with HPC Condo Registration  
 *  ID or  ID, contact information, reason for requesting an HPC Condo allocation, and the name of your directorate and division.
 
+-->
