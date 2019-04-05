@@ -46,4 +46,3 @@ It is easy to use your personal or work computer as a Globus Endpoint. Follow th
      📝 **Note:** The Globus Personal Endpoint Client may produce errors if you are connected via VPN.
 
 6. Now you may use the Globus web interface or the [command line interface](globus-command-line-interface.md) to search for your new endpoint using the name you provided in step 1.
-

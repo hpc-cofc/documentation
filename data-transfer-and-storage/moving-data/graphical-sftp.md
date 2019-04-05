@@ -2,12 +2,11 @@
 
 Graphical file transfer clients can be used to move data between your local machine and remote storage locations. Once you install the client on your computer and set up the remote connection, you may move folders and files between your computer and the remote storage using a drag-and-drop method.
 
-📝 **Note:** It is impractical to maintain documentation on every storage system that CCLA offers. These examples are chosen to be representative of our services. If you need help connecting to a different storage service, please [contact the CCLA](../../support.md).
-
 ## CyberDuck \(macOS and Windows\)
 
 Download Cyberduck [here](https://cyberduck.io/) and run the installation.
 
+<!--
 _**AWS S3 - Scality**_
 
 * To set up a new connection, click on the `Open Connection` button in the top left of the window.
@@ -45,12 +44,16 @@ _**CCLA OR Condo HPC, NFS, and Lustre**_
 
   [![](https://github.com/wendikristine/documentation-template/tree/62a326e16ecef2ff128ef0b976de12c16f6ea062/data-transfer-and-storage/screenshots/cyberduck-condo-login.png)](https://github.com/wendikristine/documentation-template/tree/62a326e16ecef2ff128ef0b976de12c16f6ea062/data-transfer-and-storage/screenshots/cyberduck-condo-login.png)  
 
+-->
+
 ## WinSCP \(Windows\)
 
 Download WinSCP [here](https://winscp.net/eng/download.php) and run the installation.  
 📝 **Note:** In cases where an SSH key is required for access, you must store the path to the key in WinSCP for each connection. To store the key, enter the connection information that you will find in the steps below. Then, click the `Advanced...` button. Provide the path to your SSH private key.  
+
+<!--
 [![](https://github.com/wendikristine/documentation-template/tree/62a326e16ecef2ff128ef0b976de12c16f6ea062/data-transfer-and-storage/screenshots/winscp-advanced.png)](https://github.com/wendikristine/documentation-template/tree/62a326e16ecef2ff128ef0b976de12c16f6ea062/data-transfer-and-storage/screenshots/winscp-advanced.png)  
-  
+
 [![](https://github.com/wendikristine/documentation-template/tree/62a326e16ecef2ff128ef0b976de12c16f6ea062/data-transfer-and-storage/screenshots/winscp-advanced-ssh-key.png)](https://github.com/wendikristine/documentation-template/tree/62a326e16ecef2ff128ef0b976de12c16f6ea062/data-transfer-and-storage/screenshots/winscp-advanced-ssh-key.png)  
 
 
@@ -89,9 +92,12 @@ _**CCLA HPC, NFS, and Lustre**_
 
   [![](https://github.com/wendikristine/documentation-template/tree/62a326e16ecef2ff128ef0b976de12c16f6ea062/data-transfer-and-storage/screenshots/winscp-condo-login.png)](https://github.com/wendikristine/documentation-template/tree/62a326e16ecef2ff128ef0b976de12c16f6ea062/data-transfer-and-storage/screenshots/winscp-condo-login.png)  
 
+
+
 ## Related Tutorials
 
 * [Scality Object Storage User Guide](https://github.com/wendikristine/documentation-template/tree/62a326e16ecef2ff128ef0b976de12c16f6ea062/data-transfer-and-storage/data-transfer-storage/scality-guide.md)
 * [Globus Data Transfer Tool](https://github.com/wendikristine/documentation-template/tree/62a326e16ecef2ff128ef0b976de12c16f6ea062/data-transfer-and-storage/data-transfer-storage/globus-overview.md)
 * [Access VM Instances](https://github.com/wendikristine/documentation-template/tree/62a326e16ecef2ff128ef0b976de12c16f6ea062/openstack/access-vm/access-vm.md)
 
+-->
