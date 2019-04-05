@@ -54,7 +54,7 @@ The HPC is a commodity Linux cluster containing many compute, storage and networ
     * 480GB of local SSD storage,
     * 1x NVIDIA Quadro P4000 8GB GPU
 * [**Storage**](storage.md)
-  * 600TB NFS-shared, global, highly-available storage
+  * 512TB NFS-shared, global, highly-available storage
   * 38TB NFS-shared, global fast scratch storage
 * [**Interconnect**](http://www.mellanox.com/page/products_dyn?product_family=192&mtag=sb7700_sb7790)
   * Mellanox EDR Infiniband with 100Gb/s bandwidth
@@ -113,13 +113,15 @@ The HPC is a commodity Linux cluster containing many compute, storage and networ
 
 ### 􏰀Storage:
 * Long-term HDD-based NFS $HOME storage -  highly redundant and resilient.
-  * 600 TB in total
-  * 10 GB quota per user $HOME directory by default; larger allocations upon request
-  * Backed up weekly
-  * Peak performance - 7 GBps / 6 GBps for sequential read/write
+  * 512 TB in total
+  * 100 GB quota per faculty/staff $HOME directory by default; larger allocations upon request
+  * 10 GB quota per student $HOME directory by default; larger allocations upon request
+  * Will eventually be backed up weekly, but not yet
+  * Peak performance - 7 GBps / 6 GBps for sequential read/write (*at the moment, we are experiencing issues that are limiting the performance to 2 GBps / 2 GBps sequential read/write.*)
 * Short-term NVMe SSD-based NFS $SCRATCH storage -  fast storage for intermediate data during the course of a computation
   * 38 TB in total
-  * 10 GB quota per user $HOME directory by default; larger allocations upon request
+  * No quota per user currently, but data will be deleted as needed with very short notice
   * Never backed up; purged weekly or as needed
   * Theoretical peak performance ~ 28 GBps / 28 GBps for sequential read/write
-  * Actual peak performance ~ `12 GBps / 12 GBps for sequential read/write (benchmarks coming soon)`
+  * Expected peak performance ~ 12 GBps / 12 GBps for sequential read/write
+  * Actual peak performance -  (*at the moment, we are experiencing issues that are limiting the performance to 2 GBps / 4 GBps sequential read/write.*)
