@@ -18,7 +18,7 @@ You are restricted to a small number of processes running in the login/head node
 
 You may submit jobs that require up to 48 hours of processing time and 8 nodes to the standard default queue. If your jobs require more computing resources than the defined Linux resource limit, please send an email to [hpc@cofc.edu](mailto:hpc@cofc.edu?subject=Increasing%20walltime%20limit%20).
 
-  * **debugq**  - this queue shares two compute nodes with the <code>stdmem</code> queue and it is intended for testing quick jobs before submitting production runs to the <code>stdmem</code> queue. Run times in this queue are limited to 2 hours and 2 nodes.
+  * **debugq**  - this queue shares two compute nodes with the <code>stdmemq</code> queue and it is intended for testing quick jobs before submitting production runs to the <code>stdmemq</code> queue. Run times in this queue are limited to 2 hours and 2 nodes.
   * **stdmemq** - this is the default queue containing 10 compute nodes with 40 cores, 192GB of RAM and 300GB SSD storage each. Run times in this queue are limited to 48 hours unless you request an extension by emailing [hpc@cofc.edu](mailto:hpc@cofc.edu?subject=Increasing%20walltime%20limit%20).
   * **bigmemq** - this queue is intended to provide access to our large node which has 80 cores, 1.5TB of RAM and 600GB SSD. Run times in this queue are limited to 24 hours and 1 node.
   * **gpuq** - this queue is intended to provide access to two nodes each with 1 NVIDIA Tesla V100 GPU, 24 cores, 192GB of RAM and 300GB SSD. Run times in this queue are limited to 48 hours and 1 node.

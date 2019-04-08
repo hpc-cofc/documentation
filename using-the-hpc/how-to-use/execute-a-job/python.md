@@ -155,7 +155,7 @@ _Python does not need to be compiled._
    .
    ```
 
-4. Download your results \(using the `scp` command or an SFTP client\) or move them to persistent storage. See our [moving data](https://github.com/wendikristine/documentation-template/tree/62a326e16ecef2ff128ef0b976de12c16f6ea062/data-transfer-storage/moving-data.md) section for help.
+4. Download your results \(using the `scp` command or an SFTP client\) or move them to persistent storage. 
 
 #### Additional Examples
 
@@ -163,4 +163,3 @@ _Python does not need to be compiled._
 * [Working with C++](cpp.md)
 * [Working with Fortran](fortran.md)
 * [Working with Makefiles](makefile.md)
-

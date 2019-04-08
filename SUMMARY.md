@@ -15,7 +15,7 @@
 * [How to Use](using-the-hpc/how-to-use/README.md)
   * [Prerequisites](using-the-hpc/how-to-use/prerequisites.md)
   * [Request an Allocation](using-the-hpc/how-to-use/request-access.md)
-  * [Access your Allocation](using-the-hpc/how-to-use/access-your-allocation.md)
+<!--  * [Access your Allocation](using-the-hpc/how-to-use/access-your-allocation.md) -->
   * [Execute a Job](using-the-hpc/how-to-use/execute-a-job/README.md)
     * [Working with C++](using-the-hpc/how-to-use/execute-a-job/cpp.md)
     * [Working with Fortran](using-the-hpc/how-to-use/execute-a-job/fortran.md)

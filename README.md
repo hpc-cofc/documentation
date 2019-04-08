@@ -3,7 +3,7 @@
 High performance computing (HPC) at College of Charleston has historically been under the purview of
 the Department of Computer Science. It is now under Division of Information Technology with the aim
 of delivering research computing environment and support for the whole campus. We especially thank the following groups for making HPC at CofC possible
-* [Office of the president](http://president.cofc.edu/about/index.php)
+* [Office of the President](http://president.cofc.edu/about/index.php)
 * [Division of Information Technology](http://it.cofc.edu)
 * [School of Sciences and Mathematics](http://ssm.cofc.edu)
 
