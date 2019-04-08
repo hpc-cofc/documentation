@@ -151,9 +151,3 @@ prepend-path     PATH /software/dev_tools/swtree/cs400_centos7.2_pe2016-08/PE/1.
 module         load xalt
 -------------------------------------------------------------------
 ```
-
-### Related Information
-
-* [Environment Customization](https://github.com/wendikristine/documentation-template/tree/62a326e16ecef2ff128ef0b976de12c16f6ea062/using-the-hpc/how-to-use/condos/software/environment.md)
-* [Modules](https://github.com/wendikristine/documentation-template/tree/62a326e16ecef2ff128ef0b976de12c16f6ea062/using-the-hpc/how-to-use/condos/software/modules.md)
-

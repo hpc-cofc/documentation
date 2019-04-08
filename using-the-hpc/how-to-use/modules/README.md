@@ -91,25 +91,6 @@ user@host[~]  module avail
 **Modules: Local repository**  
  By default the local repository is used as a source of software installations. To list available modules, type `module avail`. To load a module, use `module load module_name`. Similarly, unload modules by typing `module unload module_name`.
 
-**Modules: CVMFS-based repository**  
- A CVMFS \(Cern Virtual File System\)-based repository is available for use that has several software packages available for use. To use the CVMFS-based repository run the following commands from your login node:
-
-```bash
-source /software/dev_tools/swtree/cs400/modulefiles/switch-modules.sh
-```
-
-```bash
-switch_modules oasis
-```
-
-After entering the above commands the new repository should be active and the command below will list the software available for use:
-
-```bash
-module avail
-```
-
-Similarly `switch_modules local` will bring back the local modules to use.
-
 ## Available Modules
 
 To see a list of available modules, type

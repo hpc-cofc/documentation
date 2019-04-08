@@ -2,17 +2,27 @@
 
 AVAILABLE QUEUES:
 
+```bash
+iserbt-local@openhpc[~/ResearchTools/startup]  sinfo
+PARTITION AVAIL  TIMELIMIT  NODES  STATE NODELIST
+stdmemq      up 2-00:00:00      8   idle compute[001-008]
+bigmemq      up 2-00:00:00      1   idle bigmem001
+debugq       up    2:00:00      2   idle gpu[001-002]
+gpuq         up 2-00:00:00      2   idle gpuv100[001-002]
+```
+
+Description:
+```
 Queue    | QOS   | Max Walltime | Priority | Description
 -------- | ----- | ------------ | -------- | -----------------------------------------------------------------
-Batch    | burst |              |          | Burst queue allows for use of resources beyond your system
-high_mem | devel | 4 hours      | high     | Queue for use of CPU nodes
-         | std   | 48 hours     | lower    |
-         | long  | 2 weeks      | lowest   |
-
+stdmemq  | std   | 48 hours     | avg    | the 8 nodes in this queue are the best choice for most jobs
+bigmemq  | std   | 4 hours      | avg    | this node with 80 cores and 1.5TB of memory is ideal for large SMP jobs with large memory demands
+gpuq     | std   | 48 hours     | avg    | this partition is exclusively for jobs utilizing our NVIDIA Tesla V100 GPUs
+debugq   | devel | 2 weeks      | high   | the 2 nodes in this partition are for short jobs (< 2 hr) and quick development tests
 
 ## Example Submission Scripts:
 
-BURST QUEUE
+STDMEMQ:
 
 ```text
 #PBS -N jobname
