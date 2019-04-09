@@ -22,7 +22,7 @@
     * [Working with Python](using-the-hpc/how-to-use/execute-a-job/python.md)
     * [Working with Makefiles](using-the-hpc/how-to-use/execute-a-job/makefile.md)
   * [Scheduling Jobs](using-the-hpc/how-to-use/scheduling-jobs.md)
-  * [Managing Jobs](using-the-hpc/how-to-use/managing-jobs.md)
+<!--  * [Managing Jobs](using-the-hpc/how-to-use/managing-jobs.md) -->
   * [Bash Environment Customization](using-the-hpc/how-to-use/bash-env.md)
   * [Modules](using-the-hpc/how-to-use/modules/README.md)
 <!--    * [CVMFS Modules](using-the-hpc/how-to-use/modules/cvmfs-modules.md) -->
