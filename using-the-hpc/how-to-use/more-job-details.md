@@ -3,7 +3,7 @@
 AVAILABLE QUEUES:
 
 ```bash
-iserbt-local@openhpc[~/ResearchTools/startup]  sinfo
+user@host[~/] sinfo
 PARTITION AVAIL  TIMELIMIT  NODES  STATE NODELIST
 stdmemq      up 2-00:00:00      8   idle compute[001-008]
 bigmemq      up 2-00:00:00      1   idle bigmem001
@@ -12,7 +12,7 @@ gpuq         up 2-00:00:00      2   idle gpuv100[001-002]
 ```
 
 Description:
-```
+
 Queue    | QOS   | Max Walltime | Priority | Description
 -------- | ----- | ------------ | -------- | -----------------------------------------------------------------
 stdmemq  | std   | 48 hours     | avg    | the 8 nodes in this queue are the best choice for most jobs

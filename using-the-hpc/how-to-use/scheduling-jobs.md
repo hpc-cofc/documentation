@@ -1,13 +1,26 @@
 # Managing Jobs
 
-HPC utilizes SLURM to manage jobs that users submit to various queues on a computer system. Each queue represents a group of resources with attributes necessary for the queue's jobs. You can see the list of queues that HPC has by typing `squeue`. **stdmemq** is the default partition/queue.
+HPC utilizes SLURM to manage jobs that users submit to various queues on a computer system. Each queue represents a group of resources with attributes necessary for the queue's jobs. You can see the list of queues that HPC has by typing `sinfo`. **stdmemq** is the default partition/queue.
 
-📝 **Note:** Do not run jobs on the login nodes. All jobs launched from those nodes will be terminated without notice.
+## Common Commands
+
+The table below gives a short description of the most used SLURM commands.
+
+Command | 	Description
+----------    | -----------------------
+squeue | 	reports the state of jobs (it has a variety of filtering, sorting, and formatting options), by default, reports the running jobs in priority order followed by the pending jobs in priority order
+sbatch 	      | submit a job script for later execution (the script typically contains one or more srun commands to launch parallel tasks)
+scancel 	 | cancel a pending or running job
+sinfo 	| reports the state of partitions and nodes managed by SLURM (it has a variety of filtering, sorting, and formatting options)
+sacct         |	report job accounting information about active or completed jobs
+srun 	 | used to submit a job for execution in real time
+salloc 	      | allocate resources for a job in real time (typically used to allocate resources and spawn a shell, in which the srun command is used to launch parallel tasks)
+
+**Note:** Do not run jobs on the login nodes. All jobs launched from those nodes will be terminated without notice.
 
 ## Listing jobs
 
 To list all jobs:
-
 ```bash
 squeue
 ```
@@ -35,7 +48,7 @@ sbatch your_script
 
 ## Deleting a job
 
-📝 **Note:** Be aware that deleting a job cannot be undone. Double check the job ID before deleting a job.
+**Note:** Be aware that deleting a job cannot be undone. Double check the job ID before deleting a job.
 
 Users can delete their jobs by typing the following command.
 

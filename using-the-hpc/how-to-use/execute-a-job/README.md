@@ -1,120 +1,79 @@
 # Execute a Job
 
-The tutorial below shows you how to run Wes Kendall's basic "hello world" program, written in C, using the message passing interface \(MPI\) to scale across the HPC Condo compute nodes [\[1\]](./#works-cited). This tutorial is intended for users who are new to the HPC Condo environment and leverages a portable batch system \(PBS\) script and a C source code.
+The tutorial below shows you how to run Wes Kendall's basic "hello world" program, written in C, using the message passing interface \(MPI\) to scale across our HPC compute nodes [\[1\]](./#works-cited). The test will be submitted to the HPC via a [SLURM (Simple Linux Utility for Resource Management)](https://slurm.schedmd.com) batch scheduling system.
 
 Additional examples can be found in [C++](cpp.md), [Fortran](fortran.md) or [Python](python.md) sections.
 
 **Table of Contents**
 
 * [Step 1: Access Your Allocation](./#step-1-access-your-allocation)
-* [Step 2: Create a PBS Script](./#step-2-create-a-pbs-script)
-  * [Example PBS Script](./#example-pbs-script)
-  * [PBS Script Breakdown](./#pbs-script-breakdown)
-  * [PBS Procedure](./#pbs-procedure)
+* [Step 2: Create a SLURM Script](./#step-2-create-a-SLURM-script)
+  * [Example SLURM Script](./#example-slurm-script)
+  * [SLURM Script Breakdown](./#slurm-script-breakdown)
+  * [SLURM Procedure](./#pbs-procedure)
 * [Step 3: Compile the C Program from Source](./#step-3-compile-the-c-program-from-source)
   * [MPI Hello World Source Code](./#mpi-hello-world-source-code)
   * [C Procedure](./#c-procedure)
 * [Step 4: Run the Job](./#step-4-run-the-job)
 
-📝 **Note:** Do not execute jobs on the login nodes; only use the login nodes to access your compute nodes. Processor-intensive, memory-intensive, or otherwise disruptive processes running on login nodes will be killed without warning.
+**Note:** Do not execute jobs on the login nodes; only use the login nodes to access your compute nodes. Processor-intensive, memory-intensive, or otherwise disruptive processes running on login nodes will be killed without warning.
 
 ## Step 1: Access Your Allocation
 
-Open and Moderate protection zones each have their own login node. Choose the login node for your protection zone. For this tutorial, we will be using the Open protection zone. If you need to request an allocation, see [instructions here](../request-access.md).
+1. Open a Bash terminal.
+2. Execute `ssh username@hpc.cofc.edu`.
+3. When prompted, enter your password.
 
-📝 **Note:** The Open protection zone can be accessed either using either  or  credentials. However, the Moderate protection zone requires an Univ  ID.
+Once you have connected to the login node, you can proceed to Step 2 and begin assembling your SLURM submission script.
 
-1. Open a Bash terminal \(or PuTTY for Windows users\).
-2. Execute `ssh username@or-condo-login.univ.edu`.
-   * Replace "username" with your  or  ID.
-3. When prompted, enter your  or  password.
+## Step 2: Create a SLURM Script
 
-Once you have connected to the login node, you can proceed to Step 2 and begin assembling your PBS script.
+Below is the SLURM script we are using to run an MPI "hello world" program as a batch job. SLURM scripts use variables to specify things like the number of nodes and cores used to execute your job, estimated walltime for your job, and which compute resources to use \(e.g., GPU _vs._ CPU\). The sections below feature an example Slurm script for our HPC resources, show you how to create and save and submit your own SLURM script to run on our HPC.
 
-## Step 2: Create a PBS Script
+Consult the official SLURM [documentation](https://slurm.schedmd.com/documentation.html) and [FAQ](https://slurm.schedmd.com/faq.html) for a complete list of options and common questions.
 
-Below is the PBS script we are using to run an MPI "hello world" program as a batch job. PBS scripts use variables to specify things like the number of nodes and cores used to execute your job, estimated walltime for your job, and which compute resources to use \(e.g., GPU _vs._ CPU\). The sections below feature an example PBS script for HPC Condo resources, show you how to create and save your own PBS script, and show you how store the PBS script on an HPC Condo file system.
+### Example SLURM Script
 
-Consult the [official Torque documentation](http://docs.adaptivecomputing.com/torque/4-0-2/Content/topics/commands/qsub.htm) for a complete list of PBS variables.
-
-### Example PBS Script
-
-Here is an example PBS script for running a batch job on a HPC Condo allocation. We break down each command in the section below.
+Here is an example SLURM script for running a batch job on our HPC. Please save it to a file named `mpi-test.slurm`. We break down each command in the section below.
 
 ```bash
-#!/bin/bash
+#SBATCH -p stdmemq          # Submit to 'stdmemq' Partitiion or queue
+#SBATCH -J MPItest          # Name the job as 'MPItest'
+#SBATCH -o MPItest-%j.out   # Write the standard output to file named 'jMPItest-<job_number>.out'
+#SBATCH -e MPItest-%j.err   # Write the standard error to file named 'jMPItest-<job_number>.err'
+#SBATCH --mail-user=<user>@cofc.edu  # Email the user on the status of the job based on the --mail-type option
+#SBATCH --mail-type=ALL     # Email at the start and of the job
+#SBATCH -t 0-12:00:00       # Run for a maximum time of 0 days, 12 hours, 00 mins, 00 secs
+#SBATCH -N 2                # Request 2 nodes
+#SBATCH -n 40               # Request 40 cores or task per node
+#SBATCH --mem=180G          # Use as much as 180GB memory per node
 
-#PBS -N mpi_hello_world_c
-#PBS -M your_email@univ.edu
-#PBS -l nodes=1:ppn=16
-#PBS -l walltime=0:00:6:0
-#PBS -W group_list=cad-right
-#PBS -A right
-#PBS -l qos=burst
-#PBS -V
+module purge                # clear all existing paths
+module load gnu8 openmpi3   # load gnu8 compiler and openmpi3 MPI library, which are the default compiler and MPI library
+module list                 # will list modules loaded; we'll just use this to check that the modules we selected are indeed loaded
+pwd                         # prints current working directory
+date                        # prints the date and time
 
-module purge
-module load PE-gnu
-module list
-cd $PBS_O_WORKDIR
-pwd
-mpirun hello_world_c
+mpirun hello_world_c        # run the MPI job
 ```
 
-📝 **Note**: This example uses the `cad-right` resource. Users can use the `cad-right` resource for these examples, but otherwise, the PBS directives for your Division should be used. See the table [on this page](../request-access.md#HPC-condo-groups) for the appropriate resource codes.
+### SLURM Script Breakdown
 
-### PBS Script Breakdown
+You can always type `man sbatch` to see all the SLURM batch submission options. Below is an explanation of the options used above.
 
-Here, we break down the essential elements of the above PBS script.
+  -  | Option   | Description
+-------- |  ---------------------  | -----------------------------------------------------------------
+SBATCH | -p, --partition=<partition\> | Submit the job to <partition> queue
+SBATCH | -J, --job-name=<jobname\> | Name the job as <jobname>
+SBATCH | -o, --output=<filename\>	| Write the job's standard output to the file name named <filename\>
+SBATCH | -e, --error=<filename\>	| Write the job's standard error messages to the file name named <filename\>
+SBATCH | --mail-user=<e-mail address\> | Notify user by email when certain event types occur, as specified by the --mail-type=<type\> option.
+SBATCH | --mail-type=<type\> | Notify user by email when certain event types occur. <type\>=ALL notifies upon the start, end or failing of the job. <type\>=END only notified the user at the end.  
+SBATCH | -N, --nodes=<n\> | Request that `n` nodes be allocated to this job.
+SBATCH | -n, --ntasks-per-node=<ntasks\>  | Request that ntasks be invoked on each node.
+SBATCH | --mem=<size[units]\>  | Specify the real memory required per node in the proper unit.
+SBATCH | -t, --time=<time\>  | Maximum run time for your job in the format `D-HH:MM:SS`
 
-* `#!/bin/bash`: sets the script type
-* `#PBS -N mpi_hello_world_c`: sets the job name; your output files will share this name
-* `#PBS -M your_email@univ.edu`: add your email address if you would like errors to be emailed to you
-* `#PBS -l nodes=1:ppn=16`: sets the number of nodes and processors per node that you want to use to run your job; in this case, we're using one node and 16 cores per node.
-* `#PBS -l walltime=0:00:6:0`: tells PBS the anticipated runtime for your job, where `walltime=HH:MM:S`
-* `#PBS -W group_list=cad-right`: specifies your LDAP group; the full list of HPC Condo LDAP groups is [here](../request-access.md#HPC-condo-groups)
-* `#PBS -A right`: specifies your account type; list of account types is found [here](../request-access.md#HPC-condo-groups)
-* `#PBS -l qos=burst`: sets the quality of service \(QOS\) to burst or std
-  * Burst jobs allow a user to leverage more nodes/cores/GPUs than may be in their formal allocation. However, in exchange for this "resource burst" flexibility, your burst job may be preempted if the rightful owner of those resources needs them to complete his or her own jobs.
-  * In most cases, a user will simply run a job with the QOS set to std.
-* `module purge`: clears any modules currently loaded that might result in a conflict
-* `module load PE-gnu`: loads the PE-gnu module, which loads OpenMPI, GCC, and XALT
-* `module list`: confirms the modules that were loaded.
-* `cd $PBS_O_WORKDIR`: sets the working path
-  * In this example, our binary will be launched from the same directory as our PBS script. The results from the binary will also be placed here.
-* `pwd`: confirms current working directory
-* `mpirun hello_world_c`: calls MPI to run our `hello_world_c` binary
-
-### PBS Procedure
-
-Now that we have covered the basics of a PBS script in the context of an HPC Condo, we will now talk about actually creating and using the script on your allocation.
-
-When creating and editing your PBS script, we will be working on the login node \(from Lustre storage\) using the text editor, Vi. _If Lustre storage is not available, you may complete this tutorial from within your home directory on NFS._
-
-1. From the login node, change your working directory to the desired file system. We are going to use our Lustre allocation for this example.
-
-   ```bash
-   cd /lustre/or-myst/cad-right/username
-   ```
-
-   Replace "username" with your own / user ID.
-
-2. Use Vi to create and edit your PBS script.
-
-   ```bash
-   vi hello_world_c.pbs
-   ```
-
-3. Write your PBS script within Vi or paste the contents of your PBS script into Vi.
-   * Hit `Esc` on your keyboard to exit the input mode.
-   * Enter `:set paste` into Vi's command line, and press `Return` to enter paste mode.
-   * Paste the PBS code into Vi.
-
-     -
-4. When finished, hit `Esc` on your keyboard to exit the input mode.
-5. Enter `:x!` into Vi's command line, and press `Return` to save your file and return to the Bash shell.
-
-With the PBS script in place, you can now move on to compiling your hello world C code in Step 3.
 
 ## Step 3: Compile the C Program from Source
 
@@ -150,103 +109,67 @@ int main(int argc, char** argv) {
 
 ### C Procedure
 
-When creating and editing your `hello_world.c` source code, we will be working on the login node \(from Lustre storage\) using the text editor, Vi. _If Lustre storage is not available, you may complete this tutorial from within your home directory on NFS._
+When creating and editing your `hello_world.c` source code, we will be working on the login node using the text editor such as Vi, Emacs or Nano.
 
-1. Ensure that you are still in your working directory \(`/lustre/or-myst/cad-right/username`\) using `pwd`.
-2. Use Vi \(`vi`\) to create your C source file within your working directory.
-
-   ```bash
-   vi hello-world.c
-   ```
-
-3. Paste the hello world C code into Vi.
-   * Hit `Esc` on your keyboard to exit the input mode.
-   * Enter `:set paste` into Vi's command line, and press `Return` to enter paste mode.
-   * Paste the C code into Vi.
-4. When finished, hit `Esc` on your keyboard to exit the paste/input mode.
-5. Enter `:x!` into Vi's command line, and press `Return` to save your file and return to the Bash shell.  
-
-
-   You now have a C source file that you can compile.
-
-6. Load the MPI compiler using the PE-gnu module.
+1. Create a file named `hello_world.c` and paste the contents of the above code there.
+2. Load the compiler and MPI library. Please note that `GNU8` and `OpenMPI3` are the defaults on our cluster and they may already be loaded. Enter `module list` to see if they are loaded. If not, you can load them using the command below.
 
    ```bash
-   module load PE-gnu
+   module load gnu8 openmpi3
    ```
 
-7. Compile the C source into a binary executable file.
+3. Compile the C source into a binary executable file.
 
    ```bash
    mpicc -o hello_world_c hello_world.c
    ```
 
-8. Use `ls -al` to verify the presence of the `hello_world_c` binary in your working directory.
+4. Use `ls -al` to verify the presence of the `hello_world_c` binary in your working directory.
 
 With the C code compiled into a binary \(`hello_world_c`\), we can now schedule and run the job on our compute nodes.
 
 ## Step 4: Run the Job
 
-1. Before proceeding, ensure that you are still in your working directory \(using `pwd`\) and that you still have the PE-gnu module loaded \(using `module list`\).
-   * We need to be in the same path/directory as our PBS script and our C binary. Use `ls -al` to confirm their presence.
-   * PE-gnu also loads OpenMPI, GCC, and XALT. Use `module list` to confirm their presence. If necessary, use `module load PE-gnu` to reload the module\(s\).
-2. Use `qsub` to schedule your batch job in the queue.
+1. Before proceeding, please check the path/directory as your SLURM script and C binary. Use `ls -al` to confirm their presence.
+2. Use `sbatch` to schedule your batch job in the queue.
 
    ```bash
-   qsub hello_world_c.pbs
+   sbatch mpi-test.slurm
    ```
 
-   This command will automatically queue your job using Torque and produce a six-digit job number \(shown below\).
+   This command will automatically queue your job using SLURM and produce a job number \(shown below\). You can check the status of your job at any time with the `squeue` command.
 
    ```bash
-   143295.or-condo-pbs01
+   squeue -u $USER
    ```
 
-   You can check the status of your job at any time with the `checkjob` command.
+   You can also stop your job at any time with the `scancel` command.
 
    ```bash
-   checkjob 143295
-   ```
-
-   You can also stop your job at any time with the `qdel` command.
-
-   ```bash
-   qdel 143295
+   scancel <job_ID>
    ```
 
 3. View your results.  
-    Once your job completes, Torque will produce two output/data files. These output/data files, unless otherwise specified in the PBS script, are placed in the same path as your binary.  
-    One file \(`myscript.o<jobnumber>`\) contains the results of the binary you just executed, and the other \(`myscript.e<jobnumber>`\) contains any errors that occurred during execution.  
-    Replace "myscript" with the name of your script and "&lt;jobnumber&gt;" with your job number.  
+    Once your job completes, SLURM will produce two output/data files. These output/data files, unless otherwise specified in the SLURM script, are placed in the same path as your binary.  
+    One file \(`MPItest-<jobnumber>.out`\) contains the results of the binary you just executed, and the other \(`MPItest-<jobnumber>.err`\) contains any errors that occurred during execution. Please replace  "<jobnumber\> with your job number.  
     You can view the contents of these files using the `more` command followed by the file name.  
 
-
    ```bash
-   more mpi_hello_world_c.o143295
+   more mpi_hello_world_c.oXXXXX
    ```
 
-   Your output should look something like this, with one line per processor core \(16 in this case\):
+   Your output should look something like this, with one line per processor core \(80 in this case\):
 
    ```bash
-    Hello world from processor or-condo-c136.univ.edu, rank 3 out of 16 processors
-    Hello world from processor or-condo-c136.univ.edu, rank 4 out of 16 processors
-    Hello world from processor or-condo-c136.univ.edu, rank 6 out of 16 processors
-    Hello world from processor or-condo-c136.univ.edu, rank 11 out of 16 processors
-    Hello world from processor or-condo-c136.univ.edu, rank 7 out of 16 processors
-    Hello world from processor or-condo-c136.univ.edu, rank 14 out of 16 processors
-    Hello world from processor or-condo-c136.univ.edu, rank 2 out of 16 processors
-    Hello world from processor or-condo-c136.univ.edu, rank 5 out of 16 processors
-    Hello world from processor or-condo-c136.univ.edu, rank 8 out of 16 processors
-    Hello world from processor or-condo-c136.univ.edu, rank 9 out of 16 processors
-    Hello world from processor or-condo-c136.univ.edu, rank 10 out of 16 processors
-    Hello world from processor or-condo-c136.univ.edu, rank 12 out of 16 processors
-    Hello world from processor or-condo-c136.univ.edu, rank 13 out of 16 processors
-    Hello world from processor or-condo-c136.univ.edu, rank 15 out of 16 processors
-    Hello world from processor or-condo-c136.univ.edu, rank 0 out of 16 processors
-    Hello world from processor or-condo-c136.univ.edu, rank 1 out of 16 processors
+    Hello world from processor compute001, rank 3 out of 80 processors
+    Hello world from processor compute002, rank 12 out of 80 processors
+    Hello world from processor compute002, rank 31 out of 80 processors
+    Hello world from processor compute001, rank 24 out of 80 processors
+    .
+    .
+    .
    ```
-
-4. Download your results \(using the `scp` command or an SFTP client\) or move them to persistent storage. See our [moving data](https://github.com/wendikristine/documentation-template/tree/62a326e16ecef2ff128ef0b976de12c16f6ea062/data-transfer-storage/moving-data.md) section for help.
+4. You have successfully created an MPI code and run it through a batch queue manager!
 
 #### Works Cited
 
@@ -258,4 +181,3 @@ With the C code compiled into a binary \(`hello_world_c`\), we can now schedule 
 * [Working with Fortran](fortran.md)
 * [Working with Python](python.md)
 * [Working with Makefiles](makefile.md)
-
