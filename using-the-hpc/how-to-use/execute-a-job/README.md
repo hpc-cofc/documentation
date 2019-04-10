@@ -124,7 +124,7 @@ When creating and editing your `hello_world.c` source code, we will be working o
 
   ------------------------------------------------------
   mpich:
-------------------------------------------------------
+ ------------------------------------------------------
     Description:
       MPICH MPI implementation
 
