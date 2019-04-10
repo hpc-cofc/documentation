@@ -3,11 +3,11 @@
 The following topics may be more relevant for system adminstrators than users, but they are
 essential to gaining a fuller understanding of the Linux environment users operate in.
 
-* [Know Your System](https://hpc.cofc.edu/docs/learning-linux/know-your-system)
-  * [System Configuration](https://hpc.cofc.edu/docs/learning-linux/know-your-system/system-config)
-  * [Services](https://hpc.cofc.edu/docs/learning-linux/know-your-system/services)
-  * [Communication Protocols](https://hpc.cofc.edu/docs/learning-linux/know-your-system/protocols)
-  * [Task Manager crontab, at](https://hpc.cofc.edu/docs/learning-linux/know-your-system/scheduling-cron)
+* [Know Your System](know-your-system.md)
+  * [System Configuration](system-config.md)
+  * [Services](services.md)
+  * [Communication Protocols](protocols.md)
+  * [Task Manager crontab, at](scheduling-cron.md)
 
 
   <!--
