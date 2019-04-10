@@ -28,7 +28,7 @@ After your [access request](request-access.md) has been approved and you have in
 
 3. When prompted, enter your password.
 
-**By default, `/home` directories should be automatically created for you when logging into HPC Condos**.
+**By default, `/home/$USER`, `/globalscratch/$USER` and /localscratch/$USER directories should be automatically created when you log into the HPC if they aren't created already.**.
 
 You can run the following command on your terminal to see your files:
 

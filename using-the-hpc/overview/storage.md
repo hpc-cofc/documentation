@@ -15,7 +15,7 @@ The 512TB <code>/home</code> partition is NFS-shared from a Dell NSS-HA storage 
 ## USER SCRATCH
 ### Global
 
-The 35TB <code>/globalscratch</code> is a fast, temporary storage that is NFS-shared on the login/head node as well as all compute nodes. It is composed of 24 1.6TB NVMe SSD drives merged striped (RAID0) to form one big partition. Users with jobs that span multiple nodes, or intermediate data output exceeding 300GB are encouraged to use this partition for temporary storage. While there is currently no limit on how much of the storage users take up in this partition, files stored here are periodically purged to make sure there is always sufficient space for running calculations.
+The 38TB <code>/globalscratch</code> is a fast, temporary storage that is NFS-shared on the login/head node as well as all compute nodes. It is composed of 24 1.6TB NVMe SSD drives merged striped (RAID0) to form one big partition. Users with jobs that span multiple nodes, or intermediate data output exceeding 300GB are encouraged to use this partition for temporary storage. While there is currently no limit on how much of the storage users take up in this partition, files stored here are periodically purged to make sure there is always sufficient space for running calculations.
 
 ### Node-local
 The <code>/localscratch</code> is the local temporary space on each compute node. It is not directly accessible from other nodes.

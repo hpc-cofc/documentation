@@ -41,10 +41,11 @@ allocation](../how-to-use/access-HPC.md).
 * [**Interconnect**](http://www.mellanox.com/page/products_dyn?product_family=192&mtag=sb7700_sb7790)
   * Mellanox EDR Infiniband with 100Gb/s bandwidth
 * [**Software stack**](software.md)
-  * OpenHPC using CentOS 7.5
+  * OpenHPC 1.3.6
+  * CentOS 7.6
   * Warewulf provisioning
   * SLURM scheduler
   * LMod modules for package management
   * Workflow tools
 
-In total, the cluster can do 51 trillion floating point operations per second (TeraFLOPS). We will provide benchmarks based on standard High Performance LINPACK (HPL) at some point.
+In total, the cluster has a theoretical peak performance of 51 trillion floating point operations per second (TeraFLOPS). We will provide benchmarks based on standard High Performance LINPACK (HPL) at some point.

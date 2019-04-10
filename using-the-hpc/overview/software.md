@@ -26,7 +26,7 @@ Some of the underlying management components are:
 A wide range of software from specific disciplines as well as general ones (Python, R, C, C++) will be pre-compiled and provisioned as `modules` users can load at run time. If there is a particular software users want to use, please submit a request to have them installed in a central location. Otherwise, users can install them in their own area for their personal use. If users prefer working with containers, we encourage using `Singularity` containers which are preferred over `Docker` for HPC applications.
 
 ### Provisioning software
-Our software environment uses Linux environment [modules](../how-to-use/modules/) to perform this configuration. The software modules available to users also contain preconfigured [compiler toolchains](../how-to-use/compilers.md), or programming environments which include parallel compiler wrappers and associated MPI stacks. There are also [workflow tools](../how-to-use/workflows/) that may help with your applications as well.
+Our software environment uses LMod [modules](../how-to-use/modules/) to set paths to executables, libraries, include files and manual pages for the installed software. The software modules available to users also contain preconfigured [compiler toolchains](../how-to-use/compilers.md), or programming environments which include parallel compiler wrappers and associated MPI stacks. There are also [workflow tools](../how-to-use/workflows/) that may help with your applications as well.
 
 ## Modules
 
