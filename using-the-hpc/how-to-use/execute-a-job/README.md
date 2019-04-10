@@ -114,7 +114,7 @@ When creating and editing your `hello_world.c` source code, we will be working o
 1. Create a file named `hello_world.c` and paste the contents of the above code there.
 2. Load the compiler and MPI library. Please note that `GNU8` and `OpenMPI3` are the defaults on our cluster. This exercise suggests that we use a different flavor of MPI called [MPICH](https://www.mpich.org/). Enter `module list` to see if what modules are loaded. If MPICH is not loaded, swap the current MPI library with MPICH to proceed.
 
-   ```bash
+```bash
    user@host[~]  module list
 
    Currently Loaded Modules:
@@ -122,7 +122,7 @@ When creating and editing your `hello_world.c` source code, we will be working o
 
   user@host[~] module spider mpich
 
-------------------------------------------------------
+  ------------------------------------------------------
   mpich:
 ------------------------------------------------------
     Description:
