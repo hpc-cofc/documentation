@@ -48,8 +48,8 @@ Here is an example SLURM script for running a batch job on our HPC. Please save 
 #SBATCH -n 40               # Request 40 cores or task per node
 #SBATCH --mem=180G          # Use as much as 180GB memory per node
 
-module purge                # clear all existing paths
-module load gnu8 openmpi3   # load gnu8 compiler and openmpi3 MPI library, which are the default compiler and MPI library
+module list                 # will list modules loaded by default. In our case, it will be GNU8 compilers and OpenMPI3 MPI libraries
+module swap openmpi3/3.1.3 mpich/3.3  # swap the MPI library from the default 'openmpi3/3.1.3' to 'mpich/3.3'.
 module list                 # will list modules loaded; we'll just use this to check that the modules we selected are indeed loaded
 pwd                         # prints current working directory
 date                        # prints the date and time
@@ -112,10 +112,48 @@ int main(int argc, char** argv) {
 When creating and editing your `hello_world.c` source code, we will be working on the login node using the text editor such as Vi, Emacs or Nano.
 
 1. Create a file named `hello_world.c` and paste the contents of the above code there.
-2. Load the compiler and MPI library. Please note that `GNU8` and `OpenMPI3` are the defaults on our cluster and they may already be loaded. Enter `module list` to see if they are loaded. If not, you can load them using the command below.
+2. Load the compiler and MPI library. Please note that `GNU8` and `OpenMPI3` are the defaults on our cluster. This exercise suggests that we use a different flavor of MPI called [MPICH](https://www.mpich.org/). Enter `module list` to see if what modules are loaded. If MPICH is not loaded, swap the current MPI library with MPICH to proceed.
 
    ```bash
-   module load gnu8 openmpi3
+   user@host[~]  module list
+
+   Currently Loaded Modules:
+     1) autotools   2) prun/1.2   3) gnu8/8.3.0   4) openmpi3/3.1.3   5) ohpc
+
+  user@host[~] module spider mpich
+
+------------------------------------------------------
+  mpich:
+------------------------------------------------------
+    Description:
+      MPICH MPI implementation
+
+     Versions:
+        mpich/3.2.1
+        mpich/3.3
+
+------------------------------------------------------
+  For detailed information about a specific "mpich" module (including how to load the modules) use the full name.
+  For example:
+
+     $ module spider mpich/3.3
+------------------------------------------------------
+
+user@host[~]  module load mpich/3.3
+Lmod has detected the following error: You can only have one MPI module loaded at a time.
+You already have openmpi3 loaded.
+To correct the situation, please execute the following command:
+
+  $ module swap openmpi3 mpich/3.3
+
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    mpich/3.3        /opt/ohpc/pub/moduledeps/gnu8/mpich/3.3
+
+
+ user@host[~]  module swap openmpi3 mpich/3.3
    ```
 
 3. Compile the C source into a binary executable file.
