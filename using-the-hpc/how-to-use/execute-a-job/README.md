@@ -112,14 +112,19 @@ int main(int argc, char** argv) {
 When creating and editing your `hello_world.c` source code, we will be working on the login node using the text editor such as Vi, Emacs or Nano.
 
 1. Create a file named `hello_world.c` and paste the contents of the above code there.
-2. Load the compiler and MPI library. Please note that `GNU8` and `OpenMPI3` are the defaults on our cluster. This exercise suggests that we use a different flavor of MPI called [MPICH](https://www.mpich.org/). Enter `module list` to see if what modules are loaded. If MPICH is not loaded, swap the current MPI library with MPICH to proceed.
+2. Load the compiler and MPI library.
+ Enter `module list` to see if what modules are loaded. If MPICH is not loaded, swap the current MPI library with MPICH to proceed.
 
 ```bash
    user@host[~]  module list
 
    Currently Loaded Modules:
      1) autotools   2) prun/1.2   3) gnu8/8.3.0   4) openmpi3/3.1.3   5) ohpc
+```
 
+Please note that `GNU8` and `OpenMPI3` are the defaults on our cluster. This exercise suggests that we use a different flavor of MPI called [MPICH](https://www.mpich.org/). So, search for the available MPICH module.
+
+```bash
   user@host[~] module spider mpich
 
   ------------------------------------------------------
@@ -138,7 +143,10 @@ When creating and editing your `hello_world.c` source code, we will be working o
 
      $ module spider mpich/3.3
 ------------------------------------------------------
+```
+Try loading the suggested MPICH module, namely `mpich/3.3`
 
+```bash
 user@host[~]  module load mpich/3.3
 Lmod has detected the following error: You can only have one MPI module loaded at a time.
 You already have openmpi3 loaded.
@@ -151,8 +159,10 @@ While processing the following module(s):
     Module fullname  Module Filename
     ---------------  ---------------
     mpich/3.3        /opt/ohpc/pub/moduledeps/gnu8/mpich/3.3
+```
+As noted above, you can only have one MPI library in your path at a time. Therefore, you would need to swap the default `openmpi3` library with `mpich`
 
-
+```bash
  user@host[~]  module swap openmpi3 mpich/3.3
    ```
 
