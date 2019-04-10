@@ -28,17 +28,17 @@ After your [access request](request-access.md) has been approved and you have in
 
 3. When prompted, enter your password.
 
-**By default, `/home/$USER`, `/globalscratch/$USER` and /localscratch/$USER directories should be automatically created when you log into the HPC if they aren't created already.**.
+**By default, `/home/$USER`, `/globalscratch/$USER` and `/localscratch/$USER` directories should be automatically created when you log into the HPC if they aren't created already.**.
 
 You can run the following command on your terminal to see your files:
 
 ```bash
 $ ls -lhtr /home/username
 total 20K
-drwxr-xr-x 2 username users 4     Apr 6 12:11 Test1
--rw-r--r-- 1 username users 982   Apr 6 12:11 setup.py
--rw-r--r-- 1 username users 1.5K  Apr 6 12:11 readme.txt
--rw-r--r-- 1 username users 77    Apr 6 12:11 paralleltestpy2.py
+drwxr-xr-x 2 username groupname 4     Apr 6 12:11 Test1
+-rw-r--r-- 1 username groupname 982   Apr 6 12:11 setup.py
+-rw-r--r-- 1 username groupname 1.5K  Apr 6 12:11 readme.txt
+-rw-r--r-- 1 username groupname 77    Apr 6 12:11 paralleltestpy2.py
 ```
 
 - The `ls -lhtr /home/username` command will show the whole list and details of the files that the **username** has.

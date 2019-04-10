@@ -41,7 +41,7 @@ Here is an example SLURM script for running a batch job on our HPC. Please save 
 #SBATCH -J MPItest          # Name the job as 'MPItest'
 #SBATCH -o MPItest-%j.out   # Write the standard output to file named 'jMPItest-<job_number>.out'
 #SBATCH -e MPItest-%j.err   # Write the standard error to file named 'jMPItest-<job_number>.err'
-#SBATCH --mail-user=<user>@cofc.edu  # Email the user on the status of the job based on the --mail-type option
+#SBATCH --mail-user=<user>@cofc.edu  # Email the user on the status of the job n
 #SBATCH --mail-type=ALL     # Email at the start and of the job
 #SBATCH -t 0-12:00:00       # Run for a maximum time of 0 days, 12 hours, 00 mins, 00 secs
 #SBATCH -N 2                # Request 2 nodes
@@ -49,7 +49,7 @@ Here is an example SLURM script for running a batch job on our HPC. Please save 
 #SBATCH --mem=180G          # Use as much as 180GB memory per node
 
 module list                 # will list modules loaded by default. In our case, it will be GNU8 compilers and OpenMPI3 MPI libraries
-module swap openmpi3/3.1.3 mpich/3.3  # swap the MPI library from the default 'openmpi3/3.1.3' to 'mpich/3.3'.
+module swap openmpi3 mpich  # swap the MPI library from the default 'openmpi3' to 'mpich'.
 module list                 # will list modules loaded; we'll just use this to check that the modules we selected are indeed loaded
 pwd                         # prints current working directory
 date                        # prints the date and time
