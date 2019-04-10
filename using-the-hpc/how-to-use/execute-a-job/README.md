@@ -63,16 +63,16 @@ You can always type `man sbatch` to see all the SLURM batch submission options. 
 
   -  | Option   | Description
 -------- |  ---------------------  | -----------------------------------------------------------------
-SBATCH | -p, --partition=<partition\> | Submit the job to <partition> queue
-SBATCH | -J, --job-name=<jobname\> | Name the job as <jobname>
-SBATCH | -o, --output=<filename\>	| Write the job's standard output to the file name named <filename\>
-SBATCH | -e, --error=<filename\>	| Write the job's standard error messages to the file name named <filename\>
-SBATCH | --mail-user=<e-mail address\> | Notify user by email when certain event types occur, as specified by the --mail-type=<type\> option.
-SBATCH | --mail-type=<type\> | Notify user by email when certain event types occur. <type\>=ALL notifies upon the start, end or failing of the job. <type\>=END only notified the user at the end.  
-SBATCH | -N, --nodes=<n\> | Request that `n` nodes be allocated to this job.
-SBATCH | -n, --ntasks-per-node=<ntasks\>  | Request that ntasks be invoked on each node.
-SBATCH | --mem=<size[units]\>  | Specify the real memory required per node in the proper unit.
-SBATCH | -t, --time=<time\>  | Maximum run time for your job in the format `D-HH:MM:SS`
+SBATCH | -p, `--partition=<partition>` | Submit the job to `<partition>` queue
+SBATCH | -J, `--job-name=<jobname>` | Name the job as `<jobname>`
+SBATCH | -o, `--output=<filename>`	| Write the job's standard output to the file name named `<filename>`
+SBATCH | -e, `--error=<filename>`	| Write the job's standard error messages to the file name named `<filename>`
+SBATCH | `--mail-user=<e-mail_address>` | Notify user by email when certain event types occur, as specified by the `--mail-type=<type>` option.
+SBATCH | `--mail-type=<type>` | Notify user by email when certain event types occur. `<type>=ALL` notifies upon the start, end or failing of the job. `<type>=END` only notified the user at the end.  
+SBATCH | -N, `--nodes=<n>` | Request that `n` nodes be allocated to this job.
+SBATCH | -n, `--ntasks-per-node=<ntasks>`  | Request that `ntasks` be invoked on each node.
+SBATCH | `--mem=<size[units]>`  | Specify the real memory required per node in the proper unit.
+SBATCH | -t, `--time=<time>`  | Maximum run time for your job in the format `D-HH:MM:SS`
 
 
 ## Step 3: Compile the C Program from Source
