@@ -45,7 +45,7 @@ Here is an example SLURM script for running a batch job on our HPC. Please save 
 #SBATCH --mail-type=ALL     # Email at the start and of the job
 #SBATCH -t 0-12:00:00       # Run for a maximum time of 0 days, 12 hours, 00 mins, 00 secs
 #SBATCH -N 2                # Request 2 nodes
-#SBATCH -n 40               # Request 40 cores or task per node
+#SBATCH -n 10               # Request 10 cores or task per node
 #SBATCH --mem=180G          # Use as much as 180GB memory per node
 
 module list                 # will list modules loaded by default. In our case, it will be GNU8 compilers and OpenMPI3 MPI libraries
@@ -199,13 +199,13 @@ With the C code compiled into a binary \(`hello_world_c`\), we can now schedule 
    more mpi_hello_world_c.oXXXXX
    ```
 
-   Your output should look something like this, with one line per processor core \(80 in this case\):
+   Your output should look something like this, with one line per processor core \(20 in this case\):
 
    ```bash
-    Hello world from processor compute001, rank 3 out of 80 processors
-    Hello world from processor compute002, rank 12 out of 80 processors
-    Hello world from processor compute002, rank 31 out of 80 processors
-    Hello world from processor compute001, rank 24 out of 80 processors
+    Hello world from processor compute001, rank 3 out of 20 processors
+    Hello world from processor compute002, rank 12 out of 20 processors
+    Hello world from processor compute002, rank 14 out of 20 processors
+    Hello world from processor compute001, rank 8 out of 20 processors
     .
     .
     .

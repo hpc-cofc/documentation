@@ -91,4 +91,4 @@ sacct --format=jobid,user,jobname,partition,end,Elapsed,State
 
 ## Related Information
 
-- [Execute a Job](../how-to-use/execute-a-job.md)
+- [MPI Example](execute-a-job/README.md)
