@@ -4,5 +4,5 @@ This section will walk you through the primary steps that are required to get yo
 
 * [Prerequisites](prerequisites.md)
 * [Request Credentials for an Allocation](request-access.md)
-* [Access to your Allocation](access-HPC.md)
+* [Access to your Allocation](access-hpc.md)
 * [Execute a Job on an Allocation](execute-a-job/)
