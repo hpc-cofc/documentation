@@ -37,6 +37,7 @@ Consult the official SLURM [documentation](https://slurm.schedmd.com/documentati
 Here is an example SLURM script for running a batch job on our HPC. Please save it to a file named `mpi-test.slurm`. We break down each command in the section below.
 
 ```bash
+#!/bin/bash
 #SBATCH -p stdmemq          # Submit to 'stdmemq' Partitiion or queue
 #SBATCH -J MPItest          # Name the job as 'MPItest'
 #SBATCH -o MPItest-%j.out   # Write the standard output to file named 'jMPItest-<job_number>.out'
