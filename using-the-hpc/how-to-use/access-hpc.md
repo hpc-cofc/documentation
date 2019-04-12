@@ -6,7 +6,8 @@ The CofC HPC cluster is accessible directly via SSH from the CofC campus wired a
 ## Off-campus Access
 If you are off-campus, you would need to use CofC's VPN to access the HPC resource. If you have never used CofC's HPC resources before, you would need to submit a VPN access request even if you have used CofC's VPN to access other campus resources.
 
-The process to request VPN access it
+The process to request VPN access is:
+
 1. Go to the [TeamDynamix VPN Access Request (Pulse VPN)](https://cofc.teamdynamix.com/TDClient/Requests/ServiceDet?ID=13575) page
 
 2. Click on the 'Request VPN Access' button on the right
@@ -14,8 +15,8 @@ The process to request VPN access it
 3. For **Request Type**, select `new` if this is your first time requesting VPN access, or `add` if you just need to be added to the HPC access group
 
 4. For **Request and Justification**, enter
-  * Server Name: hpc.cofc.edu (153.9.128.11)
-  * Justification: Description of how you intend to use the HPC cluster
+  * `Server Name:` hpc.cofc.edu (153.9.128.11)
+  * `Justification:` Description of how you intend to use the HPC cluster
 
 It's identity management group will try to add you to the HPC access list and get you on your way quickly, but expect some delays depending on their workload.
 
