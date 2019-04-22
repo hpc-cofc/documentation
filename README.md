@@ -9,7 +9,7 @@ of delivering research computing environment and support for the whole campus. W
 
 # Available Resources
 
-We recently purchased a new Linux cluster that will be in full operation in May 2019.
+We recently purchased a new Linux cluster that will be in full operation in late April 2019.
 Faculty and staff can request accounts by emailing [email](mailto:hpc@cofc.edu). Students can ask
 their faculty/staff advisors/mentors to submit a request on their behalf.
 
@@ -32,6 +32,16 @@ In total, the cluster can do **51 TeraFLOPS** (trillions of floating point opera
 
 If you need any help, please follow any of the following channels.
 
+- Submit a support ticket through [TeamDynamix](https://cofc.teamdynamix.com)
+  - [Service requests](https://cofc.teamdynamix.com/TDClient/Requests/ServiceDet?ID=35085). These include inquiries about accounts, projects and services
+    - Request account
+    - Seek consultation about teaching/research projects
+    - Inquire about operations
+    - Ask about documentation
+  - [Incident requests](https://cofc.teamdynamix.com/TDClient/Requests/ServiceDet?ID=35086). These include any problems you encounter during any HPC operations
+    - Access problems
+    - Inability to run calculations
+    - Inability to access data
 - Please email [HPC support](mailto:hpc@cofc.edu) directly or
 - Email the campus [helpdesk](mailto:helpdesk@cofc.edu) or
 - Call the campus helpdesk at 853-953-3375 during these hours

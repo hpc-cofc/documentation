@@ -3,10 +3,14 @@
 
 Users of the high-performance computing (HPC) system must abide by [CofC's IT policies](http://policy.cofc.edu/policy.php#it) as well those outlined below specifically for HPC. These HPC usage policies have been adapted from [USC](https://hpcc.usc.edu/support/accounts/hpcc-policies/) and reflect standards practiced at most institutions.
 
-## Accounts
+## Account Creation
 
-* Faculty and staff can request accounts by filling out a form electronically or emailing a request to [hpc@cofc.edu](mailto:hpc@cofc.edu?subject=Requesting%20new%20faculty/staff%20account).
-* Students are eligible for accounts upon endorsement or sponsorship by their faculty/staff mentor/advisor. Their faculty/staff mentor/advisor can send an email request to [hpc@cofc.edu](mailto:hpc@cofc.edu?subject=Requesting%20new%20student%20account) on their behalf to initiate the account creation process.
+* Faculty and staff can request accounts by emailing [hpc@cofc.edu](mailto:hpc@cofc.edu?subject=Requesting%20new%20faculty/staff%20account) or filling out a [service request](https://cofc.teamdynamix.com/TDClient/Requests/ServiceDet?ID=35085).
+* Students are eligible for accounts upon endorsement or sponsorship by their faculty/staff mentor/advisor. Their faculty/staff mentor/advisor should send an email request to [hpc@cofc.edu](mailto:hpc@cofc.edu?subject=Requesting%20new%20student%20account) on their behalf to initiate the account creation process.
+
+## Account Security
+
+Every user will have their own login credentials that they must guard with caution. Sharing of accounts and credentials is strictly forbidden. If a user is deemed to have shared their credentials, their account will be suspended immediately.
 
 ## Resource Management
 
@@ -72,4 +76,4 @@ All emails regarding HPC questions, concerns, and maintenance requests should be
 
 If it has been determined that you have violated any of the HPC resource policies, or any other CofC IT policies, your account(s) will be deactivated immediately. Your account will not be reactivated until HPC management receives a formal request from your faculty mentor or leader of your project.
 
-If you have any questions or concerns regarding any of these policies, please send an email to hpc@cofc.edu.
+If you have any questions or concerns regarding any of these policies, please send an email to [hpc@cofc.edu](mailto:hpc@cofc.edu).
