@@ -8,11 +8,11 @@ The HPC is a commodity Linux cluster containing many compute, storage and networ
 |--|---|
 | 1  GbE 48-port Switch (4x SPF+ 10GbE ports)	| **internal network** |
 | 1 Mellanox 100Gbs 36-port EDR Infiniband Switch	| **interconnect** |
-| #7 PowerEdge R740 2x 6-core Intel Xeon-G 6128 3.4GHz CPUs, 192GB RAM, 1x480GB SAS SSDs striped + 1 NVIDIA Tesla V100 GPU	| **1x gpu nodes** |
-| #7 PowerEdge R740 2x 6-core Intel Xeon-G 6128 3.4GHz CPUs, 192GB RAM, 1x480GB SAS SSDs striped + 1 NVIDIA Tesla V100 GPU |	**1x gpu nodes** |
+| #7 PowerEdge R740 2x 12-core Intel Xeon-G 6128 3.4GHz CPUs, 192GB RAM, 1x480GB SAS SSDs striped + 1 NVIDIA Tesla V100 GPU	| **1x gpu nodes** |
+| #7 PowerEdge R740 2x 12-core Intel Xeon-G 6128 3.4GHz CPUs, 192GB RAM, 1x480GB SAS SSDs striped + 1 NVIDIA Tesla V100 GPU |	**1x gpu nodes** |
 | #6 PowerEdge R840 4x 20-core Intel Xeon-G 6148 2.4GHz, 1.5TB RAM, 2x480GB SATA SSD	| **1x large memory node** |
 | #5 2U PowerEdge R740 2x 20-core Intel Xeon-G 6148 2.4GHz, 192TB RAM, 1x480GB SATA SSD	| **1x gpu-capable nodes** |
-| #5 2U PowerEdge R740 2x 20-core Intel Xeon-G 6148 2.4GHz, 192TB RAM, 1x480GB SATA SSD | **1x gpu-capable nodes** |
+| #5 2U PowerEdge R740 2x 20-core Intel Xeon-G 6148 2.4GHz, 192GB RAM, 1x480GB SATA SSD | **1x gpu-capable nodes** |
 | #4 4x PowerEdge C6420 in a 2U chassis 2x 20-core Intel Xeon-G 6148 2.4GHz, 192GB RAM, 1x480GB SSD |	**4x stdmem nodes** |
 | #4 4x PowerEdge C6420 in a 2U chassis 2x 20-core Intel Xeon-G 6148 2.4GHz, 192GB RAM, 1x480GB SSD |	**4x stdmem nodes** |
 | #3 2U NFS server with NVMe SSDs PowerEdge R740XD 2x Intel Xeon-G 6126 2.6GHz CPU, 192GB RAM,  24x 1.6TB NVMe SSDs |	**fast scratch storage server** |
@@ -111,17 +111,14 @@ The HPC is a commodity Linux cluster containing many compute, storage and networ
 * Mellanox EDR (100 Gbps) InfiniBand interconnect
 * 1:1 non-blocking
 
-### 􏰀Storage:
+### Storage
 * Long-term HDD-based NFS $HOME storage -  highly redundant and resilient.
   * 512 TB in total
-  * 100 GB quota per faculty/staff $HOME directory by default; larger allocations upon request
-  * 10 GB quota per student $HOME directory by default; larger allocations upon request
   * Will eventually be backed up weekly, but not yet
-  * Peak performance - 7 GBps / 6 GBps for sequential read/write (*at the moment, we are experiencing issues that are limiting the performance to 2 GBps / 2 GBps sequential read/write.*)
+  * Peak performance - 7 GBps / 6 GBps for sequential read/write
 * Short-term NVMe SSD-based NFS $SCRATCH storage -  fast storage for intermediate data during the course of a computation
   * 38 TB in total
-  * No quota per user currently, but data will be deleted as needed with very short notice
   * Never backed up; purged weekly or as needed
   * Theoretical peak performance ~ 28 GBps / 28 GBps for sequential read/write
   * Expected peak performance ~ 12 GBps / 12 GBps for sequential read/write
-  * Actual peak performance -  (*at the moment, we are experiencing issues that are limiting the performance to 2 GBps / 4 GBps sequential read/write.*)
+  * Actual peak performance -  8 GBps / 5 GBps for sequential read/write

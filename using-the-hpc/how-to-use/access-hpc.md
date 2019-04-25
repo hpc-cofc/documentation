@@ -18,7 +18,7 @@ The process to request VPN access is:
   * `Server Name:` hpc.cofc.edu (153.9.128.11)
   * `Justification:` Description of how you intend to use the HPC cluster
 
-It's identity management group will try to add you to the HPC access list and get you on your way quickly, but expect some delays depending on their workload.
+Our identity management group will try to add you to the HPC access list and get you on your way quickly, but expect some delays depending on their workload.
 
 ## Once You are Given Access
 After your [access request](request-access.md) has been approved and you have installed the [prerequisites](prerequisites.md)

@@ -1,8 +1,8 @@
 # About HPC at CofC
 
 High performance computing (HPC) at College of Charleston has historically been under the purview of
-the Department of Computer Science. It is now under Division of Information Technology with the aim
-of delivering research computing environment and support for the whole campus. We especially thank the following groups for making HPC at CofC possible
+the Department of Computer Science. It is now under the Division of Information Technology with the aim
+of delivering a research computing environment and support for the whole campus. We especially thank the following groups for making HPC at CofC possible.
 * [Office of the President](http://president.cofc.edu/about/index.php)
 * [Division of Information Technology](http://it.cofc.edu)
 * [School of Sciences and Mathematics](http://ssm.cofc.edu)
@@ -12,17 +12,16 @@ of delivering research computing environment and support for the whole campus. W
 We recently purchased a new Linux cluster that will be in full operation in late April 2019.
 Faculty and staff can request accounts by emailing [hpc@cofc.edu](mailto:hpc@cofc.edu) or filling out a [service request](https://cofc.teamdynamix.com/TDClient/Requests/ServiceDet?ID=35085). Students are eligible for accounts upon endorsement or sponsorship by their faculty/staff mentor.
 
-The new cluster will be composed of
+The new cluster is composed of
 - **10 compute nodes** each with 2x 20-core 2.4GHz Intel Xeon Skylake CPUs, 192GB of memory and 480GB of local storage,
 - **1 large memory compute node** with 4x 20-core 2.4GHz  Intel Xeon Skylake CPUs, 1.5TB of memory and 960GB of local storage,
 - **2 GPU-containing nodes** each with 2x 12-core 2.6GHz Intel Xeon Skylake CPUs, 1 NVIDIA Tesla V100 GPU, 192GB of RAM and 480GB local storage,
 - **1 login and visualization node** with 2x 12-core 24 2.4GHz Intel Xeon Skylake CPUs, 1 NVIDIA Quadro P4000 GPU, 192GB of RAM and 480GB local storage,
 - **512TB globally-shared storage**,
 - **38TB globally-shared NVMe SSD-based fast scratch storage**,
-- **All interconnected with EDR Infiniband fabric**
+- **All interconnected with 100Gbps Mellanox EDR InfiniBand fabric**
 
-It will run an **OpenHPC** software stack composed of CentOS 7.6 with Warewulf for management and provisioning, and **SLURM** as the scheduler. It will
-have all the necessary **general as well as subject-specific software libraries and compilers** to ensure that users' software compiles and runs optimally on the cluster.
+It runs an **OpenHPC** software stack composed of CentOS 7.6 with WareWulf for management and provisioning, and **SLURM** as the scheduler. It has all the necessary **general as well as subject-specific software libraries and compilers** to ensure that users' software compiles and runs optimally on the cluster.
 
 In total, the cluster can do **51 TeraFLOPS** (trillions of floating point operations per second). We will provide benchmarks based on standard High Performance LINPACK (HPL) at some point.
 

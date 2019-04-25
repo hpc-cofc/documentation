@@ -5,6 +5,9 @@
 * [Support](support.md) -->
 * [Policies](policies.md)
 * [Acknowledgement](acknowledge.md)
+* [F.A.Q](FAQ.md)
+<!-- * [Quickstart Guide](quickstart.md) -->
+
 
 ## Using the HPC
 
