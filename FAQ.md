@@ -47,7 +47,7 @@ You can learn more about the software on the cluster [here](using-the-hpc/overvi
 
 #### What kind of applications are available on the cluster?
 > The parallel software available on the cluster depends on the compiler and message passing library (MPI) you choose. The default GNU8 compiler and OpenMPI3 library chain provides the following applications:
->
+
 ```bash
 ------------------------------ /opt/ohpc/pub/moduledeps/gnu8-openmpi3 -------------------------------
    adios/1.13.1     mpiP/3.4.1              pnetcdf/1.11.0      scorep/4.1
@@ -76,7 +76,7 @@ You can learn more about the software on the cluster [here](using-the-hpc/overvi
 ```
 
 #### Can users request applications to be installed?
-> Absolutely. We will add applications at users' request. 
+> Absolutely. We will add applications at users' request.
 > Please submit a TeamDynamix [service request](https://cofc.teamdynamix.com/TDClient/Requests/ServiceDet?ID=35085) stating the application you need and any pertinent details and we will do our best to get the application available to you quickly.
 
 > Please note that some applications are trivial to install and test while others can be cumbersome. So, we can not guarantee a quick turn-around, but we will try to give you a reasonable timeline.
