@@ -5,28 +5,30 @@
 * [Support](support.md) -->
 * [Policies](policies.md)
 * [Acknowledgement](acknowledge.md)
-* [F.A.Q](FAQ.md)
+* [F.A.Q.](FAQ.md)
 <!-- * [Quickstart Guide](quickstart.md) -->
 
+## Overview
+
+* [Overview](using-the-hpc/overview/README.md)
+* [Hardware](using-the-hpc/overview/hardware.md)
+* [Storage](using-the-hpc/overview/storage.md)
+* [Software](using-the-hpc/overview/software.md)
 
 ## Using the HPC
 
-* [Overview](using-the-hpc/overview/README.md)
-  * [Hardware](using-the-hpc/overview/hardware.md)
-  * [Storage](using-the-hpc/overview/storage.md)
-  * [Software](using-the-hpc/overview/software.md)
-* [How to Use](using-the-hpc/how-to-use/README.md)
-  * [Prerequisites](using-the-hpc/how-to-use/prerequisites.md)
-  * [Request an Account](using-the-hpc/how-to-use/request-access.md)
-  * [Access your Account](using-the-hpc/how-to-use/access-hpc.md)
-  * [Scheduling Jobs](using-the-hpc/how-to-use/scheduling-jobs.md)
-  * [Bash Environment Customization](using-the-hpc/how-to-use/bash-env.md)
-  * [Modules](using-the-hpc/how-to-use/modules/README.md)
-  * [MPI Example](using-the-hpc/how-to-use/execute-a-job/README.md)
-    * [Working with C++](using-the-hpc/how-to-use/execute-a-job/cpp.md)
-    * [Working with Fortran](using-the-hpc/how-to-use/execute-a-job/fortran.md)
-    * [Working with Python](using-the-hpc/how-to-use/execute-a-job/python.md)
-    * [Working with Makefiles](using-the-hpc/how-to-use/execute-a-job/makefile.md)
+<!-- * [How to Use](using-the-hpc/how-to-use/README.md) -->
+* [Prerequisites](using-the-hpc/how-to-use/prerequisites.md)
+* [Request an Account](using-the-hpc/how-to-use/request-access.md)
+* [Access your Account](using-the-hpc/how-to-use/access-hpc.md)
+* [Accessing Software](using-the-hpc/how-to-use/modules/README.md)
+* [Scheduling Jobs](using-the-hpc/how-to-use/scheduling-jobs.md)
+* [MPI Example](using-the-hpc/how-to-use/execute-a-job/README.md)
+  * [Working with C++](using-the-hpc/how-to-use/execute-a-job/cpp.md)
+  * [Working with Fortran](using-the-hpc/how-to-use/execute-a-job/fortran.md)
+  * [Working with Python](using-the-hpc/how-to-use/execute-a-job/python.md)
+  * [Working with Makefiles](using-the-hpc/how-to-use/execute-a-job/makefile.md)
+* [Bash Environment Customization](using-the-hpc/how-to-use/bash-env.md)
 <!--  * [Managing Jobs](using-the-hpc/how-to-use/managing-jobs.md) -->
 <!--    * [CVMFS Modules](using-the-hpc/how-to-use/modules/cvmfs-modules.md) -->
 <!--  * [Compilers](using-the-hpc/how-to-use/compilers.md) -->

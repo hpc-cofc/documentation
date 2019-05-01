@@ -124,6 +124,249 @@ The GNU7 and OpenMPI3 software stack currently has the following packages.
    chem/orca/4.1.2              llvm5/5.0.1
    clustershell/1.8             ohpc             (L)
 ```
+### All Currently Installed Applications
+You can always get a list of all available modules by entering `module spider`. The current (`04-30-2019`) list is
+
+* EasyBuild: EasyBuild/3.7.1
+  - Build and installation framework
+
+* R: R/3.4.2, R/3.5.0, R/3.5.2
+  - R is a language and environment for statistical computing and graphics (S-Plus like).
+
+* adios: adios/1.12.0, adios/1.13.1
+  - The Adaptable IO System (ADIOS)
+
+* autotools: autotools
+  - Developer utilities
+
+* boost: boost/1.66.0, boost/1.69.0
+  - Boost free peer-reviewed portable C++ source libraries
+
+* charliecloud: charliecloud/0.9.2
+  - Lightweight user-defined software stacks for high-performance computing
+
+* chem/gamess: chem/gamess/2018-R2
+  - Application for computational chemistry
+
+* chem/gaussian: chem/gaussian/16-B.01
+  - Application for computational chemistry
+
+* chem/mopac: chem/mopac/2016
+  - Application for computational chemistry
+
+* chem/orca: chem/orca/4.1.2
+  - Application for computational chemistry
+
+* clustershell: clustershell/1.8
+  - VIM files for ClusterShell
+
+* cm1: cm1/19.8-mpi, cm1/19.8-omp
+  - Atmospheric physics simulation package
+
+* cmake: cmake/3.12.2
+  - CMake is an open-source, cross-platform family of tools designed to build, test and package software.
+
+* cuda: cuda/9.2
+  - CUDA Compiler and Library
+
+* dimemas: dimemas/5.3.4
+  - Dimemas tool
+
+* extrae: extrae/3.5.2
+  - Extrae tool
+
+* fftw: fftw/3.3.7, fftw/3.3.8
+  - A Fast Fourier Transform library
+
+* gdal: gdal/2.2.3
+  - A GIS format library
+
+* geopm: geopm/0.6.1
+  - Global Extensible Open Power Manager
+
+* gnu: gnu/5.4.0
+  - GNU Compiler Family (C/C++/Fortran for x86_64)
+
+* gnu7: gnu7/7.3.0
+  - GNU Compiler Family (C/C++/Fortran for x86_64)
+
+* gnu8: gnu8/8.3.0
+  - GNU Compiler Family (C/C++/Fortran for x86_64)
+
+* gsl: gsl/2.4
+  - GNU Scientific Library (GSL)
+
+* hdf5: hdf5/1.10.2, hdf5/1.10.4
+  - A general purpose library and file format for storing scientific data
+
+* hwloc: hwloc/1.11.10
+  - Portable Hardware Locality
+
+* hypre: hypre/2.13.0, hypre/2.14.0, hypre/2.15.1
+  - Scalable algorithms for solving linear systems of equations
+
+* imb: imb/2018.1
+  - Intel MPI Benchmarks (IMB)
+
+* impi: impi/2019.3.199
+  - Intel MPI Library (C/C++/Fortran for x86_64)
+
+* intel: intel/19.0.3.199
+  - Intel Compiler Family (C/C++/Fortran for x86_64)
+
+* likwid: likwid/4.3.3
+  - Toolsuite of command line applications for performance oriented programmers
+
+* llvm5: llvm5/5.0.1
+  - LLVM Compiler Infrastructure
+
+* metis: metis/5.1.0
+  - Metis development files
+
+* mfem: mfem/3.4
+  - Lightweight, general, scalable C++ library for finite element methods
+
+* mkl: mkl/19.0.3.199
+  - Intel Math Kernel Library for C/C++ and Fortran
+
+* mpiP: mpiP/3.4.1
+  - mpiP: a lightweight profiling library for MPI applications.
+
+* mpich: mpich/3.2.1, mpich/3.3
+  - MPICH MPI implementation
+
+* mumps: mumps/5.1.2
+  - A MUltifrontal Massively Parallel Sparse direct Solver
+
+* mvapich2: mvapich2/2.2, mvapich2/2.3
+  - OSU MVAPICH2 MPI implementation
+
+* netcdf: netcdf/4.5.0, netcdf/4.6.2
+  - C Libraries for the Unidata network Common Data Form
+
+* netcdf-cxx: netcdf-cxx/4.3.0
+  - C++ Libraries for the Unidata network Common Data Form
+
+* netcdf-fortran: netcdf-fortran/4.4.4, netcdf-fortran/4.4.5
+  - Fortran Libraries for the Unidata network Common Data Form
+
+* numpy: numpy/1.12.1
+  - NumPy array processing for numbers, strings, records and objects
+
+* ocr: ocr/1.0.1
+  - Open Community Runtime (OCR) for shared memory
+
+* ohpc: ohpc
+
+* openblas: openblas/0.2.20, openblas/0.3.5
+  - An optimized BLAS library based on GotoBLAS2
+
+* opencoarrays: opencoarrays/2.2.0
+  - ABI to leverage the parallel programming features of the Fortran 2018 DIS
+
+* openmpi: openmpi/1.10.7
+  - A powerful implementation of MPI
+
+* openmpi3: openmpi3/3.1.0, openmpi3/3.1.3
+  - A powerful implementation of MPI
+
+* papi: papi/5.6.0
+  - Performance Application Programming Interface
+
+* pdtoolkit: pdtoolkit/3.25
+  - PDT is a framework for analyzing source code
+
+* petsc: petsc/3.8.3, petsc/3.10.3
+  - Portable Extensible Toolkit for Scientific Computation
+
+* phdf5: phdf5/1.10.1, phdf5/1.10.4
+  - A general purpose library and file format for storing scientific data
+
+* plasma: plasma/2.8.0
+  - Parallel Linear Algebra Software for Multicore Architectures
+
+* pmix: pmix/2.1.4
+
+* pnetcdf: pnetcdf/1.11.0
+  - A Parallel NetCDF library (PnetCDF)
+
+* prun: prun/1.2
+  - job launch utility for multiple MPI families
+
+* ptscotch: ptscotch/6.0.6
+  - Graph, mesh and hypergraph partitioning library using MPI
+
+* py2-mpi4py: py2-mpi4py/3.0.0
+  - Python bindings for the Message Passing Interface (MPI) standard.
+
+* py2-numpy: py2-numpy/1.15.3
+  - NumPy array processing for numbers, strings, records and objects
+
+* py2-scipy: py2-scipy/1.2.1
+  - Scientific Tools for Python
+
+* py3-mpi4py: py3-mpi4py/3.0.0
+  - Python bindings for the Message Passing Interface (MPI) standard.
+
+* py3-numpy: py3-numpy/1.15.3
+  - NumPy array processing for numbers, strings, records and objects
+
+* py3-scipy: py3-scipy/1.2.1
+  - Scientific Tools for Python
+
+* python-intel: python-intel/2.7.15, python-intel/3.6.8
+  - Python is cross-platform interpreted language. This version is optimzed by Intel
+
+* scalapack: scalapack/2.0.2
+  - A subset of LAPACK routines redesigned for heterogenous computing
+
+* scalasca: scalasca/2.3.1, scalasca/2.4
+  - Toolset for performance analysis of large-scale parallel applications
+
+* scipy: scipy/0.19.1
+  - Scientific Tools for Python
+
+* scorep: scorep/3.1, scorep/4.1
+  - Scalable Performance Measurement Infrastructure for Parallel Codes
+
+* scotch: scotch/6.0.6
+  - Graph, mesh and hypergraph partitioning library
+
+* singularity: singularity/2.6.0
+  - Application and environment virtualization
+
+* sionlib: sionlib/1.7.1, sionlib/1.7.2
+  - Scalable I/O Library for Parallel Access to Task-Local Files
+
+* slepc: slepc/3.10.2
+  - A library for solving large scale sparse eigenvalue problems
+
+* spack: spack/0.11.2
+  - Spack package management
+
+* superlu: superlu/5.2.1
+  - A general purpose library for the direct solution of linear equations
+
+* superlu_dist: superlu_dist/4.2, superlu_dist/6.1.1
+  - A general purpose library for the direct solution of linear equations
+
+* tau: tau/2.27, tau/2.28
+  - Tuning and Analysis Utilities Profiling Package
+
+* trilinos: trilinos/12.12.1
+  - A collection of libraries of numerical algorithms
+
+* use.own: use.own
+  - If you want to install your own private modules
+
+* valgrind: valgrind/3.13.0
+  - Memory debugging utilities
+
+Over the course of May 2019, the following applications will be available for all users.
+
+* MATLAB
+* AMBER 18 including GPU(CUDA) support
+* NAMD 2.13 including GPU(CUDA) support
 
 ### Other Applications and Utilities
 The applications listed above are traditional HPC software that are stored in a central location that all storage and compute nodes can access. There are other system and utility applications stored locally on the login node as well as all compute and storage nodes.
