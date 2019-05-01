@@ -124,6 +124,37 @@ The GNU7 and OpenMPI3 software stack currently has the following packages.
    chem/orca/4.1.2              llvm5/5.0.1
    clustershell/1.8             ohpc             (L)
 ```
+
+### GNU + OpenMPI
+If you have slightly older software that requires GNU5 compilers and OpenMPI1, you can switch from the default software stack build using GNU8 to one built using GNU5 using modules:
+``module swap gnu8 gnu``
+
+The GNU and OpenMPI software stack currently has the following packages.
+
+```bash
+--------------------------------- /opt/ohpc/pub/moduledeps/gnu-openmpi ---------------------------------
+   adios/1.12.0    mumps/5.1.2             phdf5/1.10.1       scorep/3.1          trilinos/12.12.1
+   boost/1.66.0    netcdf-fortran/4.4.4    scalapack/2.0.2    sionlib/1.7.1
+   fftw/3.3.7      netcdf/4.5.0            scalasca/2.3.1     superlu_dist/4.2
+   hypre/2.13.0    petsc/3.8.3             scipy/0.19.1       tau/2.27
+
+------------------------------------- /opt/ohpc/pub/moduledeps/gnu -------------------------------------
+   gsl/2.4            mkl/19.0.3.199    numpy/1.12.1       openmpi/1.10.7 (L)
+   impi/2019.3.199    mpich/3.2.1       ocr/1.0.1          pdtoolkit/3.25
+   metis/5.1.0        mvapich2/2.2      openblas/0.2.20    superlu/5.2.1
+
+-------------------------------------- /opt/ohpc/pub/modulefiles ---------------------------------------
+   EasyBuild/3.7.1              cuda/9.2                pmix/2.1.4
+   autotools             (L)    gnu/5.4.0        (L)    prun/1.2            (L)
+   charliecloud/0.9.2           gnu7/7.3.0              python-intel/2.7.15
+   chem/gamess/2018-R2          gnu8/8.3.0              python-intel/3.6.8  (D)
+   chem/gaussian/16-B.01        hwloc/1.11.10           singularity/2.6.0
+   chem/mopac/2016              intel/19.0.3.199        use.own
+   chem/orca/4.1.2              llvm5/5.0.1             valgrind/3.13.0
+   clustershell/1.8             ohpc             (L)
+   cmake/3.12.2                 papi/5.6.0
+```
+
 ### All Currently Installed Applications
 You can always get a list of all available modules by entering `module spider`. The current (`04-30-2019`) list is
 
