@@ -10,7 +10,7 @@
 
 ## Overview
 
-* [Overview](using-the-hpc/overview/README.md)
+<!--* [Overview](using-the-hpc/overview/README.md) -->
 * [Hardware](using-the-hpc/overview/hardware.md)
 * [Storage](using-the-hpc/overview/storage.md)
 * [Software](using-the-hpc/overview/software.md)

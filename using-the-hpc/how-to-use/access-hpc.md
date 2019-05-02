@@ -4,7 +4,12 @@
 The CofC HPC cluster is accessible directly via SSH from the CofC campus wired and 'eduroam' wireless network.
 
 ## Off-campus Access
-If you are off-campus, you would need to use CofC's VPN to access the HPC resource. If you have never used CofC's HPC resources before, you would need to submit a VPN access request even if you have used CofC's VPN to access other campus resources.
+[Remote access](http://it.cofc.edu/network/remote) to the cluster from outside
+the CofC campus network requires the use of VPN much like access to other campus
+resources. If you are off-campus, you would need to use CofC's VPN to access
+the HPC resource. If you have never used CofC's HPC resources before, you would
+need to submit a VPN access request even if you have used CofC's VPN to access
+other campus resources.
 
 The process to request VPN access is:
 
