@@ -16,3 +16,7 @@ _book
 *.pdf
 
 license.md
+
+# backup files
+*.bak
+*-bak
