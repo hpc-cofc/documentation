@@ -18,17 +18,18 @@
 ## Using the HPC
 
 <!-- * [How to Use](using-the-hpc/how-to-use/README.md) -->
-* [Prerequisites](using-the-hpc/how-to-use/prerequisites.md)
+<!-- * [Prerequisites](using-the-hpc/how-to-use/prerequisites.md) -->
 * [Request an Account](using-the-hpc/how-to-use/request-access.md)
 * [Access your Account](using-the-hpc/how-to-use/access-hpc.md)
-* [Accessing Software](using-the-hpc/how-to-use/modules/README.md)
-* [Scheduling Jobs](using-the-hpc/how-to-use/scheduling-jobs.md)
+* [Customize Environment](using-the-hpc/how-to-use/bash-env.md)
+* [Transfer Data](using-the-hpc/how-to-use/transfer-data.md) -->
+* [Access Software](using-the-hpc/how-to-use/modules/README.md)
+* [Schedule Jobs](using-the-hpc/how-to-use/scheduling-jobs.md)
 * [MPI Example](using-the-hpc/how-to-use/execute-a-job/README.md)
   * [Working with C++](using-the-hpc/how-to-use/execute-a-job/cpp.md)
   * [Working with Fortran](using-the-hpc/how-to-use/execute-a-job/fortran.md)
   * [Working with Python](using-the-hpc/how-to-use/execute-a-job/python.md)
   * [Working with Makefiles](using-the-hpc/how-to-use/execute-a-job/makefile.md)
-* [Bash Environment Customization](using-the-hpc/how-to-use/bash-env.md)
 <!--  * [Managing Jobs](using-the-hpc/how-to-use/managing-jobs.md) -->
 <!--    * [CVMFS Modules](using-the-hpc/how-to-use/modules/cvmfs-modules.md) -->
 <!--  * [Compilers](using-the-hpc/how-to-use/compilers.md) -->
@@ -54,10 +55,10 @@
   * [Task Manager \(crontab, at\)](learning-linux/know-your-system/scheduling-cron.md)
 * [Help - man/tl;dr](learning-linux/help.md)
 
-## Data Transfer and Storage
+<!--## Data Transfer and Storage
 
 * [Moving Data](data-transfer-and-storage/moving-data/README.md)
-  * [Graphical Client SFTP](data-transfer-and-storage/moving-data/graphical-sftp.md)
+  * [Graphical Client SFTP](data-transfer-and-storage/moving-data/graphical-sftp.md) -->
 <!-- * [Globus Data Transfer Tool](data-transfer-and-storage/globus-overview/README.md) -->
 <!--  * [Globus Endpoints](data-transfer-and-storage/globus-overview/globus-endpoints.md) -->
 <!--  * [Globus Transfers & More](data-transfer-and-storage/globus-overview/globus-transfer.md) -->
