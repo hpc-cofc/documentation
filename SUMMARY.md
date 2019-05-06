@@ -69,6 +69,10 @@
 * [Docker Containers](tools/docker.md)
 * [Singularity Containers](tools/singularity.md)
 -->
+## Products
+
+* [Publications](products/publications.md)
+* [Grants](products/grants.md)
 
 ## Misc
 

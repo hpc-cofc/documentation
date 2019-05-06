@@ -24,4 +24,4 @@ If you are submitting proposals for grant funding with a computational component
 * the presence of HPC resources can strengthen your proposals
 * you can request funding to add to our HPC resources
 
-If your project is supported by grants or other funding, this information should be included on the HPC project website under the [grants page](products/projects.md). This will be used internally to provide a better idea of how CofC researchers are making use of the HPC for funded projects.
+If your project is supported by grants or other funding, this information should be included on the HPC project website under the [grants page](products/grants.md). This will be used internally to provide a better idea of how CofC researchers are making use of the HPC for funded projects.
