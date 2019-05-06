@@ -12,6 +12,14 @@ Users of the high-performance computing (HPC) system must abide by [CofC's IT po
 
 Every user will have their own login credentials that they must guard with caution. Sharing of accounts and credentials is strictly forbidden. If a user is deemed to have shared their credentials, their account will be suspended immediately.
 
+## Account Lifecycle
+
+* Faculty and staff accounts will remain active as long as they are at the CofC unless (1) they request that it be terminated or (2) the account is inactive for longer than two years.
+* Students accounts will be deactivated whenever any one of these following criteria are met:
+  * The student graduates, **OR**
+  * The student's faculty/staff mentor indicates that the student no longer needs access to the cluster, **OR**
+  * The student's account remains inactive for longer than two years
+
 ## Resource Management
 
 ### Head Node Process Limit Policy

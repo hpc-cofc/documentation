@@ -12,8 +12,8 @@ If you need any help, please follow any of the following channels.
     - Inability to access the cluster or individual nodes
     - Inability to run calculations
     - Inability to access data
-- If TeamDynamix is inacessible, please email [HPC support](mailto:hpc@cofc.edu) directly or
-- Email the campus [helpdesk](mailto:helpdesk@cofc.edu) or
+- If TeamDynamix is inacessible, please email [hpc@cofc.edu](mailto:hpc@cofc.edu) directly or
+- Email [helpdesk@cofc.edu](mailto:helpdesk@cofc.edu) to contact the campus helpdesk or
 - Call the campus helpdesk at 853-953-3375 during these hours
   - Mon - Fri 7:30 AM - 10:00 PM
   - Sat - Sun 2:00 PM - 10:00 PM
