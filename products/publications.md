@@ -12,7 +12,7 @@ Any publications, presentations, websites, patents and other products resulting 
 
 > "Computation for the work described in this product was supported by the College of Charleston’s High Performance Computing (HPC) resources (https://hpc.cofc.edu)."
 
-Copies of published papers acknowledging HPC should be submitted for inclusion on the HPC project website, under the [publications page](products/publications.md) as well as the [CofC Research and Grants Administration Office](http://research.cofc.edu/administration/index.php). Be sure to include complete publication information (i.e, a URL, PDF, or PS file of the actual publication) and indicate if there are any restrictions on publication.
+Copies of published papers acknowledging HPC should be submitted for inclusion on the HPC project website, under the [publications page](publications.md) as well as the [CofC Research and Grants Administration Office](http://research.cofc.edu/administration/index.php). Be sure to include complete publication information (i.e, a URL, PDF, or PS file of the actual publication) and indicate if there are any restrictions on publication.
 
 
 # List of Publications
