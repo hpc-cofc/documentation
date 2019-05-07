@@ -87,7 +87,7 @@ Please see the following tips to run your calculations optimally.
 - See [Gaussian's support page](http://gaussian.com/techsupport) to learn about its capabilities.
 - Please note that we do not have license for Linda to run calculations across multiple nodes. So, all your calculations would need to run within a single node.
 - Depending the size of your molecule, the method and basis set you are using, and the type of calculation you are running, Gaussian's parallel efficiency varies. In general, it scales well up to 16 compute cores. Therefore, you should use up to 16 cores even though the default number of compute cores is set to 8. In the 'Preview' tab before submitting your calculation, you can make sure the first line of your input file shows `%NProcShared=16` or `%NProcShared=8`
-- All our compute nodes have 4.8 GB/core, except for big memory node which has 19.2GB/core. Therefore, you should request about 4GB/core for your calculation. For example, you can add the line `%MEM=32GB` right below `%NProcShared=8` and `%MEM=64GB` before `%NProcShared=16`. In short, If you are requesting `N` cores via `%NProcShared=N`, you should request `%MEM=N*4GB`.
+- All our compute nodes have 4.8 GB/core, except for big memory node which has 19.2GB/core. Therefore, you should request about 4GB/core for your calculation. For example, you can add the line `%MEM=32GB` right below `%NProcShared=8` and `%MEM=64GB` before `%NProcShared=16`. In short, If you are requesting `N` cores via `%NProcShared=N`, you should request `%MEM=(N*4)GB`.
 - You should try to run MP2, MP4, CCSD, CCSD(T) calculations in integral direct mode as much as possible to prevent substantial slowdown that comes from writing lots of data to disk.
 
 #### GAMESS
