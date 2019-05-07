@@ -44,6 +44,13 @@ To request an account, please
 - email [hpc@cofc.edu](mailto:hpc@cofc.edu) OR
 - submit a [service request](https://cofc.teamdynamix.com/TDClient/Requests/ServiceDet?ID=35085).
 
+### Best Way to Learn about WebMO
+
+WebMO has a very user-friendly interface. The quickest way to learn about it is to go over these YouTube tutorials
+
+- [WebMO basics (7:30)](https://www.youtube.com/watch?v=X_JbEtytasE)
+- [Computational Chemistry using WebMO at UoA (26:12)](https://www.youtube.com/watch?v=iZqYmd10mgg)
+
 Below are notes about using our WebMO installation safely and effectively.
 
 ### Hardware
