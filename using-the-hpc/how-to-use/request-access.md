@@ -1,7 +1,7 @@
 # Requesting an Allocation
 
 ## Who can request an account?
-* Faculty and staff can request accounts by filling out a form electronically or emailing their request to [hpc@cofc.edu](mailto:hpc@cofc.edu?subject=Requesting%20new%20faculty/staff%20account).
+* Faculty and staff can request accounts emailing [hpc@cofc.edu](mailto:hpc@cofc.edu?subject=Requesting%20new%20faculty/staff%20account).
 * Students are eligible for accounts upon endorsement or sponsorship by their faculty/staff mentor/advisor. Their faculty/staff mentor/advisor can send an email request to [hpc@cofc.edu](mailto:hpc@cofc.edu?subject=Requesting%20new%20student%20account) on their behalf to initiate the account creation process.
 
 ## Information that needs to be provided
@@ -9,7 +9,8 @@ To request an account, faculty/staff/students would need to agree to [CofC HPC's
 
 1. Your full name
 2. Your CofC email address
-3. A mobile phone number that will be used for two-factor authentication in the future.
+3. A brief description of how you intend to use the HPC
+4. Any requests for software or storage requirements
 
 ## Procedure
 ### User names and primary group names

@@ -19,13 +19,16 @@
 
 <!-- * [How to Use](using-the-hpc/how-to-use/README.md) -->
 <!-- * [Prerequisites](using-the-hpc/how-to-use/prerequisites.md) -->
+* [Quickstart Guide](using-the-hpc/how-to-use/quickstart.md)
 * [Request an Account](using-the-hpc/how-to-use/request-access.md)
 * [Access your Account](using-the-hpc/how-to-use/access-hpc.md)
 * [Customize Environment](using-the-hpc/how-to-use/bash-env.md)
-* [Transfer Data](using-the-hpc/how-to-use/transfer-data.md) -->
+* [Transfer Data](using-the-hpc/how-to-use/transfer-data.md)
 * [Access Software](using-the-hpc/how-to-use/modules/README.md)
+  * [Software List](using-the-hpc/how-to-use/software/README.md)
+  * [WebMO](using-the-hpc/how-to-use/software/webmo.md)
 * [Schedule Jobs](using-the-hpc/how-to-use/scheduling-jobs.md)
-* [MPI Example](using-the-hpc/how-to-use/execute-a-job/README.md)
+* [Run MPI Example](using-the-hpc/how-to-use/execute-a-job/README.md)
   * [Working with C++](using-the-hpc/how-to-use/execute-a-job/cpp.md)
   * [Working with Fortran](using-the-hpc/how-to-use/execute-a-job/fortran.md)
   * [Working with Python](using-the-hpc/how-to-use/execute-a-job/python.md)
