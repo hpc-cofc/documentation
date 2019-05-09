@@ -70,11 +70,11 @@ There are two queues that you can submit your WebMO calculations to. Please choo
 - **debugq** - this queue is intended for short calculations running for 60 minutes or less. Anything submitted to this queue runs on the **stdmem** nodes.
 - **bigmemq** - this queue is intended for calculations requiring lots of memory (4.8 - 19.2 GB/core) or local scratch storage.
 
-Queue  | Time limit (hrs) | #CPU limit | Memory limit (GB) | Scratch limit (GB) |Best use
+Queue  | Time limit (hrs) | #CPU limit | Memory limit(GB) | Scratch disk limit (GB) |Best use
 ------ |-------------| ----------- | ------ | --------
-debugq | 1 | 40 | 4.8 | 300GB | Quick test calculations lasting less than 1 hr
-stdmemq | 24 | 40 | 4.8 | 300GB | Most typical calculations
-bigmemq | 24 | 40 | 19.2 | 600GB | Calculations needing lots of memory
+debugq | 1 | 40 | 4.8/core | 300 | Quick test calculations lasting less than 1 hr
+stdmemq | 24 | 40 | 4.8/core | 300 | Most typical calculations
+bigmemq | 24 | 40 | 19.2/core | 600 | Calculations needing lots of memory
 
 ### Interfaces
 Our WebMO installation provides interfaces to the following packages:
