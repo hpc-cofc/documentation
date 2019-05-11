@@ -26,6 +26,7 @@
 * [Transfer Data](using-the-hpc/how-to-use/transfer-data.md)
 * [Access Software](using-the-hpc/how-to-use/modules/README.md)
   * [Software List](using-the-hpc/how-to-use/software/README.md)
+  * [Examples @GitHub](https://github.com/hpc-cofc/example-runs)
   * [WebMO](using-the-hpc/how-to-use/software/webmo.md)
 * [Schedule Jobs](using-the-hpc/how-to-use/scheduling-jobs.md)
 * [Run MPI Example](using-the-hpc/how-to-use/execute-a-job/README.md)
