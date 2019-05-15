@@ -45,6 +45,7 @@ You can always get a list of all available modules by entering `module spider`. 
 | chem/gaussian |  chem/gaussian/16-B.01 |   Application for computational chemistry |
 | chem/mopac |  chem/mopac/2016 |   Application for computational chemistry |
 | chem/orca |  chem/orca/4.1.2 |   Application for computational chemistry |
+| chem/psi4conda |  chem/psi4conda/1.3.1 |   Application for computational chemistry |
 | clustershell |  clustershell/1.8 |   VIM files for ClusterShell |
 | cm1 |  cm1/19.8-omp |   Atmospheric physics simulation package |
 | cmake |  cmake/3.12.2 |   CMake is an open-source, cross-platform family of tools designed to build, test and package software. |
@@ -69,6 +70,7 @@ You can always get a list of all available modules by entering `module spider`. 
 | likwid |  likwid/4.3.3 |   Toolsuite of command line applications for performance oriented programmers |
 | llvm5 |  llvm5/5.0.1 |   LLVM Compiler Infrastructure |
 | metis |  metis/5.1.0 |   Metis development files |
+| matlab |  matlab/r2019a, matlab/r2018b, matlab/r2018a, matlab/r2017b | General numerical and symbolic simulation |
 | mfem |  mfem/3.4 |   Lightweight, general, scalable C++ library for finite element methods |
 | mkl |  mkl/19.0.3.199 |   Intel Math Kernel Library for C/C++ and Fortran |
 | mpiP |  mpiP/3.4.1 |  a lightweight profiling library for MPI applications. |
