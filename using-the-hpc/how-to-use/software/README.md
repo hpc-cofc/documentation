@@ -30,7 +30,7 @@ A wide range of software from specific disciplines as well as general ones (Pyth
 Our software environment uses LMod [modules](../how-to-use/modules/) to set paths to executables, libraries, include files and manual pages for the installed software. The software modules available to users are organized according to the compiler and MPI library to ensure that the environment is set up properly to run the applications.  
 -->
 
-## List of available software (as of 05/10/2019)
+## List of available software (as of 05/17/2019)
 
 You can always get a list of all available modules by entering `module spider`. Here is the current list:
 
@@ -41,8 +41,10 @@ You can always get a list of all available modules by entering `module spider`. 
 | boost |  boost/1.66.0, boost/1.69.0 |   Boost free peer-reviewed portable C++ source libraries |
 | charliecloud |  charliecloud/0.9.2 |   Lightweight user-defined software stacks for high-performance computing |
 | chem/amber |  chem/amber/18-cpu, chem/amber/18-gpu |   Application for computational chemistry and biochemistry |
+| chem/chimera |  chem/chimera | UCSF molecular modeling and graphics software | 
 | chem/gamess |  chem/gamess/2018-R2 |   Application for computational chemistry |
 | chem/gaussian |  chem/gaussian/16-B.01 |   Application for computational chemistry |
+| chem/jmol  | chem/jmol | Jmol molecular visualization software | 
 | chem/mopac |  chem/mopac/2016 |   Application for computational chemistry |
 | chem/orca |  chem/orca/4.1.2 |   Application for computational chemistry |
 | chem/psi4conda |  chem/psi4conda/1.3.1 |   Application for computational chemistry |
@@ -70,7 +72,7 @@ You can always get a list of all available modules by entering `module spider`. 
 | likwid |  likwid/4.3.3 |   Toolsuite of command line applications for performance oriented programmers |
 | llvm5 |  llvm5/5.0.1 |   LLVM Compiler Infrastructure |
 | metis |  metis/5.1.0 |   Metis development files |
-| matlab |  matlab/r2019a, matlab/r2018b, matlab/r2018a, matlab/r2017b | General numerical and symbolic simulation |
+| math/matlab |  math/matlab/r2019a, math/matlab/r2018b, math/matlab/r2018a, math/matlab/r2017b | General numerical and symbolic simulation |
 | mfem |  mfem/3.4 |   Lightweight, general, scalable C++ library for finite element methods |
 | mkl |  mkl/19.0.3.199 |   Intel Math Kernel Library for C/C++ and Fortran |
 | mpiP |  mpiP/3.4.1 |  a lightweight profiling library for MPI applications. |
