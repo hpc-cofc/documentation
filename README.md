@@ -20,7 +20,7 @@ faculty/staff mentor.
 
 The specs for the cluster are provided below.
 
-* [**Compute nodes**](overview/hardware.md)
+* [**Compute nodes**](using-the-hpc/overview/hardware.md)
   * 10 standard compute nodes:
     * 2x 20-core 2.4GHz Intel Xeon Gold 6148 CPUs w/ 27MB L3 cache,
     * 192GB of DDR4 2667MHz RAM,
@@ -37,19 +37,19 @@ The specs for the cluster are provided below.
     * 480GB of local SSD storage,
     * 1 NVIDIA Tesla V100 16GB GPU
     * Double precision performance ~ 1.8 + 7.0 = 8.8 TFLOPs/node
-* [**Login/visualization node**](overview/hardware.md)
+* [**Login/visualization node**](using-the-hpc/overview/hardware.md)
   * 1 login and visualization node:
     * 2x 12-core 2.6GHz Intel Xeon Gold 6126 CPUs w/ 27MB L3 cache,
     * 192GB of DDR4 2667MHz RAM,
     * 3TB of local apps storage,
     * 1x NVIDIA Quadro P4000 8GB GPU
-* [**Storage**](overview/storage.md)
+* [**Storage**](using-the-hpc/overview/storage.md)
   * 512TB NFS-shared, global, highly-available storage
   * 38TB NFS-shared, global fast NVMe-SSD-based scratch storage
   * 300-600GB local SSDs in each compute node for local scratch storage
 * [**Interconnect**](http://www.mellanox.com/page/products_dyn?product_family=192&mtag=sb7700_sb7790)
   * Mellanox EDR Infiniband with 100Gb/s bandwidth
-* [**Software stack**](overview/software.md)
+* [**Software stack**](using-the-hpc/overview/software.md)
   * OpenHPC 1.3.6
   * CentOS 7.6
   * Warewulf provisioning
