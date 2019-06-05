@@ -28,26 +28,27 @@ Our identity management group will try to add you to the HPC access list and get
 ## Once You are Given Access
 After your [access request](request-access.md) has been approved, your account will be created and you will be sent your access credentials and preliminary information to get you started.
 
-- Open terminal or SSH client
-   - **On Macs and Linux and Windows 10** - Open a terminal (Terminal, xterm, iTerm, Windows Terminal ... ) 
-   - **On Windows using SSH Clients** - Open SSH clients such as 
+1. Open terminal or SSH client
+   - **On Macs and Linux and Windows 10** - Open a terminal (Terminal, xterm, iTerm, Windows Terminal ... )
+   - **On Windows using SSH Clients** - Open SSH clients such as
       - [MobaTerm](https://mobaxterm.mobatek.net)
       - [XManager](https://www.netsarang.com/en/xmanager)
       - [Git Bash](https://git-scm.com/download/win)
       - [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/)
 
-- Connect to the cluster 
+2. Connect to the cluster
    - **On Macs and Linux and Windows 10**
       - Execute `ssh username@hpc.cofc.edu`.
    - **On Windows using SSH Clients** - fill in the following information
-      - protocol - SSH
-      - port number - 22
-      - host or hostname - hpc.cofc.edu
+      - protocol - `SSH`
+      - port number - `22`
+      - host or hostname - `hpc.cofc.edu`
       - login or username - your HPC user name
       - password - your HPC password  (you can set up authentication using SSH keys later).
       - Accept prompt warning if this is the first time you are connecting the HPC
 
-- Once you have logged in to the HPC, the first thing you want to do is change your password by entering the `passwd` command
+3. Once you have logged in to the HPC, the first thing you want to do is change your password by entering the `passwd` command
+
 ```bash
 username@openhpc[~] passwd
 Changing password for user username.
@@ -56,9 +57,9 @@ Changing password for username.
 New password:
 New password:
 
-Password successully changed. 
+Password successully changed.
 ```
-- By default, `/home/$USER`, `/globalscratch/$USER` and `/scratch/$USER` directories should be
+4. By default, `/home/$USER`, `/globalscratch/$USER` and `/scratch/$USER` directories should be
   automatically created when you log into the HPC if they aren't created already. Also, a
 `slurm_examples` directory provides simple examples of SLURM submission files. There will also be
 other test directories from software you expressed interest in in your account request form.
@@ -69,7 +70,7 @@ You can run the following command on your terminal to see your files:
 ```bash
 username@openhpc[~] ls -lhtr /home/username
 total 20K
-drwxr-xr-x 2 username groupname 4     Apr 6 12:11 00_slurm-examples 
+drwxr-xr-x 2 username groupname 4     Apr 6 12:11 00_slurm-examples
 -rw-r--r-- 1 username groupname 982   Apr 6 12:11 sample.slurm
 -rw-r--r-- 1 username groupname 1.5K  Apr 6 12:11 11_AMBER
 ```
