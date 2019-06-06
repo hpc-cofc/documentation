@@ -59,11 +59,12 @@ New password:
 
 Password successully changed.
 ```
+[![asciicast](https://asciinema.org/a/250343.svg)](https://asciinema.org/a/250343?t=4)
+
 4. By default, `/home/$USER`, `/globalscratch/$USER` and `/scratch/$USER` directories should be
   automatically created when you log into the HPC if they aren't created already. Also, a
 `slurm_examples` directory provides simple examples of SLURM submission files. There will also be
 other test directories from software you expressed interest in in your account request form.
-the kinds of computations you m
 
 You can run the following command on your terminal to see your files:
 
@@ -75,4 +76,4 @@ drwxr-xr-x 2 username groupname 4     Apr 6 12:11 00_slurm-examples
 -rw-r--r-- 1 username groupname 1.5K  Apr 6 12:11 11_AMBER
 ```
 
-- The `ls -lhtr /home/username` command will show the whole list and details of the files that the **username** has.
+The `ls -lhtr /home/username` command will show the whole list and details of the files that the **username** has.
