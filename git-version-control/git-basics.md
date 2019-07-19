@@ -172,7 +172,7 @@ Sometimes Git repository sites use different terminology, i.e., _merge request_ 
 
 ### Ready to Learn More?
 
-- [Git and Atom Workflow: GitHub](https://github.com/wendikristine/documentation-template/tree/62a326e16ecef2ff128ef0b976de12c16f6ea062/git-version-control/contributing/git-workflow-github.md)
+- [Git and Atom Workflow: GitHub](git-version-control/git-workflow-github.md)
 - [Git and Atom Workflow: GitLab](https://github.com/wendikristine/documentation-template/tree/62a326e16ecef2ff128ef0b976de12c16f6ea062/git-version-control/contributing/git-workflow-gitlab.md)
 - [Git in the Command Line](https://github.com/wendikristine/documentation-template/tree/62a326e16ecef2ff128ef0b976de12c16f6ea062/git-version-control/contributing/git-command-line.md)
 - [Git Scenarios](https://github.com/wendikristine/documentation-template/tree/62a326e16ecef2ff128ef0b976de12c16f6ea062/git-version-control/contributing/git-scenarios.md)
