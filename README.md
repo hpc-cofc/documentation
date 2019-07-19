@@ -11,7 +11,7 @@ following groups for making HPC at CofC possible.
 
 # HPC Cluster Specs in Brief
 
-We recently purchased a new Linux cluster that will be in full operation in late
+We recently purchased a new Linux cluster that has been in full operation since late
 April 2019.  Faculty and staff can request accounts by emailing
 [hpc@cofc.edu](mailto:hpc@cofc.edu) or filling out a [service
 request](https://cofc.teamdynamix.com/TDClient/Requests/ServiceDet?ID=35085).
@@ -88,12 +88,11 @@ If you need any help, please follow any of the following channels.
     - Inability to access the cluster or individual nodes
     - Inability to run calculations
     - Inability to access data
-- If TeamDynamix is inacessible, please email [HPC support](mailto:hpc@cofc.edu) directly or
+- If TeamDynamix is inaccessible, please email [HPC support](mailto:hpc@cofc.edu) directly or
 - Email the campus [helpdesk](mailto:helpdesk@cofc.edu) or
 - Call the campus helpdesk at 853-953-3375 during these hours
   - Mon - Fri 7:30 AM - 10:00 PM
   - Sat - Sun 2:00 PM - 10:00 PM
-- Submit a support ticket through [TeamDynamix](https://cofc.teamdynamix.com)
 - Stop by Bell Building, Room 520 during normal work hours (M-F, 8AM-5PM)
 
 We recognize that there are a lot of hurdles that keep people from using HPC resources. We have experience facilitating research computing for experts and new users alike. So, please feel free to contact us and we will work to get you started.

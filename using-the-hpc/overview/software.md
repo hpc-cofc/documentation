@@ -170,6 +170,7 @@ You can always get a list of all available modules by entering `module spider`. 
 | chem/gaussian |  chem/gaussian/16-B.01 |   Application for computational chemistry |
 | chem/jmol  | chem/jmol | Jmol molecular visualization software | 
 | chem/mopac |  chem/mopac/2016 |   Application for computational chemistry |
+| chem/namd |  chem/namd/2.13, chem/namd/2.13-gpu |   Application for computational chemistry and biochemistry |
 | chem/orca |  chem/orca/4.1.2 |   Application for computational chemistry |
 | chem/psi4conda |  chem/psi4conda/1.3.1 |   Application for computational chemistry |
 | clustershell |  clustershell/1.8 |   VIM files for ClusterShell |
@@ -196,7 +197,8 @@ You can always get a list of all available modules by entering `module spider`. 
 | likwid |  likwid/4.3.3 |   Toolsuite of command line applications for performance oriented programmers |
 | llvm5 |  llvm5/5.0.1 |   LLVM Compiler Infrastructure |
 | metis |  metis/5.1.0 |   Metis development files |
-| math/matlab |  math/matlab/r2019a, math/matlab/r2018b, math/matlab/r2018a, math/matlab/r2017b | General numerical and symbolic simulation |
+| math/mathematica |  math/mathematica/12.0 | General numerical and symbolic computation |
+| math/matlab |  math/matlab/r2019a, math/matlab/r2018b, math/matlab/r2018a, math/matlab/r2017b | General numerical and symbolic computation |
 | mfem |  mfem/3.4 |   Lightweight, general, scalable C++ library for finite element methods |
 | mkl |  mkl/19.0.3.199 |   Intel Math Kernel Library for C/C++ and Fortran |
 | mpiP |  mpiP/3.4.1 |  a lightweight profiling library for MPI applications. |

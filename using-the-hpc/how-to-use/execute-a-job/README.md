@@ -42,12 +42,12 @@ Here is an example SLURM script for running a batch job on our HPC. Please save 
 #SBATCH -J MPItest          # Name the job as 'MPItest'
 #SBATCH -o MPItest-%j.out   # Write the standard output to file named 'jMPItest-<job_number>.out'
 #SBATCH -e MPItest-%j.err   # Write the standard error to file named 'jMPItest-<job_number>.err'
-#SBATCH --mail-user=<user>@cofc.edu  # Email the user on the status of the job n
-#SBATCH --mail-type=ALL     # Email at the start and of the job
-#SBATCH -t 0-12:00:00       # Run for a maximum time of 0 days, 12 hours, 00 mins, 00 secs
-#SBATCH -N 2                # Request 2 nodes
-#SBATCH -n 10               # Request 10 cores or task per node
-#SBATCH --mem=180G          # Use as much as 180GB memory per node
+#SBATCH -t 0-12:00:00        # Run for a maximum time of 0 days, 12 hours, 00 mins, 00 secs
+#SBATCH --nodes=1            # Request N nodes
+#SBATCH --ntasks-per-node=20 # Request n cores or task per node
+#SBATCH --mem-per-cpu=4GB   # Request 4GB RAM per core
+#SBATCH --mail-type=ALL      # Send email notification at the start and end of the job
+#SBATCH --mail-user=<user>@cofc.edu  # Send email notification to this address
 
 module list                 # will list modules loaded by default. In our case, it will be GNU8 compilers and OpenMPI3 MPI libraries
 module swap openmpi3 mpich  # swap the MPI library from the default 'openmpi3' to 'mpich'.
@@ -71,8 +71,9 @@ SBATCH | -e, `--error=<filename>`	| Write the job's standard error messages to t
 SBATCH | `--mail-user=<e-mail_address>` | Notify user by email when certain event types occur, as specified by the `--mail-type=<type>` option.
 SBATCH | `--mail-type=<type>` | Notify user by email when certain event types occur. `<type>=ALL` notifies upon the start, end or failing of the job. `<type>=END` only notified the user at the end.  
 SBATCH | -N, `--nodes=<n>` | Request that `n` nodes be allocated to this job.
-SBATCH | -n, `--ntasks-per-node=<ntasks>`  | Request that `ntasks` be invoked on each node.
+SBATCH | `--ntasks-per-node=<ntasks>`  | Request that `ntasks` be started on each node.
 SBATCH | `--mem=<size[units]>`  | Specify the real memory required per node in the proper unit.
+SBATCH | `--mem-per-cpu=<size[units]>`  | Specify memory per **core**. 4GB is a reasonable number.
 SBATCH | -t, `--time=<time>`  | Maximum run time for your job in the format `D-HH:MM:SS`
 
 
