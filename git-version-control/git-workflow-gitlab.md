@@ -6,7 +6,7 @@ GitLab is a popular platform to share code, store software solutions, and host d
 
 Project owners control access to GitLab repositories. You may log in and create your projects and repositories, and share them with others.
 
-[![](https://github.com/wendikristine/documentation-template/tree/62a326e16ecef2ff128ef0b976de12c16f6ea062/git-version-control/screenshots/git-workflow-steps.png)](https://github.com/wendikristine/documentation-template/tree/62a326e16ecef2ff128ef0b976de12c16f6ea062/git-version-control/screenshots/git-workflow-steps.png)
+[![](screenshots/git-workflow-steps.png)](screenshots/git-workflow-steps.png)
 
 _Jump to a Section:_
 
@@ -43,7 +43,7 @@ Atom has several packages which enhance the user experience and some of them you
   * todo-show (provides visuals for TODO and FIXME tags)
 * Navigate to the GitLab repository in your web browser. For this example, we'll use the `user-documentation` repository. Copy the SSH address to your machine's clipboard.   
 
-  [![](https://github.com/wendikristine/documentation-template/tree/62a326e16ecef2ff128ef0b976de12c16f6ea062/git-version-control/screenshots/git-repo-ssh-address.png)](https://github.com/wendikristine/documentation-template/tree/62a326e16ecef2ff128ef0b976de12c16f6ea062/git-version-control/screenshots/git-repo-ssh-address.png)   
+  [![](screenshots/git-repo-ssh-address.png)](screenshots/git-repo-ssh-address.png)   
 
 * _\(Optional\)_ Consider adding your SSH key to your GitLab profile so you are not prompted for credentials after every commit. To add your public SSH key to GitLab:   
   * Click on your user image in the top-right of the GitLab window.
@@ -108,7 +108,7 @@ At this point, you likely either want to create a new branch and add your contri
 
 1. Create a Git branch by clicking on the `master` button on the bottom-right of the Atom window. Name the branch something descriptive.   
 
-   [![](https://github.com/wendikristine/documentation-template/tree/62a326e16ecef2ff128ef0b976de12c16f6ea062/git-version-control/screenshots/git-new_branch_atom.png)](https://github.com/wendikristine/documentation-template/tree/62a326e16ecef2ff128ef0b976de12c16f6ea062/git-version-control/screenshots/git-new_branch_atom.png)   
+   [![](screenshots/git-new_branch_atom.png)](screenshots/git-new_branch_atom.png)   
 
 #### _Checkout an Existing Branch_
 
@@ -116,21 +116,21 @@ We need the name of the remote branch we wish to work on
 
 1. The GitLab project page displays a droplist with the name of available branches.   
 
-   [![](https://github.com/wendikristine/documentation-template/tree/62a326e16ecef2ff128ef0b976de12c16f6ea062/git-version-control/screenshots/git-show-branches.png)](https://github.com/wendikristine/documentation-template/tree/62a326e16ecef2ff128ef0b976de12c16f6ea062/git-version-control/screenshots/git-show-branches.png)   
+   [![](screenshots/git-show-branches.png)](screenshots/git-show-branches.png)   
 
 2. Open the Atom command palette and search for `git checkout checkout` \(requires Git checkout plugin having been installed\).   
 
-   [![](https://github.com/wendikristine/documentation-template/tree/62a326e16ecef2ff128ef0b976de12c16f6ea062/git-version-control/screenshots/git-checkout-checkout-search.png)](https://github.com/wendikristine/documentation-template/tree/62a326e16ecef2ff128ef0b976de12c16f6ea062/git-version-control/screenshots/git-checkout-checkout-search.png)   
+   [![](screenshots/git-checkout-checkout-search.png)](screenshots/git-checkout-checkout-search.png)   
 
    You may also open the checkout dialog directly using the hotkeys `ctrl`+`alt`+`shift`+`c` \(or `ctrl`+`opt`+`shift`+`c` on Mac\).   
 
    * The checkout dialog is a list of branches to checkout or switch to. Using the arrow keys, highlight the `custom` entry and hit enter. Now type in the name of the remote branch name. You may find this in GitLab.   
 
-     [![](https://github.com/wendikristine/documentation-template/tree/62a326e16ecef2ff128ef0b976de12c16f6ea062/git-version-control/screenshots/git-checkout-provide-branch.png)](https://github.com/wendikristine/documentation-template/tree/62a326e16ecef2ff128ef0b976de12c16f6ea062/git-version-control/screenshots/git-checkout-provide-branch.png)   
+     [![](screenshots/git-checkout-provide-branch.png)](screenshots/git-checkout-provide-branch.png)   
 
    * A notice will display if the checkout was successful. You may then switch between branches using the branch selector in the bottom-right toolbar.   
 
-     [![](https://github.com/wendikristine/documentation-template/tree/62a326e16ecef2ff128ef0b976de12c16f6ea062/git-version-control/screenshots/git-atom-switch-branch.png)](https://github.com/wendikristine/documentation-template/tree/62a326e16ecef2ff128ef0b976de12c16f6ea062/git-version-control/screenshots/git-atom-switch-branch.png)   
+     [![](screenshots/git-atom-switch-branch.png)](screenshots/git-atom-switch-branch.png)   
 
 📝 **Note:** If checking out a remote branch within Atom using the 'git checkout' plugin, ensure you read the directions carefully. Do _**not**_ click on the 'custom' branch, use the arrow keys and press `Enter`, then supply the name of the remote branch you wish to checkout. Lastly, if you make a mistake while typing in the branch name, you will end up creating a new branch with the typo. Be sure to type the branch name correctly.
 
