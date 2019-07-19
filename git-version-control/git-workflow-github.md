@@ -6,7 +6,7 @@ GitHub is a popular platform to share code, store software solutions, and host d
 
 Project owners control access to GitHub repositories. You may log in and create your projects and repositories, and share them with others.
 
-[![](https://github.com/wendikristine/documentation-template/tree/62a326e16ecef2ff128ef0b976de12c16f6ea062/git-version-control/screenshots/git-workflow-steps.png)](https://github.com/wendikristine/documentation-template/tree/62a326e16ecef2ff128ef0b976de12c16f6ea062/git-version-control/screenshots/git-workflow-steps.png)
+[![](screenshots/git-workflow-steps.png)](screenshots/git-workflow-steps.png)
 
 _Jump to a Section:_
 
