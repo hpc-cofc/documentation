@@ -2,7 +2,7 @@
 
 There are many reasons one would prefer to work from the command line. Regardless of your reasons, here is how to use Git/GitHub using only command line tools.
 
-[![](https://github.com/wendikristine/documentation-template/tree/62a326e16ecef2ff128ef0b976de12c16f6ea062/git-version-control/screenshots/git-workflow-steps.png)](https://github.com/wendikristine/documentation-template/tree/62a326e16ecef2ff128ef0b976de12c16f6ea062/git-version-control/screenshots/git-workflow-steps.png)
+[![](screenshots/git-workflow-steps.png)](screenshots/git-workflow-steps.png)
 
 _Jump to a Section:_
 
