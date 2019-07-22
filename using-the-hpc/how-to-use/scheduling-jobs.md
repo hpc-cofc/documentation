@@ -88,6 +88,27 @@ You can format that output in a more detailed form:
 sacct --format=jobid,user,jobname,partition,end,Elapsed,State
 ```
 
+# SLURM environmental variables
+
+When a SLURM job is scheduled to run, some relevant information about the job such as the names of the nodes it is running on, the number of cores, the working directory ... etc ... are saved as environmental variables. Users can invoke these environmental variables in their job submission scripts.
+
+Below is a list of the most common SLURM environmental variables including with a brief description from [UMD's HPC page](https://www.glue.umd.edu/hpcc/help/slurmenv.html).
+
+| SLURM Variable Name |	Description |	Example values |	PBS/Torque analog |
+|------------------------|-----------------------------------|-------------------|-------------|
+| $SLURM_JOB_ID |	Job ID |	5741192 |	$PBS_JOBID
+| $SLURM_JOBID 	| Deprecated. Same as SLURM_JOB_ID 	 | | | 	 
+| $SLURM_JOB_NAME |	Job Name |	myjob |	$PBS_JOBNAME
+| $SLURM_SUBMIT_DIR |	Submit Directory |	/home/user/testdir |	$PBS_O_WORKDIR
+| $SLURM_JOB_NODELIST |	Nodes assigned to job |	compute[001-003]| 	cat $PBS_NODEFILE |
+| $SLURM_SUBMIT_HOST |	Host submitted from |	login-hpc.cofc.edu |	$PBS_O_HOST |
+| $SLURM_JOB_NUM_NODES |	Number of nodes allocated to job |	2 	$PBS_NUM_NODES |
+| $SLURM_CPUS_ON_NODE |	Number of cores/node |	8,3 |	$PBS_NUM_PPN  |
+| $SLURM_NTASKS |	Total number of cores for job 	| 11 |	$PBS_NP |
+| $SLURM_NODEID  |	Index to node running on relative to nodes assigned to job |	0 |	$PBS_O_NODENUM |
+| $SLURM_LOCALID |	Index to core running on within node | 	4 |	$PBS_O_VNODENUM |
+| $SLURM_PROCID |	Index to task relative to job |	0 |	$PBS_O_TASKNUM - 1 |
+
 
 ## Related Information
 
