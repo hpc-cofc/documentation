@@ -37,15 +37,52 @@ If you plan to run Python3 notebooks, load up the `anaconda3` module.
 `module load anaconda3/2019.03`
 
 ## Python/R versions
-Initially, only the base version of Anaconda is installed in a central/shared location. Depending on your needs, you would need to install the packages you need. Anaconda uses the `conda` tool to install packages and manage your software environment. In this particular case, we'll install a Python 3.7 environment.
+Initially, only the base version of Anaconda is installed in a central/shared location. If you type `conda env list`, you will only see the base installation.
+
+`conda env list`
+```bash
+# conda environments:
+#
+base                  *  /opt/ohpc/pub/apps/anaconda/anaconda3-2019.03
+```
+
+Depending on your needs, you would need to install specific versions of Python and R. Anaconda uses the `conda` tool to install packages and manage your software environment. In this particular case, we'll install a Python 3.7 environment.
 
 `module load anaconda3/2019.03`
 
 `conda create -n jupyter_3.7 python=3.7 jupyter `
 
+You will see that Python 3.7 has successfully installed by checking the list of available environments.
+`conda env list`
+```bash
+# conda environments:
+#
+jupyter_3.7              /home/barberca/.conda/envs/jupyter_3.7
+base                  *  /opt/ohpc/pub/apps/anaconda/anaconda3-2019.03
+```
+
+To activate this environment, you can use the following command:
+
 `source activate jupyter_3.7`
 
 # After initial setup
+
+After performing the tasks above once the first time you use Anaconda's Python distribution, you will not need to repeat them. You can proceed to load up the Anaconda and Python environments easily.
+
+
+## See available environments
+
+`conda env list`
+```bash
+# conda environments:
+#
+jupyter_3.7              /home/barberca/.conda/envs/jupyter_3.7
+base                  *  /opt/ohpc/pub/apps/anaconda/anaconda3-2019.03
+```
+
+## Activate desired environments
+
+`source activate jupyter_3.7`
 
 
     This module can be loaded directly: module load anaconda3/2019.03
