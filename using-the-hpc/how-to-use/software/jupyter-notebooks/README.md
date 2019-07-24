@@ -36,6 +36,21 @@ user@host:~$ module spider anaconda
 ```
 
 
+```terminal
+user@host:~$ module spider anaconda
+
+---------------------------------------------------------------------
+  anaconda2: anaconda2/2019.03
+----------------------------------------------------------------------
+
+    This module can be loaded directly: module load anaconda2/2019.03
+
+----------------------------------------------------------------------
+  anaconda3: anaconda3/2019.03
+----------------------------------------------------------------------
+```
+
+
 ```json
 user@host: module spider anaconda
 
