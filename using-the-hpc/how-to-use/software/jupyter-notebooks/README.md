@@ -20,10 +20,8 @@ The first time you use Anaconda and its distribution of Python/R, you need to pe
 
 ### See what versions of Anaconda are available
 
-<b>user@host: <code>module spider anaconda</code></b>
-
 ```console
-user@host:~$ module spider anaconda
+user@host[~]:    module spider anaconda
 
 ---------------------------------------------------------------------
   anaconda2: anaconda2/2019.03
@@ -38,13 +36,15 @@ user@host:~$ module spider anaconda
 
 If you plan to run Python3 notebooks, load up the `anaconda3` module.
 
-`module load anaconda3/2019.03`
+```console
+user@host[~]:    module load anaconda3/2019.03
+```
 
 ## Python/R versions
 Initially, only the base version of Anaconda is installed in a central/shared location. If you type `conda env list`, you will only see the base installation.
 
-`conda env list`
-```bash
+```
+user@host[~]:     conda env list
 # conda environments:
 #
 base                  *  /opt/ohpc/pub/apps/anaconda/anaconda3-2019.03
@@ -52,13 +52,15 @@ base                  *  /opt/ohpc/pub/apps/anaconda/anaconda3-2019.03
 
 Depending on your needs, you would need to install specific versions of Python and R. Anaconda uses the `conda` tool to install packages and manage your software environment. In this particular case, we'll install a Python 3.7 environment.
 
-`module load anaconda3/2019.03`
-
-`conda create -n jupyter_3.7 python=3.7 jupyter `
+```console
+user@host[~]:    module load anaconda3/2019.03
+user@host[~]:    conda create -n jupyter_3.7 python=3.7 jupyter
+```
 
 You will see that Python 3.7 has successfully installed by checking the list of available environments.
-`conda env list`
-```bash
+
+```console
+user@host[~]:    conda env list
 # conda environments:
 #
 jupyter_3.7              /home/barberca/.conda/envs/jupyter_3.7
@@ -67,8 +69,9 @@ base                  *  /opt/ohpc/pub/apps/anaconda/anaconda3-2019.03
 
 To activate this environment, you can use the following command:
 
-`source activate jupyter_3.7`
-
+```console
+user@host[~]:    source activate jupyter_3.7
+```
 # After initial setup
 
 After performing the tasks above once the first time you use Anaconda's Python distribution, you will not need to repeat them. You can proceed to load up the Anaconda and Python environments easily.
@@ -76,8 +79,8 @@ After performing the tasks above once the first time you use Anaconda's Python d
 
 ## See available environments
 
-`conda env list`
-```bash
+```console
+user@host[~]:    conda env list
 # conda environments:
 #
 jupyter_3.7              /home/barberca/.conda/envs/jupyter_3.7
@@ -106,7 +109,7 @@ You are probably on the master/login node at this point and you can run quick, s
     - `jupyter-notebook --no-browser --port=$myport --ip='0.0.0.0'`
 
 You should see something like that looks like this:
-```bash
+```console
 (jupyter_3.7) user@hpc[~]  jupyter-notebook --no-browser --port=$myport --ip='0.0.0.0'
 [I 12:57:24.992 NotebookApp] Serving notebooks from local directory: /home/bt-local
 [I 12:57:24.992 NotebookApp] The Jupyter Notebook is running at:
@@ -121,6 +124,7 @@ You should see something like that looks like this:
         http://hpc.cofc.edu:10002/?token=7efb536faedf2e36e849cb39150f32300ad7ac9253ed7f01
      or http://127.0.0.1:10002/?token=7efb536faedf2e36e849cb39150f32300ad7ac9253ed7f01
 ```
+
 Before you connect notebooks using the above URLs, you need to start SSH forwarding on your local desktop/laptop
 
 #### On the client side (your laptop/desktop)
@@ -152,7 +156,7 @@ You need to run your production calculations on compute nodes by first starting 
     - `jupyter-notebook --no-browser --port=$myport --ip='0.0.0.0'`
 
 You should see something like that looks like this:
-```bash
+```console
 (jupyter_3.7) user@host[~]  jupyter-notebook --no-browser --port=$myport --ip='0.0.0.0'
 [I 12:57:24.992 NotebookApp] Serving notebooks from local directory: /home/bt-local
 [I 12:57:24.992 NotebookApp] The Jupyter Notebook is running at:
@@ -175,107 +179,3 @@ Before you connect notebooks using the above URLs, you need to start SSH forward
     - You will be prompted for a password unless you have SSH keys already set up. **Please note that you will not see any output if the connection is successful. Please keep the terminal alive and open your browser to access your notebook**
   - Point your browser to the URLs provided above
     - Eg.  http://127.0.0.1:10002/?token=7efb536faedf2e36e849cb39150f32300ad7ac9253ed7f01
-
-**sh**
-
-```sh
-user@host:~$   module spider anaconda
-
-anaconda2: anaconda2/2019.03
-```
-
-**bash**
-
-```bash
-user@host:~$   module spider anaconda
-
-anaconda2: anaconda2/2019.03
-```
-
-**shell**
-
-```shell
-user@host:~$   module spider anaconda
-
-anaconda2: anaconda2/2019.03
-```
-
-**terminal**
-
-```terminal
-user@host:~$   module spider anaconda
-
-anaconda2: anaconda2/2019.03
-```
-
-**console**
-
-```console
-user@host:~$   module spider anaconda
-
-anaconda2: anaconda2/2019.03
-```
-
-**zsh**
-
-```zsh
-user@host:~$   module spider anaconda
-
-anaconda2: anaconda2/2019.03
-```
-
-**cpp**
-
-```cpp
-user@host:~$   module spider anaconda
-
-anaconda2: anaconda2/2019.03
-```
-
-**python**
-
-```python
-user@host:~$   module spider anaconda
-
-anaconda2: anaconda2/2019.03
-```
-
-**perl**
-
-```perl
-user@host:~$   module spider anaconda
-
-anaconda2: anaconda2/2019.03
-```
-
-**ruby**
-
-```ruby
-user@host:~$   module spider anaconda
-
-anaconda2: anaconda2/2019.03
-```
-
-**json**
-
-```json
-user@host:~$   module spider anaconda
-
-anaconda2: anaconda2/2019.03
-```
-
-**POWERSHELL**
-
-```powershell
-user@host:~$   module spider anaconda
-
-anaconda2: anaconda2/2019.03
-```
-
-**postscript**
-
-```webidl
-user@host:~$   module spider anaconda
-
-anaconda2: anaconda2/2019.03
-```
