@@ -19,19 +19,66 @@ The first time you use Anaconda and its distribution of Python/R, you need to pe
 ## Anaconda versions
 
 ### See what versions of Anaconda are available
-`module spider anaconda`
+
+<b>user@host: <code>module spider anaconda</code></b>
 ```bash
+user@host: module spider anaconda
+
 ---------------------------------------------------------------------
   anaconda2: anaconda2/2019.03
 ----------------------------------------------------------------------
 
     This module can be loaded directly: module load anaconda2/2019.03
 
+----------------------------------------------------------------------
+  anaconda3: anaconda3/2019.03
+----------------------------------------------------------------------
+```
+
+
+```json
+user@host: module spider anaconda
+
+---------------------------------------------------------------------
+  anaconda2: anaconda2/2019.03
+----------------------------------------------------------------------
+
+    This module can be loaded directly: module load anaconda2/2019.03
 
 ----------------------------------------------------------------------
   anaconda3: anaconda3/2019.03
 ----------------------------------------------------------------------
 ```
+
+
+```perl
+user@host: module spider anaconda
+
+---------------------------------------------------------------------
+  anaconda2: anaconda2/2019.03
+----------------------------------------------------------------------
+
+    This module can be loaded directly: module load anaconda2/2019.03
+
+----------------------------------------------------------------------
+  anaconda3: anaconda3/2019.03
+----------------------------------------------------------------------
+```
+
+```python
+user@host: module spider anaconda
+
+---------------------------------------------------------------------
+  anaconda2: anaconda2/2019.03
+----------------------------------------------------------------------
+
+    This module can be loaded directly: module load anaconda2/2019.03
+
+----------------------------------------------------------------------
+  anaconda3: anaconda3/2019.03
+----------------------------------------------------------------------
+```
+
 If you plan to run Python3 notebooks, load up the `anaconda3` module.
 
 `module load anaconda3/2019.03`
@@ -103,10 +150,10 @@ You are probably on the master/login node at this point and you can run quick, s
 
 You should see something like that looks like this:
 ```bash
-(jupyter_3.7) user@host[~]  jupyter-notebook --no-browser --port=$myport --ip='0.0.0.0'
+(jupyter_3.7) user@hpc[~]  jupyter-notebook --no-browser --port=$myport --ip='0.0.0.0'
 [I 12:57:24.992 NotebookApp] Serving notebooks from local directory: /home/bt-local
 [I 12:57:24.992 NotebookApp] The Jupyter Notebook is running at:
-[I 12:57:24.992 NotebookApp] http://host.cofc.edu:10002/?token=7efb536faedf2e36e849cb39150f32300ad7ac9253ed7f01
+[I 12:57:24.992 NotebookApp] http://hpc.cofc.edu:10002/?token=7efb536faedf2e36e849cb39150f32300ad7ac9253ed7f01
 [I 12:57:24.992 NotebookApp]  or http://127.0.0.1:10002/?token=7efb536faedf2e36e849cb39150f32300ad7ac9253ed7f01
 [I 12:57:24.992 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
 [C 12:57:24.998 NotebookApp]
@@ -114,7 +161,7 @@ You should see something like that looks like this:
     To access the notebook, open this file in a browser:
         file:///home/user/.local/share/jupyter/runtime/nbserver-274617-open.html
     Or copy and paste one of these URLs:
-        http://host.cofc.edu:10002/?token=7efb536faedf2e36e849cb39150f32300ad7ac9253ed7f01
+        http://hpc.cofc.edu:10002/?token=7efb536faedf2e36e849cb39150f32300ad7ac9253ed7f01
      or http://127.0.0.1:10002/?token=7efb536faedf2e36e849cb39150f32300ad7ac9253ed7f01
 ```
 Before you connect notebooks using the above URLs, you need to start SSH forwarding on your local desktop/laptop
@@ -123,7 +170,7 @@ Before you connect notebooks using the above URLs, you need to start SSH forward
   - In a new terminal on your laptop/desktop, start an SSH tunnel between the server (master node) and your local machine using the command from [1]. It should look something like
   - `ssh -NL 10001:hpc.cofc.edu:10002 $USER@hpc.cofc.edu`
     - You will be prompted for a password unless you have SSH keys already set up. **Please note that you will not see any output if the connection is successful. Please keep the terminal alive and open your browser to access your notebook**
-  - Point your browser to the URLs provided above
+  - Point your browser to the URL provided above in [2]
     - Eg.  http://127.0.0.1:10002/?token=7efb536faedf2e36e849cb39150f32300ad7ac9253ed7f01
 
 
@@ -171,8 +218,3 @@ Before you connect notebooks using the above URLs, you need to start SSH forward
     - You will be prompted for a password unless you have SSH keys already set up. **Please note that you will not see any output if the connection is successful. Please keep the terminal alive and open your browser to access your notebook**
   - Point your browser to the URLs provided above
     - Eg.  http://127.0.0.1:10002/?token=7efb536faedf2e36e849cb39150f32300ad7ac9253ed7f01
-
-
-## Run on compute nodes interactively
-
-You need to run your production calculations on compute nodes by first starting an interactive session.
