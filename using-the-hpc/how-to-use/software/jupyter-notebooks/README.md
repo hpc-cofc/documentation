@@ -21,8 +21,8 @@ The first time you use Anaconda and its distribution of Python/R, you need to pe
 ### See what versions of Anaconda are available
 
 <b>user@host: <code>module spider anaconda</code></b>
-```bash
-user@host: module spider anaconda
+```console
+user@host:~$ module spider anaconda
 
 ---------------------------------------------------------------------
   anaconda2: anaconda2/2019.03
