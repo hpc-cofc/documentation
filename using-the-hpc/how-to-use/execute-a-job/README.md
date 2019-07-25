@@ -38,6 +38,7 @@ Here is an example SLURM script for running a batch job on our HPC. Please save 
 
 ```bash
 #!/bin/bash
+
 #SBATCH -p stdmemq          # Submit to 'stdmemq' Partitiion or queue
 #SBATCH -J MPItest          # Name the job as 'MPItest'
 #SBATCH -o MPItest-%j.out   # Write the standard output to file named 'jMPItest-<job_number>.out'
@@ -126,6 +127,7 @@ When creating and editing your `hello_world.c` source code, we will be working o
    Please note that `GNU8` and `OpenMPI3` are the defaults on our cluster. This exercise suggests that we use a different flavor of MPI called [MPICH](https://www.mpich.org/). So, search for the available MPICH module.
    ```bash
    user@host[~] module spider mpich
+
    ------------------------------------------------------
    mpich:
    ------------------------------------------------------
@@ -145,6 +147,7 @@ When creating and editing your `hello_world.c` source code, we will be working o
    Try loading the suggested MPICH module, namely `mpich/3.3`
    ```bash
    user@host[~]  module load mpich/3.3
+
    Lmod has detected the following error: You can only have one MPI module loaded at a time.
    You already have openmpi3 loaded.
    To correct the situation, please execute the following command:
