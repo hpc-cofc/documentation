@@ -111,6 +111,7 @@ You are probably on the master/login node at this point and you can run quick, s
 You should see something like that looks like this:
 ```console
 (jupyter_3.7) user@hpc[~]  jupyter-notebook --no-browser --port=$myport --ip='0.0.0.0'
+
 [I 12:57:24.992 NotebookApp] Serving notebooks from local directory: /home/bt-local
 [I 12:57:24.992 NotebookApp] The Jupyter Notebook is running at:
 [I 12:57:24.992 NotebookApp] http://hpc.cofc.edu:10002/?token=7efb536faedf2e36e849cb39150f32300ad7ac9253ed7f01
@@ -158,6 +159,7 @@ You need to run your production calculations on compute nodes by first starting 
 You should see something like that looks like this:
 ```console
 (jupyter_3.7) user@host[~]  jupyter-notebook --no-browser --port=$myport --ip='0.0.0.0'
+
 [I 12:57:24.992 NotebookApp] Serving notebooks from local directory: /home/bt-local
 [I 12:57:24.992 NotebookApp] The Jupyter Notebook is running at:
 [I 12:57:24.992 NotebookApp] http://host.cofc.edu:10002/?token=7efb536faedf2e36e849cb39150f32300ad7ac9253ed7f01

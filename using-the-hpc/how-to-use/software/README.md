@@ -37,17 +37,22 @@ You can always get a list of all available modules by entering `module spider`. 
 | Application | Versions     | Description|
 |:-----------|:--------------|:-----------|
 | adios |  adios/1.12.0, adios/1.13.1 |   The Adaptable IO System (ADIOS) |
+| anaconda2 |  anaconda2/2019.03 |   Anaconda environment based on Python 2.7 |
+| anaconda3 |  anaconda3/2019.03 |   Anaconda environment based on Python 3.7 |
 | autotools |  autotools |   Developer utilities |
 | boost |  boost/1.66.0, boost/1.69.0 |   Boost free peer-reviewed portable C++ source libraries |
-| charliecloud |  charliecloud/0.9.2 |   Lightweight user-defined software stacks for high-performance computing |
+| charliecloud |  charliecloud/0.9.2 |   Lightweight user-defined software stacks for HPC |
+| chem/aimall |  chem/aimall/19_02_13 | Bader's atoms-in-molecules tools for chemistry by Todd A. Keith |
 | chem/amber |  chem/amber/18-cpu, chem/amber/18-gpu |   Application for computational chemistry and biochemistry |
-| chem/chimera |  chem/chimera | UCSF molecular modeling and graphics software | 
+| chem/chimera |  chem/chimera | UCSF molecular modeling and graphics software |
 | chem/gamess |  chem/gamess/2018-R2 |   Application for computational chemistry |
 | chem/gaussian |  chem/gaussian/16-B.01 |   Application for computational chemistry |
-| chem/jmol  | chem/jmol | Jmol molecular visualization software | 
+| chem/jmol  | chem/jmol | Jmol molecular visualization software |
 | chem/mopac |  chem/mopac/2016 |   Application for computational chemistry |
 | chem/orca |  chem/orca/4.1.2 |   Application for computational chemistry |
 | chem/psi4conda |  chem/psi4conda/1.3.1 |   Application for computational chemistry |
+| chem/aimall |  chem/vmd/1.9.3 |   molecular modeling and graphics software |
+| chem/vmd |  chem/vmd/1.9.3 |   molecular modeling and graphics software |
 | clustershell |  clustershell/1.8 |   VIM files for ClusterShell |
 | cm1 |  cm1/19.8-omp |   Atmospheric physics simulation package |
 | cmake |  cmake/3.12.2 |   CMake is an open-source, cross-platform family of tools designed to build, test and package software. |
@@ -108,6 +113,7 @@ You can always get a list of all available modules by entering `module spider`. 
 | py3-scipy |  py3-scipy/1.2.1 |   Scientific Tools for Python |
 | python-intel |  python-intel/2.7.15, python-intel/3.6.8 |   Python is cross-platform interpreted language. This version is optimzed by Intel |
 | R |  R/3.4.2, R/3.5.0, R/3.5.2 |   R is a language and environment for statistical computing and graphics (S-Plus like). |
+| RStudio | rstudio/1.2.1555 |  GUI for running R for statistical computing and graphics. |
 | scalapack |  scalapack/2.0.2 |   A subset of LAPACK routines redesigned for heterogenous computing |
 | scalasca |  scalasca/2.3.1, scalasca/2.4 |   Toolset for performance analysis of large-scale parallel applications |
 | scipy |  scipy/0.19.1 |   Scientific Tools for Python |
