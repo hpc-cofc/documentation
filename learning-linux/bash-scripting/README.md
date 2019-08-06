@@ -10,7 +10,7 @@
   echo Hello, World. # prints out "Hello, World."
   ```
 
-* To execute a script, you must be sure your file has the permission to be executed `chmod +x your_script.sh`. Click [here](file-permissions.md) to see more about permissions.
+* To execute a script, you must be sure your file has the permission to be executed `chmod +x your_script.sh`. Click [here](../managing-files/file-permissions.md) to see more about permissions.
 * If you are located in the same PATH were you created the script, you execute your script by running `./your_script.sh`.
 
 ## Conditionals \(Decision Control Structure\)

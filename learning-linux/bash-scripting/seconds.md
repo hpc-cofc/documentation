@@ -13,5 +13,5 @@ DURATION=$(echo "$(date +%s.%N) - $START" | bc)
 printf "Execution time: %.6f seconds" $DURATION
 ```
 
-Back to [Essential Commands](./)
+Back to [Essential Commands](../essential-commands.md)
 

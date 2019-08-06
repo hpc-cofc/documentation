@@ -93,7 +93,7 @@ This protocol enables secure connection to the SSH server on a remote machine.
 
   Make sure the SSH key was successfully created by checking the encrypted content at `~/.ssh/id_rsa.pub`.
 
-  This file must have the [permission 600](file-permissions.md). To check it please run `ls -AhlF ~/.ssh`.
+  This file must have the [permission 600](../managing-files/file-permissions.md). To check it please run `ls -AhlF ~/.ssh`.
 
   Finally, to copy the SSH key to a server, please run `ssh-copy-id -i ~/.ssh/id_rsa.pub user@server`
 
@@ -101,25 +101,25 @@ This protocol enables secure connection to the SSH server on a remote machine.
 
 This protocol allows files to be copied to, from, or between different hosts. It uses SSH for data transfer and provides the same authentication and same level of security as SSH.
 
-* **Copy the file `remote_file.txt` from a remote host to the local host**
+* **Copy the file** `remote_file.txt` **from a remote host to the local host**
 
 ```bash
 scp x0y@remotehost.univ.edu:remote_file.txt /some/local/directory
 ```
 
-* **Copy the file `local_file.txt` from the local host to a remote host directory**
+* **Copy the file** `local_file.txt` **from the local host to a remote host directory**
 
   ```bash
   scp local_file.txt x0y@remotehost.univ.edu:/some/remote/directory
   ```
 
-* **Copy the directory `local_directory` from the local host to a remote host's directory `remote_directory`**
+* **Copy the directory** `local_directory` **from the local host to a remote host's directory** `remote_directory`
 
   ```bash
   scp -r local_directory x0y@remotehost.Univ:/some/remote/directory/remote_directory
   ```
 
-* **Copy the file `fr1.txt` from remote host `rh1.univ.edu` to remote host `rh2.univ.edu`**
+* **Copy the file** `fr1.txt` **from remote host** `rh1.univ.edu` **to remote host** `rh2.univ.edu`
 
   ```bash
   scp x0y@rh1.univ.edu:/some/remote/directory/fr1.txt x0y@rh2.univ.edu:/some/remote/directory/
@@ -171,7 +171,7 @@ To set up `NFS mounts`, we will need at least two Linux/Unix machines. Here we w
 
   _This command shows that a directory named_ `nfsshare` _is available at "192.168.0.100" to share with your server._
 
-* **To mount a shared NFS directory permanently, we can use following `mount` command:**
+* **To mount a shared NFS directory permanently, we can use following** `mount` **command:**
 
   ```bash
   vi /etc/fstab

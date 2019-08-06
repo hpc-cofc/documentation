@@ -1,4 +1,4 @@
-# Script: Create Files
+# Create Files
 
 * Create the `test_files` directory inside `/tmp` with `mkdir /tmp/test_files`
 * Navigate into the directory recently created with `cd /tmp/test_files`

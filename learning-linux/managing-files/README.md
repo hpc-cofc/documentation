@@ -56,7 +56,7 @@ main(int argc, char **argv)
 
   _The last six lines of the file_ `/tmp/matrix.c` _will be shown in_ `/tmp/matrix_tail.txt`_._
 
-* **more: lets you view text files or other output in a scrollable manner. It displays the text one screenful at a time. Press `<Space>` to advance the screen.**
+* **more: lets you view text files or other output in a scrollable manner. It displays the text one screenful at a time. Press** `<Space>` **to advance the screen.**
 
   ```bash
   more /tmp/matrix.c
@@ -127,7 +127,7 @@ Let's apply commands to filter, sort, group, match, and replace data in the file
 
   If you want to know the rows that contain "Match to Mom", then type `awk '$4 ~/Match to Mom/'`
 
-* **sort: is used to sort a file, arranging records in a particular order. By default, the `sort` command sorts file using ASCII.**
+* **sort: is used to sort a file, arranging records in a particular order. By default, the** `sort` **command sorts file using ASCII.**
 
   ```bash
   sort -k 5n /tmp/data.txt
@@ -211,7 +211,7 @@ Weld I.D.    Material Grade        Segment Tested        Accepted
 
 To create files with extensions such as `.tar`, `tar.gz`, `.tgz`, `.gz`, or `.bz2` use the commands `tar` \(also useful to extract files\), `gzip`, or `bzip2`.
 
-* **gzip: compresses the size of the given files. Whenever possible, each file is replaced by one with the extension `.gz`.:**
+* **gzip: compresses the size of the given files. Whenever possible, each file is replaced by one with the extension** `.gz`**.:**
 
   ```bash
   gzip test66.txt
@@ -229,7 +229,7 @@ To create files with extensions such as `.tar`, `tar.gz`, `.tgz`, `.gz`, or `.bz
 
   To decompress the file and remove the `bz2` extension, please run `bzip2 -d test66.txt.bz2`.
 
-* **zip: compress the size of the given files. Whenever possible, each file is replaced by one with the extension `.gz`.**
+* **zip: compress the size of the given files. Whenever possible, each file is replaced by one with the extension** `.gz`**.**
 
   ```bash
   zip test.zip test66.txt test6.txt

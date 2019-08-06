@@ -67,7 +67,7 @@ echo '5 p.m. meeting with Carol' | mail raithel
 Job c00ceb7fb.01 will be executed using /bin/sh
 ```
 
-_The_ `at` _command takes input up to the end-of-file character \(_`ctrl` __`D` _while at the beginning of a line\). It reports the job number and informs you that it will use_ `/bin/sh` _to execute the command. An email to raithel will be sent at 4:55pm on Friday with the Subject: '5 p.m. meeting with Carol'._
+_The_ `at` _command takes input up to the end-of-file character \(_`ctrl` _\__`D` _\_while at the beginning of a line\). It reports the job number and informs you that it will use_ `/bin/sh` _to execute the command. An email to raithel will be sent at 4:55pm on Friday with the Subject: '5 p.m. meeting with Carol'._
 
 To program a script from `now`, you may add hours, minutes, or seconds with the `+` symbol, e.g.:
 

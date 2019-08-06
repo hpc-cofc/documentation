@@ -1,4 +1,6 @@
-# Environment Customization
+# Customize Environment
+
+The Bash shell environment may be customized to suit your needs.
 
 ## Before Starting
 
