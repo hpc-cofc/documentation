@@ -20,6 +20,7 @@ The first time you use Anaconda and its distribution of Python/R, you need to pe
 
 ### See what versions of Anaconda are available
 
+<pre><code class="language-bash">user@host[~]:    module spider anaconda</code></pre>
 ```console
 user@host[~]:    module spider anaconda
 
