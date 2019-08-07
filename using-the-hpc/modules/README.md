@@ -129,10 +129,10 @@ user@host[~]  module display your_module
 Unloading a module will avoid conflict and/or messages of failure due to different versions or dependencies.
 
 ```sql
-user@host[~]  module unload PE-gnu/1.0
+user@host[~]  module unload cuda/10.1
 ```
 
-Switching between different module versions can accomplish the task of having to load, unload and load modules in multiple steps. In the following example, `cuda/7.5` is currently loaded. After running the command, `cuda/7.5` is _unloaded_ and `cuda/8.0` is _loaded_.
+Switching between different module versions can accomplish the task of having to load, unload and load modules in multiple steps. In the following example, `cuda/9.2` is currently loaded. After running the command, `cuda/10.1` is _unloaded_ and `cuda/9.2` is _loaded_.
 
 ```sql
 user@host[~]  module switch cuda/10.1 cuda/9.2
