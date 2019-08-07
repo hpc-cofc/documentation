@@ -24,7 +24,7 @@ Here is a list of some common environment variables:
 * `$HOME` - Path of your home directory
 * `$PATH` - List of directories where the system checks for programs to run
 * `$LD_LIBRARY_PATH` - List of directories where the system checks for shared libraries to load
-* `$HOSTNAME` - The name of the host, e.g. `or-condos-login`.
+* `$HOSTNAME` - The name of the host machine.
 
 📝 **Note:** See the values of all your environment variables by typing `env` on your terminal.
 
@@ -32,22 +32,22 @@ Here is a list of some common environment variables:
 
 * Display the value of an environment variable using `echo`:
 
-  ```bash
-  echo $HOME
+  ```sql
+  user@hpc[~]:  echo $HOME
   /home/UID
   ```
 
 * Modify the value of environment variables with `export`:
 
-  ```bash
-  export PATH=$PATH:/home/$USER
-  export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/$USER/custom_lib_directory
+  ```sql
+  user@hpc[~]:  export PATH=$PATH:/home/$USER
+  user@hpc[~]:  export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/$USER/custom_lib_directory
   ```
 
 * Set a value for environment variables:
 
-  ```bash
-  export OMP_NUM_THREADS=12
+  ```sql
+  user@hpc[~]:   export OMP_NUM_THREADS=12
   ```
 
   _This command sets the value of the variable called OMP\_NUM\_THREADS \(an OpenMP parameter\) to 12._

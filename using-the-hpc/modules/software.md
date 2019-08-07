@@ -1,6 +1,6 @@
 # Software List
 
-## List of available software \(as of 05/17/2019\)
+## List of available software \(as of 08/05/2019\)
 
 You can always get a list of all available modules by entering `module spider`. Here is the current list:
 
@@ -47,6 +47,7 @@ You can always get a list of all available modules by entering `module spider`. 
 | likwid | likwid/4.3.3 | Toolsuite of command line applications for performance oriented programmers |
 | llvm5 | llvm5/5.0.1 | LLVM Compiler Infrastructure |
 | metis | metis/5.1.0 | Metis development files |
+| math/mathematica | math/mathematica/12.0 | General numerical and symbolic computation |
 | math/matlab | math/matlab/r2019a, math/matlab/r2018b, math/matlab/r2018a, math/matlab/r2017b | General numerical and symbolic simulation |
 | mfem | mfem/3.4 | Lightweight, general, scalable C++ library for finite element methods |
 | mkl | mkl/19.0.3.199 | Intel Math Kernel Library for C/C++ and Fortran |

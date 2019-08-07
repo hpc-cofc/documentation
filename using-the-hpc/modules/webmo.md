@@ -112,7 +112,7 @@ Please see the following tips to run your calculations optimally.
 
 * See [GAMESS's site](https://www.msg.chem.iastate.edu/gamess/)
 * GAMESS scales well within a node. We encourage you to use 8-16 cores in general, but you can request as many as 40 cores if necessary.
-* GAMESS's default memory is too low and that will cause most sizeable calculations to fail due to lack of memory. Therefore, you would need to set the memory to a more reasonable number.
+* GAMESS's default memory is too low and that will cause most sizable calculations to fail due to lack of memory. Therefore, you would need to set the memory to a more reasonable number.
   * In the `Advanced` tab, enter `500` or a larger number for the `Memory` field. That sets the memory per process to 500 megawords or 500 \* 8 = 4GB.
 
 #### ORCA
@@ -123,8 +123,8 @@ Please see the following tips to run your calculations optimally.
 
 #### MOPAC
 
-* See [MOPAC's site](http://openmopac.net) to learn more about its capabilies
-* MOPAC provides access to quick semiempirical methods for calculations on molecules of any size quickly. By default, it will use 1 core and a limited amount of memory.
+* See [MOPAC's site](http://openmopac.net) to learn more about its capabilities
+* MOPAC provides access to quick semi-empirical methods for calculations on molecules of any size quickly. By default, it will use 1 core and a limited amount of memory.
 
 ### Caveats
 

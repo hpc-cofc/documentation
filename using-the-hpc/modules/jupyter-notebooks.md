@@ -123,12 +123,12 @@ You are probably on the master/login node at this point and you can run quick, s
 ```sql
 (jupyter_3.7) user@hpc[~]:  jupyter-notebook --no-browser --port=$myport --ip='0.0.0.0'
 
-[I 12:57:24.992 NotebookApp] Serving notebooks from local directory: /home/bt-local
-[I 12:57:24.992 NotebookApp] The Jupyter Notebook is running at:
-[I 12:57:24.992 NotebookApp] http://hpc.cofc.edu:10002/?token=7e2e36e849cb39150f32300ad7ac9253ed7f01
-[I 12:57:24.992 NotebookApp]  or http://127.0.0.1:10002/?token=7e2e36e849cb39150f32300ad7ac9253ed7f01
-[I 12:57:24.992 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[C 12:57:24.998 NotebookApp]
+[I 12 NotebookApp] Serving notebooks from local directory: /home/bt-local
+[I 12 NotebookApp] The Jupyter Notebook is running at:
+[I 12 NotebookApp] http://hpc.cofc.edu:10002/?token=7e2e36e849cb39150f32300ad7ac9253ed7f01
+[I 12 NotebookApp]  or http://127.0.0.1:10002/?token=7e2e36e849cb39150f32300ad7ac9253ed7f01
+[I 12 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 12 NotebookApp]
 
     To access the notebook, open this file in a browser:
         file:///home/user/.local/share/jupyter/runtime/nbserver-274617-open.html
@@ -185,12 +185,12 @@ You should see something like that looks like this:
 ```sql
 (jupyter_3.7) user@hpc[~]  jupyter-notebook --no-browser --port=$myport --ip='0.0.0.0'
 
-[I 12:57:24.992 NotebookApp] Serving notebooks from local directory: /home/bt-local
-[I 12:57:24.992 NotebookApp] The Jupyter Notebook is running at:
-[I 12:57:24.992 NotebookApp] http://host.cofc.edu:10002/?token=7e2e36e849cb39150f32300ad7ac9253ed7f01
-[I 12:57:24.992 NotebookApp]  or http://127.0.0.1:10002/?token=7e2e36e849cb39150f32300ad7ac9253ed7f01
-[I 12:57:24.992 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[C 12:57:24.998 NotebookApp]
+[I 12 NotebookApp] Serving notebooks from local directory: /home/bt-local
+[I 12 NotebookApp] The Jupyter Notebook is running at:
+[I 12 NotebookApp] http://host.cofc.edu:10002/?token=7e2e36e849cb39150f32300ad7ac9253ed7f01
+[I 12 NotebookApp]  or http://127.0.0.1:10002/?token=7e2e36e849cb39150f32300ad7ac9253ed7f01
+[I 12 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 12 NotebookApp]
 
     To access the notebook, open this file in a browser:
         file:///home/user/.local/share/jupyter/runtime/nbserver-274617-open.html

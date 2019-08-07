@@ -7,7 +7,7 @@ The cluster runs OpenHPC stack on top of a CentOS 7.6 operating system.
 |  | Available component |
 | :---: | :--- |
 | Base OS | CentOS 7.6 x86\_64 |
-| Compilers | GNU6\(gcc, g++, gfortran\), Intel |
+| Compilers | GNU8\(gcc, g++, gfortran\), Intel 2019 |
 | Math/Numerical Libraries | BLAS, LAPACK, OpenBLAS, ATLAS, MKL, Scalapack |
 | MPI libraries | OpenMPI, MPICH, MPICH2, MVAPICH, IMPI |
 | I/O libraries | HDF5\(pHDF\), NetCDF |
@@ -161,7 +161,9 @@ The GNU and OpenMPI software stack currently has the following packages.
 
 ### All Currently Installed Applications
 
-You can always get a list of all available modules by entering `module spider`. The current \(05-17-2019\) list is
+You can always get a list of all available modules and their description by entering `module spider`. You can also find this the most up-to-date tabulated [Software List](../using-the-hpc/modules/software.md#list-of-available-software-as-of-05-17-2019).
+
+The list as of 07-17-2019 looks like
 
 | Application | Versions | Description |
 | :--- | :--- | :--- |
@@ -251,7 +253,7 @@ You can always get a list of all available modules by entering `module spider`. 
 | superlu\_dist | superlu\_dist/4.2, superlu\_dist/6.1.1 | A general purpose library for the direct solution of linear equations |
 | tau | tau/2.27, tau/2.28 | Tuning and Analysis Utilities Profiling Package |
 | trilinos | trilinos/12.12.1 | A collection of libraries of numerical algorithms |
-| use.own | use.own |  |
+| use.own | use.own | Add your own modules |
 | valgrind | valgrind/3.13.0 | Memory debugging utilities |
 
 Over the coming days, weeks and months, more software will be added per users request.

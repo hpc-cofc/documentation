@@ -2,7 +2,7 @@
 
 Modules are a utility which allow users to load and manage applications and their versions. The modules of software packages allow you to dynamically modify your user environment by using “modulefiles.” Each modulefile contains the information needed to configure the shell for an application. After the module software package is initialized, the environment can be modified on a per-module basis using the module command, which interprets modulefiles. Typically, modulefiles instruct the module command to change or set shell environment variables such as `PATH`, `MANPATH`, and others. The modulefiles can be shared by many users on a system.
 
-**Note:** Some modules cannot be used simultaneously, such as an Intel compiler and a GNU compiler \([information on compilers](https://github.com/hpc-cofc/documentation/tree/660cbe68265541127a5250a6a7a53aa040d21f19/using-the-hpc/how-to-use/compilers.md)\). If you attempt to _load_ a module that is incompatible with a currently-loaded module, you will be prompted of the conflict. To avoid the error, you may have to _unload_ or _switch_ modules.
+**Note:** Some modules cannot be used simultaneously, such as an Intel compiler and a GNU compiler. If you attempt to _load_ a module that is incompatible with a currently-loaded module, you will be prompted of the conflict. To avoid the error, you may have to _unload_ or _switch_ modules.
 
 ## Default Software Stack
 
