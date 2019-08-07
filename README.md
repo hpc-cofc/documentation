@@ -12,6 +12,10 @@ High performance computing \(HPC\) at College of Charleston has historically bee
 
 We recently purchased a new Linux cluster that has been in full operation since late April 2019. Faculty and staff can request accounts by emailing [hpc@cofc.edu](mailto:hpc@cofc.edu) or filling out a [service request](https://cofc.teamdynamix.com/TDClient/Requests/ServiceDet?ID=35085). Students are eligible for accounts upon endorsement or sponsorship by their faculty/staff mentor.
 
+The HPC is a commodity Linux cluster containing many compute, storage and networking equipment all assembled into a standard rack. It is largely accessed remotely via SSH although some applications can be accessed using web interfaces and remote desktop tools.  
+
+![A general HPC schematic.](.gitbook/assets/hpc-schematic.png)
+
 The specs for the cluster are provided below.
 
 * [**Compute nodes**](overview/hardware.md)
