@@ -1,5 +1,13 @@
 # Run Calculations
 
+To run calculations on the cluster, users need to have 
+ - the code they plan to run
+ - any input it requires
+ - a way to sub the code using a batch scheduler
+
+
+
+
 ## Managing Jobs
 
 HPC utilizes SLURM to manage jobs that users submit to various queues on a computer system. Each queue represents a group of resources with attributes necessary for the queue's jobs. You can see the list of queues that HPC has by typing `sinfo`. **stdmemq** is the default partition/queue.
