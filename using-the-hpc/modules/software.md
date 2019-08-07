@@ -114,9 +114,9 @@ Suppose I want to run a statistical analysis using `R` while taking full advanta
 
 #### See what modules I have loaded by default
 
-`module list`
+```sql
+user@host[~]:   module list
 
-```bash
 Currently Loaded Modules:
   1) autotools   2) prun/1.2   3) gnu8/8.3.0   4) openmpi3/3.1.3   5) ohpc
 ```
@@ -125,9 +125,9 @@ Given that I don't see `R` loaded by default, let me see if `R` is available on 
 
 #### See what versions of `R` are available on the cluster
 
-`module spider R`
+```sql
+user@host[~]: module spider R
 
-```bash
 ---------------------------------------------------------------------
   R:
 ---------------------------------------------------------------------
@@ -148,9 +148,9 @@ I see there are three versions of R. Let me get some detail on `R/3.5.2`
 
 #### Get information about `R/3.5.2` are available on the cluster
 
-`module spider R/3.5.2`
+```sql
+user@host[~]: module spider R/3.5.2
 
-```bash
 ---------------------------------------------------------------------
   R: R/3.5.2
 ---------------------------------------------------------------------
@@ -169,13 +169,15 @@ I see `R/3.5.2` is available with the default `gnu8/8.3.0` compiler toolchain or
 
 #### Load `R/3.5.2` from `gnu8` stack
 
-`module load R/3.5.2`
+```sql
+user@host[~]: module load R/3.5.
+```
 
 When I check what modules are loaded, I see that `R/3.5.2` is indeed added.
 
-`module list`
+```sql
+user@host[~]: module list
 
-```bash
 Currently Loaded Modules:
   1) autotools   2) prun/1.2   3) gnu8/8.3.0   4) openmpi3/3.1.3   5) ohpc   
   6) gdal/2.2.3   7) proj/5.2.0   8) geos/3.7.2   9) gsl/2.5  10) openblas/0.3.5  
@@ -186,9 +188,9 @@ However, I see many other applications \( `gdal/2.2.3` , `proj/5.2.0` , `geos/3.
 
 So, what do these Lmod module files look like? You can use the `module show R/3.5.2` command to see the location and content of these module files.
 
-`module show R/3.5.2`
+```sql
+user@host[~]: module show R/3.5.2
 
-```bash
 ---------------------------------------------------------------------
    /opt/ohpc/pub/moduledeps/gnu8/R/3.5.2:
 ---------------------------------------------------------------------
@@ -228,9 +230,9 @@ I can run R interactively on the head node for quick tests or submit more extens
 
 An alternative way to see what software is available for my current software stack to enter `module avail`
 
-`module avail`
+```sql
+user@host[~]:   module avail
 
-```bash
 ----------------------- /opt/ohpc/pub/moduledeps/gnu8-openmpi3 -----------------------
    adios/1.13.1     mpiP/3.4.1              pnetcdf/1.11.0      scorep/4.1
    boost/1.69.0     mumps/5.1.2             ptscotch/6.0.6      sionlib/1.7.2

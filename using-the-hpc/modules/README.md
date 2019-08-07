@@ -8,8 +8,8 @@ Modules are a utility which allow users to load and manage applications and thei
 
 LMOD modules are used to provision the software environment for users. The default software stack is built on GNU 8.3.0 and OpenMPI 3.1.3 MPI library.
 
-```text
-user@host[~]  module list
+```sql
+user@hpc[~]  module list
 
 Currently Loaded Modules:
   1) autotools   2) prun/1.2   3) gnu8/8.3.0   4) openmpi3/3.1.3   5) ohpc
@@ -23,13 +23,13 @@ You can switch to a software stack based on GNU7 compilers and OpenMPI3 librarie
 
 GNU7-OpenMPI3 Stack
 
-```text
-user@host[~] module swap gnu8 gnu7
+```sql
+user@hpc[~] module swap gnu8 gnu7
 
 The following have been reloaded with a version change:
   1) openmpi3/3.1.3 => openmpi3/3.1.0
 
-user@host[~]  module list
+user@hpc[~]  module list
 
 Currently Loaded Modules:
   1) autotools   2) prun/1.2   3) ohpc   4) gnu7/7.3.0   5) openmpi3/3.1.0
@@ -37,13 +37,13 @@ Currently Loaded Modules:
 
 Intel-OpenMPI3 Stack
 
-```text
-user@host[~]  module swap gnu8 intel
+```sql
+user@hpc[~]  module swap gnu8 intel
 
 Due to MODULEPATH changes, the following have been reloaded:
   1) openmpi3/3.1.3
 
-user@host[~]  module list
+user@hpc[~]  module list
 
 Currently Loaded Modules:
   1) autotools   2) prun/1.2   3) ohpc   4) intel/19.0.3.199   5) openmpi3/3.1.3
@@ -51,7 +51,7 @@ Currently Loaded Modules:
 
 You can see a list of all available modules using the `module avail` command.
 
-```text
+```sql
 user@host[~]  module avail
 
 -------------------------------------------------------------------- /opt/ohpc/pub/moduledeps/gnu8-openmpi3 --------------------------------------------------------------------
@@ -93,54 +93,54 @@ By default the local repository is used as a source of software installations. T
 
 To see a list of available modules, type
 
-```bash
-module avail
+```sql
+user@host[~]  module avail
 ```
 
 📝 **Note:** If you need a module that is not available, please [contact us](https://github.com/hpc-cofc/documentation/tree/660cbe68265541127a5250a6a7a53aa040d21f19/support.md).
 
 You can check for the existence of a module and its versions using `module avail <module-name>`.
 
-```bash
-$ module avail cuda
+```sql
+user@host[~]  module avail cuda
 
------------------ /software/dev_tools/swtree/cs400/modulefiles -----------------
-cuda/6.5          cuda/7.5(default)       cuda/8.0
+----------------- /software/dev/modulefiles -----------------
+cuda/9.2          cuda/10.1(default)       
 ```
 
 ## Working with Modules
 
 When you load a module, your environment is modified to use a specific software package. To load a module:
 
-```bash
-module load vmd
+```sql
+user@host[~]  module load chem/vmd
 ```
 
 To verify your module has loaded, you can type `module list`.
 
 To display information about the attributes of the module such as the size of the module, the compiler or the source from which the module was created, etc., use the following command:
 
-```bash
-module display your_module
+```sql
+user@host[~]  module display your_module
 ```
 
 ## Removing and Switching Modules
 
 Unloading a module will avoid conflict and/or messages of failure due to different versions or dependencies.
 
-```bash
-module unload PE-gnu/1.0
+```sql
+user@host[~]  module unload PE-gnu/1.0
 ```
 
 Switching between different module versions can accomplish the task of having to load, unload and load modules in multiple steps. In the following example, `cuda/7.5` is currently loaded. After running the command, `cuda/7.5` is _unloaded_ and `cuda/8.0` is _loaded_.
 
-```bash
-module switch cuda/7.5 cuda/8.0
+```sql
+user@host[~]  module switch cuda/10.1 cuda/9.2
 ```
 
 You can unload all the modules on your environment, by executing the module purge command:
 
-```bash
-module purge
+```sql
+user@host[~] module purge
 ```
 
