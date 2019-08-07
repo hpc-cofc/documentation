@@ -106,9 +106,9 @@ While scp in a non-interactive way to copy files between two computers or locati
 
   `ls`
 
-## Using Graphical Interaces
+## Using Graphical Interface
 
-Depending on whether your local computer is a Windows, Mac OS or Linux machine, there are a large number if graphical file transfer clients to move data between your local computer and the HPC cluster. The main points to remember are:
+Depending on whether your local computer is a Windows, Mac OS or Linux machine, there are a large number of graphical file transfer clients to move data between your local computer and the HPC cluster. The main points to remember are:
 
 * Host/hostname/server = `hpc.cofc.edu`
 * Port = 22
