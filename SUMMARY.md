@@ -26,11 +26,11 @@
   * [Jupyter Notebooks](using-the-hpc/modules/jupyter-notebooks.md)
 * [Run Calculations](using-the-hpc/scheduling-jobs/README.md)
   * [SLURM](using-the-hpc/scheduling-jobs/scheduling-jobs.md)
-* [Run MPI Example](using-the-hpc/execute-a-job/README.md)
-  * [Working with C++](using-the-hpc/execute-a-job/cpp.md)
-  * [Working with Fortran](using-the-hpc/execute-a-job/fortran.md)
-  * [Working with Python](using-the-hpc/execute-a-job/python.md)
-  * [Working with Makefiles](using-the-hpc/execute-a-job/makefile.md)
+  * [MPI Example](using-the-hpc/scheduling-jobs/execute-a-job/README.md)
+    * [C++](using-the-hpc/scheduling-jobs/execute-a-job/cpp.md)
+    * [Fortran](using-the-hpc/scheduling-jobs/execute-a-job/fortran.md)
+    * [Python](using-the-hpc/scheduling-jobs/execute-a-job/python.md)
+    * [Makefiles](using-the-hpc/scheduling-jobs/execute-a-job/makefile.md)
 
 ## Learning Linux
 

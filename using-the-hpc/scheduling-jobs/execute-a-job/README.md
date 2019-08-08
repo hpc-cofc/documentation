@@ -1,4 +1,4 @@
-# Run MPI Example
+# MPI Example
 
 The tutorial below shows you how to run Wes Kendall's basic "hello world" program, written in C, using the message passing interface \(MPI\) to scale across our HPC compute nodes [\[1\]](./#works-cited). The test will be submitted to the HPC via a [SLURM \(Simple Linux Utility for Resource Management\)](https://slurm.schedmd.com) batch scheduling system.
 

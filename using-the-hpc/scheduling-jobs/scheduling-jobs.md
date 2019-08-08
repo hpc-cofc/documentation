@@ -1,4 +1,4 @@
-# Run Calculations
+# SLURM
 
 ## Managing Jobs
 
@@ -30,7 +30,6 @@ user@host[~]:   squeue
 4340   gpuq       testjob1  user1  RUNNING  2-03:06:55  4-00:00:00  2     1      gpu1
 4349   stdmemq    testjob2  user2  RUNNING  1:36:09     2-00:00:00  2     1      compute1
 4347   bigmemq    testjob3  user2  RUNNING  18:34:07    2-00:00:00  40    1      bigmem1
-
 ```
 
 To list your jobs:
@@ -122,7 +121,6 @@ You can format that output in a more detailed form:
 user@host[~]:   sacct --format=jobid,user,jobname,partition,end,Elapsed,State
 4359          user jredo-0.x+    bigmemq 2019-08-07T15:03:15   00:00:10  COMPLETED
 4360          user jredo-0.x+    bigmemq 2019-08-07T15:03:42   00:00:05  CANCELLED
-
 ```
 
 ## SLURM environmental variables
@@ -147,6 +145,5 @@ Below is a list of the most common SLURM environmental variables including with 
 
 ### Related Information
 
-* [MPI Example](../execute-a-job/)
-
+* [MPI Example](execute-a-job/)
 

@@ -1,4 +1,4 @@
-# Working with Makefiles
+# Makefiles
 
 The tutorial assumes you have already worked through the [MPI Example Tutorial](./). Therefore, the instructions here are abbreviated but will follow the same format so you may easily consult the extended tutorial.
 
@@ -19,7 +19,7 @@ On this page, we will use a Makefile to automate the compiling of the C, C++, an
 
 ## Step 1: Access Your Allocation
 
-If you need to request an allocation, see [instructions here](../request-access.md).
+If you need to request an allocation, see [instructions here](../../request-access.md).
 
 1. Open a Bash terminal \(or PuTTY for Windows users\).
 2. Execute `ssh username@hpc.cofc.edu`.
