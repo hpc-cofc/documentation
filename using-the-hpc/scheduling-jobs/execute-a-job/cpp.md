@@ -27,7 +27,7 @@ If you need to request an allocation, see [instructions here](../../request-acce
 
 ### Example SLURM Script
 
-Here is an example PBS script for running a batch job on a HPC Condo allocation.
+Here is an example SLURM script for running a batch job on the cluster.
 
 ```bash
 #!/bin/bash

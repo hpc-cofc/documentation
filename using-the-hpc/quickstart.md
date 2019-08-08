@@ -11,7 +11,7 @@ You can read more about [requesting account access](request-access.md).
 
 During the account request process, you will be asked about how you intend to use the HPC so that we can make sure all the software and tools you need are available on the cluster. We also run a few tests and assist new users get started on the cluster based on the information you provide in the account request form.
 
-## Access the HPC Cluster
+## Log into the HPC Cluster
 
 Most users will access the cluster with a **command line interface \(CLI\) using an SSH client**. However, some may choose a **graphical user interface \(GUI\)** or a **web interface** to use the cluster.
 
@@ -116,4 +116,136 @@ To copy a single file
   To copy a directory recursively
 
 * `scp -r ./local_file myusername@hpc.cofc.edu:/home/myusername`
+
+## Access Software
+
+Our cluster uses LMod modules to provision software to users. LMod [modules](modules/) set paths to executables, libraries, include files and help pages for the requested software. They also load up any software the requested software depends on. 
+
+Users are welcome to install any software on their home directories and access them using custom module files or by setting up their environment in more traditional ways.
+
+### Modules
+
+The default software stack is built using GNU8 compilers and OpenMPI3 message passing libraries. Other software that does not depend on GNU8 and OpenMPI3 libraries will also be available. As you change the compiler from GNU8, to GNU7, GNU5 or Intel2019, and the message library from OpenMPI3 to OpenMPI1, MPICH, MVAPICH or impi, the available software will vary. However, we try our best to make most software available within each stack.
+
+Here are some helpful commands to use Lmod Modules. 
+
+* See a list of currently loaded modules
+  * ```sql
+    user@hpc[~] module list
+
+    Currently Loaded Modules:
+      1) autotools   2) prun/1.2   3) gnu8/8.3.0   4) openmpi3/3.1.3   5) ohpc
+    ```
+* See all available modules
+  * ```sql
+    user@hpc[~] module avail
+
+    ---------------------------------------------------------- /opt/ohpc/pub/moduledeps/gnu8-openmpi3 ----------------------------------------------------------
+       adios/1.13.1     hypre/2.15.1    netcdf-cxx/4.3.0        phdf5/1.10.4        py3-mpi4py/3.0.0    sionlib/1.7.2
+  
+    -------------------------------------------------------------- /opt/ohpc/pub/moduledeps/gnu8 ---------------------------------------------------------------
+       R/3.5.2       gsl/2.5            likwid/4.3.3    mvapich2/2.3      openmpi3/3.1.3 (L)    py2-numpy/1.15.3
+ 
+    ---------------------------------------------------------------- /opt/ohpc/pub/modulefiles -----------------------------------------------------------------
+       EasyBuild/3.7.1             chem/gamess/2018-R2      cmake/3.12.2            math/mathematica/12.0        prun/1.2            (L)
+ 
+    ```
+* See a description of all available software
+  * ```sql
+    user@hpc[~] module spider
+
+    --------------------------------------------------------------------------------------------------------------------------------------------------------
+    The following is a list of the modules currently available:
+    --------------------------------------------------------------------------------------------------------------------------------------------------------
+      EasyBuild: EasyBuild/3.7.1
+        Build and installation framework
+
+      R: R/3.4.2, R/3.5.0, R/3.5.2
+        R is a language and environment for statistical computing and graphics (S-Plus like).
+
+    ...
+    ```
+* Unload a module
+  * ```sql
+    user@hpc[~] module unload gnu8
+
+    Inactive Modules:
+      1) openmpi3
+    ```
+* Swap a module with a different version
+  * ```sql
+    user@hpc[~] module swap gnu8 gnu7
+
+    The following have been reloaded with a version change:
+      1) openmpi3/3.1.3 => openmpi3/3.1.0
+
+    ```
+
+## Submit a job/calculation
+
+Our cluster uses SLURM queue manager to schedule calculations \(or jobs, as they are commonly called\). Generally, users log into the login node, prepare their calculations and submit them to a SLURM queue manager, which sends the calculations to run on our many compute nodes that have the necessary resources for that particular calculation.
+
+### SLURM
+
+A SLURM batch submission file typically looks like this:
+
+```bash
+#!/bin/bash
+
+#SBATCH -p stdmemq          # Submit to 'stdmemq' Partitiion or queue
+#SBATCH -J MPItest          # Name the job as 'MPItest'
+#SBATCH -o MPItest-%j.out   # Write the standard output to file named 'jMPItest-<job_number>.out'
+#SBATCH -e MPItest-%j.err   # Write the standard error to file named 'jMPItest-<job_number>.err'
+#SBATCH -t 0-12:00:00        # Run for a maximum time of 0 days, 12 hours, 00 mins, 00 secs
+#SBATCH --nodes=1            # Request N nodes
+#SBATCH --ntasks-per-node=20 # Request n cores or task per node
+#SBATCH --mem-per-cpu=4GB   # Request 4GB RAM per core
+#SBATCH --mail-type=ALL      # Send email notification at the start and end of the job
+#SBATCH --mail-user=<user>@cofc.edu  # Send email notification to this address (update <user>)
+
+module list                 # will list modules loaded by default. In our case, it will be GNU8 compilers and OpenMPI3 MPI libraries
+module swap openmpi3 mpich  # swap the MPI library from the default 'openmpi3' to 'mpich'.
+module list                 # will list modules loaded; we'll just use this to check that the modules we selected are indeed loaded
+pwd                         # prints current working directory
+date                        # prints the date and time
+
+mpirun hello_world_c        # run the MPI job
+```
+
+One can submit this SLURM batch submission file to the queue manager using the `sbatch` command. Here are some usage information for common SLURM commands.
+
+* Submit a job
+  * ```sql
+    user@host[~]:   sbatch your_script.slurm
+    Submitted batch job 4359
+    ```
+* Get list of running jobs 
+  * ```sql
+    user@host[~]:   squeue
+     JOBID  PARTITION  NAME      USER   STATE    TIME        TIME_LIMI   CPUS  NODES  NODELIST(REASON)
+    4340   gpuq       testjob1  user1  RUNNING  2-03:06:55  4-00:00:00  2     1      gpu1
+    4349   stdmemq    testjob2  user2  RUNNING  1:36:09     2-00:00:00  2     1      compute1
+    4347   bigmemq    testjob3  user2  RUNNING  18:34:07    2-00:00:00  40    1      bigmem1
+    ```
+* Delete a job 
+  * ```sql
+    user@host[~]:   scancel JOB_ID
+    ```
+* Get an overview of the cluster's resources and queues
+  * ```sql
+    user@host[~]:   sinfo -o "%20P %5a %.10l %16F"
+    PARTITION            AVAIL  TIMELIMIT NODES(A/I/O/T)
+    stdmemq*             up    2-00:00:00 10/1/0/11
+    stdmemq-long         up    4-00:00:00 1/2/0/3
+    bigmemq              up    2-00:00:00 1/0/0/1
+    gpuq                 up    4-00:00:00 1/1/0/2
+    debugq               up       2:00:00 1/3/0/4
+    scavengeq            up    1-00:00:00 2/11/0/13
+    ```
+
+
+
+
+
+
 

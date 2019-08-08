@@ -2,7 +2,7 @@
 
 ## Managing Jobs
 
-HPC utilizes SLURM to manage jobs that users submit to various queues on a computer system. Each queue represents a group of resources with attributes necessary for the queue's jobs. You can see the list of queues that HPC has by typing `sinfo`. **stdmemq** is the default partition/queue.
+The cluster utilizes SLURM to manage jobs that users submit to various queues on a computer system. Each queue represents a group of resources with attributes necessary for the queue's jobs. You can see the list of queues that HPC has by typing `sinfo`. **stdmemq** is the default partition/queue.
 
 ### Common Commands
 
@@ -142,6 +142,8 @@ Below is a list of the most common SLURM environmental variables including with 
 | $SLURM\_NODEID | Index to node running on relative to nodes assigned to job | 0 | $PBS\_O\_NODENUM |
 | $SLURM\_LOCALID | Index to core running on within node | 4 | $PBS\_O\_VNODENUM |
 | $SLURM\_PROCID | Index to task relative to job | 0 | $PBS\_O\_TASKNUM - 1 |
+
+For a more complete list of SLURM environmental variables, please check [here](https://slurm.schedmd.com/sbatch.html#lbAJ).
 
 ### Related Information
 
