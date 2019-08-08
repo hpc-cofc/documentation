@@ -1,6 +1,74 @@
 # SLURM
 
-## Managing Jobs
+SLURM is a powerful job scheduler that enables optimal use of an HPC cluster of any size. It takes certain information about the resource requirements of a calculations and send that calculation to run on a compute node\(s\) that satisfy that criteria. It also ensures that the HPC cluster is used fairly among all users. 
+
+## Queues/Partitions
+
+The compute nodes in the cluster are assigned to one or more queues or partitions. Users submit their jobs to one partition and the job runs on a compute node\(s\) that belongs in that partition.  You can look at the partitions and the status of the compute resources under each using the `sinfo` command.
+
+```sql
+user@host[~]:   sinfo -o "%20P %5a %.10l %16F"
+PARTITION            AVAIL  TIMELIMIT NODES(A/I/O/T)
+stdmemq*             up    2-00:00:00 0/10/0/10
+stdmemq-long         up    4-00:00:00 1/2/0/3
+bigmemq              up    2-00:00:00 1/0/0/1
+gpuq                 up    4-00:00:00 1/1/0/2
+debugq               up       2:00:00 1/3/0/4
+scavengeq            up    1-00:00:00 2/11/0/13
+```
+
+You may submit jobs that require up to 48 hours of processing time and 8 nodes to the standard default queue. If your jobs require more computing resources than the defined Linux resource limit, please send an email to [hpc@cofc.edu](mailto:hpc@cofc.edu?subject=Increasing%20walltime%20limit%20).
+
+* **debugq**  - this queue shares two compute nodes with the `stdmemq` queue and it is intended for testing quick jobs before submitting production runs to the `stdmemq` queue. Run times in this queue are limited to 2 hours and 2 nodes.
+* **stdmemq** - this is the default queue containing 10 compute nodes with 40 cores, 192GB of RAM and 300GB SSD storage each. Run times in this queue are limited to 48 hours unless you request an extension by emailing [hpc@cofc.edu](mailto:hpc@cofc.edu?subject=Increasing%20walltime%20limit%20).
+* **stdmemq-long** - this queue is the same as the `stdmemq` , except run times in this queue are extended to a maximum of 96 hours unless you request an extension by emailing [hpc@cofc.edu](mailto:hpc@cofc.edu?subject=Increasing%20walltime%20limit%20).
+* **bigmemq** - this queue is intended to provide access to our large node which has 80 cores, 1.5TB of RAM and 600GB SSD. Run times in this queue are limited to 24 hours and 1 node.
+* **gpuq** - this queue is intended to provide access to two nodes each with 1 NVIDIA Tesla V100 GPU, 24 cores, 192GB of RAM and 300GB SSD. Run times in this queue are limited to 96 hours and 1 node.
+
+The HPC cluster is a shared computing resource. Jobs with a long wait or sleep loop jobs are not allowed on the cluster, as this wastes valuable computing time that could be used by other researchers. Any jobs with a long wait or that contain a sleep loop may be terminated without advance notice. Additionally, any processes that may create performance or load issues on the head node or interfere with other users’ jobs may be terminated. This includes compute jobs running on the compute nodes.
+
+## Batch Submission Script
+
+A typical batch submission script file looks like this:
+
+```bash
+#!/bin/bash
+
+#SBATCH -p stdmemq          # Submit to 'stdmemq' Partitiion or queue
+#SBATCH -J MPItest          # Name the job as 'MPItest'
+#SBATCH -o MPItest-%j.out   # Write the standard output to file named 'jMPItest-<job_number>.out'
+#SBATCH -e MPItest-%j.err   # Write the standard error to file named 'jMPItest-<job_number>.err'
+#SBATCH -t 0-12:00:00        # Run for a maximum time of 0 days, 12 hours, 00 mins, 00 secs
+#SBATCH --nodes=1            # Request N nodes
+#SBATCH --ntasks-per-node=20 # Request n cores or task per node
+#SBATCH --mem-per-cpu=4GB   # Request 4GB RAM per core
+#SBATCH --mail-type=ALL      # Send email notification at the start and end of the job
+#SBATCH --mail-user=<user>@cofc.edu  # Send email notification to this address
+
+module list                 # will list modules loaded by default. In our case, it will be GNU8 compilers and OpenMPI3 MPI libraries
+module swap openmpi3 mpich  # swap the MPI library from the default 'openmpi3' to 'mpich'.
+module list                 # will list modules loaded; we'll just use this to check that the modules we selected are indeed loaded
+pwd                         # prints current working directory
+date                        # prints the date and time
+
+mpirun hello_world_c        # run the MPI job
+```
+
+You can always type `man sbatch` to see all the SLURM batch submission options. Below is an explanation of the options used above.
+
+| - | Option | Description |
+| :--- | :--- | :--- |
+| SBATCH | -p, `--partition=<partition>` | Submit the job to `<partition>` queue |
+| SBATCH | -J, `--job-name=<jobname>` | Name the job as `<jobname>` |
+| SBATCH | -o, `--output=<filename>` | Write the job's standard output to the file name named `<filename>` |
+| SBATCH | -e, `--error=<filename>` | Write the job's standard error messages to the file name named `<filename>` |
+| SBATCH | `--mail-user=<e-mail_address>` | Notify user by email when certain event types occur, as specified by the `--mail-type=<type>` option. |
+| SBATCH | `--mail-type=<type>` | Notify user by email when certain event types occur. `<type>=ALL` notifies upon the start, end or failing of the job. `<type>=END` only notified the user at the end. |
+| SBATCH | -N, `--nodes=<n>` | Request that `n` nodes be allocated to this job. |
+| SBATCH | `--ntasks-per-node=<ntasks>` | Request that `ntasks` be started on each node. |
+| SBATCH | `--mem=<size[units]>` | Specify the real memory required per node in the proper unit. |
+| SBATCH | `--mem-per-cpu=<size[units]>` | Specify memory per **core**. 4GB is a reasonable number. |
+| SBATCH | -t, `--time=<time>` | Maximum run time for your job in the format `D-HH:MM:SS` |
 
 The cluster utilizes SLURM to manage jobs that users submit to various queues on a computer system. Each queue represents a group of resources with attributes necessary for the queue's jobs. You can see the list of queues that HPC has by typing `sinfo`. **stdmemq** is the default partition/queue.
 
