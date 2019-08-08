@@ -52,8 +52,8 @@ New password:
 
 Password successully changed.
 ```
-
-![asciicast](https://asciinema.org/a/250343.svg)
+<a href="https://asciinema.org/a/250343?t=4"><img src="https://asciinema.org/a/250343.png" width="800"/></a>
+<!-- [![asciicast](https://asciinema.org/a/250343.svg)](https://asciinema.org/a/250343?t=4) -->
 
 1. By default, `/home/$USER`, `/globalscratch/$USER` and `/scratch/$USER` directories should be
 
