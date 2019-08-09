@@ -62,10 +62,6 @@ Message Passing Interface
 
 Network File System
 
-### PBS
-
-Portable Batch System
-
 ### S3
 
 Simple Storage Service
@@ -73,6 +69,10 @@ Simple Storage Service
 ### SFTP
 
 Secure/SSH File Transfer Protocol
+
+### SLURM
+
+Simple Linux Utility for Resource Management \(SLURM\) is a batch scheduling tool used to submit your calculations to run on appropriate compute resources.
 
 ### SSH
 

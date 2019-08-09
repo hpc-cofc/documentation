@@ -2,6 +2,45 @@
 
 One of the biggest challenges for new HPC users is figuring out where to start. This page hopefully helps overcome that hurdle. If not, you can always email [hpc@cofc.edu](mailto:hpc.cofc.edu) to seek help.
 
+## The HPC Cluster
+
+The HPC cluster is a commodity Linux cluster containing many compute, storage and networking equipment all assembled into a standard rack. It is largely accessed remotely via SSH although some applications can be accessed using web interfaces and remote desktop tools.  
+
+![A general HPC schematic.](../.gitbook/assets/hpc-schematic.png)
+
+### Hardware Specs
+
+The cluster is composed of the following main components:
+
+* **A login/visualization node/node** - this is the server you connect to when you log into `hpc.cofc.edu`. The login node is intended for simple tasks like 
+  * compiling and testing code, 
+  * preparing and submitting jobs, 
+  * checking on job status, 
+  * doing non-intensive analysis and visualization
+  * transferring data to/from the cluster
+* **13 Compute nodes** - these are the workhorses of the cluster that perform all your heavy computations. You generally submit calculations to these compute nodes using the SLURM batch scheduler, or you can do interactive computations by reserving nodes using the same SLURM scheduler. You would rarely need  of the cluster. For computational work both Serial or Parallel, in Batch mode or Interactive mode, you will be using the compute nodes.
+* **Other components you need not worry about**  - 
+  * Storage 
+    * long-term permanent storage nodes
+    * short-term scratch storage nodes
+  * Networking 
+    * out-of-band management switch
+    * high-speed InfiniBand interconnect
+
+### General Process
+
+Running calculations on the HPC takes different forms, but here are some typical steps
+
+* **Request an account**. It may take as long as 24 hours to create your accounts and run test calculations similar to what you intend to run.
+* Once you have an account, **log into the HPC cluster** via command line SSH or remote desktop client
+* **Transfer data** from your local computer and/or other sources to the HPC cluster
+* Find software to run from the cluster itself, download from a remote source, or compile your own code
+* **Prepare input** files
+* **Prepare batch submission files**
+* **Submit your batch submission files** to the queue manager to start the calculation
+* **Check on the calculations** as they progress 
+* **Analyze the results** when they finish either on the HPC login node or copy the data to your local computer for analysis and visualization
+
 ## Request an Account
 
 * Faculty and staff can request accounts emailing [hpc@cofc.edu](mailto:hpc@cofc.edu?subject=Requesting%20new%20faculty/staff%20account).
