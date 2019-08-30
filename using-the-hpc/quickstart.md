@@ -129,8 +129,8 @@ Once you have picked a 'profile' or desktop manager, you should see a Linux remo
 
 To make using the HPC cluster easier, some applications can be accessed using a web interface. Two such applications at the moment are WebMO and Jupyter Notebook.
 
-* [WebMO](modules/webmo.md) is a web interface to many computational chemistry programs. It has many powerful capabilities that give users access to computational chemistry tools without having to use a command line.
-* [Jupyter Notebook](modules/jupyter-notebooks.md) allows users to access and run Anaconda versions of Python 2/3, R and other applications using a web interface.
+* [WebMO](scheduling-jobs/webmo.md) is a web interface to many computational chemistry programs. It has many powerful capabilities that give users access to computational chemistry tools without having to use a command line.
+* [Jupyter Notebook](scheduling-jobs/jupyter-notebooks.md) allows users to access and run Anaconda versions of Python 2/3, R and other applications using a web interface.
 
 ## Transfer Data to the HPC Cluster
 

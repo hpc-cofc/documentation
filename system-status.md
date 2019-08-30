@@ -22,7 +22,7 @@ description: 'News, updates, outages, maintenance periods'
 
 ### Updates
 
-* Jupyter Notebooks are now available. You can set up your own Anaconda environment to run Python2/3, R and other codes using a web Jupyter Notebook. Please see the [Jupyter Notebooks](using-the-hpc/modules/jupyter-notebooks.md) page 
+* Jupyter Notebooks are now available. You can set up your own Anaconda environment to run Python2/3, R and other codes using a web Jupyter Notebook. Please see the [Jupyter Notebooks](using-the-hpc/scheduling-jobs/jupyter-notebooks.md) page 
 
 ### Maintenance
 

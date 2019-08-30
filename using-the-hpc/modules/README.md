@@ -1,4 +1,4 @@
-# Access Software
+# Access Software using Modules
 
 Modules are a utility which allow users to load and manage applications and their versions. The modules of software packages allow you to dynamically modify your user environment by using “modulefiles.” Each modulefile contains the information needed to configure the shell for an application. After the module software package is initialized, the environment can be modified on a per-module basis using the module command, which interprets modulefiles. Typically, modulefiles instruct the module command to change or set shell environment variables such as `PATH`, `MANPATH`, and others. The modulefiles can be shared by many users on a system.
 

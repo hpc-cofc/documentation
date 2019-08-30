@@ -1,4 +1,4 @@
-# SLURM
+# Schedule Jobs using SLURM
 
 SLURM is a powerful job scheduler that enables optimal use of an HPC cluster of any size. It takes certain information about the resource requirements of a calculations and send that calculation to run on a compute node\(s\) that satisfy that criteria. It also ensures that the HPC cluster is used fairly among all users. 
 
@@ -215,5 +215,5 @@ For a more complete list of SLURM environmental variables, please check [here](h
 
 ### Related Information
 
-* [MPI Example](execute-a-job/)
+* [MPI Example](scheduling-jobs/execute-a-job/)
 
