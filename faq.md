@@ -42,7 +42,7 @@ description: Frequently Asked Questions
 
 > Most user will access the cluster via SSH. If you are on campus, the HPC cluster is accessible directly via SSH from the CofC campus wired and 'eduroam' wireless network.
 >
-> If you are off-campus, you would need to use CofC's VPN to access the HPC resource. If you have never used CofC's HPC resources before, you would need to submit a VPN access request even if you have used CofC's VPN to access other campus resources. Instructions on access can be found [here](using-the-hpc/access-hpc.md)
+> If you are off-campus, you would need to use CofC's VPN to access the HPC resource. If you have never used CofC's HPC resources before, you would need to submit a VPN access request even if you have used CofC's VPN to access other campus resources. Instructions on access can be found [here](using-the-hpc/access-hpc/)
 
 ### If I am not comfortable with a command-line interface \(CLI\), how can I use the cluster?
 

@@ -2,11 +2,13 @@
 
 [WebMO](https://www.webmo.net) is a web interface to many computational chemistry programs. It has many powerful capabilities that give users access to computational chemistry tools without having to use a command line.
 
+Faculty and staff can get access to our WebMO Enterprise installation at [https://hpc.cofc.edu/webmo](https://hpc.cofc.edu/webmo) by emailing a request to [hpc@cofc.edu](mailto:hpc@cofc.edu). Students need their faculty/research advisor to submit a request on their behalf.
+
 ## Capabilities
 
 ### Visualization
 
-[WebMO Enterprise](https://www.webmo.net/enterprise/index.html) has the following capabilites:
+[WebMO Enterprise](https://www.webmo.net/enterprise/index.html) has the following capabilities:
 
 * Build molecules by drawing atoms and bonds in a 3-D molecular editor, or by speaking the name \(e.g., “aspirin”\)
 * Optimize structures using VSEPR theory or molecular mechanics
@@ -42,10 +44,14 @@ Our WebMO installation provides interfaces to the following packages:
 
 ## Notes about using the CofC WebMO Installation
 
-We have a WebMO Enterprise installation at [https://hpc.cofc.edu/webmo](https://hpc.cofc.edu/webmo). To request an account, please
+### How to get access
+
+We have a WebMO Enterprise installation at [https://hpc.cofc.edu/webmo](https://hpc.cofc.edu/webmo). To request an account, faculty and staff can 
 
 * email [hpc@cofc.edu](mailto:hpc@cofc.edu) OR
 * submit a [service request](https://cofc.teamdynamix.com/TDClient/Requests/ServiceDet?ID=35085).
+
+Students need their faculty/research advisor to submit a request on their behalf.
 
 ### Best Way to Learn about WebMO
 

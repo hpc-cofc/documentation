@@ -16,7 +16,9 @@
 
 * [Quickstart Guide](using-the-hpc/quickstart.md)
 * [Request an Account](using-the-hpc/request-access.md)
-* [Access your Account](using-the-hpc/access-hpc.md)
+* [Access your Account](using-the-hpc/access-hpc/README.md)
+  * [CLI - an SSH terminal](using-the-hpc/access-hpc/cli-an-ssh-terminal.md)
+  * [GUI - remote desktop](using-the-hpc/access-hpc/gui-remote-desktop.md)
 * [Customize Environment](using-the-hpc/bash-env.md)
 * [Transfer Data](using-the-hpc/transfer-data.md)
 * [Access Software using Modules](using-the-hpc/modules/README.md)
