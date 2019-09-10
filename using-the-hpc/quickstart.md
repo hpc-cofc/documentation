@@ -69,16 +69,19 @@ In all cases, you would need to provide the following:
 {% tab title="Windows" %}
 Windows 10 now has a Bash shell. If you are using an older version of Windows, you have the following options, among others for sure.
 
-* [MobaTerm](https://mobaxterm.mobatek.net) - It provides SSH, X11, VNC and FTP clients .
-* [XManager](https://www.netsarang.com/en/xmanager)
-* [Git Bash](https://git-scm.com/download/win) – Part of the Git for Windows environment includes Git Bash, which provides a light weight ssh client.
-* [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/) - SSH client and Bash environment for Windows.
+* [Windows PowerShell](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/powershell) - Included in windows 10; good SSH client 
+* [MobaXterm](https://mobaxterm.mobatek.net) - free + commercial versions providing SSH, X11, VNC and FTP clients.
+* [XManager](https://www.netsarang.com/en/xmanager) - free + commercial versions providing SSH, X11, VNC and FTP clients.
+* [Git Bash](https://git-scm.com/download/win) - free and lightweight SSH client.
+* [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/) - free SSH client and Bash environment
 {% endtab %}
 
 {% tab title="MacOS/Linux" %}
-Both Mac OS and Linux distributions include a BASH terminal and an SSH client by default. No additional software should be required to access the HPC cluster.
+Both Mac OS and Linux distributions include an SSH client by default. No additional software should be required to access the HPC cluster.
 
 Mac OS users can go to **Applications &gt; Utilities &gt; Terminal.app** to open the Mac Terminal. Different Linux distributions offer terminals and feature them prominently.
+
+To enable X11 forwarding, an **XQuartz** Xserver needs be running on the local Mac OS machine.
 {% endtab %}
 {% endtabs %}
 
