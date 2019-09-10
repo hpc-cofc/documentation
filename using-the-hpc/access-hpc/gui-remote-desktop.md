@@ -9,7 +9,7 @@ GUIs enable users to compute on the cluster using little or no command line tool
 
 **Remote desktop sessions**
 
-We have a [ThinLinc Cendio ](https://www.cendio.com/)remote desktop server running on the cluster to provide users access to a graphical Linux environment. _We only have 5 concurrent licenses, so please close the remote desktop session and exit as soon as you are finished._ Users would need to download and install a Thinlinc Client from the [Cendio site](https://www.cendio.com/thinlinc/download). There are Thinlinc Clients for Windows, MacOS and Linux.
+We have a [Cendio Thinlinc ](https://www.cendio.com/)remote desktop server running on the cluster to provide users access to a graphical Linux environment. _We only have 5 concurrent licenses, so please close the remote desktop session and exit as soon as you are finished._ Users would need to download and install a Thinlinc Client from the [Cendio site](https://www.cendio.com/thinlinc/download). There are Thinlinc Clients for Windows, MacOS and Linux.
 
 After installing the Thinlinc Client, you can start the application and provide the necessary information to start the remote desktop session.
 
