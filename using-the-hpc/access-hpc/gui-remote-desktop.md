@@ -31,5 +31,9 @@ Once you have picked a 'profile' or desktop manager, you should see a Linux remo
 
 ![XFCE remote desktop environment](../../.gitbook/assets/thinlinc-client-rdsession.png)
 
-**Note:** _Because we only have 5 concurrent licenses, please close the remote desktop session and exit as soon as you are finished._
+**Note:** _Because we only have 5 concurrent licenses, please close the remote desktop session and exit as soon as you are finished_
+
+[![](http://img.youtube.com/vi/dxKZbXaIb0U/0.jpg)](http://www.youtube.com/watch?v=dxKZbXaIb0U)
+
+
 
