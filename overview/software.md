@@ -169,6 +169,16 @@ The list as of 07-17-2019 looks like
 | :--- | :--- | :--- |
 | adios | adios/1.12.0, adios/1.13.1 | The Adaptable IO System \(ADIOS\) |
 | autotools | autotools | Developer utilities |
+| bio/angsd | bio/angsd/0.931 | a powerful toolset for genome arithmetic |
+| bio/bedtools | bio/bedtools/2.29.0 | a powerful toolset for genome arithmetic |
+| bio/bowtie | bio/bowtie/1.2.3 | an ultrafast, memory-efficient short read aligner |
+| bio/bowtie2 | bio/bowtie2/2.3.5.1 | an ultrafast, memory-efficient short read aligner |
+| bio/bwa | bio/bwa/0.7.17 | a software package for mapping DNA sequences against a large reference genome |
+| bio/hisat2  | bio/hisat2/2.1.0  | an ultrafast and memory-efficient tool for aligning sequencing reads to long reference sequences |
+| bio/minimap2 | bio/minimap2/2.12  | A versatile pairwise aligner for genomic and spliced nucleotide sequences |
+| bio/ngstools  | bio/ngstools/2019  | Programs to analyze NGS data for population genetics purposes |
+| bio/samtools:  | bio/samtools/1.9  | Tools \(written in C using htslib\) for manipulating next-generation sequencing data |
+| bio/vcftools  | bio/vcftools/0.1.16 |  Perl and C++ tools for working with VCF files |
 | boost | boost/1.66.0, boost/1.69.0 | Boost free peer-reviewed portable C++ source libraries |
 | charliecloud | charliecloud/0.9.2 | Lightweight user-defined software stacks for high-performance computing |
 | chem/amber | chem/amber/18-cpu, chem/amber/18-gpu | Application for computational chemistry and biochemistry |
