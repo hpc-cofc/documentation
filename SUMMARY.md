@@ -4,7 +4,7 @@
 * [Policies](policies.md)
 * [Acknowledgement](acknowledge.md)
 * [F.A.Q.](faq.md)
-* [System Status](system-status.md)
+* [System News and Updates](system-status.md)
 
 ## Overview
 
