@@ -4,6 +4,18 @@ description: 'News, updates, outages, maintenance periods'
 
 # System News and Updates
 
+## October 2019
+
+#### Updates 
+
+* A new remote desktop service \(StarNet FastX\) is available to get a full graphical Linux environment on the HPC. You can download the FastX client for your local computer [here](https://www.starnet.com/download/fastx3). 
+* [VisIT](https://visit.llnl.gov) and [ParaView](https://www.paraview.org/) visualizations are now available on the HPC to allow remote visualization of data on the HPC on your local computer. Documentation on these tools will be available soon.
+* The [Spack](https://spack.readthedocs.io) package manger is made available to users to compile very complex software stacks in their own space. Please run '`module purge; module load spack`' to set up the Spack environment.
+
+#### Maintenance 
+
+* 10/04/19 - 10/20/19 : network access to the HPC may be blocked from certain locations during some traffic rerouting attempts to optimize the network's throughput
+
 ## September 2019
 
 #### Updates 
