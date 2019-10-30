@@ -15,10 +15,10 @@ In all cases, you would need to provide the following:
 
 {% tabs %}
 {% tab title="Windows" %}
-Windows 10 now has a Bash shell. If you are using an older version of Windows, you have the following options, among others for sure.
+Windows 10 now has a Bash shell. If you are using an older version of Windows, you have the following options, among others for sure. 
 
-* [Windows PowerShell](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/powershell) - Included in windows 10; good SSH client 
 * [MobaXterm](https://mobaxterm.mobatek.net) - free + commercial versions providing SSH, X11, VNC and FTP clients.
+* [Windows PowerShell](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/powershell) - Included in windows 10; good SSH client 
 * [XManager](https://www.netsarang.com/en/xmanager) - free + commercial versions providing SSH, X11, VNC and FTP clients.
 * [Git Bash](https://git-scm.com/download/win) - free and lightweight SSH client.
 * [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/) - free SSH client and Bash environment

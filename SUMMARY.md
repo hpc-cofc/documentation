@@ -44,6 +44,11 @@
     * [Orca](using-the-hpc/scheduling-jobs/examples-github/orca.md)
     * [Psi4](using-the-hpc/scheduling-jobs/examples-github/psi4.md)
 
+## Products
+
+* [Publications](products/publications.md)
+* [Grants](products/grants.md)
+
 ## Learning Linux
 
 * [Overview](learning-linux/linux-intro.md)
@@ -62,11 +67,6 @@
   * [Communication Protocols](learning-linux/know-your-system/protocols.md)
   * [Task Manager \(crontab, at\)](learning-linux/know-your-system/scheduling-cron.md)
 * [Help - man/tl;dr](learning-linux/help.md)
-
-## Products
-
-* [Publications](products/publications.md)
-* [Grants](products/grants.md)
 
 ## Misc
 
