@@ -52,11 +52,14 @@ New password:
 
 Password successfully changed.
 ```
+Please see the [demo](https://asciinema.org/a/250343) below:
+[![](https://asciinema.org/a/250343.png)](https://asciinema.org/a/250343)
 
+<!--
 ## Markdown
-Full linking of image \[![First Login Demo](https://asciinema.org/a/250343.svg%20|%20width=200)\([https://asciinema.org/a/250343](https://asciinema.org/a/250343)\)
+Full linking of image [![First Login Demo](https://asciinema.org/a/250343.svg%20|%20width=200)\([https://asciinema.org/a/250343](https://asciinema.org/a/250343)\)
 
-\[![First Login Demo](https://asciinema.org/a/250343.svg%20=500x500)\([https://asciinema.org/a/250343](https://asciinema.org/a/250343)\)
+[![First Login Demo](https://asciinema.org/a/250343.svg%20=500x500)\([https://asciinema.org/a/250343](https://asciinema.org/a/250343)\)
 
 ![](../../.gitbook/assets/250343.png)
 
@@ -68,8 +71,14 @@ No size
 [![](https://asciinema.org/a/250343.png)](https://asciinema.org/a/250343)
 
 ## HTML
+<html>
+no size
+<a href="https://asciinema.org/a/250343"><img src="https://asciinema.org/a/250343.png"></a>
 
-<a href="https://asciinema.org/a/250343"><img src="https://asciinema.org/a/250343.png" width="800"></a>
+with size
+<a href="https://asciinema.org/a/250343"><img src="https://asciinema.org/a/250343.png" width="800" height="400"></a>
+</html>
+-->
 
 
 1. By default, `/home/$USER`, `/globalscratch/$USER` and `/scratch/$USER` directories should be
