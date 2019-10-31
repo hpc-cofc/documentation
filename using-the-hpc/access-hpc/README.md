@@ -53,16 +53,15 @@ New password:
 Password successfully changed.
 ```
 
-Full linking of image
-[![First Login Demo](https://asciinema.org/a/250343.svg | width=200)(https://asciinema.org/a/250343)
+Full linking of image \[![First Login Demo](https://asciinema.org/a/250343.svg%20|%20width=200)\([https://asciinema.org/a/250343](https://asciinema.org/a/250343)\)
 
-[![First Login Demo](https://asciinema.org/a/250343.svg =500x500)(https://asciinema.org/a/250343)
+\[![First Login Demo](https://asciinema.org/a/250343.svg%20=500x500)\([https://asciinema.org/a/250343](https://asciinema.org/a/250343)\)
 
-With HTML
-<a href="https://asciinema.org/a/250343"> <img src="https://asciinema.org/a/250343.svg" width="800"></a>
+![](../../.gitbook/assets/250343.png)
 
-Straight embedding
- [![](https://asciinema.org/a/250343.png)](https://asciinema.org/a/250343)
+With HTML  [![](https://asciinema.org/a/250343.svg)](https://asciinema.org/a/250343)
+
+Straight embedding [![](https://asciinema.org/a/250343.png)](https://asciinema.org/a/250343)
 
 1. By default, `/home/$USER`, `/globalscratch/$USER` and `/scratch/$USER` directories should be
 
@@ -83,3 +82,4 @@ drwxr-xr-x 2 username groupname 4     Apr 6 12:11 00_slurm-examples
 ```
 
 The `ls -lhtr /home/username` command will show the whole list and details of the files that the **username** has.
+
