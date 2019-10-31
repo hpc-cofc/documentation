@@ -1,15 +1,22 @@
 # GUI - remote desktop
 
-#### Graphical user interface \(GUI\)
+## Graphical user interface \(GUI\)
 
 GUIs enable users to compute on the cluster using little or no command line tools. These graphical access options come in two forms:
 
 * Remote desktop sessions
 * Web interface
 
-**Remote desktop sessions**
+## **Remote desktop sessions**
 
-We have a [Cendio Thinlinc ](https://www.cendio.com/)remote desktop server running on the cluster to provide users access to a graphical Linux environment. _We only have 5 concurrent licenses, so please close the remote desktop session and exit as soon as you are finished._ Users would need to download and install a Thinlinc Client from the [Cendio site](https://www.cendio.com/thinlinc/download). There are Thinlinc Clients for Windows, MacOS and Linux.
+### Using FastX3
+
+
+
+### Using Cendio ThinLinc
+
+_We only have 5 concurrent licenses of Cendio Thinlinc, so please close the remote desktop session and exit as soon as you are finished._   
+We have a [Cendio Thinlinc ](https://www.cendio.com/)remote desktop server running on the cluster to provide users access to a graphical Linux environment.  Users would need to download and install a Thinlinc Client from the [Cendio site](https://www.cendio.com/thinlinc/download). There are Thinlinc Clients for Windows, MacOS and Linux.
 
 After installing the Thinlinc Client, you can start the application and provide the necessary information to start the remote desktop session.
 
@@ -33,7 +40,9 @@ Once you have picked a 'profile' or desktop manager, you should see a Linux remo
 
 **Note:** _Because we only have 5 concurrent licenses, please close the remote desktop session and exit as soon as you are finished_
 
-[![](http://img.youtube.com/vi/dxKZbXaIb0U/0.jpg)](http://www.youtube.com/watch?v=dxKZbXaIb0U)
+{% embed url="https://www.youtube.com/watch?v=dxKZbXaIb0U" %}
+
+\_\_
 
 
 
