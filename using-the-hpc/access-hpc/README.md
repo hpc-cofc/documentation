@@ -53,13 +53,7 @@ New password:
 Password successfully changed.
 ```
 
-<html>
-<a href="https://asciinema.org/a/250343"><img src="https://asciinema.org/a/250343.png" width="800"/></a>
-</html>
-
-<!--
- [![](https://asciinema.org/a/250343.png)](https://asciinema.org/a/250343?t=4)
--->
+ [![](https://asciinema.org/a/250343.png)](https://asciinema.org/a/250343)
 
 1. By default, `/home/$USER`, `/globalscratch/$USER` and `/scratch/$USER` directories should be
 
@@ -80,3 +74,4 @@ drwxr-xr-x 2 username groupname 4     Apr 6 12:11 00_slurm-examples
 ```
 
 The `ls -lhtr /home/username` command will show the whole list and details of the files that the **username** has.
+
