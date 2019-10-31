@@ -54,7 +54,12 @@ Password successfully changed.
 ```
 
 Full linking of image
-[![First Login Demo](https://asciinema.org/a/250343.svg)](https://asciinema.org/a/250343)
+[![First Login Demo](https://asciinema.org/a/250343.svg | width=200)(https://asciinema.org/a/250343)
+
+[![First Login Demo](https://asciinema.org/a/250343.svg =500x500)(https://asciinema.org/a/250343)
+
+With HTML
+<a href="https://asciinema.org/a/250343"> <img src="https://asciinema.org/a/250343.svg" width="800"></a>
 
 Straight embedding
  [![](https://asciinema.org/a/250343.png)](https://asciinema.org/a/250343)
