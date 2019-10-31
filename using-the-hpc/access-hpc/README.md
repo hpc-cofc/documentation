@@ -50,8 +50,10 @@ Changing password for username.
 New password:
 New password:
 
-Password successully changed.
+Password successfully changed.
 ```
+<a href="https://asciinema.org/a/250343"><img src="https://asciinema.org/a/250343.png" width="836"/></a>
+
 
  [![](https://asciinema.org/a/250343.png)](https://asciinema.org/a/250343?t=4)
 
@@ -74,4 +76,3 @@ drwxr-xr-x 2 username groupname 4     Apr 6 12:11 00_slurm-examples
 ```
 
 The `ls -lhtr /home/username` command will show the whole list and details of the files that the **username** has.
-
