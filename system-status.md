@@ -73,6 +73,7 @@ description: 'News, updates, outages, maintenance periods'
 
 #### Updates
 
+* 04/25/19 - WebMO installation is up with interfaces to many computational chemistry software including Gaussian16, GAMESS, Orca, Psi4 and MOPAC
 * 04/22/19 - the cluster is open to all campus users. Please feel free to [Request an Account](using-the-hpc/request-access.md)
 * 04/05/19 - the cluster is open to a few users for testing. It'll be open to all other users in two weeks if it is deemed ready for production runs. 
 
