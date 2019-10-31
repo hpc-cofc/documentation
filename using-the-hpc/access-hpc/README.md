@@ -53,15 +53,24 @@ New password:
 Password successfully changed.
 ```
 
+## Markdown
 Full linking of image \[![First Login Demo](https://asciinema.org/a/250343.svg%20|%20width=200)\([https://asciinema.org/a/250343](https://asciinema.org/a/250343)\)
 
 \[![First Login Demo](https://asciinema.org/a/250343.svg%20=500x500)\([https://asciinema.org/a/250343](https://asciinema.org/a/250343)\)
 
 ![](../../.gitbook/assets/250343.png)
 
-With HTML  [![](../../.gitbook/assets/250343.png)](https://asciinema.org/a/250343)
+With HTML  
+[![](../../.gitbook/assets/250343.png)](https://asciinema.org/a/250343)
 
-Straight embedding [![](https://asciinema.org/a/250343.png)](https://asciinema.org/a/250343)
+Straight embedding
+No size
+[![](https://asciinema.org/a/250343.png)](https://asciinema.org/a/250343)
+
+## HTML
+
+<a href="https://asciinema.org/a/250343"><img src="https://asciinema.org/a/250343.png" width="800"></a>
+
 
 1. By default, `/home/$USER`, `/globalscratch/$USER` and `/scratch/$USER` directories should be
 
