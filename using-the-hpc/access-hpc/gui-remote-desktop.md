@@ -1,21 +1,82 @@
 # GUI - remote desktop
 
-## Graphical user interface \(GUI\)
+## **Remote desktop access**
 
 GUIs enable users to compute on the cluster using little or no command line tools. These graphical access options come in two forms:
 
 * Remote desktop sessions
+  * FastX desktop client
+  * ThinLinc desktop client
 * Web interface
+  * FastX web client
+  * Using web applications such as WebMO and XSEDE Science Gateways
 
-## **Remote desktop sessions**
+The steps below outline how users can get remote desktop access to our HPC cluster
 
-### Using FastX3
+## Using StarNet FastX
+
+A new remote desktop service \(StarNet's [FastX3](https://www.starnet.com/fastx)\) is available to provide a fully graphical Linux environment on the HPC. StarNet's [FastX3](https://www.starnet.com/fastx) is a tool for remote desktop access to Linux systems. We have a FastX server running on the cluster and users can connect to the cluster using a
+
+* FastX desktop client or
+* Web client 
+
+A FastX3 interactive session can be disconnected from without closing the session, allowing users to leave applications running and resume their sessions from other locations. More information on this utility can be found on the StarNet website: [https://www.starnet.com/fastx](https://www.starnet.com/fastx)
+
+### Desktop Client
+
+Here are [steps](https://www.chpc.utah.edu/documentation/software/fastx2.php#utdc) as outlined by University of Utah's HPC center  
+
+* [ ] Download the [latest FastX client for your OS](https://www.starnet.com/download/fastx3?ID=1034252-255).
+* [ ] Start the FastX client on your desktop \(_Note: If you are connecting using a VPN, be sure to start the VPN prior to opening the FastX client.\)_
+* [ ] Use the "**+**" found in the upper right corner to define a server.
+
+![](../../.gitbook/assets/fastx-1.png)
+
+1. [ ] You need to provide a **name**, the **host** and a **user** \(your HPC user name\) data. ****
+   * Servers can be edited \(clicking on the right "pencil"\) or deleted by clicking on the X-icon on the right edge.
+   * You can create several several entries \(i.e. different hosts & names\)
+
+![](../../.gitbook/assets/fastx-2.png)
+
+1. [ ] Once you have servers defined you can select one of them and login by clicking on them. 
+
+![](../../.gitbook/assets/fastx-3%20%281%29.png)
+
+1. [ ] When you do so, two windows will open. In the top window you will be asked to enter your password. As soon as you are logged, the password window will disappear and the main window will appear. To open a new session on this server, click on the "**+**" symbol in the top window.
+
+![](../../.gitbook/assets/fastx-4.png)
+
+1. [ ] A new window will pop up. **You need to either take one of the options given in the window** **or add a command**. When you do this the session becomes defined in this window, along with the start and last connect time, and a new window opens for your session. Your choice depends on your needs.  There are both full desktop \(XFCE desktops\) and different xterm/terminal options **.**
+
+![](../../.gitbook/assets/fastx-5.png)
+
+1. [ ] **You can open terminal and run any graphical applications from the graphical desktop session.**
+
+![](../../.gitbook/assets/fastx-6.png)
+
+1. [ ] If you want to finish the session, you can close this window.  Please do this for any session that you are done with to ensure there are sufficient resources available to meet the active user needs. If you want to keep the session in order to return to it, right click on the session name in the list and select the pause \("\|\|"  button\)  You can close the FastX window listing the sessions at this point, and this closes your connection on the server. To reconnect, either from the same desktop or another, start FastX, select and login to the same server, and you should see your saved session. Right click on the session, and select the "play" button. All windows you had open when you disconnected will appear.
+
+![](../../.gitbook/assets/fastx-7.png)
 
 
 
-### Using Cendio ThinLinc
+1. [ ] Please be sure to close any sessions you no longer need to keep the number of sessions at a minimum.
 
-_We only have 5 concurrent licenses of Cendio Thinlinc, so please close the remote desktop session and exit as soon as you are finished._   
+### Web Client
+
+The steps to access the cluster using a web client are the same as those outlines for the desktop client 
+
+* [ ] Open your browser and point it towards hpc.cofc.edu port 3300
+* [ ] Fill out the proceeding pages with your user name, server name and login credentials
+
+_Much like other services, you would need to connected to the CofC VPN before accessing these remote desktop services._
+
+## Using Cendio ThinLinc
+
+_We only have 5 concurrent licenses of Cendio Thinlinc, so please close the remote desktop session and exit as soon as you are finished._  
+
+### Desktop Client
+
 We have a [Cendio Thinlinc ](https://www.cendio.com/)remote desktop server running on the cluster to provide users access to a graphical Linux environment.  Users would need to download and install a Thinlinc Client from the [Cendio site](https://www.cendio.com/thinlinc/download). There are Thinlinc Clients for Windows, MacOS and Linux.
 
 After installing the Thinlinc Client, you can start the application and provide the necessary information to start the remote desktop session.

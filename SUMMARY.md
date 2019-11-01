@@ -43,6 +43,7 @@
     * [Matlab](using-the-hpc/scheduling-jobs/examples-github/matlab.md)
     * [Orca](using-the-hpc/scheduling-jobs/examples-github/orca.md)
     * [Psi4](using-the-hpc/scheduling-jobs/examples-github/psi4.md)
+* [Visualize Data](using-the-hpc/visualize-data.md)
 
 ## Products
 
