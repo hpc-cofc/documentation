@@ -22,6 +22,8 @@ Graphical user interfaces \(GUIs\) enable users to compute on the cluster using 
 
 The steps below outline how users can get remote desktop access to our HPC cluster
 
+We have a [Cendio Thinlinc](https://www.cendio.com/thinlinc/download) remote desktop server running on the cluster to provide users access to a graphical Linux environment. _We only have 5 concurrent licenses, so please close the remote desktop session and exit as soon as you are finished._ Users would need to download and install a Thinlinc Client from the [Cendio](https://www.cendio.com/thinlinc/download) site. There are Thinlinc Clients for Windows, MacOS and Linux.
+
 ## RDP using StarNet FastX
 
 A new remote desktop service \(StarNet's [FastX3](https://www.starnet.com/fastx)\) is available to provide a fully graphical Linux environment on the HPC. StarNet's [FastX3](https://www.starnet.com/fastx) is a tool for remote desktop access to Linux systems. We have a FastX server running on the cluster and users can connect to the cluster using a
