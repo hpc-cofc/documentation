@@ -118,6 +118,10 @@ We have a [Cendio Thinlinc ](https://www.cendio.com/)remote desktop server runni
 
 **Note:** _Because we only have 5 concurrent licenses, please close the remote desktop session and exit as soon as you are finished_
 
+[![HPC](http://img.youtube.com/vi/bkLVuNfiCVs/0.jpg)](http://www.youtube.com/watch?v=bkLVuNfiCVs)
+
+\_\_
+
 Please see the video tutorial below demonstrating the different ways you can access CofC's HPC.
 
 {% embed url="https://www.youtube.com/watch?v=dxKZbXaIb0U" %}
