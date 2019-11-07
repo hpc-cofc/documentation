@@ -4,17 +4,17 @@ description: 'If you need any help, please follow any of the following channels.
 
 # Support
 
-## Support and Facilitation
+## Support and Facilitation <a id="support-and-facilitation"></a>
 
 If you need any help, please follow any of the following channels.
 
-* Submit a support ticket through [TeamDynamix](https://cofc.teamdynamix.com)
-  * [Service requests](https://cofc.teamdynamix.com/TDClient/Requests/ServiceDet?ID=35085). These include inquiries about accounts, projects and services
+* Submit a support ticket through [TeamDynamix](https://cofc.teamdynamix.com/)​
+  * ​[Service requests](https://cofc.teamdynamix.com/TDClient/Requests/ServiceDet?ID=35085). These include inquiries about accounts, projects and services
     * Request account
     * Seek consultation about teaching/research projects
     * Inquire about operations
     * Ask about documentation
-  * [Incident requests](https://cofc.teamdynamix.com/TDClient/Requests/ServiceDet?ID=35086). These include any problems you encounter during any HPC operations
+  * ​[Incident requests](https://cofc.teamdynamix.com/TDClient/Requests/ServiceDet?ID=35086). These include any problems you encounter during any HPC operations
     * Inability to access the cluster or individual nodes
     * Inability to run calculations
     * Inability to access data
