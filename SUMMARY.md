@@ -21,7 +21,7 @@
   * [GUI - remote desktop](using-the-hpc/access-hpc/gui-remote-desktop.md)
 * [Customize Environment](using-the-hpc/bash-env.md)
 * [Transfer Data](using-the-hpc/transfer-data.md)
-* [Access Software using Modules](using-the-hpc/modules/README.md)
+* [Access Software](using-the-hpc/modules/README.md)
   * [Software List](using-the-hpc/modules/software.md)
 * [Schedule Jobs using SLURM](using-the-hpc/scheduling-jobs-1.md)
 * [Run Calculations](using-the-hpc/scheduling-jobs/README.md)
@@ -49,6 +49,7 @@
 
 * [Publications](products/publications.md)
 * [Grants](products/grants.md)
+* [Research Profiles](products/research-profiles.md)
 
 ## Learning Linux
 

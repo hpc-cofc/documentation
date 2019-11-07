@@ -116,9 +116,7 @@ We have a [Cendio Thinlinc ](https://www.cendio.com/)remote desktop server runni
 
 ![XFCE remote desktop environment](../../.gitbook/assets/thinlinc-client-rdsession.png)
 
-**Note:** _Because we only have 5 concurrent licenses, please close the remote desktop session and exit as soon as you are finished_
-
-[![HPC](http://img.youtube.com/vi/bkLVuNfiCVs/0.jpg)](http://www.youtube.com/watch?v=bkLVuNfiCVs)
+**Note:** _Because we only have 5 concurrent licenses, please close the remote desktop session and exit as soon as you are finished._
 
 \_\_
 
@@ -126,21 +124,25 @@ Please see the video tutorial below demonstrating the different ways you can acc
 
 {% embed url="https://www.youtube.com/watch?v=dxKZbXaIb0U" %}
 
+## 
+
 ## Web Interfaces
 
 Some web interfaces enable setting up, running and analyzing HPC from a web browser. Two of those approaches will be discussed below.
 
 ### Jupyter Notebooks
 
-{% hint style="info" %}
-Please see the [Jupyter Notebook ](../scheduling-jobs/jupyter-notebooks.md)page
-{% endhint %}
+Please see the page below
+
+{% page-ref page="../scheduling-jobs/jupyter-notebooks.md" %}
+
+
 
 ### WebMO
 
-{% hint style="info" %}
-Please see the [WebMO](../scheduling-jobs/webmo.md) page
-{% endhint %}
+Please see the page below
+
+{% page-ref page="../scheduling-jobs/webmo.md" %}
 
 
 

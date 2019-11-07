@@ -1,3 +1,7 @@
+---
+description: Welcome to College of Charleston's High Performance Computing Initiatives
+---
+
 # Introduction
 
 ## About HPC at CofC
