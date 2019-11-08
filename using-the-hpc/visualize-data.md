@@ -36,7 +36,7 @@ This data can be visualized as
 * Vector flows
 * Molecular visualizations
 
-### The Tools enabling data Visualization
+### The Tools
 
 There are a lot of software that are specifically designed for research computing platforms. That means the ability to handle remote visualization, do parallel processing of data, recognize parallel data formats and render graphics remotely or locally. Here is a list of the most common ones:
 
@@ -47,7 +47,37 @@ There are a lot of software that are specifically designed for research computin
 
 ## ParaView
 
-ParaView Setup
+ParaView is powerful and versatile an open-source multiple-platform application for interactive, scientific visualization. It has a client–server architecture to facilitate remote visualization of datasets, and generates level of detail models to maintain interactive frame rates for large datasets.[\[2\]](https://www.paraview.org/)
+
+We have ParaView 5.70 server running on the HPC and users would need to download and install the same version of ParaView on their local computer: [https://www.paraview.org/download/](https://www.paraview.org/download/)
+
+For those needing to learn more about ParaView, there is a good tutorial [here](http://www.bu.edu/tech/support/research/training-consulting/online-tutorials/paraview/#INTRO) and another one here.
+
+```text
+<Servers>
+<Server name="CofCHPC-ParaView-570" resource="cs://localhost:11111">
+    <CommandStartup>
+      <Options>
+        <Option name="SSH_USER" label="SSH Username" save="true">
+          <String default="test-user" />
+        </Option>
+        <Option name="SSH_EXE" label="SSH Executable" save="true">
+          <File default="ssh" />
+        </Option>
+      </Options>
+      <Command exec="$SSH_EXE$" delay="5">
+        <Arguments>
+          <Argument value="-L11111:hpc.cofc.edu:11111" /> <!-- port forwarding -->
+          <Argument value="hpc.cofc.edu" />
+          <Argument value="-l" />
+          <Argument value="$SSH_USER$" />
+          <Argument value="/opt/ohpc/pub/apps/paraview/5.7.0/pvserver" />
+        </Arguments>
+      </Command>
+    </CommandStartup>
+</Server>
+</Servers>
+```
 
 ## VisIT
 
@@ -97,7 +127,13 @@ For actual VisIT local visualization of data stored remotely on the HPC cluster,
 
 
 
+### Configuration files
 
+Instead of inputting the host and launch profiles manually, you can also read in the following configuration files or put them in `~/.visit/hosts` on your local computer.
+
+{% file src="../.gitbook/assets/host\_cofc\_hpc-2-13-2.xml" caption="config file for VisIT 2.13.2" %}
+
+{% file src="../.gitbook/assets/host\_hpc\_cofc\_edu\_302.xml" caption="config file for VisIT 3.02" %}
 
 ## Remote Desktop  
 
