@@ -81,6 +81,5 @@
   * [Markdown Guide](misc/contributing/markdown-guide.md)
 * [Glossary](misc/glossary.md)
 * [License](misc/license.md)
-* [Support](misc/support.md)
 * [Support](misc/support-1.md)
 

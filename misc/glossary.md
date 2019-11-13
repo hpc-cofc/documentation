@@ -1,8 +1,14 @@
+---
+description: >-
+  The definitions below are related to this document and are provided for quick
+  reference.
+---
+
 # Glossary
 
-## Glossary
+For other terms commonly used in research software engineering environments, please see [https://us-rse.org/rse-glossary/](https://us-rse.org/rse-glossary/)
 
-The definitions below are related to this document and are provided for quick reference.
+## Terms
 
 ### Bash
 
