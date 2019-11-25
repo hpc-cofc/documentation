@@ -2,25 +2,89 @@
 
 ## OpenHPC Stack
 
-The cluster runs OpenHPC stack on top of a CentOS 7.6 operating system.
+The cluster runs [OpenHPC stack](https://openhpc.community/) on top of a CentOS 7.6 operating system.
 
-|  | Available component |
-| :---: | :--- |
-| Base OS | CentOS 7.6 x86\_64 |
-| Compilers | GNU8\(gcc, g++, gfortran\), Intel 2019 |
-| Math/Numerical Libraries | BLAS, LAPACK, OpenBLAS, ATLAS, MKL, Scalapack |
-| MPI libraries | OpenMPI, MPICH, MPICH2, MVAPICH, IMPI |
-| I/O libraries | HDF5\(pHDF\), NetCDF |
-| Development tools | Autotools \(autoconf, automake, libtool\), Valgrind |
-| Debugging and profiling tools | Gprof, TAU |
+![](../.gitbook/assets/ohpc_logo.png)
 
-Some of the underlying management components are:
+The OpenHPC software stack looks like this:
+
+![](../.gitbook/assets/openhpc-software-stack.png)
+
+
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:center"></th>
+      <th style="text-align:left">Available component</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center"><b>Base OS</b>
+      </td>
+      <td style="text-align:left">CentOS 7.6 x86_64</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><b>Compilers</b>
+      </td>
+      <td style="text-align:left">
+        <p>GNU8.5 (gcc, g++, gfortran),</p>
+        <p>GNU7.3 (gcc, g++, gfortran),</p>
+        <p>GNU5.4 (gcc, g++, gfortran),</p>
+        <p>GNU4.8.5 (gcc, g++, gfortran),</p>
+        <p>Intel 2019</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><b>MPI libraries</b>
+      </td>
+      <td style="text-align:left">OpenMPI, MPICH, MPICH2, MVAPICH2, Intel MPI (IMPI)</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><b>Software provisioner</b>
+      </td>
+      <td style="text-align:left">Lmod</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><b>Resource manager</b>
+      </td>
+      <td style="text-align:left">SLURM, Munge</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><b>Math/Numerical Libraries</b>
+      </td>
+      <td style="text-align:left">BLAS, LAPACK, OpenBLAS, ATLAS, MKL, Scalapack, Boost, GSL, FFTW, Hypre,
+        PETSc, SuperLU, Trilinos</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><b>MPI libraries</b>
+      </td>
+      <td style="text-align:left">OpenMPI, MPICH, MPICH2, MVAPICH, IMPI</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><b>I/O libraries</b>
+      </td>
+      <td style="text-align:left">HDF5(pHDF), NetCDF, Adios</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><b>Development tools</b>
+      </td>
+      <td style="text-align:left">Autotools (autoconf, automake, libtool), Valgrind</td>
+    </tr>
+    <tr>
+      <td style="text-align:center"><b>Debugging and profiling tools</b>
+      </td>
+      <td style="text-align:left">Gprof, TAU, Likwid, Dimemas</td>
+    </tr>
+  </tbody>
+</table>Some of the underlying management components are:
 
 |  | Available component |
 | :---: | :--- |
 | Node provisioning | Warewulf |
 | Resource management | SLURM |
-| Software provisioning | Modules, Built using Lmod/easybuild/Spack |
+| Software provisioning | Lmod modules, built using Lmod/easybuild/Spack |
 | Cluster monitoring | Ganglia, Nagios |
 
 ## Application Access
