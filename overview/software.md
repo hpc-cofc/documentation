@@ -8,15 +8,15 @@ The cluster runs [OpenHPC stack](https://openhpc.community/) on top of a CentOS 
 
 The OpenHPC software stack looks like this:
 
-![](../.gitbook/assets/openhpc-software-stack.png)
+![See https://github.com/openhpc/ohpc/wiki/Component-List-v1.3.6 for all components](../.gitbook/assets/openhpc-software-stack.png)
 
 
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:center"></th>
-      <th style="text-align:left">Available component</th>
+      <th style="text-align:center">Category</th>
+      <th style="text-align:left">Component</th>
     </tr>
   </thead>
   <tbody>
