@@ -18,7 +18,11 @@ We recently purchased a new Linux cluster that has been in full operation since 
 
 The HPC is a commodity Linux cluster containing many compute, storage and networking equipment all assembled into a standard rack. It is largely accessed remotely via SSH although some applications can be accessed using web interfaces and remote desktop tools.  
 
-![A general HPC schematic.](.gitbook/assets/hpc-schematic.png)
+![ HPC system schematic](.gitbook/assets/hpc-cluster-schematic.png)
+
+The cluster uses the [OpenHPC](https://openhpc.community/) software stack.
+
+![https://openhpc.community/](.gitbook/assets/openhpc-logo-small.png)
 
 The specs for the cluster are provided below.
 
