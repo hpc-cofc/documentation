@@ -1,7 +1,7 @@
 ---
 description: >-
   See examples at
-  https://github.com/hpc-cofc/example-runs/tree/master/18_Psi4/1.3.1
+  https://github.com/hpc-cofc/example-runs/tree/master/chemistry/Psi4
 ---
 
 # Psi4

@@ -47,5 +47,5 @@ user@localhost>  module spider matlab
 
 ### How to run
 
-There are very good instructions on adapting Matlab to run optimally on an HPC syste: \(here\)\[[https://github.com/UtrechtUniversity/MATLAB-on-HPC/blob/master/Part-3-Parallel-Matlab.md](https://github.com/UtrechtUniversity/MATLAB-on-HPC/blob/master/Part-3-Parallel-Matlab.md)\]
+There are very good instructions on adapting Matlab to run optimally on an HPC system [here](https://github.com/UtrechtUniversity/MATLAB-on-HPC/blob/master/Part-3-Parallel-Matlab.) 
 

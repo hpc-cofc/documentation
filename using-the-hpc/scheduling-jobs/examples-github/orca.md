@@ -1,5 +1,7 @@
 ---
-description: See examples at
+description: >-
+  See examples at
+  https://github.com/hpc-cofc/example-runs/tree/master/chemistry/Orca
 ---
 
 # Orca
@@ -12,27 +14,7 @@ Here is a quick example of an Orca run through a batch scheduler. This example c
 
 [![asciicast](https://asciinema.org/a/250328.svg)](https://asciinema.org/a/250328)
 
-### What versions of Mathematica are available?
-
-You can always execute `module spider matlab` to see what versions of Matlab are available. In our case, you should see something like this:
-
-```text
-user@localhost>  module spider orca
-
-----------------------------------------------------------------------
-  chem/orca/4.1.2:
-----------------------------------------------------------------------
-    Description:
-      Application for computational chemistry and biochemistry
-
-     Versions:
-        chem/orca/4.1.2
-
-------------------------------------------------------------------------
-
-     $ module spider chem/orca/4.1.2
-------------------------------------------------------------------------
-```
+### What versions of Orca are available?
 
 ### Operation Modes
 

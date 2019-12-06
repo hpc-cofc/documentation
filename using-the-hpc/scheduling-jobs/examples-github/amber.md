@@ -1,5 +1,7 @@
 ---
-description: 'Examples at https://github.com/hpc-cofc/example-runs/tree/master/11_AMBER'
+description: >-
+  Examples at
+  https://github.com/hpc-cofc/example-runs/tree/master/chemistry/AMBER
 ---
 
 # AMBER

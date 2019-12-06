@@ -1,5 +1,5 @@
 ---
-description: 'Examples at https://github.com/hpc-cofc/example-runs/tree/master/31_CM1'
+description: 'Examples at https://github.com/hpc-cofc/example-runs/tree/master/physics/CM1'
 ---
 
 # CM1
