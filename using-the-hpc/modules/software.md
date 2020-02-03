@@ -1,34 +1,53 @@
 # Software List
 
-## List of available software \(as of 08/05/2019\)
+## List of available software \(as of 02/03/2020\)
 
 You can always get a list of all available modules by entering `module spider`. Here is the current list:
 
+
+
 | Application | Versions | Description |
 | :--- | :--- | :--- |
+| EasyBuild | EasyBuild/3.7.1 | Build and installation framework |
+| R | R/3.4.2, R/3.5.0, R/3.5.2 | R is a language and environment for statistical computing and graphics \(S-Plus like\). |
 | adios | adios/1.12.0, adios/1.13.1 | The Adaptable IO System \(ADIOS\) |
-| anaconda2 | anaconda2/2019.03 | Anaconda environment based on Python 2.7 |
-| anaconda3 | anaconda3/2019.03 | Anaconda environment based on Python 3.7 |
+| anaconda2 | anaconda2/2019.03 |  |
+| anaconda3 | anaconda3/2019.03, anaconda3/2019.10 |  |
 | autotools | autotools | Developer utilities |
-| boost | boost/1.66.0, boost/1.69.0 | Boost free peer-reviewed portable C++ source libraries |
-| charliecloud | charliecloud/0.9.2 | Lightweight user-defined software stacks for HPC |
-| chem/aimall | chem/aimall/19\_02\_13 | Bader's atoms-in-molecules tools for chemistry by Todd A. Keith |
+| bio/angsd | bio/angsd/0.931 | a powerful toolset for genome arithmetic |
+| bio/bcftools | bio/bcftools/1.9 | BCFtools are meant as a faster replacement for most of the perl VCFtools commands. |
+| bio/bedtools | bio/bedtools/2.29.0 | a powerful toolset for genome arithmetic |
+| bio/bowtie | bio/bowtie/1.2.3 | an ultrafast, memory-efficient short read aligner |
+| bio/bowtie2 | bio/bowtie2/2.3.5.1 | an ultrafast, memory-efficient short read aligner |
+| bio/bwa | bio/bwa/0.7.17 | a software package for mapping DNA sequences against a large reference genome |
+| bio/hisat2 | bio/hisat2/2.1.0 | an ultrafast and memory-efficient tool for aligning sequencing reads to long reference sequences |
+| bio/htslib | bio/htslib/1.9 | htslib are meant as a faster replacement for most of the perl VCFtools commands. |
+| bio/minimap2 | bio/minimap2/2.12 | A versatile pairwise aligner for genomic and spliced nucleotide sequences |
+| bio/mothur | bio/mothur/1.43.0 | mothur is a single piece of open-source, expandable software to fill the bioinformatics needs of the microbial ecology community |
+| bio/ncbi-blast+ | bio/ncbi-blast+/2.10.0 | a powerful local alignment and search tool |
+| bio/ngstools | bio/ngstools/2019 | Programs to analyse NGS data for population genetics purposes |
+| bio/samtools | bio/samtools/1.9 | Tools \(written in C using htslib\) for manipulating next-generation sequencing data |
+| bio/stacks | bio/stacks/2.41 | Stacks is a software pipeline for building loci from short-read sequences, such as those generated on the Illumina platform |
+| bio/vcftools | bio/vcftools/0.1.16 | Perl and C++ tools for working with VCF files |
+| bio/vsearch | bio/vsearch/2.14.2 | A faster version of usearch for the bioinformatics needs of the microbial ecology community |
+| boost | boost/1.66.0, boost/1.67.0, boost/1.69.0 | Boost free peer-reviewed portable C++ source libraries |
+| charliecloud | charliecloud/0.9.2 | Lightweight user-defined software stacks for high-performance computing |
+| chem/aimall | chem/aimall/19\_02\_13 | Tools for using Bader's Atoms-in-Molecules \(AIM\) tools by Todd A. Keith |
 | chem/amber | chem/amber/18-cpu, chem/amber/18-gpu | Application for computational chemistry and biochemistry |
-| chem/chimera | chem/chimera | UCSF molecular modeling and graphics software |
+| chem/chimera | chem/chimera | Application for computational chemistry modeling and visualization |
 | chem/gamess | chem/gamess/2018-R2 | Application for computational chemistry |
-| chem/gaussian | chem/gaussian/16-B.01 | Application for computational chemistry |
-| chem/jmol | chem/jmol | Jmol molecular visualization software |
+| chem/gaussian | chem/gaussian/09-D.01, chem/gaussian/16-B.01 | Application for computational chemistry |
+| chem/jmol | chem/jmol | Application for molecular modeling |
 | chem/mopac | chem/mopac/2016 | Application for computational chemistry |
-| chem/orca | chem/orca/4.1.2 | Application for computational chemistry |
-| chem/psi4conda | chem/psi4conda/1.3.1 | Application for computational chemistry |
-| chem/aimall | chem/vmd/1.9.3 | molecular modeling and graphics software |
-| chem/vmd | chem/vmd/1.9.3 | molecular modeling and graphics software |
+| chem/orca | chem/orca/4.1.2, chem/orca/4.2.0, chem/orca/4.2.1 | Application for computational chemistry |
+| chem/psi4conda | chem/psi4conda/1.3.1 | Application for computational chemistry and biochemistry |
+| chem/vmd | chem/vmd/1.9.3 | Application for visualizations of molecular structures, trajectories surfaces, crystals ... |
+| chem/xtb | chem/xtb/6.2.2 | Application for computational chemistry and biochemistry |
 | clustershell | clustershell/1.8 | VIM files for ClusterShell |
 | cm1 | cm1/19.8-omp | Atmospheric physics simulation package |
 | cmake | cmake/3.12.2 | CMake is an open-source, cross-platform family of tools designed to build, test and package software. |
 | cuda | cuda/9.2, cuda/10.1 | CUDA Compiler and Library |
 | dimemas | dimemas/5.3.4 | Dimemas tool |
-| EasyBuild | EasyBuild/3.7.1 | Build and installation framework |
 | extrae | extrae/3.5.2 | Extrae tool |
 | fftw | fftw/3.3.7, fftw/3.3.8 | A Fast Fourier Transform library |
 | gdal | gdal/2.2.3 | A GIS format library |
@@ -37,25 +56,27 @@ You can always get a list of all available modules by entering `module spider`. 
 | gnu | gnu/5.4.0 | GNU Compiler Family \(C/C++/Fortran for x86\_64\) |
 | gnu7 | gnu7/7.3.0 | GNU Compiler Family \(C/C++/Fortran for x86\_64\) |
 | gnu8 | gnu8/8.3.0 | GNU Compiler Family \(C/C++/Fortran for x86\_64\) |
-| gsl | gsl/2.4, gsl/2.5 | GNU Scientific Library \(GSL\) |
+| gsl | gsl/1.15, gsl/2.4, gsl/2.5 | GNU Scientific Library \(GSL\) |
 | hdf5 | hdf5/1.10.2, hdf5/1.10.4 | A general purpose library and file format for storing scientific data |
 | hwloc | hwloc/1.11.10 | Portable Hardware Locality |
-| hypre | hypre/2.13.0, hypre/2.15.1 | Scalable algorithms for solving linear systems of equations |
+| hypre | hypre/2.13.0, hypre/2.14.0, hypre/2.15.1 | Scalable algorithms for solving linear systems of equations |
 | imb | imb/2018.1 | Intel MPI Benchmarks \(IMB\) |
 | impi | impi/2019.3.199 | Intel MPI Library \(C/C++/Fortran for x86\_64\) |
 | intel | intel/19.0.3.199 | Intel Compiler Family \(C/C++/Fortran for x86\_64\) |
 | likwid | likwid/4.3.3 | Toolsuite of command line applications for performance oriented programmers |
 | llvm5 | llvm5/5.0.1 | LLVM Compiler Infrastructure |
+| math/mathematica | math/mathematica/12.0 | Application for symbolic and numerical computation |
+| math/matlab | math/matlab/r2017b, math/matlab/r2018a, math/matlab/r2018b, math/matlab/r2019a, math/matlab/r2019b | Application for numerical simulations |
 | metis | metis/5.1.0 | Metis development files |
-| math/mathematica | math/mathematica/12.0 | General numerical and symbolic computation |
-| math/matlab | math/matlab/r2019a, math/matlab/r2018b, math/matlab/r2018a, math/matlab/r2017b | General numerical and symbolic simulation |
 | mfem | mfem/3.4 | Lightweight, general, scalable C++ library for finite element methods |
+| miniconda2 | miniconda2/4.7.10 |  |
+| miniconda3 | miniconda3/4.7.10 |  |
 | mkl | mkl/19.0.3.199 | Intel Math Kernel Library for C/C++ and Fortran |
-| mpiP | mpiP/3.4.1 | a lightweight profiling library for MPI applications. |
+| mpiP | mpiP/3.4.1 | mpiP a lightweight profiling library for MPI applications. |
 | mpich | mpich/3.2.1, mpich/3.3 | MPICH MPI implementation |
 | mumps | mumps/5.1.2 | A MUltifrontal Massively Parallel Sparse direct Solver |
 | mvapich2 | mvapich2/2.2, mvapich2/2.3 | OSU MVAPICH2 MPI implementation |
-| netcdf | netcdf/4.5.0, netcdf/4.6.2 | C Libraries for the Unidata network Common Data Form |
+| netcdf | netcdf/4.5.0, netcdf/4.6.1, netcdf/4.6.2 | C Libraries for the Unidata network Common Data Form |
 | netcdf-cxx | netcdf-cxx/4.3.0 | C++ Libraries for the Unidata network Common Data Form |
 | netcdf-fortran | netcdf-fortran/4.4.4, netcdf-fortran/4.4.5 | Fortran Libraries for the Unidata network Common Data Form |
 | numpy | numpy/1.12.1 | NumPy array processing for numbers, strings, records and objects |
@@ -66,13 +87,12 @@ You can always get a list of all available modules by entering `module spider`. 
 | openmpi | openmpi/1.10.7 | A powerful implementation of MPI |
 | openmpi3 | openmpi3/3.1.0, openmpi3/3.1.3 | A powerful implementation of MPI |
 | papi | papi/5.6.0 | Performance Application Programming Interface |
-| parallel | parallel/2019 | GNU parallel is a command-line driven utility for Linux and other Unix-like operating systems which allows the user to execute shell scripts in parallel. |
 | pdtoolkit | pdtoolkit/3.25 | PDT is a framework for analyzing source code |
 | petsc | petsc/3.8.3, petsc/3.10.3 | Portable Extensible Toolkit for Scientific Computation |
-| phdf5 | phdf5/1.10.1, phdf5/1.10.4 | A general purpose library and file format for storing scientific data |
+| phdf5 | phdf5/1.10.1, phdf5/1.10.2, phdf5/1.10.4 | A general purpose library and file format for storing scientific data |
 | plasma | plasma/2.8.0 | Parallel Linear Algebra Software for Multicore Architectures |
 | pmix | pmix/2.1.4 |  |
-| pnetcdf | pnetcdf/1.11.0 | A Parallel NetCDF library \(PnetCDF\) |
+| pnetcdf | pnetcdf/1.9.0, pnetcdf/1.11.0 | A Parallel NetCDF library \(PnetCDF\) |
 | proj | proj/5.2.0 | A geospatial coordinate transformation software |
 | prun | prun/1.2 | job launch utility for multiple MPI families |
 | ptscotch | ptscotch/6.0.6 | Graph, mesh and hypergraph partitioning library using MPI |
@@ -83,8 +103,7 @@ You can always get a list of all available modules by entering `module spider`. 
 | py3-numpy | py3-numpy/1.15.3 | NumPy array processing for numbers, strings, records and objects |
 | py3-scipy | py3-scipy/1.2.1 | Scientific Tools for Python |
 | python-intel | python-intel/2.7.15, python-intel/3.6.8 | Python is cross-platform interpreted language. This version is optimzed by Intel |
-| R | R/3.4.2, R/3.5.0, R/3.5.2 | R is a language and environment for statistical computing and graphics \(S-Plus like\). |
-| RStudio | rstudio/1.2.1555 | GUI for running R for statistical computing and graphics. |
+| rstudio | rstudio/1.2.1335, rstudio/1.2.1555 | RStudio provides a GUI for running R which is a language and environment for statistical computing and graphics \(S-Plus like\). |
 | scalapack | scalapack/2.0.2 | A subset of LAPACK routines redesigned for heterogenous computing |
 | scalasca | scalasca/2.3.1, scalasca/2.4 | Toolset for performance analysis of large-scale parallel applications |
 | scipy | scipy/0.19.1 | Scientific Tools for Python |
@@ -93,17 +112,16 @@ You can always get a list of all available modules by entering `module spider`. 
 | singularity | singularity/2.6.0 | Application and environment virtualization |
 | sionlib | sionlib/1.7.1, sionlib/1.7.2 | Scalable I/O Library for Parallel Access to Task-Local Files |
 | slepc | slepc/3.10.2 | A library for solving large scale sparse eigenvalue problems |
+| spack | spack/0.12.1 | Spack package management |
 | superlu | superlu/5.2.1 | A general purpose library for the direct solution of linear equations |
 | superlu\_dist | superlu\_dist/4.2, superlu\_dist/6.1.1 | A general purpose library for the direct solution of linear equations |
 | tau | tau/2.27, tau/2.28 | Tuning and Analysis Utilities Profiling Package |
 | trilinos | trilinos/12.12.1 | A collection of libraries of numerical algorithms |
 | use.own | use.own |  |
 | valgrind | valgrind/3.13.0 | Memory debugging utilities |
+| visit | visit/2.13.2, visit/3.0.2 | VisIT is a parallel visualization suite based on VTK |
 
-Over the course of May 2019, the following applications will be available for all users.
-
-* MATLAB
-* Anaconda/Jupyter Notebooks
+New software is being installed constantly. Please run `module spider` to see the latest list of available software on the cluster.
 
 ## Provisioning software using Lmod modules
 
