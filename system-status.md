@@ -4,13 +4,34 @@ description: 'News, updates, outages, maintenance periods'
 
 # System News and Updates
 
+## 
+
+## Dec 2019 - Jan 2020
+
+#### Updates 
+
+* Newly installed software 
+  * chem/amber/18-gpu and chem/amber/18-cpu with AmberTools19
+  * chem/xtb/6.2.2 
+  * math/matlab/r2019b 
+  * bio/ncbi-blast+/2.10.0 
+* See the example runs [here](https://github.com/hpc-cofc/example-runs)
+
+## November 2019
+
+#### Updates 
+
+* Documentation on our remote desktop service \(StarNet FastX\) is added [here](using-the-hpc/access-hpc/gui-remote-desktop.md). You can download the FastX desktop client or a web client. 
+* Documentation on [VisIT](https://visit.llnl.gov) and [ParaView](https://www.paraview.org/) is added [here](using-the-hpc/visualize-data.md). 
+* Please run `module spider` to see newly installed and updated software
+
 ## October 2019
 
 #### Updates 
 
-* A new remote desktop service \(StarNet FastX\) is available to get a full graphical Linux environment on the HPC. You can download the FastX client for your local computer [here](https://www.starnet.com/download/fastx3). 
-* [VisIT](https://visit.llnl.gov) and [ParaView](https://www.paraview.org/) visualizations are now available on the HPC to allow remote visualization of data on the HPC on your local computer. Documentation on these tools will be available soon.
-* The [Spack](https://spack.readthedocs.io) package manger is made available to users to compile very complex software stacks in their own space. Please run '`module purge; module load spack`' to set up the Spack environment.
+* A new remote desktop service \(StarNet FastX\) is available to get a full graphical Linux environment on the HPC. You can download the FastX client for your local computer here. 
+* VisIT and ParaView visualizations are now available on the HPC to allow remote visualization of data on the HPC on your local computer. Documentation on these tools will be available soon.
+* The Spack package manger is made available to users to compile very complex software stacks in their own space. Please run '`module purge; module load spack`' to set up the Spack environment.
 
 #### Maintenance 
 
