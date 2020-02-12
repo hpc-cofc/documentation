@@ -4,7 +4,12 @@ description: 'News, updates, outages, maintenance periods'
 
 # System News and Updates
 
-## 
+## February 2020
+
+#### Updates 
+
+* Split view of compute and storage servers in Ganglia 
+* New 24-core compute node with 2TB local storage deployed
 
 ## Dec 2019 - Jan 2020
 
@@ -14,7 +19,8 @@ description: 'News, updates, outages, maintenance periods'
   * chem/amber/18-gpu and chem/amber/18-cpu with AmberTools19
   * chem/xtb/6.2.2 
   * math/matlab/r2019b 
-  * bio/ncbi-blast+/2.10.0 
+  * bio/ncbi-blast+/2.10.0
+  * bio/mothur 
 * See the example runs [here](https://github.com/hpc-cofc/example-runs)
 
 ## November 2019
