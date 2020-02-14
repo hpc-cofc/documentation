@@ -10,6 +10,7 @@ description: 'News, updates, outages, maintenance periods'
 
 * Split view of compute and storage servers in Ganglia 
 * New 24-core compute node with 2TB local storage deployed
+* [MarvinSuite](https://chemaxon.com/products/marvin) from [ChemAxon](https://chemaxon.com) available on the login node. Some features are not available in the free version, so you may need to get a license by [creating an account](https://accounts.chemaxon.com/register) at ChemAxon and [request a free personal academic license.](https://www.chemaxon.com/my-chemaxon/my-academic-license/)
 
 ## Dec 2019 - Jan 2020
 
