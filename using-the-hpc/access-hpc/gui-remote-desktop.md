@@ -20,9 +20,7 @@ Graphical user interfaces \(GUIs\) enable users to compute on the cluster using 
     * WebMO and
     * other web gateways
 
-The steps below outline how users can get remote desktop access to our HPC cluster
-
-We have a [Cendio Thinlinc](https://www.cendio.com/thinlinc/download) remote desktop server running on the cluster to provide users access to a graphical Linux environment. _We only have 5 concurrent licenses, so please close the remote desktop session and exit as soon as you are finished._ Users would need to download and install a Thinlinc Client from the [Cendio](https://www.cendio.com/thinlinc/download) site. There are Thinlinc Clients for Windows, MacOS and Linux.
+The steps below outline how users can get remote desktop access to our HPC cluster_. **Please note that you would need to use a VPN to access the RDP services from off-campus networks.**_
 
 ## RDP using StarNet FastX
 
@@ -37,7 +35,7 @@ A FastX3 interactive session can be disconnected from without closing the sessio
 
 Here are [steps](https://www.chpc.utah.edu/documentation/software/fastx2.php#utdc) as adapted from University of Utah's HPC center  
 
-* Download the [latest FastX client for your OS](https://www.starnet.com/download/fastx3?ID=1034252-255).
+* Download the [latest FastX client for your OS.](https://www.starnet.com/download/fastx-client)
 * Start the FastX client on your desktop \(_Note: If you are connecting using a VPN, be sure to start the VPN prior to opening the FastX client.\)_
 * Use the "**+**" found in the upper right corner to define a server.
 
@@ -77,7 +75,7 @@ Here are [steps](https://www.chpc.utah.edu/documentation/software/fastx2.php#utd
 
 The steps to access the cluster using a web client are the same as those outlined for the desktop client 
 
-* Open a web browser on your local computer and point it to `hpc.cofc.edu` port `3300`
+* Open a web browser on your local computer and point it to `hpc.cofc.edu:3300` or `https://hpc.cofc.edu/rdp`
 * Fill out the proceeding pages with your user name, server name and login credentials
 
 While the FastX web client is very convenient, it does pose security concerns. To prevent these security issues from being exploited, users should make sure
@@ -88,6 +86,8 @@ While the FastX web client is very convenient, it does pose security concerns. T
 _Much like other services, you would need to connected to the CofC VPN before accessing these remote desktop services._
 
 ## RDP using Cendio ThinLinc
+
+We have [Cendio Thinlinc](https://www.cendio.com/thinlinc/download) remote desktop services running on the cluster to provide users access to a graphical Linux environment. _We only have 25 concurrent licenses FastX and 5 concurrent Thinlinc licenses, so please close the remote desktop session and exit as soon as you are finished._ Users would need to download and install a Thinlinc Client from the [Cendio](https://www.cendio.com/thinlinc/download) site. There are Thinlinc Clients for Windows, MacOS and Linux.
 
 _We only have 5 concurrent licenses of Cendio Thinlinc, so please close the remote desktop session and exit as soon as you are finished._  
 
