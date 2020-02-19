@@ -118,14 +118,6 @@ We have a [Cendio Thinlinc ](https://www.cendio.com/)remote desktop server runni
 
 **Note:** _Because we only have 5 concurrent licenses, please close the remote desktop session and exit as soon as you are finished._
 
-\_\_
-
-Please see the video tutorial below demonstrating the different ways you can access CofC's HPC.
-
-{% embed url="https://www.youtube.com/watch?v=dxKZbXaIb0U" %}
-
-## 
-
 ## Web Interfaces
 
 Some web interfaces enable setting up, running and analyzing HPC from a web browser. Two of those approaches will be discussed below.
