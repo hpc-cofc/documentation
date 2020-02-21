@@ -6,35 +6,29 @@ The cluster has 13 compute nodes including 2 GPU nodes, a login node,  a high-av
 
 * [**Compute nodes**](hardware.md)
   * 10 standard compute nodes:
-    * Dell PowerEdge servers
+    * Dell PowerEdge R740 or R740XD servers
     * 2x 20-core 2.4GHz Intel Xeon Gold 6148 CPUs w/ 27MB L3 cache,
     * 192GB of DDR4 2667MHz RAM,
     * 480GB of local SSD storage,
     * Double precision performance ~ 2.8 TFLOPs/node
   * 1 large memory node:
-    * Dell PowerEdge server
+    * Dell PowerEdge R840 server
     * 4x 20-core 2.4GHz Intel Xeon Gold 6148 CPUs w/ 27MB L3 cache,
     * 1536GB of DDR4 2667MHz RAM,
     * 960GB of local SSD storage,
     * Double precision performance ~ 5.6 TFLOPs/node
-  * 3 GPU-containing nodes:
-    * Dell PowerEdge server
+  * 2 GPU-containing nodes:
+    * Dell PowerEdge R740XD server
     * 2x 12-core 2.6GHz Intel Xeon Gold 6126 CPUs w/ 19MB L3 cache,
     * 192GB of DDR4 2667MHz RAM,
     * 480GB of local SSD storage,
-    * GPUs
-      * the first two have 1 NVIDIA Tesla V100 16GB GPU each
-      * the third has 1 NVIDIA Pascal Quadro P4000 8GB GPU
-    * Double precision performance 
-      * those with 1 NVIDIA Tesla V100 16GB GPU ~ 1.8 + 7.0 = 8.8 TFLOPs/node
-      * those with 1 NVIDIA Pascal Quadro P4000 8GB GPU ~ 1.8 + 2.6 = 4.4 TFLOPs/node
+    * 1 NVIDIA Tesla V100 16GB
+    * Double precision performance ~ 1.8 + 7.0 = 8.8 TFLOPs/node
 * [**Login/visualization node**](hardware.md)
   * 1 login and visualization node:
-    * Dell PowerEdge server
     * 2x 12-core 2.6GHz Intel Xeon Gold 6126 CPUs w/ 27MB L3 cache,
     * 192GB of DDR4 2667MHz RAM,
-    * 960GB of local SSD storage,
-    * 3TB RAID5 storage
+    * 480GB of local SSD storage,
     * 1x NVIDIA Quadro P4000 8GB GPU
 * [**Storage**](storage.md)
   * 512TB NFS-shared, global, highly-available storage
@@ -50,12 +44,11 @@ The HPC cluster is a commodity Linux cluster containing many compute, storage an
 | :--- | :--- |
 | 1  GbE 48-port Switch \(4x SPF+ 10GbE ports\) | **internal network** |
 | 1 Mellanox 100Gbs 36-port EDR Infiniband Switch | **interconnect** |
-| \#8 PowerEdge R740 2x 12-core Intel Xeon-G 6128 3.4GHz CPUs, 192GB RAM, 1x480GB SAS SSDs striped + 1 NVIDIA Quadro P4000 GPU | **1x p4000 gpu node** |
-| \#7 PowerEdge R740 2x 12-core Intel Xeon-G 6128 3.4GHz CPUs, 192GB RAM, 1x480GB SAS SSDs striped + 1 NVIDIA Tesla V100 GPU | **1x v100 gpu node** |
-| \#7 PowerEdge R740 2x 12-core Intel Xeon-G 6128 3.4GHz CPUs, 192GB RAM, 1x480GB SAS SSDs striped + 1 NVIDIA Tesla V100 GPU | **1x v100 gpu node** |
+| \#7 PowerEdge R740 2x 12-core Intel Xeon-G 6128 3.4GHz CPUs, 192GB RAM, 1x480GB SAS SSDs striped + 1 NVIDIA Tesla V100 GPU | **1x gpu nodes** |
+| \#7 PowerEdge R740 2x 12-core Intel Xeon-G 6128 3.4GHz CPUs, 192GB RAM, 1x480GB SAS SSDs striped + 1 NVIDIA Tesla V100 GPU | **1x gpu nodes** |
 | \#6 PowerEdge R840 4x 20-core Intel Xeon-G 6148 2.4GHz, 1.5TB RAM, 2x480GB SATA SSD | **1x large memory node** |
-| \#5 2U PowerEdge R740 2x 20-core Intel Xeon-G 6148 2.4GHz, 192TB RAM, 1x480GB SATA SSD | **1x gpu-capable node** |
-| \#5 2U PowerEdge R740 2x 20-core Intel Xeon-G 6148 2.4GHz, 192GB RAM, 1x480GB SATA SSD | **1x gpu-capable node** |
+| \#5 2U PowerEdge R740 2x 20-core Intel Xeon-G 6148 2.4GHz, 192TB RAM, 1x480GB SATA SSD | **1x gpu-capable nodes** |
+| \#5 2U PowerEdge R740 2x 20-core Intel Xeon-G 6148 2.4GHz, 192GB RAM, 1x480GB SATA SSD | **1x gpu-capable nodes** |
 | \#4 4x PowerEdge C6420 in a 2U chassis 2x 20-core Intel Xeon-G 6148 2.4GHz, 192GB RAM, 1x480GB SSD | **4x stdmem nodes** |
 | \#4 4x PowerEdge C6420 in a 2U chassis 2x 20-core Intel Xeon-G 6148 2.4GHz, 192GB RAM, 1x480GB SSD | **4x stdmem nodes** |
 | \#3 2U NFS server with NVMe SSDs PowerEdge R740XD 2x Intel Xeon-G 6126 2.6GHz CPU, 192GB RAM,  24x 1.6TB NVMe SSDs | **fast scratch storage server** |
