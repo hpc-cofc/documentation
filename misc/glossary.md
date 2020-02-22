@@ -25,7 +25,7 @@ For other terms commonly used in research software engineering environments, ple
 
 This was taken from the [USRSE glossary](https://github.com/rseng/rse-glossary/blob/master/_data/terms.yml)
 
-Name | Definition
+| Name | Definition |
 |:------------|:----------------------------------------------------|
 | research software engineer | Those who regularly use expertise in programming to advance research. https://us-rse.org/what-is-an-rse/
 | digital humanities | computational work and software for traditionally liberal arts oriented domains   https://en.wikipedia.org/wiki/Digital_humanities
@@ -60,8 +60,8 @@ Name | Definition
 
 ## Acronyms
 
-Acronym | Definition 
-|:---------|:--------------------------------- 
+| Acronym | Definition  |
+|:---------|:---------------------------------
 CLI | Command-Line Interface
 DTN | Delay-Tolerant Network
 GPU | Graphics Processing Unit
@@ -76,4 +76,3 @@ SFTP | Secure/SSH File Transfer Protocol
 SLURM | Simple Linux Utility for Resource Management \(SLURM\) is a batch scheduling tool used to submit your calculations to run on appropriate compute resources.
 SSH | Secure Shell
 VM | Virtual Machine
-
