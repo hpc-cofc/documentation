@@ -62,17 +62,17 @@ This was taken from the [USRSE glossary](https://github.com/rseng/rse-glossary/b
 
 | Acronym | Definition  |
 |:---------|:---------------------------------
-CLI | Command-Line Interface
-DTN | Delay-Tolerant Network
-GPU | Graphics Processing Unit
-GUI | Graphical User Interface
-IDE | integrated development environment
-HPC | High-Performance Computing/Cluster
-LDAP | Limited Lightweight Directory Access Protocol
-MPI | Message Passing Interface
-NFS | Network File System
-S3 | Simple Storage Service
-SFTP | Secure/SSH File Transfer Protocol
-SLURM | Simple Linux Utility for Resource Management \(SLURM\) is a batch scheduling tool used to submit your calculations to run on appropriate compute resources.
-SSH | Secure Shell
-VM | Virtual Machine
+| CLI | Command-Line Interface
+| DTN | Delay-Tolerant Network
+| GPU | Graphics Processing Unit
+| GUI | Graphical User Interface
+| IDE | integrated development environment
+| HPC | High-Performance Computing/Cluster
+| LDAP | Limited Lightweight Directory Access Protocol
+| MPI | Message Passing Interface
+| NFS | Network File System
+| S3 | Simple Storage Service
+| SFTP | Secure/SSH File Transfer Protocol
+| SLURM | Simple Linux Utility for Resource Management \(SLURM\) is a batch scheduling tool used to submit your calculations to run on appropriate compute resources.
+| SSH | Secure Shell
+| VM | Virtual Machine
