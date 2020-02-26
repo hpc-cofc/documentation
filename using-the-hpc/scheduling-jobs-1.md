@@ -2,6 +2,44 @@
 
 SLURM is a powerful job scheduler that enables optimal use of an HPC cluster of any size. It takes certain information about the resource requirements of a calculations and send that calculation to run on a compute node\(s\) that satisfy that criteria. It also ensures that the HPC cluster is used fairly among all users. 
 
+## Compute Nodes
+
+The compute nodes have the following resources:
+
+*  S = CPU sockets
+* C = Cores per CPU
+* CORES = Total number of coresPU cores
+
+```sql
+NODELIST    NODES    PARTITION       STATE CORES  S:C:T MEMORY
+bigmem001       1    scavengeq       mixed   80   4:20:1 1536000
+compute001      1    scavengeq       mixed   40   2:20:1 192000
+compute002      1    scavengeq       mixed   40   2:20:1 192000
+compute003      1    scavengeq       mixed   40   2:20:1 192000
+compute004      1    scavengeq       mixed   40   2:20:1 192000
+compute005      1    scavengeq       mixed   40   2:20:1 192000
+compute006      1    scavengeq       mixed   40   2:20:1 192000
+compute007      1    scavengeq       mixed   40   2:20:1 192000
+compute008      1    scavengeq       mixed   40   2:20:1 192000
+gpu001          1    scavengeq       mixed   40   2:20:1 192000
+gpu002          1    scavengeq       mixed   40   2:20:1 192000
+gpuv100001      1    scavengeq       mixed   24   2:12:1 192000
+gpuv100002      1    scavengeq       mixed   24   2:12:1 192000
+loginbk         1    scavengeq       mixed   22   2:11:1 192000
+```
+
+These compute nodes belong to different queues or partitions :
+
+```sql
+PARTITION    AVAIL  TIMELIMIT  NODES  STATE NODELIST
+stdmemq         up 2-00:00:00      13    mix compute[001-008],gpu[001-002],loginbk,gpuv[100001-100002]
+stdmemq-long    up 4-00:00:00      2    mix bigmem001,gpu002
+bigmemq         up 2-00:00:00      1    mix bigmem001
+gpuq            up 4-00:00:00      2    mix gpuv[100001-100002]
+debugq          up    2:00:00      5    mix gpu[001-002],gpuv[100001-100002],loginbk
+scavengeq       up 2-00:00:00      13    mix bigmem001,compute[001-008],gpu[001-002],loginbk
+```
+
 ## Queues/Partitions
 
 The compute nodes in the cluster are assigned to one or more queues or partitions. Users submit their jobs to one partition and the job runs on a compute node\(s\) that belongs in that partition.  You can look at the partitions and the status of the compute resources under each using the `sinfo` command.
