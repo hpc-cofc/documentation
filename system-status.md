@@ -9,7 +9,7 @@ description: 'News, updates, outages, maintenance periods'
 #### Updates 
 
 * Split view of compute and storage servers in Ganglia 
-* New 24-core compute node with 2TB local storage deployed
+* New 24-core compute node with 1 NVIDIA Quadro P4000 GPU and 2TB local storage deployed
 * [MarvinSuite](https://chemaxon.com/products/marvin) from [ChemAxon](https://chemaxon.com) available on the login node. Some features are not available in the free version, so you may need to get a license by [creating an account](https://accounts.chemaxon.com/register) at ChemAxon and [request a free personal academic license.](https://www.chemaxon.com/my-chemaxon/my-academic-license/)
 * Community version of Cambridge Crystallographic Data Centre's [Mercury](https://www.ccdc.cam.ac.uk/Community/csd-community/freemercury/) -- you would need your own license to access features only available in the commercial version such as CSD System, CSD Materials, CSD Discovery
 
