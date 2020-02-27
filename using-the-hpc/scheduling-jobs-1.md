@@ -251,7 +251,3 @@ Below is a list of the most common SLURM environmental variables including with 
 
 For a more complete list of SLURM environmental variables, please check [here](https://slurm.schedmd.com/sbatch.html#lbAJ).
 
-### Related Information
-
-* [MPI Example](scheduling-jobs/execute-a-job/)
-

@@ -149,7 +149,5 @@ Below is a list of the most common SLURM environmental variables including with 
 | $SLURM\_LOCALID | Index to core running on within node | 4 | $PBS\_O\_VNODENUM |
 | $SLURM\_PROCID | Index to task relative to job | 0 | $PBS\_O\_TASKNUM - 1 |
 
-### Related Information
 
-* [MPI Example](execute-a-job/)
 
