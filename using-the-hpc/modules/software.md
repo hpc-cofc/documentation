@@ -39,6 +39,7 @@ You can always get a list of all available modules by entering `module spider`. 
 | chem/gaussian | chem/gaussian/09-D.01, chem/gaussian/16-B.01 | Application for computational chemistry |
 | chem/jmol | chem/jmol | Application for molecular modeling |
 | chem/mopac | chem/mopac/2016 | Application for computational chemistry |
+| chem/mercury | chem/mercury/4.3.1 | CCSD's crystallographic analysis tools; community version |
 | chem/orca | chem/orca/4.1.2, chem/orca/4.2.0, chem/orca/4.2.1 | Application for computational chemistry |
 | chem/psi4conda | chem/psi4conda/1.3.1 | Application for computational chemistry and biochemistry |
 | chem/vmd | chem/vmd/1.9.3 | Application for visualizations of molecular structures, trajectories surfaces, crystals ... |
