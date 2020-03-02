@@ -17,5 +17,10 @@ Copies of published papers acknowledging HPC should be submitted for inclusion o
 
 ## List of Publications
 
-... coming soon
+Water Triggers Hydrogen Bond Network Reshaping in the Glycoaldehyde Dimer  
+C. Perez, A. Steber, B. Temelso, Z. Kisiel, and M. Schnell  
+**Angewandte Chemie** in press \(**2020**\)  
+\(doi: [10.1002/anie.201914888](http://doi.org/10.1002/anie.201914888)\)
+
+
 
