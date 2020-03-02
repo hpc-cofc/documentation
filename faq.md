@@ -2,7 +2,7 @@
 description: Frequently Asked Questions
 ---
 
-# F.A.Q.
+# F.A.Q. & Tips
 
 ## System Details
 
