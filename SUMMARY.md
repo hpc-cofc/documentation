@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [Policies](policies.md)
 * [Acknowledgement](acknowledge.md)
-* [F.A.Q. & Tips](faq.md)
+* [FAQs & Tips](faq.md)
 * [System News and Updates](system-status.md)
 
 ## Overview

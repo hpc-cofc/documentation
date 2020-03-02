@@ -1,12 +1,14 @@
 ---
-description: Frequently Asked Questions
+description: Frequently Asked Questions and Helpful Tips
 ---
 
-# F.A.Q. & Tips
+# FAQs & Tips
 
-## System Details
+## FAQs
 
-### What are the system's hardware specs?
+### System Details
+
+#### What are the system's hardware specs?
 
 > The new cluster is composed of
 >
@@ -20,37 +22,37 @@ description: Frequently Asked Questions
 >
 >   You can learn more about the hardware [here](overview/hardware.md)
 
-### What kind of software stack is running on the cluster?
+#### What kind of software stack is running on the cluster?
 
 > It runs an **OpenHPC** software stack composed of CentOS 7.6 with WareWulf for management and provisioning, and **SLURM** as the scheduler. It has all the necessary **general as well as subject-specific software libraries and compilers** to ensure that users' software compiles and runs optimally on the cluster. You can learn more about the software on the cluster [here]()
 
-## Accounts
+### Accounts
 
-### Who is eligible to use the HPC cluster?
+#### Who is eligible to use the HPC cluster?
 
 > All CofC faculty, staff and students are eligible to use the cluster for educational or research purposes. Students need the endorsement or sponsorship of their faculty advisor or mentor. All users have to agree to the terms outlined in the [policies page](policies.md) before getting an account on the cluster.
 
-### How does one go about getting an account to use the HPC cluster?
+#### How does one go about getting an account to use the HPC cluster?
 
 > * Faculty and staff can request accounts by filling out a form electronically or emailing their request to [hpc@cofc.edu](mailto:hpc@cofc.edu?subject=Requesting%20new%20faculty/staff%20account).
 > * Students are eligible for accounts upon endorsement or sponsorship by their faculty/staff mentor/advisor. Their faculty/staff mentor/advisor can send an email request to [hpc@cofc.edu](mailto:hpc@cofc.edu?subject=Requesting%20new%20student%20account) on their behalf to initiate the account creation process.
 > * Instructions about applying for accounts can be found [here](using-the-hpc/request-access.md)
 
-## Access
+### Access
 
-### How do I access the cluster?
+#### How do I access the cluster?
 
 > Most user will access the cluster via SSH. If you are on campus, the HPC cluster is accessible directly via SSH from the CofC campus wired and 'eduroam' wireless network.
 >
 > If you are off-campus, you would need to use CofC's VPN to access the HPC resource. If you have never used CofC's HPC resources before, you would need to submit a VPN access request even if you have used CofC's VPN to access other campus resources. Instructions on access can be found [here](using-the-hpc/access-hpc/)
 
-### If I am not comfortable with a command-line interface \(CLI\), how can I use the cluster?
+#### If I am not comfortable with a command-line interface \(CLI\), how can I use the cluster?
 
 > While a CLI is essential to making full use of the cluster, we do plan to provide other ways to use the cluster though a graphical user interface \(GUI\). For example, chemists can run calculations using [WebMO](https://hpc.cofc.edu/webmo). Users running Python or R will soon be able to use Jupyter Notebooks right from their web browsers.
 
-## Software
+### Software
 
-### What kind of applications are available on the cluster?
+#### What kind of applications are available on the cluster?
 
 > The parallel software available on the cluster depends on the compiler and message passing library \(MPI\) you choose. The default GNU8 compiler and OpenMPI3 library chain provides the following applications:
 
@@ -81,13 +83,13 @@ description: Frequently Asked Questions
    clustershell/1.8             ohpc             (L)
 ```
 
-### Can users request applications to be installed?
+#### Can users request applications to be installed?
 
 > Absolutely. We will add applications at users' request. Please submit a TeamDynamix [service request](https://cofc.teamdynamix.com/TDClient/Requests/ServiceDet?ID=35085) stating the application you need and any pertinent details and we will do our best to get the application available to you quickly.
 >
 > Please note that some applications are trivial to install and test while others can be cumbersome. So, we can not guarantee a quick turn-around, but we will try to give you a reasonable timeline.
 
-### Can users install their own applications?
+#### Can users install their own applications?
 
 > Yes, users are welcome to install their own applications in their `$HOME` directories and run them. If they do, here are some useful tips
 >
@@ -96,13 +98,47 @@ description: Frequently Asked Questions
 >   * You can enter `module load use.own` to create a directory called `privatemodules` in your `$HOME` directory
 >   * You can copy an example module file from `/opt/ohpc/pub/examples/example.modulefile` or `/opt/ohpc/pub/examples/examplempi-dependent.modulefile` and change it to match your application
 
-## Learning
+### Learning
 
-### What tools are available to learn about HPC?
+#### What tools are available to learn about HPC?
 
 > [HPC Carpentry](https://hpc-carpentry.github.io/) provides a robust introduction to high-performance computing. The [Software Carpentry](https://software-carpentry.org/lessons/) project it is following has excellent lessons on the Unix shell, Python, R and Matlab.
 
-### Will there be workshops to help users learn about HPC?
+#### Will there be workshops to help users learn about HPC?
 
 > Yes, we do plan to run workshops on campus. We also track online webinars and workshops in the area where users can expand their knowledge base.
+
+## Tips and Tricks
+
+#### What is the easiest way to learn about a command and how to use it?
+
+> Of course, you can look at the man pages by entering `man command`, but a more user-friendly option is to enter `tldr command` which gives examples of the most common used of that command. As with `man` pages, there isn't a [TL;DR](https://tldr.sh/) entry for every command. If you feel like contributing to the TL;DR project, you can do so through their [GitHub](https://github.com/tldr-pages/tldr) page.
+
+#### How can I SSH to the HPC without having to enter my password every time?
+
+> Using SSH keys instead of conventional passwords is more convenient to users and more robust from a security standpoint. It requires you to
+>
+> * Generate an private-public SSH key pair on your local computer and copy it to the HPC
+>   * `cd ~/.ssh/`
+>   * `ssh-keygen -t rsa -b 4096`
+>     * Accept the `~/.ssh/` as the default location to store the keys
+>     * Make sure you don't overwrite existing SSH keys if you use those for some purpose.
+>     * Enter a passphrase for an extra later of security, but leave it empty otherwise
+>     * If everything is successful, you should have a public-private key pair \(eg. `id_rsa` and `id_rsa.pub` in \`~/.ssh\`\)
+>     * Execute `ls ~/.ssh/id_*` to check that the keys exist
+>   * Copy the public key to the remote computer \(the HPC in this case\)
+>     * `ssh-copy-id $HPC_USERNAME@hpc.cofc.edu`
+>     * You will be prompted to enter your HPC password
+>     * Once the password is accepted, your public SSH key will be added to the file `~/.ssh/authorized_keys` file on the HPC
+> * Test if it works
+>   * On your local computer, try SSHing to the HPC
+>     * `ssh` -Y `$HPC_USERNAME@hpc.cofc.edu`
+>     * If  your SSH key has a non-standard name \(id\_rsa\), you may need to explicitly tell SSH to use a particular private SSH key
+>       * `ssh -Y -i ~/.ssh/id_rsa-mytest $HPC_USERNAME@hpc.cofc.edu`
+>       * Alternatively, you can open/create your SSH config file \(`~/.ssh`/`config`\) and add a section on handling your SSH communication with the HPC
+>         * ```text
+>           Host hpc.cofc.edu
+>              User <Your HPC USERNAME HERE>
+>              IdentityFile ~/.ssh/id_rsa-mytest
+>           ```
 
