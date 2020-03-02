@@ -133,7 +133,7 @@ description: Frequently Asked Questions and Helpful Tips
 > * Test if it works
 >   * On your local computer, try SSHing to the HPC
 >     * `ssh` -Y `$HPC_USERNAME@hpc.cofc.edu`
->     * If  your SSH key has a non-standard name \(id\_rsa\), you may need to explicitly tell SSH to use a particular private SSH key
+>     * If  your SSH key has a non-standard name \(i.e. different from `id_rsa`\) or location \(i.e. different from \` ~/.ssh \`\), you may need to explicitly tell SSH to use a particular private SSH key
 >       * `ssh -Y -i ~/.ssh/id_rsa-mytest $HPC_USERNAME@hpc.cofc.edu`
 >       * Alternatively, you can open/create your SSH config file \(`~/.ssh`/`config`\) and add a section on handling your SSH communication with the HPC
 >         * ```text
