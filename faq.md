@@ -110,9 +110,7 @@ description: Frequently Asked Questions and Helpful Tips
 
 ## Tips and Tricks
 
-#### What is the easiest way to learn about a command and how to use it?
-
-> Of course, you can look at the man pages by entering `man command`, but a more user-friendly option is to enter `tldr command` which gives examples of the most common used of that command. As with `man` pages, there isn't a [TL;DR](https://tldr.sh/) entry for every command. If you feel like contributing to the TL;DR project, you can do so through their [GitHub](https://github.com/tldr-pages/tldr) page.
+### Access
 
 #### How can I SSH to the HPC without having to enter my password every time?
 
@@ -141,4 +139,87 @@ description: Frequently Asked Questions and Helpful Tips
 >              User <Your HPC USERNAME HERE>
 >              IdentityFile ~/.ssh/id_rsa-mytest
 >           ```
+
+#### What's the best way to make data on the HPC available on my local computer?
+
+While we do not encourage this, it is possible to mount filesystems on the HPC on your local computer using SSHFS. You would need to have an SSHFS client installed on your local computer. 
+
+* Mac OS X users can install [FUSE](https://osxfuse.github.io/). 
+* Windows users can install  `win-sshfs`  
+* Linux users can install `sshfs` using their respective package managers
+
+Once you have an SSHFS client installed, you can 
+
+* open a terminal on your local computer
+* create a directory, for example /tmp/hpc
+  * \`mkdir /tmp/hpc\`
+* mount the filesystem of interest using SSHFS. For example
+  * `sshfs <USERNAME>@hpc.cofc.edu:/home/<USERNAME> /tmp/hpc` 
+
+When you are finished, please make sure you unmount the remote filesystem. Otherwise, you will have stale NFS filesystem and you will run into trouble the next time you try to mount the same filesystem. This is the most common problem SSHFS users encounter.
+
+### Learning
+
+#### What is the easiest way to learn about a command and how to use it?
+
+> Of course, you can look at the man pages by entering `man command`, but a more user-friendly option is to enter `tldr command` which gives examples of the most common used of that command. As with `man` pages, there isn't a [TL;DR](https://tldr.sh/) entry for every command. If you feel like contributing to the TL;DR project, you can do so through their [GitHub](https://github.com/tldr-pages/tldr) page.
+>
+> For example, TLDR page for `rsync` looks like this:
+>
+> ```bash
+> user@host[~]  tldr rsync
+> # rsync
+>
+>   Transfer files either to or from a remote host (not between two remote hosts).
+>   Can transfer single files, or multiple files matching a pattern.
+>
+> - Transfer file from local to remote host:
+>
+>   rsync path/to/local_file remote_host:path/to/remote_directory
+>
+> - Transfer file from remote host to local:
+>
+>   rsync remote_host:path/to/remote_file path/to/local_directory
+>
+> - Transfer file in [a]rchive (to preserve attributes) and compressed ([z]ipped) mode with [v]erbose and [h]uman-readable [p]rogress:
+>
+>   rsync -azvhP path/to/local_file remote_host:path/to/remote_directory
+>
+> - Transfer a directory and all its children from a remote to local:
+>
+>   rsync -r remote_host:path/to/remote_directory path/to/local_directory
+>
+> - Transfer directory contents (but not the directory itself) from a remote to local:
+>
+>   rsync -r remote_host:path/to/remote_directory/ path/to/local_directory
+>
+> - Transfer a directory [r]ecursively, in [a]rchive to preserve attributes, resolving contained soft[l]inks , and ignoring already transferred files [u]nless newer:
+>
+>   rsync -rauL remote_host:path/to/remote_file path/to/local_directory
+>
+> - Transfer file over SSH and delete local files that do not exist on remote host:
+>
+>   rsync -e ssh --delete remote_host:path/to/remote_file path/to/local_file
+>
+> - Transfer file over SSH and show global progress:
+>
+>   rsync -e ssh --info=progress2 remote_host:path/to/remote_file path/to/local_file
+> ```
+
+
+
+## Most Common Problems
+
+### Access
+
+#### You can't access the HPC or your connection times out
+
+This is most likely because you are not on the CofC campus network, or using VPN if you are off campus. Please check to make sure 
+
+* if [on campus](using-the-hpc/access-hpc/#on-campus-access), you are connected to the campus wired or wireless \(Eduroam\) network
+* if [off campus](using-the-hpc/access-hpc/#off-campus-access), you are using the CofC VPN. Please request VPN access to the HPC if you intend to access HPC from off-campus networks. 
+
+
+
+
 
