@@ -158,6 +158,35 @@ Once you have an SSHFS client installed, you can
 
 When you are finished, please make sure you unmount the remote filesystem. Otherwise, you will have stale NFS filesystem and you will run into trouble the next time you try to mount the same filesystem. This is the most common problem SSHFS users encounter.
 
+### Operations
+
+#### It takes too long to get information about file/directory sizes and my storage usage. How can I get that information more quickly?
+
+Most people use ``ls -lth``` or the disk usage \(`du`\) commands to get information about file and directory sizes. To get a more complete picture your disk usage, the _ncurses_ based `ncdu` command is quicker and more informative.
+
+```bash
+$user@hpc:~/misc/molden|  ls -ltn
+
+total 25228
+drwxr-x--- 2 5000 5001       10 Mar  8 11:29 apps
+-rwxr-xr-x 1 5000 5001  4279704 Mar  8 11:26 gmolden5.8.gfortran.64
+-rw-r----- 1 5000 5001 21545670 Mar  8 11:24 molden6.2.full.ubuntu.64.tar.gz
+drwxr-x--- 4 5000 5001     4096 Jul 25  2019 molden
+
+$user@hpc:~/misc/molden|  du -sh *
+0	apps
+4.1M	gmolden5.8.gfortran.64
+154M	molden
+21M	molden6.2.full.ubuntu.64.tar.gz
+
+$user@hpc:~/misc/molden|  ncdu
+--- /home/user/misc/molden -------------------------
+  153.0 MiB [##########] /molden
+   20.6 MiB [#         ]  molden6.2.full.ubuntu.64.tar.gz
+    4.1 MiB [          ]  gmolden5.8.gfortran.64
+e   0.0   B [          ] /apps
+```
+
 ### Learning
 
 #### What is the easiest way to learn about a command and how to use it?
@@ -167,7 +196,7 @@ When you are finished, please make sure you unmount the remote filesystem. Other
 > For example, TLDR page for `rsync` looks like this:
 >
 > ```bash
-> user@host[~]  tldr rsync
+> $user@host:~|  tldr rsync
 > # rsync
 >
 >   Transfer files either to or from a remote host (not between two remote hosts).
