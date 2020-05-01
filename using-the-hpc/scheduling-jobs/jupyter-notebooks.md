@@ -16,9 +16,9 @@ Below, we will describe how to run Anaconda's version of Python on the CofC clus
 Below are the steps involved in being able to run a Python notebook on our HPC using Anaconda Jupyter Notebooks 
 
 1. **First time set up**
-   1. Load the Anaconda environment. We have `anaconda2` and `anaconda3` 
-   2. Create the kernel/environment you need. For example, you can install `python2` or `python3`, or `haskell` or `julia` ... environments depending on what codes you intend to use
-   3. Since your anaconda environment is contained locally in your account \(`~/.conda`\) , you can install, uninstall these environments and any packages within them as necessary. You do not need a system administrator's permission or input to manage these environments.
+   1. Load the Anaconda environment. We have different `anaconda2` and `anaconda3` versions. It is best to use the latest one as long as there are no compatibility issues with the packages/libraries you intend to install and run.
+      1. Create the kernel/environment you need. For example, you can install `Python2` or `Python3`, or `Haskell` or `Julia` or `R` ...etc environments depending on what codes you intend to use
+   2. Since your anaconda environment is contained locally in your account \(`~/.conda`\) , you can install or uninstall these environments and any packages within them as necessary. You do not need a system administrator's permission or input to manage these environments.
 2. **Running applications**
    1. Once you have the anaconda environment you need, you can
       1. load the `anaconda2`/`anaconda3` module, 
@@ -43,20 +43,27 @@ The first time you use Anaconda and its distribution of Python/R, you need to pe
 user@hpc[~]:    module spider anaconda
 
 ---------------------------------------------------------------------
-  anaconda2: anaconda2/2019.03
+    anaconda/3:
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+     Versions:
+        anaconda/3/2019.03
+        anaconda/3/2019.10
+        anaconda/3/2020.02
 ----------------------------------------------------------------------
 
     This module can be loaded directly: module load anaconda2/2019.03
 
 ----------------------------------------------------------------------
-  anaconda3: anaconda3/2019.03
-----------------------------------------------------------------------
+    anaconda/2: anaconda/2/2019.03
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    This module can be loaded directly: module load anaconda/2/2019.03
 ```
 
-If you plan to run Python3 notebooks, load up the `anaconda3` module.
+If you plan to run Python3 notebooks, load up the `anaconda/3` module.
 
 ```sql
-user@hpc[~]:    module load anaconda3/2019.03
+user@hpc[~]:    module load anaconda/3/2020.02
 ```
 
 ### Python/R versions
@@ -67,14 +74,14 @@ Initially, only the base version of Anaconda is installed in a central/shared lo
 user@hpc[~]:     conda env list
 # conda environments:
 #
-base                  *  /opt/ohpc/pub/apps/anaconda/anaconda3-2019.03
+base                  *  /opt/ohpc/pub/apps/anaconda/3/2020.02
 ```
 
 Depending on your needs, you would need to install specific versions of Python and R. Anaconda uses the `conda` tool to install packages and manage your software environment. In this particular case, we'll install a Python 3.7 environment.
 
 ```sql
-user@hpc[~]:    module load anaconda3/2019.03
-user@hpc[~]:    conda create -n jupyter_3.7 python=3.7 jupyter
+user@hpc[~]:    module load anaconda/3/2020.02
+user@hpc[~]:    conda create -n myJupyter_3.7 python=3.7 jupyter
 ```
 
 You will see that Python 3.7 has successfully installed by checking the list of available environments.
@@ -83,14 +90,14 @@ You will see that Python 3.7 has successfully installed by checking the list of 
 user@hpc[~]:    conda env list
 # conda environments:
 #
-jupyter_3.7              /home/testuser/.conda/envs/jupyter_3.7
-base                  *  /opt/ohpc/pub/apps/anaconda/anaconda3-2019.03
+jupyter_3.7              /home/user/.conda/envs/myJupyter_3.7
+base                  *  /opt/ohpc/pub/apps/anaconda/3/2020.02
 ```
 
 To activate this environment, you can use the following command:
 
 ```sql
-user@hpc[~]:    source activate jupyter_3.7
+user@hpc[~]:    source activate myJupyter_3.7
 ```
 
 ## **Running your notebook**
@@ -159,20 +166,16 @@ Enter selection [0-2]:
    loading anaconda3 module
 
 Currently Loaded Modules:
-  1) autotools   2) prun/1.2   3) gnu8/8.3.0   4) openmpi3/3.1.3   5) ohpc   6) use.own   7) anaconda3/2019.03
+  1) autotools   2) prun/1.2   3) gnu8/8.3.0   4) openmpi3/3.1.3   5) ohpc   6) use.own   7) anaconda/3/2020.02
 
 You have these environments to pick from
 
-jupyter_2.7              /home/user/.conda/envs/jupyter_2.7
-jupyter_3.7              /home/user/.conda/envs/jupyter_3.7
-qiime2-2019.7            /home/user/.conda/envs/qiime2-2019.7
-r_env                    /home/user/.conda/envs/r_env
-tangram                  /home/user/.conda/envs/tangram
-base                  *  /opt/ohpc/pub/apps/anaconda/anaconda3-2019.03
+myJupyter_3.7              /home/user/.conda/envs/myJupyter_3.7
+base                  *  /opt/ohpc/pub/apps/anaconda/3/2020.02
 
 Which environment would you like to use?
 
-jupyter_3.7
+myJupyter_3.7
 
 On your local computer (laptop/desktop), set up SSH port forwarding using the 
 following command.
@@ -192,7 +195,7 @@ ssh -NL 19620:hpc.cofc.edu:19620 user@hpc.cofc.edu
 A Jupyter notebook will start up shortly. You will be given instructions such as this
 
     To access the notebook, open this file in a browser:
-        file:///home/USER/.local/share/jupyter/runtime/nbserver-9192-open.html
+        file:///home/user/.local/share/jupyter/runtime/nbserver-9192-open.html
     Or copy and paste one of these URLs:
         http://...
      or http://...
@@ -262,8 +265,8 @@ _**Set up the calculation**_
 
 1. Load up and activate the environment on the server/node
    * ```sql
-     user@hpc[~]:  module load anaconda3/2019.03
-     user@hpc[~]:  conda activate jupyter_3.7
+     user@hpc[~]:  module load anaconda/3/2020.02
+     user@hpc[~]:  conda activate myJupyter_3.7
      ```
 2. Set up forwarding of the notebook data over an unused port \(say `10002`\)
    * ```sql
@@ -323,8 +326,8 @@ You need to run your production calculations on compute nodes by first starting 
      ```
 2. Load up and activate the environment on the server/node
    * ```sql
-     user@hpc[~]:  module load anaconda3/2019.03
-     user@hpc[~]:  conda activate jupyter_3.7
+     user@hpc[~]:  module load anaconda/3/2020.02
+     user@hpc[~]:  conda activate myJupyter_3.7
      ```
 3. Set up forwarding of the notebook data over an unused port \(say `10002`\)
    * ```sql
