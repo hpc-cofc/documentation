@@ -30,6 +30,7 @@
     * [Fortran](using-the-hpc/scheduling-jobs/execute-a-job/fortran.md)
     * [Python](using-the-hpc/scheduling-jobs/execute-a-job/python.md)
     * [Makefiles](using-the-hpc/scheduling-jobs/execute-a-job/makefile.md)
+  * [JupyterHub](using-the-hpc/scheduling-jobs/jupyterhub.md)
   * [Jupyter Notebooks](using-the-hpc/scheduling-jobs/jupyter-notebooks.md)
   * [WebMO](using-the-hpc/scheduling-jobs/webmo.md)
   * [Examples @GitHub](using-the-hpc/scheduling-jobs/examples-github/README.md)
