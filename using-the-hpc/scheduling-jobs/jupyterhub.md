@@ -6,7 +6,7 @@ description: >-
 
 # JupyterHub
 
-## Project Jupyter
+## Project Jupyter Overview
 
 [Project Jupyter](https://jupyter.org/) provides tools for users to do interactive computing using different programming languages on a unified web interface. It has many components intended for single-user or multi-user environments running on personal computers or shared resources like our HPC cluster. Depending on one's needs, it is possible to deploy these different components.
 
@@ -20,7 +20,15 @@ description: >-
 
 ### JupyterHub+JupyterLab for a complete interactive web interface
 
-[JupyterLab](https://jupyterlab.readthedocs.io/) adds powerful plugins like the terminals, file upload/download options, built-in Markdown editor, ability to start and stop multiple kernels, and other capabilities to any JupyterHub installation. All these capabilities enable users to do all their interactive computation from the JupyterLab+JupyterHub interface.
+[JupyterLab](https://jupyterlab.readthedocs.io/) adds powerful plugins like the terminals, file browsers, built-in Markdown editor, ability to start and stop multiple kernels, and many other extensions to any JupyterHub installation. All these capabilities enable users to do all their interactive computation from the JupyterLab+JupyterHub interface.
+
+See the video below to review some of these capabilities:
+
+{% embed url="https://youtu.be/A5YyoCKxEOU" %}
+
+
+
+
 
 ## Typical workflow
 
@@ -56,11 +64,15 @@ A typical workflow for our JupyterHub installation would look like this:
 
 Once you log into our JupyterHub installation, you will see a **Server Options** page requesting the resources you need. Please note that there may be 5-10 second delay as the server confirms your credentials and starts up your environment. From the **Select a job profile** dropdown menu, please select the appropriate resource based on your needs. 
 
+![Requesting Resources](../../.gitbook/assets/jl-requestresource%20%281%29.png)
+
 * **Login-local \(access to login node; no heavy computations allowed\)**
   * If you simply want to look at data, transfer files or some non-intensive analysis, this is the best option for you. It allows you to perform these simple tasks on the login node.You should however not run anything computationally intensive because you are on a shared server with many other user. If you intend to run demanding computations, please request one of the other job profiles.
 
 {% hint style="warning" %}
-Do not run anything computationally intensive on the login node.
+* Do not run anything computationally intensive on the login node.
+* If you are not doing anything computationally intensive, do not waste resources by requesting compute modes.
+* In short, request the right resource for your needs every time. 
 {% endhint %}
 
 * **Compute-8 cores, 32GB for 2 hrs** - 
@@ -100,12 +112,14 @@ Available kernels:
 
 We currently provide systemwide kernels  to run
 
-* `Python3.7` - including most commonly used libraries such as `numpy`,  `scipy`, `matplotlib`, `plotly`, `pandas`, `tensorflow`, `seaborn`, `imblearn`.
+* `Python3.7` - including most commonly used libraries such as `numpy`,  `scipy`, `matplotlib`, `plotly`, `pandas`, `tensorflow`, `seaborn`, `imblearn, numba, dask`.
 * `Tensorflow2.0` - including the most commonly used libraries listed above and with support for GPUs 
 * `iR` - kernel to run R/3.5.2
 * `iJulia` - to run Julia programing  
+* `Psi4`- to run Psi4 notebooks for computational chemistry
 * `Matlab` - to run matlab/r2019b - **not added yet**
 * `Mathematica`  - to run mathematica/12 - **not added yet**
+* \*\*\*\*
 
 These system-wide kernels are installed at `/opt/ohpc/pub/apps/anaconda/3/2020.02/envs` where users do not have permission to modify them. Therefore, in cases where these kernels are insufficient, users would need to
 
@@ -295,9 +309,9 @@ $(myPython27)user@hpc[~] python -m ipykernel install --user --name "myPython27" 
 Installed kernelspec myPython27 in /home/user/.local/share/jupyter/kernels/mypython27
 ```
 
-####  Check to make sure the kernel is installed and visible
+####  Verify that the kernel is installed and visible
 
-You should deactivate the current environment, activate the jupyter-hub environment and check to see iif the kernel is installed and visible
+You should deactivate the current environment, activate the `jupyter-hub`  environment and check to see iif the kernel is installed and visible
 
 ```bash
 $(myPython27)user@hpc[~] conda deactivate
@@ -312,7 +326,7 @@ jupyter-hub              /opt/ohpc/pub/apps/anaconda/3/2020.02/envs/jupyter-hub
 psi4                     /opt/ohpc/pub/apps/anaconda/3/2020.02/envs/psi4
 tensorflow               /opt/ohpc/pub/apps/anaconda/3/2020.02/envs/tensorflow
 
-$(myPython27)user@hpc[~] conda activate jupyter-hub
+$(myPython27)user@hpc[~] source activate jupyter-hub
 $(jupyter-hub)user@hpc[~]  conda env list
 # conda environments:
 #
@@ -340,19 +354,82 @@ You can further confirm the kernel's availability on the JupyterHub's web interf
 
 ![New Python 2.7 kernel installed in a user&apos;s space](../../.gitbook/assets/newkernelinstalled.png)
 
-## Exiting Cleanly
+## Working with the JupyterLab Interface
+
+As you can see above JupyterLab adds a lot of capabilities to our JupyterHub installation by providing terminals, text editors, data viewers,  file upload/download, and a myriad of other extensions. In short, it removes a lot of the barriers non-expert users face when working in a terminal-based environment like our HPC. 
+
+The 6 minute video below covers the features of the basic features.
+
+{% embed url="https://youtu.be/ctOM-Gza04Y?t=166" caption="Demo of JupyterLab\'s capabilities" %}
+
+### The Interface
+
+The JupyterLab interface is fairly intuitive and you can learn more about it [here](https://codingclubuc3m.rbind.io/post/2019-05-08/) among other places. We will highlight the most important parts below.
+
+![https://codingclubuc3m.rbind.io/post/2019-05-08\_files/2.png](../../.gitbook/assets/jl-menubar.png)
+
+* **Menu bar -** contains `File`, `Edit`, `View`, `Kernel`, `Tabs`, `Settings` and `Help` with dropdown options under each.
+* **Left Sidebar** 
+  * allows file browsing, 
+  * checking running kernels, 
+  * shows other JupyterLab extensions
+* **Main Work Area**
+  * displays notebooks, terminals, images, data files, ... etc
+  * allows tiling of windows in any kind of configuration
+
+The options in the left sidebar are labeled in the figure below.
+
+![](../../.gitbook/assets/jl-labeled.png)
+
+### **JupyterLab extensions**
+
+We provide a set of standard extension as well as a few others that are deemed useful to our user base. While individual users do not have permission to install extensions themselves, they can send requests to hpc@cofc.edu. 
+
+## Exiting cleanly
+
+Since the HPC is a shared resource, every user has a responsibility to make sure that it is being used in a manner that benefits everyone optimally. One way of ensuring that is
+
+* requesting the right  amount of resource \( CPUs, memory, GPUs\) for the appropriate amount of time \( 2hrs, 4hrs, ... \)
+* Properly shutting down running kernels and single-user JupyterHub server when you are finished
+
+Information about requesting the right resource for the right task is described in the "[Requesting Resources](jupyterhub.md#requesting-resources)" section above.
+
+### Shut down running kernels
+
+It is not unusual for you to have many terminals, notebooks, files ... etc running on JupyterHub. When you finish, please click on 'Running Terminals and Kernels' button on the left sidebar and shut down the running kernel sessions. 
+
+![](../../.gitbook/assets/jl-shutdownallrunningkernels.png)
+
+### Shut down single-user server
+
+Go to the 'File' menu and select 'Hub Control Panel' to see the single-user jupyterhub servers running under your account. Then, stop the server and log out.
+
+![](../../.gitbook/assets/jl_hub_control_panel.png)
+
+![](../../.gitbook/assets/jl-stopserverandlogout.png)
 
 ## F.A.Q.
+
+### How come I can't connect to the JupyterHub interface?
+
+If your attempt to connect to our JupyterHub installation is timing out, it is likely because you are being blocked by our campus firewall. 
+
+* If you are on campus, make sure you are connected to the wired or 'eduroam' wireless networks. You will need use a VPN if you are using the campus guest wireless network.
+* If you are off campus, make sure you are using the CofC VPN.
 
 ### How can one turn any Python script into a notebook?
 
 Yes. There are many tools to convert regular Python scripts \(`*.py` \) to iPython notebooks \(`*.ipynb`\). These include
 
-* `p2j` - install using `pip install p2j` or \`conda install p2j\`
+* `p2j` - install using `pip install p2j` or `conda install p2j` 
 * `py2nb` 
 * ...
 
 Alternatively, you can just open a blank Jupyter Notebook and copy/paste your Python script into the cell and save it as iPython notebook.
+
+### Can I run Python2 scripts/notebooks?
+
+Yes, you can still use the 'Python2.7-shared' kernel to run Python2 scripts/notebooks. However, everyone is strongly encouraged to migrate to Python3 given the end of official support for Python2 in January 2020. You can convert Python2 script to Python3 using [2to3  - the automated Python 2 to 4 code translator.](https://docs.python.org/2/library/2to3.html)
 
 ### What other kernels are available for Jupyter?
 
@@ -360,11 +437,17 @@ Alternatively, you can just open a blank Jupyter Notebook and copy/paste your Py
 
 You can find a more complete list at [https://github.com/jupyter/jupyter/wiki/Jupyter-kernels](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels)
 
-If there is a particular kernel you or your students want to share, please make that request to `hpc@cofc.edu`and we'll make it available.
+If there is a particular kernel you or your students want to share, please send that request to `hpc@cofc.edu`and we'll make it available.
 
-### Are Google Colaboratory Notebooks capable of running on our JupyterHub installation?
+### If the time or resources I request is not enough, can I request an extension or more resources?
 
-Yes, Google Colab runs Jupyter Notebooks on Google Cloud Platform. So. their notebooks should be compatible with our JupyterHub installation.
+Yes. The time limit \(2-4 hours\) in the current profiles is intended to prevent users from hogging compute nodes for unnecessarily long time. If you have a calculation that requires more time, please email hpc@cofc.edu and request for the time limit to be extended. If your calculations generally require more than 4 hours, please email hpc@cofc.edu and we will create a new profile with a longer time limit for you.  
+
+If the number of CPUs or RAM in the current profiles do not match your needs well, we can create new ones.
+
+### Can the JupyerHub installation be used for instruction in a classroom environment?
+
+Yes. Faculty can request classroom accounts they can use on a recurring basis. Please note that off-campus access to the HPC as a whole and the JupyterHub installation in particular requires students to be added to the HPC VPN group. Please make those requests far in advance because they take time.
 
 ### Are there sample example notebooks one can play around with?
 
@@ -380,11 +463,7 @@ Please note that some of the Notebooks are old \(dating back to 2016\) and they 
 Please be cautious about randomly downloading and running a notebook from the web. You could compromise your account and the security of the cluster as a whole. Also, \*do not\* run these notebooks on the login node as their resource requirements could be substantial.
 {% endhint %}
 
-### Can the JupyerHub installation be used for instruction in a classroom environment?
+### Are Google Colaboratory Notebooks capable of running on our JupyterHub installation?
 
-Yes. Faculty can request classroom accounts they can use on a recurring basis. Please note that off-campus access to the HPC as a whole and the JupyterHub installation in particular requires students to be added to the HPC VPN group. Please make those requests far in advance because they take time.
-
-### Can I run Python2 scripts/notebooks?
-
-Yes, you can still use the 'Python2.7-shared' kernel to run Python2 scripts/notebooks. However, everyone is strongly encouraged to migrate to Python3 given the end of official support for Python2 in January 2020. You can convert Python2 script to Python3 using [2to3  - the automated Python 2 to 4 code translator.](https://docs.python.org/2/library/2to3.html)
+Yes, Google Colab runs Jupyter Notebooks on Google Cloud Platform. So. their notebooks should be compatible with our JupyterHub installation.
 
