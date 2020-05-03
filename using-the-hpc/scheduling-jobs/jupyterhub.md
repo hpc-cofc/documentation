@@ -8,11 +8,11 @@ description: >-
 
 ## Project Jupyter Overview
 
-[Project Jupyter](https://jupyter.org/) provides tools for users to do interactive computing using different programming languages on a unified web interface. It has many components intended for single-user or multi-user environments running on personal computers or shared resources like our HPC cluster. Depending on one's needs, it is possible to deploy these different components.
+[Project Jupyter](https://jupyter.org/) provides tools for users to do interactive computing using different programming languages on a unified web interface. It has many components intended for single-user or multi-user environments running on personal computers or shared resources like our HPC cluster. Depending on one's needs, it is possible to deploy one or more of these components together.
 
 ### Single-user Jupyter Notebooks
 
-[Jupyter Notebooks](https://jupyter-notebook.readthedocs.io/) are single-user web-based interactive notebooks. They allow users to create and share documents that contain live code, equations, visualizations and narrative text. Using Anaconda, anyone can install and run Jupyter Notebooks on their local computer. However, to be able to run Jupyter Notebooks on a remote shared resource like our HPC, one would need to use the log into the HPC cluster, use the commandline to reserve computing resources and set up some cumbersome SSH tunneling as described [here](jupyter-notebooks.md). A more convenient way of that removes to run Jupyter Notebooks on a shared resource is using JupyterHub.
+[Jupyter Notebooks](https://jupyter-notebook.readthedocs.io/) are single-user web-based interactive notebooks. They allow users to create and share documents that contain live code, equations, visualizations and narrative text. Using Anaconda, anyone can install and run Jupyter Notebooks on their local computer. However, to be able to run Jupyter Notebooks on a remote shared resource like our HPC, one would need to log into the HPC cluster, use the commandline to reserve computing resources and set up some cumbersome SSH tunneling as described [here](jupyter-notebooks.md). A more convenient way to run Jupyter Notebooks on a shared resource is using JupyterHub.
 
 ### Multi-user environments using JupyterHub
 
@@ -30,48 +30,48 @@ See the video below to review some of these capabilities:
 
 
 
-## Typical workflow
+## Typical Workflow
 
-A typical workflow for our JupyterHub installation would look like this: 
+A typical workflow for  a user on our JupyterHub installation would look like this: 
 
-1. Use a browser to connect to our JupyterHub installation \(https://hpc.cofc.edu/jupyterhub\)
+1. Use a browser to connect to our JupyterHub installation \([https://hpc.cofc.edu/jupyterhub](https://hpc.cofc.edu/jupyterhub)\)
 2. Log in with your CofC HPC credentials
 3. Request a resource
    * Local login node for tasks that are not computationally intensive
      * your notebook server will be shut down after a period of inactivity
    * Compute node for computationally intensive tasks
-     * you notebook server will be shut down when your allocated time runs or when you explicitly stop your notebook server
+     * your notebook server will be shut down when your allocated time runs out or when you explicitly stop your notebook server
 4. Open your notebook using the appropriate kernel
    * Shared kernels - these kernels have most of the libraries you would need, but you can't install new packages into the kernels if anything is missing
-   * User kernels - these are kernels you install in your user space \( `$HOME/.conda/env`\)
+   * User kernels - these are kernels you install in your user space \( `$HOME/.conda/env`\) and have full control over
 5. Run your notebook or perform any other tasks
 6. Shut down all kernels and the notebook server when you finish
 
-## Accessing our JupyterHub installation
+## Accessing our JupyterHub Installation
 
  Our JupyterHub installation can be found at [https://hpc.cofc.edu/jupyterhub](https://hpc.cofc.edu/jupyterhub). To access it, 
 
 * users need to have a CofC HPC account
 * users need to  
-  * be on our campus 'wired' or 'eduroam' wireless network or 
-  * use our CofC VPN if they off-campus
+  * be on our campus 'wired' or 'eduroam' wireless networks or 
+  * use our CofC VPN if they are off-campus
 
 {% hint style="info" %}
- Please not that you will need to be added to the CofC HPC VPN group to access the HPC and services it hosts like JupyterHub.
+ Please note that users will need to be added to the CofC HPC VPN group to access the HPC and services it hosts like JupyterHub.
 {% endhint %}
 
-## Requesting resources
+## Requesting Resources
 
-Once you log into our JupyterHub installation, you will see a **Server Options** page requesting the resources you need. Please note that there may be 5-10 second delay as the server confirms your credentials and starts up your environment. From the **Select a job profile** dropdown menu, please select the appropriate resource based on your needs. 
+Once you log into our JupyterHub installation, you will see a **Server Options** page asking for the resources you need. Please note that there may be 5-10 second delay as the server confirms your credentials and starts up your environment. From the **Select a job profile** dropdown menu, please select the appropriate resource based on your needs. 
 
 ![Requesting Resources](../../.gitbook/assets/jl-requestresource%20%281%29.png)
 
 * **Login-local \(access to login node; no heavy computations allowed\)**
-  * If you simply want to look at data, transfer files or some non-intensive analysis, this is the best option for you. It allows you to perform these simple tasks on the login node.You should however not run anything computationally intensive because you are on a shared server with many other user. If you intend to run demanding computations, please request one of the other job profiles.
+  * If you simply want to look at data, transfer files or some non-intensive analysis, this is the best option for you. It allows you to perform these simple tasks on the login node.You should, however, not run anything computationally intensive because you are on a shared server with many other users. If you intend to run demanding computations, please request one of the other job profiles.
 
 {% hint style="warning" %}
 * Do not run anything computationally intensive on the login node.
-* If you are not doing anything computationally intensive, do not waste resources by requesting compute modes.
+* By the same token, if you are not doing anything computationally intensive, do not waste resources by requesting compute modes.
 * In short, request the right resource for your needs every time. 
 {% endhint %}
 
@@ -82,19 +82,40 @@ Once you log into our JupyterHub installation, you will see a **Server Options**
 * **Compute-8 cores, 32GB for 4 hrs** -
 * **Compute-16 cores, 64GB for 2 hrs** -
 * **Compute-16 cores, 64GB for 4 hrs** -
-* **Compute-1 GPU, 24 cores, 192GB for 2 hrs** -
+* ...
+* **Compute-1 GPU, 24 cores, 180GB for 2 hrs** -
   * This one further requests one of our Nvidia Tesla V100 GPUs. We'll add the capability to request our NVIDIA Quadro P4000 GPU is there is interest. 
-* **Compute-1 GPU, 24 cores, 192GB for 4 hrs** -
+* **Compute-1 GPU, 24 cores, 180GB for 4 hrs** -
 
-Once the requested resource is available, you will have a Jupyter notebook server running on that resource.
+{% hint style="info" %}
+If the time \(time limit\) or resources \(\#CPUs, memory, GPUs\) from the above profiles are not enough for your computing needs,  please email `hpc@cofc.edu` for help and we'll accommodate  your request. 
+{% endhint %}
+
+Once the requested resource is available, you will have a single-user Jupyter notebook server running on that resource.
 
 ## Kernels
 
 What makes Project Jupyter powerful is that it allows users to run notebooks written in many programming languages even though Python\(iPython\) is the original language of choice. We provide a set system-wide kernels all users can access, but not modify. Users can add their own kernels and make it visible to the Jupyter environment.
 
-If you open a terminal on the designated resource and enter `jupyter kernelspec list`, you will see the system-wide and user kernels available to you.
+If you open a terminal on the designated resource, load the `anaconda/3` module, activate the  `jupyter-hub` environment, and enter `jupyter kernelspec list`, you will see the system-wide and user kernels available to you.
 
 ```bash
+$user@hpc[~] module load anaconda/3
+Currently Loaded Modules:
+  1) autotools   2) prun/1.2   3) gnu8/8.3.0   4) openmpi3/3.1.3   
+  5) ohpc   6) use.own   7) anaconda/3/2020.02
+  
+$user@hpc[~] source activate jupyter-hub
+
+$user@hpc[~] conda env list
+# conda environments:
+#
+base                     /opt/ohpc/pub/apps/anaconda/3/2020.02
+arcgis                   /opt/ohpc/pub/apps/anaconda/3/2020.02/envs/arcgis
+jupyter-hub  >> * <<    /opt/ohpc/pub/apps/anaconda/3/2020.02/envs/jupyter-hub
+psi4                     /opt/ohpc/pub/apps/anaconda/3/2020.02/envs/psi4
+tensorflow               /opt/ohpc/pub/apps/anaconda/3/2020.02/envs/tensorflow
+  
 $user@hpc[~]  jupyter kernelspec list
 Available kernels:
  >>system-wide kernels stored at /opt/ohpc/pub<< 
@@ -115,7 +136,7 @@ We currently provide systemwide kernels  to run
 * `Python3.7` - including most commonly used libraries such as `numpy`,  `scipy`, `matplotlib`, `plotly`, `pandas`, `tensorflow`, `seaborn`, `imblearn, numba, dask`.
 * `Tensorflow2.0` - including the most commonly used libraries listed above and with support for GPUs 
 * `iR` - kernel to run R/3.5.2
-* `iJulia` - to run Julia programing  
+* `iJulia` - to run Julia code  
 * `Psi4`- to run Psi4 notebooks for computational chemistry
 * `Matlab` - to run matlab/r2019b - **not added yet**
 * `Mathematica`  - to run mathematica/12 - **not added yet**
@@ -127,14 +148,14 @@ These system-wide kernels are installed at `/opt/ohpc/pub/apps/anaconda/3/2020.0
 * install an environment in their own user space and make it available to the Jupyter server
 
 {% hint style="info" %}
-The names of the system-wide kernels has a "-shared' suffix to distinguish it from kernels in your user space. 
+The names of the system-wide kernels has a "-shared' suffix to distinguish them from kernels in your user space. Users are encouraged to give unique names to their own kernels as well.
 {% endhint %}
 
 ### User kernels
 
 To install a new user kernel, say to install `Python 2.7` , you would need to
 
-* open a terminal using conventional and log into the HPC cluster
+* open a terminal in the HPC cluster
 * load the appropriate anaconda or miniconda module and activate the base environment if it isn't already
 * create a new environment
 * install the packages \(**including ipykernel**\) you want inside that environment
@@ -148,24 +169,26 @@ You can [access the HPC](../access-hpc/) different ways, but the easiest way wou
 
 #### Load anaconda module
 
-You are encourages to use the latest anaconda installation \(which us the default\), but slightly older versions should as well.
+You are encouraged to use the latest anaconda installation \(which is the default\), but slightly older versions should work as well.
 
 ```bash
 $user@hpc[~] module list
 Currently Loaded Modules:
   1) autotools   2) prun/1.2   3) gnu8/8.3.0   4) openmpi3/3.1.3   
   5) ohpc   6) use.own
+  
 $user@hpc[~] module load anaconda/3
 Currently Loaded Modules:
   1) autotools   2) prun/1.2   3) gnu8/8.3.0   4) openmpi3/3.1.3   
   5) ohpc   6) use.own   7) anaconda/3/2020.02
+
 $user@hpc[~] which conda
 /opt/ohpc/pub/apps/anaconda/3/2020.02/bin/conda
 ```
 
 #### Create a new environment
 
-You would need to create a new environment for the new kernel in your user space. As you can see below, the default environment is the `base` containing base Python 3.7 binaries and other useful tools like the `pip` and `conda` package managers. 
+You would need to create a new environment for the new kernel in your user space. As you can see below, the default environment is the `base` containing base Python 3.7 and other useful tools like the `pip` and `conda` package managers. 
 
 ```bash
 $user@hpc[~] conda env list
@@ -302,7 +325,7 @@ Do not forget to install iPykernel as you would need it to run your kernel in Ju
 
 #### Make that kernel visible to Jupyter
 
-To be able to run your kernel in Jupyter Notebooks, you need to make it visible to our JupyterHub installation.
+To be able to run your kernel in Jupyter Notebooks, you need to make it visible to our JupyterHub installation from the new environment.
 
 ```bash
 $(myPython27)user@hpc[~] python -m ipykernel install --user --name "myPython27" --display-name "myPython27"
@@ -311,10 +334,11 @@ Installed kernelspec myPython27 in /home/user/.local/share/jupyter/kernels/mypyt
 
 ####  Verify that the kernel is installed and visible
 
-You should deactivate the current environment, activate the `jupyter-hub`  environment and check to see iif the kernel is installed and visible
+You should deactivate the current environment, activate the `jupyter-hub`  environment, and check to see if the kernel is installed and visible
 
 ```bash
 $(myPython27)user@hpc[~] conda deactivate
+
 $(base)user@hpc[~]  conda env list
 # conda environments:
 #
@@ -327,6 +351,7 @@ psi4                     /opt/ohpc/pub/apps/anaconda/3/2020.02/envs/psi4
 tensorflow               /opt/ohpc/pub/apps/anaconda/3/2020.02/envs/tensorflow
 
 $(myPython27)user@hpc[~] source activate jupyter-hub
+
 $(jupyter-hub)user@hpc[~]  conda env list
 # conda environments:
 #
@@ -334,7 +359,7 @@ myPython27               /home/user/.conda/envs/myPython27
 myPython37               /home/user/.conda/envs/myPython37
 base                     /opt/ohpc/pub/apps/anaconda/3/2020.02
 arcgis                   /opt/ohpc/pub/apps/anaconda/3/2020.02/envs/arcgis
-jupyter-hu    >>  * <<   /opt/ohpc/pub/apps/anaconda/3/2020.02/envs/jupyter-hub
+jupyter-hub  >>  * <<   /opt/ohpc/pub/apps/anaconda/3/2020.02/envs/jupyter-hub
 psi4                     /opt/ohpc/pub/apps/anaconda/3/2020.02/envs/psi4
 tensorflow               /opt/ohpc/pub/apps/anaconda/3/2020.02/envs/tensorflow
 
@@ -358,7 +383,7 @@ You can further confirm the kernel's availability on the JupyterHub's web interf
 
 As you can see above JupyterLab adds a lot of capabilities to our JupyterHub installation by providing terminals, text editors, data viewers,  file upload/download, and a myriad of other extensions. In short, it removes a lot of the barriers non-expert users face when working in a terminal-based environment like our HPC. 
 
-The 6 minute video below covers the features of the basic features.
+The 6 minute video below covers some of the basic features.
 
 {% embed url="https://youtu.be/ctOM-Gza04Y?t=166" caption="Demo of JupyterLab\'s capabilities" %}
 
@@ -383,13 +408,13 @@ The options in the left sidebar are labeled in the figure below.
 
 ### **JupyterLab extensions**
 
-We provide a set of standard extension as well as a few others that are deemed useful to our user base. While individual users do not have permission to install extensions themselves, they can send requests to hpc@cofc.edu. 
+We provide a set of standard extension as well as a few others that are deemed useful to our user base. While individual users do not have permission to install extensions themselves, they can send requests to `hpc@cofc.edu`. 
 
-## Exiting cleanly
+## Exiting Cleanly
 
 Since the HPC is a shared resource, every user has a responsibility to make sure that it is being used in a manner that benefits everyone optimally. One way of ensuring that is
 
-* requesting the right  amount of resource \( CPUs, memory, GPUs\) for the appropriate amount of time \( 2hrs, 4hrs, ... \)
+* requesting the right amount of resource \( CPUs, memory, GPUs\) for the appropriate amount of time \( 2hrs, 4hrs, ... \)
 * Properly shutting down running kernels and single-user JupyterHub server when you are finished
 
 Information about requesting the right resource for the right task is described in the "[Requesting Resources](jupyterhub.md#requesting-resources)" section above.
@@ -402,7 +427,7 @@ It is not unusual for you to have many terminals, notebooks, files ... etc runni
 
 ### Shut down single-user server
 
-Go to the 'File' menu and select 'Hub Control Panel' to see the single-user jupyterhub servers running under your account. Then, stop the server and log out.
+Then, go to the `File` menu and select `Hub Control Panel`  to see the single-user Jupyterhub servers running under your account. Then, stop the server and log out.
 
 ![](../../.gitbook/assets/jl_hub_control_panel.png)
 
