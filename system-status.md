@@ -4,6 +4,20 @@ description: 'News, updates, outages, maintenance periods'
 
 # System News and Updates
 
+## April 2020
+
+#### Updates 
+
+* JupyterHub installed. Please see the [documentation here](using-the-hpc/scheduling-jobs/jupyterhub.md). Users are encouraged to use it instead of setting up SSH port forwarding themselves.
+
+## March 2020
+
+#### Updates 
+
+* Singularity upgraded to version 3.4.1
+* FastX3 upgraded to 3.0.44
+* Jave JDK version updated to java/jdk-11.0.7. Use modules to load it.
+
 ## February 2020
 
 #### Updates 
@@ -108,7 +122,7 @@ description: 'News, updates, outages, maintenance periods'
 
 ## March 2019
 
-### Updates
+#### Updates
 
 * 03/07/19 - The HPC cluster is installed by Dell-EMC.
 * 03/11/19 - Testing and benchmarking the cluster
