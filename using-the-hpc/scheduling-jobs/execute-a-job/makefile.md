@@ -120,19 +120,19 @@ clean:
 1. Use `sbatch` to schedule your batch job in the queue.
 
    ```bash
-   sbatch hello_world_make.slurm
+   $user@host[~] sbatch hello_world_make.slurm
    ```
 
    This command will automatically queue your job using SLURM and produce a job ID number \(shown below\). You can check the status of your job at any time with the `squeue -j <JOB_ID>` command.
 
    ```bash
-   squeue -j 12345
+   $user@host[~] squeue -j 12345
    ```
 
    You can also stop your job at any time with the `scancel` command.
 
    ```bash
-   scancel 12345
+   $user@host[~] scancel 12345
    ```
 
 2. View your results.  
@@ -140,7 +140,7 @@ clean:
     You can view the contents of these files using the `more` command followed by the file name.  
 
 ```bash
-   more mpi_hello_world_make.o143295
+   $user@host[~] more mpi_hello_world_make.o143295
 ```
 
 Your output should look something like this \(_the output is truncated._\):
