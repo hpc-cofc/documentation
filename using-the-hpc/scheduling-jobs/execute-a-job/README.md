@@ -117,7 +117,7 @@ When creating and editing your `hello_world.c` source code, we will be working o
 2. Load the compiler and MPI library. Enter `module list` to see if what modules are loaded. If MPICH is not loaded, swap the current MPI library with MPICH to proceed.
 
    ```bash
-   user@host[~]  module list
+   $user@host[~]  module list
 
    Currently Loaded Modules:
      1) autotools   2) prun/1.2   3) gnu8/8.3.0   4) openmpi3/3.1.3   5) ohpc
@@ -126,7 +126,7 @@ When creating and editing your `hello_world.c` source code, we will be working o
    Please note that `GNU8` and `OpenMPI3` are the defaults on our cluster. This exercise suggests that we use a different flavor of MPI called [MPICH](https://www.mpich.org/). So, search for the available MPICH module.
 
    ```bash
-   user@host[~] module spider mpich
+   $user@host[~] module spider mpich
 
    ------------------------------------------------------
    mpich:
@@ -148,13 +148,13 @@ When creating and editing your `hello_world.c` source code, we will be working o
    Try loading the suggested MPICH module, namely `mpich/3.3`
 
    ```bash
-   user@host[~]  module load mpich/3.3
+   $user@host[~]  module load mpich/3.3
 
    Lmod has detected the following error: You can only have one MPI module loaded at a time.
    You already have openmpi3 loaded.
    To correct the situation, please execute the following command:
 
-   $ module swap openmpi3 mpich/3.3
+   $user@host[~] module swap openmpi3 mpich/3.3
 
    While processing the following module(s):
    Module fullname  Module Filename
@@ -165,13 +165,13 @@ When creating and editing your `hello_world.c` source code, we will be working o
    As noted above, you can only have one MPI library in your path at a time. Therefore, you would need to swap the default `openmpi3` library with `mpich`
 
    ```bash
-    user@host[~]  module swap openmpi3 mpich/3.3
+   $user@host[~]  module swap openmpi3 mpich/3.3
    ```
 
 3. Compile the C source into a binary executable file.
 
    ```bash
-   mpicc -o hello_world_c hello_world.c
+   $user@host[~] mpicc -o hello_world_c hello_world.c
    ```
 
 4. Use `ls -al` to verify the presence of the `hello_world_c` binary in your working directory.
@@ -184,19 +184,19 @@ With the C code compiled into a binary \(`hello_world_c`\), we can now schedule 
 2. Use `sbatch` to schedule your batch job in the queue.
 
    ```bash
-   sbatch mpi-test.slurm
+   $user@host[~] sbatch mpi-test.slurm
    ```
 
    This command will automatically queue your job using SLURM and produce a job number \(shown below\). You can check the status of your job at any time with the `squeue` command.
 
    ```bash
-   squeue -u $USER
+   $user@host[~] squeue -u $USER
    ```
 
    You can also stop your job at any time with the `scancel` command.
 
    ```bash
-   scancel <job_ID>
+   $user@host[~] scancel <job_ID>
    ```
 
 3. View your results.  
@@ -205,7 +205,7 @@ With the C code compiled into a binary \(`hello_world_c`\), we can now schedule 
    You can view the contents of these files using the `more` command followed by the file name.
 
    ```bash
-   more mpi_hello_world_c.oXXXXX
+   $user@host[~] more mpi_hello_world_c.oXXXXX
    ```
 
    Your output should look something like this, with one line per processor core \(20 in this case\):
