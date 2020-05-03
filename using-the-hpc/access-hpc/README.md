@@ -42,8 +42,8 @@ After your [access request](../request-access.md) has been approved, your accoun
      * Accept prompt warning if this is the first time you are connecting the HPC
 3. Once you have logged in to the HPC, the first thing you want to do is change your password by entering the `passwd` command
 
-```sql
-username@hpc[~] passwd
+```bash
+$user@hpc[~] passwd
 Changing password for user username.
 Changing password for username.
 (current) UNIX password:
@@ -65,8 +65,8 @@ Please see the [demo](https://asciinema.org/a/250343) below: [![](https://asciin
 
 You can run the following command on your terminal to see your files:
 
-```sql
-username@hpc[~] ls -lhtr /home/username
+```bash
+$user@hpc[~] ls -lhtr /home/username
 total 20K
 drwxr-xr-x 2 username groupname 4     Apr 6 12:11 00_slurm-examples
 -rw-r--r-- 1 username groupname 982   Apr 6 12:11 sample.slurm
