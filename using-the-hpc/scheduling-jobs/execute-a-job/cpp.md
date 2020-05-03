@@ -80,7 +80,7 @@ return 0;
 1. Compile the C++ source into a binary executable file.
 
    ```bash
-   mpic++ -o hello_world_cpp hello_world.cpp
+   $user@host[~] mpic++ -o hello_world_cpp hello_world.cpp
    ```
 
 2. Use `ls -al` to verify the presence of the `hello_world_cpp` binary in your working directory.
@@ -90,25 +90,25 @@ return 0;
 1. Use `sbatch` to schedule your batch job in the queue.
 
    ```bash
-   sbatch hello_world_cpp.slurm
+   $user@host[~] sbatch hello_world_cpp.slurm
    ```
 
    This command will automatically queue your job using SLURM and produce a job ID number \(shown below\). You can check the status of your job at any time with the `squeue -j <JOB_ID>` command.
 
    ```bash
-   squeue -j 12345
+   $user@host[~] squeue -j 12345
    ```
 
    You can also stop your job at any time with the `scancel` command.
 
    ```bash
-   scancel 12345
+   $user@host[~] scancel 12345
    ```
 
 2. View your results. You can view the contents of these files using the `more` command followed by the file name.
 
 ```bash
-   more mpi_hello_world_cpp.o12345
+  $user@host[~]  more mpi_hello_world_cpp.o12345
 ```
 
 Your output should look something like this \(_the output is truncated._\):
