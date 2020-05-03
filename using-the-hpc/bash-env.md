@@ -23,8 +23,8 @@ Here is a list of some common environment variables:
 
 To see all your environment variables, typing `env` in your terminal.
 
-```sql
-user@hpc[~]:   env
+```bash
+$user@hpc[~]:   env
 PATH=
 LD_LIBRARY_PATH=
 MANPATH=
@@ -49,13 +49,14 @@ HOME=
 
   ```sql
   user@hpc[~]:  echo $HOME
-  /home/UID
+  /home/$USERNAME
   ```
 
 * Set or modify the value of environment variables with `export`:
 
   ```sql
   user@hpc[~]:  export PATH=$PATH:/home/$USER
+
   user@hpc[~]:  export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/$USER/custom_lib_directory
   ```
 
@@ -84,9 +85,11 @@ You are welcome to install and run your own applications. Here are some useful t
   * You can enter `module load use.own` to create a directory called `privatemodules` in your `$HOME` directory
   * ```sql
     user@hpc[~]:  module load use.own
+
     user@hpc[~]:  module list
     Currently Loaded Modules:
       1) autotools   2) prun/1.2   3) gnu8/8.3.0   4) openmpi3/3.1.3   5) ohpc   6) use.own
+
     user@hpc[~]:  ls
     privatemodules  sample.slurm  slurm-examples
     ```

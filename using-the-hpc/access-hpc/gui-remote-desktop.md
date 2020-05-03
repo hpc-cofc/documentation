@@ -16,6 +16,7 @@ Graphical user interfaces \(GUIs\) enable users to compute on the cluster using 
 * Web interface
   * FastX web client
   * Using web applications such as 
+    * JupyterHub
     * Jupyter Notebooks, 
     * WebMO and
     * other web gateways
@@ -122,9 +123,19 @@ We have a [Cendio Thinlinc ](https://www.cendio.com/)remote desktop server runni
 
 Some web interfaces enable setting up, running and analyzing HPC from a web browser. Two of those approaches will be discussed below.
 
+### JupyterHub
+
+JupyterHub+JupyterLab provide a complete multi-user web interface to the HPC for interactive computing
+
+Please see the page below.
+
+{% page-ref page="../scheduling-jobs/jupyterhub.md" %}
+
+
+
 ### Jupyter Notebooks
 
-Please see the page below
+While you are encouraged to use JupyterHub for interactive computing because of its convenience, you are welcome to run Jupyter Notebooks as prescribed in the page below
 
 {% page-ref page="../scheduling-jobs/jupyter-notebooks.md" %}
 
