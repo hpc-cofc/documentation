@@ -39,8 +39,8 @@ The first time you use Anaconda and its distribution of Python/R, you need to pe
 
 #### See what versions of Anaconda are available
 
-```sql
-user@hpc[~]:    module spider anaconda
+```bash
+$user@hpc[~]:    module spider anaconda
 
 ---------------------------------------------------------------------
     anaconda/3:
@@ -62,16 +62,16 @@ user@hpc[~]:    module spider anaconda
 
 If you plan to run Python3 notebooks, load up the `anaconda/3` module.
 
-```sql
-user@hpc[~]:    module load anaconda/3/2020.02
+```bash
+$user@hpc[~]:    module load anaconda/3/2020.02
 ```
 
 ### Python/R versions
 
 Initially, only the base version of Anaconda is installed in a central/shared location. If you type `conda env list`, you will only see the base installation.
 
-```sql
-user@hpc[~]:     conda env list
+```bash
+$user@hpc[~]:     conda env list
 # conda environments:
 #
 base                  *  /opt/ohpc/pub/apps/anaconda/3/2020.02
@@ -79,14 +79,15 @@ base                  *  /opt/ohpc/pub/apps/anaconda/3/2020.02
 
 Depending on your needs, you would need to install specific versions of Python and R. Anaconda uses the `conda` tool to install packages and manage your software environment. In this particular case, we'll install a Python 3.7 environment.
 
-```sql
-user@hpc[~]:    module load anaconda/3/2020.02
-user@hpc[~]:    conda create -n myJupyter_3.7 python=3.7 jupyter
+```bash
+$user@hpc[~]:    module load anaconda/3/2020.02
+
+$user@hpc[~]:    conda create -n myJupyter_3.7 python=3.7 jupyter
 ```
 
 You will see that Python 3.7 has successfully installed by checking the list of available environments.
 
-```sql
+```bash
 user@hpc[~]:    conda env list
 # conda environments:
 #
@@ -96,8 +97,8 @@ base                  *  /opt/ohpc/pub/apps/anaconda/3/2020.02
 
 To activate this environment, you can use the following command:
 
-```sql
-user@hpc[~]:    source activate myJupyter_3.7
+```bash
+$user@hpc[~]:    source activate myJupyter_3.7
 ```
 
 ## **Running your notebook**
@@ -124,8 +125,8 @@ There are two interactive shell scripts that will allow you to run your notebook
 
 Running a simple interactive shell script \(`reserve-interactive.sh`\) allows you to reserve resources to run your Jupyter Notebook as shown in the following example.
 
-```sql
-user@hpc[~/test]  request-interactive.sh
+```bash
+$user@hpc[~/test]  request-interactive.sh
 
 This script helps you start up an interactive SLURM session to reserve 
 computational resources  the CofC HPC.
@@ -152,8 +153,8 @@ srun --wait=0 --pty -p stdmemq --ntasks=4 -t 2:00:00 -J test bash
 
 A simple interactive shell script \(`run-jupyter-notebook.sh`\) guides you through the process of initiating your Jupyter Notebook run.
 
-```sql
-user@hpc[~/test]  run-jupyter-notebook.sh
+```bash
+$user@hpc[~/test]  run-jupyter-notebook.sh
 
 Which version of Anaconda would you like to run.
 Enter selection [0-2]:
@@ -265,25 +266,26 @@ _**Set up the calculation**_
 
 1. Load up and activate the environment on the server/node
    * ```sql
-     user@hpc[~]:  module load anaconda/3/2020.02
-     user@hpc[~]:  conda activate myJupyter_3.7
+     $user@hpc[~]:  module load anaconda/3/2020.02
+
+     $user@hpc[~]:  conda activate myJupyter_3.7
      ```
 2. Set up forwarding of the notebook data over an unused port \(say `10002`\)
    * ```sql
-     user@hpc[~]:  export myport=10002
+     $user@hpc[~]:  export myport=10002
      ```
    * You can determine the exact port forwarding command by executing the command below: \[1\] 
      * ```sql
-       user@hpc[~]:  echo "ssh -NL $myport:$(hostname):$myport $USER@hpc.cofc.edu"
+       $user@hpc[~]:  echo "ssh -NL $myport:$(hostname):$myport $USER@hpc.cofc.edu"
        ```
 3. Start the notebook
    * ```sql
-     user@hpc[~]:  jupyter-notebook --no-browser --port=$myport --ip='0.0.0.0'
+     $user@hpc[~]:  jupyter-notebook --no-browser --port=$myport --ip='0.0.0.0'
      ```
 4. You should see something like that looks like this:
 
-```sql
-(jupyter_3.7) user@hpc[~]:  jupyter-notebook --no-browser --port=$myport --ip='0.0.0.0'
+```bash
+$(jupyter_3.7) user@hpc[~]:  jupyter-notebook --no-browser --port=$myport --ip='0.0.0.0'
 
 [I 12 NotebookApp] Serving notebooks from local directory: /home/bt-local
 [I 12 NotebookApp] The Jupyter Notebook is running at:
@@ -344,8 +346,8 @@ You need to run your production calculations on compute nodes by first starting 
 
 You should see something like that looks like this:
 
-```sql
-(jupyter_3.7) user@hpc[~]  jupyter-notebook --no-browser --port=$myport --ip='0.0.0.0'
+```bash
+$(jupyter_3.7) user@hpc[~]  jupyter-notebook --no-browser --port=$myport --ip='0.0.0.0'
 
 [I 12 NotebookApp] Serving notebooks from local directory: /home/bt-local
 [I 12 NotebookApp] The Jupyter Notebook is running at:
