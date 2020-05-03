@@ -44,8 +44,8 @@ scavengeq       up 2-00:00:00      13    mix bigmem001,compute[001-008],gpu[001-
 
 The compute nodes in the cluster are assigned to one or more queues or partitions. Users submit their jobs to one partition and the job runs on a compute node\(s\) that belongs in that partition.  You can look at the partitions and the status of the compute resources under each using the `sinfo` command.
 
-```sql
-user@host[~]:   sinfo -o "%20P %5a %.10l %16F"
+```bash
+$user@host[~]:   sinfo -o "%20P %5a %.10l %16F"
 PARTITION            AVAIL  TIMELIMIT NODES(A/I/O/T)
 stdmemq*             up    2-00:00:00 0/10/0/10
 stdmemq-long         up    4-00:00:00 1/2/0/3
@@ -130,8 +130,8 @@ The table below gives a short description of the most used SLURM commands.
 
 To list all jobs:
 
-```sql
-user@host[~]:   squeue
+```bash
+$user@host[~]:   squeue
  JOBID  PARTITION  NAME      USER   STATE    TIME        TIME_LIMI   CPUS  NODES  NODELIST(REASON)
 4340   gpuq       testjob1  user1  RUNNING  2-03:06:55  4-00:00:00  2     1      gpu1
 4349   stdmemq    testjob2  user2  RUNNING  1:36:09     2-00:00:00  2     1      compute1
@@ -140,14 +140,14 @@ user@host[~]:   squeue
 
 To list your jobs:
 
-```sql
-user@host[~]:   squeue -u $USER
+```bash
+$user@host[~]:   squeue -u $USER
 ```
 
 To obtain the status of a job, run the following command using the job's ID number \(this is provided at time of job submission\).
 
-```sql
-user@host[~]:   squeue -j JOB_ID
+```bash
+$user@host[~]:   squeue -j JOB_ID
 ```
 
 You can also use `checkjob job_ID` to show the current status of the job.
@@ -156,8 +156,8 @@ You can also use `checkjob job_ID` to show the current status of the job.
 
 To submit a job, use the `sbatch` command, followed by the name of your submission file. A Job ID will be provided. You may want to make note of the ID for later use.
 
-```sql
-user@host[~]:   sbatch your_script.slurm
+```bash
+$user@host[~]:   sbatch your_script.slurm
 Submitted batch job 4359
 ```
 
@@ -167,22 +167,22 @@ Submitted batch job 4359
 
 Users can delete their jobs by typing the following command.
 
-```sql
-user@host[~]:   scancel JOB_ID
+```bash
+$user@host[~]:   scancel JOB_ID
 ```
 
 To delete all the jobs of a user:
 
-```sql
-user@host[~]:   scancel -u $USER
+```bash
+$user@host[~]:   scancel -u $USER
 ```
 
 ### Overview of resources
 
 The `sinfo` command gives an overview of what resources are in each partition/queue and what their status is. It should inform your decisions on how you structure your jobs and what partition you should submit them to.
 
-```sql
-user@host[~]:   sinfo
+```bash
+$user@host[~]:   sinfo
 PARTITION    AVAIL  TIMELIMIT  NODES  STATE NODELIST
 stdmemq*        up 2-00:00:00      1    mix bigmem1
 stdmemq*        up 2-00:00:00     10    mix compute[1-8],gpu[1-2]
@@ -197,8 +197,8 @@ scavengeq       up 1-00:00:00      2    mix bigmem0,gpuv1001
 
 You can format that output in a more concise form:
 
-```sql
-user@host[~]:   sinfo -o "%20P %5a %.10l %16F"
+```bash
+$user@host[~]:   sinfo -o "%20P %5a %.10l %16F"
 PARTITION            AVAIL  TIMELIMIT NODES(A/I/O/T)
 stdmemq*             up    2-00:00:00 1/10/0/11
 stdmemq-long         up    4-00:00:00 1/2/0/3
@@ -212,8 +212,8 @@ scavengeq            up    1-00:00:00 2/11/0/13
 
 The `sacct` command gives some accounting details on past and current jobs.
 
-```sql
-user@host[~]:   sacct
+```bash
+$user@host[~]:   sacct
 4359         jredo-0.x+    bigmemq     (null)          0  COMPLETED      0:0
 4360         jredo-0.x+    bigmemq     (null)          0  CANCELLED      0:0
 .
@@ -223,8 +223,8 @@ user@host[~]:   sacct
 
 You can format that output in a more detailed form:
 
-```sql
-user@host[~]:   sacct --format=jobid,user,jobname,partition,end,Elapsed,State
+```bash
+$user@host[~]:   sacct --format=jobid,user,jobname,partition,end,Elapsed,State
 4359          user jredo-0.x+    bigmemq 2019-08-07T15:03:15   00:00:10  COMPLETED
 4360          user jredo-0.x+    bigmemq 2019-08-07T15:03:42   00:00:05  CANCELLED
 ```
