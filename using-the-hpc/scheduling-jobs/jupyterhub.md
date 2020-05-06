@@ -383,6 +383,8 @@ You can further confirm the kernel's availability on the JupyterHub's web interf
 
 As you can see above JupyterLab adds a lot of capabilities to our JupyterHub installation by providing terminals, text editors, data viewers,  file upload/download, and a myriad of other extensions. In short, it removes a lot of the barriers non-expert users face when working in a terminal-based environment like our HPC. 
 
+A demonstration of a lot of its features is available [here](https://jupyterlab.readthedocs.io/en/stable/user/interface.html).
+
 The 6 minute video below covers some of the basic features.
 
 {% embed url="https://youtu.be/ctOM-Gza04Y?t=166" caption="Demo of JupyterLab\'s capabilities" %}
