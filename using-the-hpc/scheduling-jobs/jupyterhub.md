@@ -133,22 +133,24 @@ Available kernels:
 
 We currently provide systemwide kernels  to run
 
-* `Python3.7` - including most commonly used libraries such as `numpy`,  `scipy`, `matplotlib`, `plotly`, `pandas`, `tensorflow`, `seaborn`, `imblearn, numba, dask`.
+* `Python3.7` - including most commonly used libraries such as `numpy`,  `scipy`, `matplotlib`, `plotly`, `pandas`, `tensorflow`, `scikit-learn`, `seaborn`, `imblearn, numba, dask`.
 * `Tensorflow2.0` - including the most commonly used libraries listed above and with support for GPUs 
 * `iR` - kernel to run R/3.5.2
 * `iJulia` - to run Julia code  
+* `Matlab` - to run matlab/r2019b 
+* `Mathematica`  - to run mathematica/12.1
+  * currently, we only have license to run it on the login node
+* `GNUplot` - to run GNUplot 3.5.2
 * `Psi4`- to run Psi4 notebooks for computational chemistry
-* `Matlab` - to run matlab/r2019b - **not added yet**
-* `Mathematica`  - to run mathematica/12 - **not added yet**
-* \*\*\*\*
-
+* `ArcGIS` - to run ArcGIS Python notebooks
+* 
 These system-wide kernels are installed at `/opt/ohpc/pub/apps/anaconda/3/2020.02/envs` where users do not have permission to modify them. Therefore, in cases where these kernels are insufficient, users would need to
 
 * email `hpc@cofc.edu` to ask for modifications of these kernels or installation of additional ones OR
 * install an environment in their own user space and make it available to the Jupyter server
 
 {% hint style="info" %}
-The names of the system-wide kernels has a "-shared' suffix to distinguish them from kernels in your user space. Users are encouraged to give unique names to their own kernels as well.
+The names of the system-wide kernels has a "\_'" prefix to distinguish them from kernels in your user space. Users are encouraged to give unique display names to their own kernels as well.
 {% endhint %}
 
 ### User kernels
@@ -204,7 +206,7 @@ tensorflow               /opt/ohpc/pub/apps/anaconda/3/2020.02/envs/tensorflow
 ```
 
 {% hint style="warning" %}
-It is wise to append something \(e.g. `myPython37` instead of `Python37`\) to distinguish system-wide kernels from those in your user space.  If a kernel in your user space has the same name as a system-wide one, the system-wide one will have precedence.
+It is wise to append something \(e.g. `myPython37` instead of `Python37`\) to distinguish system-wide kernels from those in your user space.  If a kernel in your user space has the same name as a system-wide one, the one in your user space will have precedence. You can check the order in which jupyter looks for kernels by entering '`jupyter --paths`' in the command line
 {% endhint %}
 
 Now, we'll create a Python 2.7 environment 
