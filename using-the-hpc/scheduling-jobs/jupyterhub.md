@@ -134,7 +134,7 @@ Available kernels:
 We currently provide systemwide kernels  to run
 
 * `Python3.7` ,`Python3.6`, `Python2.7`
-  * - including most commonly used libraries such as `numpy`,  `scipy`, `matplotlib`, `plotly`, `pandas`, `tensorflow`, `scikit-learn`, `seaborn`, `imblearn,` `numba,` `dask`, `rdkit`, `pybel`
+  * - including most commonly used libraries such as `numpy`,  `scipy`, `matplotlib`, `plotly`, `pandas`, `tensorflow`, `scikit-learn`, `seaborn`, `imblearn,` `numba,` `dask`, `rdkit`, `pybel,` `openbabel`
 * `Tensorflow2.0` - including the most commonly used libraries listed above and with support for GPUs 
 * `iR` - kernel to run R/3.5.2
 * `iJulia` - to run Julia code  
