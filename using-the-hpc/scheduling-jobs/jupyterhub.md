@@ -487,6 +487,8 @@ There is a large "gallery of interesting Jupyter Notebooks" from all sorts of fi
 
 There is a constantly growing collection of notebooks at [https://nbviewer.jupyter.org/](https://nbviewer.jupyter.org/)
 
+[Kaggle](https://www.kaggle.com/notebooks) also has lots of interesting notebooks to play around with.
+
 Please note that some of the Notebooks are old \(dating back to 2016\) and they may not run on our installation. Some libraries, calls, attributed may have been deprecated or replaced. You are better off running more recent notebooks \(2019 - \).
 
 {% hint style="warning" %}
