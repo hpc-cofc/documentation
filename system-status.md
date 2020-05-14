@@ -4,11 +4,21 @@ description: 'News, updates, outages, maintenance periods'
 
 # System News and Updates
 
+## May 2020
+
+#### Updates
+
+* Documentation page moved to [https://docs.hpc.cofc.edu](https://docs.hpc.cofc.edu)
+* HPC@CofC highlighted on [Campus IT's biannual newsletter ](https://mailchi.mp/2b6b35b78547/information-technology-newsletter-spring-2020?e=e3ac133ef2#Solving%20the%20Big%20Questions)
+* New JupyterHub kernels including Python\[2.7/3.6/3.7\], R, Julia, Matlab, Mathematica, GNUplot, and ArcGIS. ... Check it out at [https://hpc.cofc.edu/jupyterhub](https://hpc.cofc.edu/jupyterhub)
+* PGI compilers added
+
 ## April 2020
 
 #### Updates 
 
 * JupyterHub installed. Please see the [documentation here](using-the-hpc/scheduling-jobs/jupyterhub.md). Users are encouraged to use it instead of setting up SSH port forwarding themselves.
+* FastX3 upgraded to 3.0.46
 
 ## March 2020
 
