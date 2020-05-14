@@ -133,7 +133,8 @@ Available kernels:
 
 We currently provide systemwide kernels  to run
 
-* `Python3.7` - including most commonly used libraries such as `numpy`,  `scipy`, `matplotlib`, `plotly`, `pandas`, `tensorflow`, `scikit-learn`, `seaborn`, `imblearn, numba, dask`.
+* `Python3.7` ,`Python3.6`, `Python2.7`
+  * - including most commonly used libraries such as `numpy`,  `scipy`, `matplotlib`, `plotly`, `pandas`, `tensorflow`, `scikit-learn`, `seaborn`, `imblearn,` `numba,` `dask`, `rdkit`, `pybel`
 * `Tensorflow2.0` - including the most commonly used libraries listed above and with support for GPUs 
 * `iR` - kernel to run R/3.5.2
 * `iJulia` - to run Julia code  
@@ -143,7 +144,7 @@ We currently provide systemwide kernels  to run
 * `GNUplot` - to run GNUplot 3.5.2
 * `Psi4`- to run Psi4 notebooks for computational chemistry
 * `ArcGIS` - to run ArcGIS Python notebooks
-* 
+
 These system-wide kernels are installed at `/opt/ohpc/pub/apps/anaconda/3/2020.02/envs` where users do not have permission to modify them. Therefore, in cases where these kernels are insufficient, users would need to
 
 * email `hpc@cofc.edu` to ask for modifications of these kernels or installation of additional ones OR
