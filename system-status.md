@@ -10,8 +10,16 @@ description: 'News, updates, outages, maintenance periods'
 
 * Documentation page moved to [https://docs.hpc.cofc.edu](https://docs.hpc.cofc.edu)
 * HPC@CofC highlighted on [Campus IT's biannual newsletter ](https://mailchi.mp/2b6b35b78547/information-technology-newsletter-spring-2020?e=e3ac133ef2#Solving%20the%20Big%20Questions)
-* New JupyterHub kernels including Python\[2.7/3.6/3.7\], R, Julia, Matlab, Mathematica, GNUplot, and ArcGIS. ... Check it out at [https://hpc.cofc.edu/jupyterhub](https://hpc.cofc.edu/jupyterhub)
+* New JupyterHub kernels including Python\[2.7/3.6/3.7\], R, Julia, Matlab, Mathematica, GNUplot, and ArcGIS ... etc. Check them out at [https://hpc.cofc.edu/jupyterhub](https://hpc.cofc.edu/jupyterhub)
 * PGI compilers added
+
+#### Outage
+
+* 05/17/20 - a cooling problem in our campus datacenter forced us to power down most of the cluster for 18 hours. Everything has been restored to its normal state now. Please report any problems to [hpc@cofc.edu](mailto:hpc@cofc.edu)
+
+#### Maintenance
+
+* 05/23/20 - the cluster will be inaccessible from 8AM-8PM due to a planned public network upgrade. The HPC will continue operating normally, but it won't be accessible during this period.
 
 ## April 2020
 
