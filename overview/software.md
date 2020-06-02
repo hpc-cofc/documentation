@@ -78,7 +78,9 @@ The OpenHPC software stack looks like this:
       <td style="text-align:left">Gprof, TAU, Likwid, Dimemas</td>
     </tr>
   </tbody>
-</table>Some of the underlying management components are:
+</table>
+
+Some of the underlying management components are:
 
 |  | Available component |
 | :---: | :--- |

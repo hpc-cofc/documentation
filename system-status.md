@@ -4,6 +4,12 @@ description: 'News, updates, outages, maintenance periods'
 
 # System News and Updates
 
+## June 2020
+
+#### Updates
+
+* R/4.0.0 compiled with GNU8+OpenBLAS and Intel+MKL is available
+
 ## May 2020
 
 #### Updates
