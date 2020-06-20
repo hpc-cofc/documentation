@@ -10,6 +10,10 @@ description: 'News, updates, outages, maintenance periods'
 
 * R/4.0.0 compiled with GNU8+OpenBLAS and Intel+MKL is available
 
+#### Outage
+
+* 06/09/20 - a persistent cooling problem in our campus datacenter forced us to power down the HPC until a permanent fix is in place. 
+
 ## May 2020
 
 #### Updates
